@@ -1,0 +1,128 @@
+[
+  {
+    "url": "https://jaychtw.github.io/",
+    "checkedAt": "2026-10-26T19:30:50.313775+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/animal-match/",
+    "checkedAt": "2026-10-26T19:30:50.314471+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/jasmine-odyssey/",
+    "checkedAt": "2026-10-26T19:30:50.314890+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/junctioneer/",
+    "checkedAt": "2026-10-26T19:30:50.315516+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/junctioneer/review/",
+    "checkedAt": "2026-10-26T19:30:50.336750+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/kaiju-tournament/",
+    "checkedAt": "2026-10-26T19:30:50.339974+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/my-queens/",
+    "checkedAt": "2026-10-26T19:30:50.342945+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/nom_nom_boom/",
+    "checkedAt": "2026-10-26T19:30:50.345454+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/pedestrian-living-hell/",
+    "checkedAt": "2026-10-26T19:30:50.348120+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/pedestrian-living-hell/?v=1.0.0",
+    "checkedAt": "2026-10-26T19:30:50.351174+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/random-project-01/",
+    "checkedAt": "2026-10-26T19:30:50.353957+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/reppublic-of-chickens/",
+    "checkedAt": "2026-10-26T19:30:50.358950+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/riot-defender/",
+    "checkedAt": "2026-10-26T19:30:50.359691+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/shape-match/",
+    "checkedAt": "2026-10-26T19:30:50.362612+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/side-scroller-01/",
+    "checkedAt": "2026-10-26T19:30:50.365512+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/snacks-match-raohe/",
+    "checkedAt": "2026-10-26T19:30:50.367010+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/squirrel-control/",
+    "checkedAt": "2026-10-26T19:30:50.368921+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/the-last-lantern/",
+    "checkedAt": "2026-10-26T19:30:50.370870+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/the-other-ninty-percent/",
+    "checkedAt": "2026-10-26T19:30:50.373401+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/vertical-scroller-01/",
+    "checkedAt": "2026-10-26T19:30:50.376410+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  },
+  {
+    "url": "https://jaychtw.github.io/wonderlands/",
+    "checkedAt": "2026-10-26T19:30:50.379380+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "outcome": "network-policy-blocked"
+  }
+]

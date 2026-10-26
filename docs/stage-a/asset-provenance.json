@@ -1,0 +1,34 @@
+[
+  {
+    "file": "assets/reppublic-of-chickens--overview-desktop.png",
+    "sha256": "165f5558cbb629fe695bbf6cb4805d1d380d1e55c98de25af564e00fcbc1351c",
+    "source": "https://raw.githubusercontent.com/jaychtw/reppublic-of-chickens/f5a2511ea87ba03c461d7e49222c25e1459a02f3/docs/screenshots/overview-desktop.png",
+    "sourceCommit": "f5a2511ea87ba03c461d7e49222c25e1459a02f3",
+    "kind": "repository gameplay screenshot, not newly captured live gameplay",
+    "reuse": "Owner-portfolio art-direction review, committed to the portal repository at the creator’s request; no new license or commercial clearance asserted."
+  },
+  {
+    "file": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+    "sha256": "e391326b2eae3e4c488222125fb7813c805c2b58e8858bc583b214dcb13a1535",
+    "source": "https://raw.githubusercontent.com/jaychtw/squirrel-control/4ce1d4a5997ef300a57cc3cc3a0d5ba8816f8660/docs/evidence/gameplay-1440-en-tidy.png",
+    "sourceCommit": "4ce1d4a5997ef300a57cc3cc3a0d5ba8816f8660",
+    "kind": "repository gameplay screenshot, not newly captured live gameplay",
+    "reuse": "Owner-portfolio art-direction review, committed to the portal repository at the creator’s request; no new license or commercial clearance asserted."
+  },
+  {
+    "file": "assets/wonderlands--desktop-after.png",
+    "sha256": "107cc40c5b2c2ffecec62ec955cdd3da8c4c04743da965a2a1d8a4ab8b098f70",
+    "source": "https://raw.githubusercontent.com/jaychtw/wonderlands/33f262a5be41d118d4ebd90ca955fbb2eb2ccb25/evidence/desktop-after.png",
+    "sourceCommit": "33f262a5be41d118d4ebd90ca955fbb2eb2ccb25",
+    "kind": "repository gameplay screenshot, not newly captured live gameplay",
+    "reuse": "Owner-portfolio art-direction review, committed to the portal repository at the creator’s request; no new license or commercial clearance asserted."
+  },
+  {
+    "file": "assets/the-last-lantern--gameplay-1440-en.png",
+    "sha256": "c8bb080cc41416e17c7d3968e91b1ae828f300b0eae9adcaee7e1efabc0826d8",
+    "source": "https://raw.githubusercontent.com/jaychtw/the-last-lantern/99dcad1f29c7a6d5e389ac274046eb8d6e24a5a6/docs/evidence/gameplay-1440-en.png",
+    "sourceCommit": "99dcad1f29c7a6d5e389ac274046eb8d6e24a5a6",
+    "kind": "repository gameplay screenshot, not newly captured live gameplay",
+    "reuse": "Owner-portfolio art-direction review, committed to the portal repository at the creator’s request; no new license or commercial clearance asserted."
+  }
+]

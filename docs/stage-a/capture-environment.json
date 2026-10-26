@@ -1,0 +1,7 @@
+{
+  "browser": "154.0.8037.57",
+  "engine": "Chromium",
+  "playwright": "1.64.1",
+  "platform": "linux",
+  "scope": "Static Stage A compositions; no physical-device or public-site browser testing."
+}

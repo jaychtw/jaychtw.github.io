@@ -1,0 +1,242 @@
+[
+  {
+    "concept": "a",
+    "width": 320,
+    "scrollWidth": 320,
+    "images": [
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "a",
+    "width": 390,
+    "scrollWidth": 390,
+    "images": [
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "a",
+    "width": 768,
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "a",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "images": [
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "b",
+    "width": 320,
+    "scrollWidth": 320,
+    "images": [
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "b",
+    "width": 390,
+    "scrollWidth": 390,
+    "images": [
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "b",
+    "width": 768,
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "b",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "images": [
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "c",
+    "width": 320,
+    "scrollWidth": 320,
+    "images": [
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "c",
+    "width": 390,
+    "scrollWidth": 390,
+    "images": [
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "c",
+    "width": 768,
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  },
+  {
+    "concept": "c",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "images": [
+      {
+        "src": "assets/wonderlands--desktop-after.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/reppublic-of-chickens--overview-desktop.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/squirrel-control--gameplay-1440-en-tidy.png",
+        "loaded": true
+      }
+    ],
+    "errors": []
+  }
+]
