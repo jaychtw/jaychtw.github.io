@@ -427,6 +427,10 @@ async function capture(page, name) {
   result.behavior.push("Blocked storage leaves theme switch usable");
   await blocked.close();
   const failed = await browser.newPage();
+  // An uploaded cover is valid. Exercise total preview failure by blocking the whole chain.
+  await failed.route("**/assets/covers/games/republic-of-chickens.*", (route) =>
+    route.abort(),
+  );
   await failed.route(
     "**/assets/screenshots/games/republic-of-chickens.*",
     (route) => route.abort(),
@@ -442,7 +446,9 @@ async function capture(page, name) {
       .locator('[data-project="republic-of-chickens"] .launch')
       .isVisible(),
   );
-  result.behavior.push("Failed screenshot retains placeholder and Play link");
+  result.behavior.push(
+    "Failed preview chain retains placeholder and Play link",
+  );
   await failed.close();
   const coverFailure = await browser.newPage();
   await coverFailure.route("**/assets/covers/games/**", (route) =>

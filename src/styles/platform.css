@@ -171,17 +171,17 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
-  margin: 4px auto 46px;
+  gap: 6px;
+  margin: 4px auto 36px;
 }
 .filter {
-  padding: 9px 17px;
-  min-height: 42px;
+  padding: 6px 12px;
+  min-height: 36px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: transparent;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   line-height: 1.4;
   /* Switch opposing text/background pairs atomically to preserve contrast. */
 }
@@ -448,12 +448,11 @@ dd {
     padding: 18px 20px 64px;
   }
   .filters {
-    gap: 7px;
-    margin-bottom: 32px;
+    gap: 6px;
+    margin-bottom: 28px;
   }
   .filter {
-    padding: 8px 13px;
-    font-size: 0.76rem;
+    padding: 6px 10px;
   }
   .detail,
   .article-page {

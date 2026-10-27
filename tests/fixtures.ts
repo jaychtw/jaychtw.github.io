@@ -18,6 +18,11 @@ export async function prepareFixtures(): Promise<string> {
     cpSync(resolve(root, name), resolve(fixtureRoot, name), {
       recursive: true,
     });
+  // Fixture tests start from a known screenshot state, independently of owner-uploaded covers.
+  rmSync(resolve(fixtureRoot, "public/assets/covers"), {
+    recursive: true,
+    force: true,
+  });
   rmSync(resolve(fixtureRoot, "content/projects"), { recursive: true });
   const p = structuredClone(
     readProjects(root).find((p: any) => p.id === "republic-of-chickens"),
