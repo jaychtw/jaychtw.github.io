@@ -1,0 +1,17 @@
+{
+  "name": "possibility-stage-a2-poc",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Isolated Stage A.2 art-direction prototype; no production build or deployment",
+  "scripts": {
+    "dev": "python3 serve.py",
+    "test": "node tests/check.cjs",
+    "verify:live": "python3 tests/verify-live.py",
+    "test:bundle": "node tests/smoke-bundle.cjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.0",
+    "playwright": "1.64.1",
+    "pngjs": "7.0.0"
+  }
+}

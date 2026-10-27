@@ -1,0 +1,24 @@
+{
+  "browser": "154.0.8037.57",
+  "cases": [
+    {
+      "light": "window",
+      "pattern": "drift",
+      "passed": true,
+      "scope": "Extracted archive: landing/email, Explore, four decoded local images, gallery refresh, return navigation."
+    },
+    {
+      "light": "diffuse",
+      "pattern": "drift",
+      "passed": true,
+      "scope": "Extracted archive: landing/email, Explore, four decoded local images, gallery refresh, return navigation."
+    },
+    {
+      "light": "window",
+      "pattern": "cadence",
+      "passed": true,
+      "scope": "Extracted archive: landing/email, Explore, four decoded local images, gallery refresh, return navigation."
+    }
+  ],
+  "failures": 0
+}

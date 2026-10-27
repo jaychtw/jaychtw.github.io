@@ -1,0 +1,19 @@
+{
+  "file": "Possibility-Stage-A2.zip",
+  "bytes": 441164,
+  "sha256": "9b587bd0a614690352433d7f33972f2429ddb6ea1f94975e0f75f846d6d09b4e",
+  "runtimeFiles": [
+    "index.html",
+    "style.css",
+    "site.js",
+    "catalog.json",
+    "games/index.html",
+    "games/gallery.js",
+    "serve.py",
+    "assets/republic-of-chickens.webp",
+    "assets/squirrel-control.webp",
+    "assets/the-last-lantern.webp",
+    "assets/wonderlands.webp"
+  ],
+  "scope": "Standalone local review only; no dependencies or deployment scripts."
+}

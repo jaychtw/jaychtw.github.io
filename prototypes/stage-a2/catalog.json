@@ -1,0 +1,30 @@
+[
+  {
+    "id": "republic-of-chickens",
+    "title": "Republic of Chickens",
+    "destination": "https://jaychtw.github.io/reppublic-of-chickens/",
+    "image": "assets/republic-of-chickens.webp",
+    "alt": "A sunlit village square populated by chickens."
+  },
+  {
+    "id": "wonderlands",
+    "title": "Wonderlands",
+    "destination": "https://jaychtw.github.io/wonderlands/",
+    "image": "assets/wonderlands.webp",
+    "alt": "An ocean planet with a painted island, mountains and a river."
+  },
+  {
+    "id": "squirrel-control",
+    "title": "Squirrel Control",
+    "destination": "https://jaychtw.github.io/squirrel-control/",
+    "image": "assets/squirrel-control.webp",
+    "alt": "Miss Bunny beside a sofa and squirrels hiding in her cottage."
+  },
+  {
+    "id": "the-last-lantern",
+    "title": "The Last Lantern",
+    "destination": "https://jaychtw.github.io/the-last-lantern/",
+    "image": "assets/the-last-lantern.webp",
+    "alt": "Rowan among timber cottages and trees in Hearthmere."
+  }
+]

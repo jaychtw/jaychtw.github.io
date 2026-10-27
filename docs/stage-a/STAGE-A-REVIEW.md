@@ -1,5 +1,7 @@
 # Possibility — Stage A review
 
+> Archived visual exploration. The [Stage A.2 pivot](../stage-a2/README.md) supersedes the A/B/C directions; no earlier direction was selected. Historical audit results below retain their original scope.
+
 Review date: **2026-10-27 (Asia/Taipei)**. Scope: read-only reconnaissance, art-direction studies, and implementation proposal. **Awaiting visual approval; Stage B has not started.**
 
 ## Decision in view

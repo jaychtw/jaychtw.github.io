@@ -1,5 +1,7 @@
 # Possibility — Stage A visual review
 
+> Archived visual exploration. The [Stage A.2 pivot](../stage-a2/README.md) supersedes the A/B/C directions; no earlier direction was selected. Historical audit results below retain their original scope.
+
 **Awaiting visual-direction approval.** These are desktop/mobile art-direction studies using authentic gameplay screenshots. They are not a production portal or release candidate. I recommend **A · Open Folio** for its restrained presentation and flexibility across media.
 
 | Direction | Character | Full-size compositions |

@@ -1,8 +1,12 @@
 # jaychtw.github.io
 Portal of jaychtw
 
-## Possibility — Stage A review
+## Possibility — current Stage A.2 review
 
-[Review the three desktop/mobile homepage concepts](docs/stage-a/README.md), with the repository audit, authentic screenshot provenance, architecture proposal, and future release-to-portal update contract.
+[Review the interactive visual pivot](docs/stage-a2/README.md): minimal sunlit landing, two light variants, and two white staggered gallery patterns with authentic square gameplay thumbnails. Includes desktop/mobile evidence, a 20× motion proof, local review ZIP, accessibility/contrast checks and source provenance.
 
-Visual-direction approval is pending. This is a documentation and concept-review change; no production portal or deployment workflow is included.
+**Visual approval is pending. Stage B has not started.** No production portal, deployment workflow or game-repository change is included.
+
+## Earlier Stage A exploration
+
+[Archived A/B/C concepts and reconnaissance](docs/stage-a/README.md). The v1.1 handoff supersedes those visual directions; their release evidence and [proposed future release-to-portal contract](docs/stage-a/RELEASE-TO-PORTAL.md) remain useful background.
