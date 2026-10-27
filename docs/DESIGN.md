@@ -1,42 +1,30 @@
-# Design and architecture
+# Platform design and maintainability
 
-## v1.0 baseline, not a permanent freeze
+The creator-approved **Platform v1.0 textual direction** supersedes the sunlight landing and staggered square gallery. [Authority and boundaries](platform-v1/inputs/implementation-authorization.md), with the [final amendment](platform-v1/textual-design-amendment.md) superseding its mockup-attachment gate. The design is a versioned baseline, not a permanent freeze.
 
-The creator approved **Stage A.2 Revision 2, `f99940ec0de18544299f5095890042584b1b1bd7`**, then authorized Stage B production. Default: living Window light + Drift gallery. The title/email stay stationary within the first viewport; native scrolling reveals white, square, deliberately staggered linked thumbnails and titles. `/games/` is directly addressable. No tagline, manifesto, future categories, decorative controls or marketing panels were introduced.
+## Current composition
 
-Identity remains medium-independent. The root renders editor-selected published work, not a repository directory. Games is the first populated collection; future real work may use another category/action without pretending it is playable. No Recently Added area is rendered because verified chronology/editorial value is not established for the whole catalog.
+Compact shared header, restrained wordmark, only published navigation and a small glossy theme orb. Games opens immediately at `/`. Centered wrapping pill buttons filter complete 16:9 image/title/tag/description/action cards. Three columns at 1024px+, two at 640–1023px, one below 640px. Dark charcoal initially; explicit user selection persists in `possibility:theme`. Pale neutral light mode, restrained rounding, no enclosing card boxes or heavy shadows.
 
-## Small replaceable layers
+`src/styles/platform.css` owns current tokens and composition. Earlier sunlight/gallery styles and the component remain archived, unused by the active builder; historical experiments and evidence are not deleted. `site.approvedBaseline` retains the prior sunlight approval SHA for provenance, not as the new visual authority. `designVersion` describes Platform v1.0; release build metadata records the textual authority.
 
-- `content/site.json` records identity, the current design version and the approval reference. Catalog and provenance are version-controlled data, never a runtime API.
-- `src/components/sunlight.ts` owns the decorative window shape and minimal identity/scroll cue. `sunlight.css` owns broad edge morphs, drift and slow illumination; periods are in `tokens.css`. Text is outside the animated layer.
-- `gallery.ts` owns reusable image/title links and honest missing-art fallbacks. `gallery.css` owns the deterministic rhythm and responsive behavior. Both routes share these components and one catalog.
-- `src/render.ts` composes physical HTML routes. Four optional, independently addressable game fact sheets expose concise controls/languages/limitations and Play/Source links; gallery tiles continue launching games directly, preserving the approved interaction.
-- The tiny client module only handles failed images and pauses invisible light. Removing JavaScript retains all initial content, routes, native links, natural scrolling and the CSS reduced-motion fallback.
-- The typed static builder validates before replacing its own generated output, fingerprints assets, creates metadata/sitemap/404, and copies only published production files. No framework server or client router is necessary.
+## Replaceable modules
 
-This division permits later animation, composition, interaction and visitor-experience changes within a component. It does not require redesigning other components or rebuilding/redeploying games. An ordinary static build is still required to publish changed portal files; “modular” does not mean unreviewed runtime edits.
+- `model.ts` / `catalog.ts`: typed, validated, data-driven identity and project collections.
+- `components/html.ts`: shared header, semantic page, canonical metadata and restrictive CSP.
+- `components/gallery.ts`: shared Games/Apps cards, filters and image fallbacks.
+- `render.ts`: collection indexes, compatibility pages, project fact sheets and articles.
+- `publishing.ts`: one safe Markdown/front-matter engine shared by Blog and What Now?. Collection settings and masthead classes preserve their editorial distinction.
+- `client/theme.js`: tiny same-origin blocking script before CSS, applying only an explicit stored theme without a flash of the opposite appearance.
+- `client/site.js`: theme interaction, single-selection filter, runtime image fallback. No client router, analytics, data fetch, service worker or external runtime dependency.
+- `scripts/build.ts`: validate and render in memory before replacing recognized output, generate assets/evidence and static routes. It emits only published content, not source or test fixtures.
 
-## Refinement workflow
+Homepage selection is `homepageCollection` in site settings. A collection must have published content before becoming home. Other indexes and stable detail/article URLs remain independent; the homepage collection's ordinary URL receives a compatibility page. No speculative section is exposed.
 
-1. Scope a small change against the current experience, noting any deliberate departures from the baseline.
-2. Modify the relevant component/tokens. Use a local preview and real project art; do not add synthetic work to fill a layout.
-3. Run checks at narrow/mobile/tablet/desktop sizes, reduced motion, keyboard and relevant failure states.
-4. When the creator approves a changed visual direction, update the small `tests/visual-reference/` fixture, its approval metadata, and the design version/reference in `content/site.json`. Archive meaningful prior evidence. No prototype server or game repository must be changed to update production tests.
-5. Prepare a new review artifact and release notes. Publication remains independently authorized.
+All projects render and open without JavaScript; enhanced controls stay hidden rather than pretending to work when JavaScript is disabled. Filters preserve source ordering, use `aria-pressed`, and announce result counts. Native buttons/links, a skip link, visible focus, reflow, reduced motion and forced colors support accessible browsing. The orb has a 44px target and an action label independent of its appearance.
 
-The visual comparison is a regression guard for the currently approved version, not an argument against future creative changes. Deliberate approved changes should update its reference instead of disabling tests or pretending old/new screenshots are identical.
+## Future refinement
 
-## Delivery and independence
+Change the relevant component or styles, inspect real content in both themes and responsive sizes, run checks, and capture fresh evidence. Update approved visual references when the creator approves a new direction; do not preserve obsolete pixel comparisons as a permanent freeze. Content additions, reorderings and cover replacement require ordinary data/assets, not component changes.
 
-The root and `/games/` share one static deployment, as allowed for v1. Each game is a separate site and lifecycle; there are no game script/asset imports, runtime GitHub calls, iframes or shared save keys. The portal writes no browser storage and installs **no root service worker**, which could otherwise intercept project Pages sites sharing this origin.
-
-A future extraction of Games must preserve its identity and plan a redirect for the existing `/games/` and fact-sheet URLs. Adding a real branch is a curation/hosting decision, not a requirement to prebuild empty categories.
-
-## Accessibility decisions
-
-Semantic landmarks/headings, visible focus, native anchors, an optional accessible downward cue, descriptive image alternatives and named external actions retain the title-only visual gallery. Text-size reflow works without moving the title with the light; large text may wrap at narrow widths. Full viewport scene sizing uses `svh` to avoid browser-toolbar jumpiness.
-
-Reduced motion is an attractive still scene; forced-colors mode suppresses decorative light. Two broad SVG paths provide a stable fallback where CSS path morphing is unsupported. Offscreen/hidden-tab light pauses without affecting scrolling or content. No audio, flashing, cursor-following, scroll snapping or intercepted input is used.
-
-Complex-gradient axe contrast checks require a separate rendered-pixel/compositing review. Actual scope, numeric bounds and untested devices are recorded in the release report, not presented as certification.
+The portal and game sites remain independent deployments. No game assets/scripts are imported at runtime, no game storage is edited, and **no root service worker** is installed on the shared origin. The previous design document is [archived](platform-v1/previous-design.md).

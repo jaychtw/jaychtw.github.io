@@ -1,46 +1,162 @@
 [
   {
-    "path": "/assets/possibility/images/republic-of-chickens.webp",
-    "sha256": "9bdd7271778fe763ac9ae19923b0fb6da074b948765e8c46ea90ac966b206daa",
+    "path": "/assets/screenshots/games/republic-of-chickens.webp",
     "source": "https://raw.githubusercontent.com/jaychtw/reppublic-of-chickens/f5a2511ea87ba03c461d7e49222c25e1459a02f3/docs/screenshots/overview-desktop.png",
-    "sourceSha256": "165f5558cbb629fe695bbf6cb4805d1d380d1e55c98de25af564e00fcbc1351c",
     "sourceCommit": "f5a2511ea87ba03c461d7e49222c25e1459a02f3",
-    "cropBox": [290, 285, 1190, 1185],
-    "dimensions": [640, 640],
-    "treatment": "Crop and resize of actual gameplay screenshot; no generated replacement imagery.",
-    "rights": "Original project gameplay screenshot, used in the creator’s approved portfolio. No new license or blanket commercial clearance asserted."
+    "sourceSha256": "165f5558cbb629fe695bbf6cb4805d1d380d1e55c98de25af564e00fcbc1351c",
+    "importSha256": "82b23edb63e5e999812a7fdd4a130776833d01b5f9ceca442c191707bf575090",
+    "sourceDimensions": [1440, 1500],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
   },
   {
-    "path": "/assets/possibility/images/wonderlands.webp",
-    "sha256": "2a5c2e25131e27d4ebe7039dd97568e085906e9c4501baaf8efaa0788fd8c278",
+    "path": "/assets/screenshots/games/wonderlands.webp",
     "source": "https://raw.githubusercontent.com/jaychtw/wonderlands/33f262a5be41d118d4ebd90ca955fbb2eb2ccb25/evidence/desktop-after.png",
-    "sourceSha256": "107cc40c5b2c2ffecec62ec955cdd3da8c4c04743da965a2a1d8a4ab8b098f70",
     "sourceCommit": "33f262a5be41d118d4ebd90ca955fbb2eb2ccb25",
-    "cropBox": [380, 268, 1060, 948],
-    "dimensions": [640, 640],
-    "treatment": "Crop and resize of actual gameplay screenshot; no generated replacement imagery.",
-    "rights": "Original project gameplay screenshot, used in the creator’s approved portfolio. No new license or blanket commercial clearance asserted."
+    "sourceSha256": "107cc40c5b2c2ffecec62ec955cdd3da8c4c04743da965a2a1d8a4ab8b098f70",
+    "importSha256": "26224cf33b5c7669b57c0e634689da7637e67cf3ee6c721ba96fedead68ee285",
+    "sourceDimensions": [1440, 1400],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
   },
   {
-    "path": "/assets/possibility/images/squirrel-control.webp",
-    "sha256": "e2a69c43754de324288df50508258f3ac54d5b1bd4f0cf44ebd970f4630ced1a",
+    "path": "/assets/screenshots/games/squirrel-control.webp",
     "source": "https://raw.githubusercontent.com/jaychtw/squirrel-control/4ce1d4a5997ef300a57cc3cc3a0d5ba8816f8660/docs/evidence/gameplay-1440-en-tidy.png",
-    "sourceSha256": "e391326b2eae3e4c488222125fb7813c805c2b58e8858bc583b214dcb13a1535",
     "sourceCommit": "4ce1d4a5997ef300a57cc3cc3a0d5ba8816f8660",
-    "cropBox": [625, 329, 1275, 979],
-    "dimensions": [640, 640],
-    "treatment": "Crop and resize of actual gameplay screenshot; no generated replacement imagery.",
-    "rights": "Original project gameplay screenshot, used in the creator’s approved portfolio. No new license or blanket commercial clearance asserted."
+    "sourceSha256": "e391326b2eae3e4c488222125fb7813c805c2b58e8858bc583b214dcb13a1535",
+    "importSha256": "4e2c5c009965a5cb124965b290245c2a9d4e25b9bc9889b46f13ef5c76ea9682",
+    "sourceDimensions": [1440, 1270],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
   },
   {
-    "path": "/assets/possibility/images/the-last-lantern.webp",
-    "sha256": "f561414869464f1a9f636b38f1fc67a4c721d089f23ae51d18c7304267356015",
+    "path": "/assets/screenshots/games/the-last-lantern.webp",
     "source": "https://raw.githubusercontent.com/jaychtw/the-last-lantern/99dcad1f29c7a6d5e389ac274046eb8d6e24a5a6/docs/evidence/gameplay-1440-en.png",
-    "sourceSha256": "c8bb080cc41416e17c7d3968e91b1ae828f300b0eae9adcaee7e1efabc0826d8",
     "sourceCommit": "99dcad1f29c7a6d5e389ac274046eb8d6e24a5a6",
-    "cropBox": [340, 40, 1300, 1000],
-    "dimensions": [640, 640],
-    "treatment": "Crop and resize of actual gameplay screenshot; no generated replacement imagery.",
-    "rights": "Original project gameplay screenshot, used in the creator’s approved portfolio. No new license or blanket commercial clearance asserted."
+    "sourceSha256": "c8bb080cc41416e17c7d3968e91b1ae828f300b0eae9adcaee7e1efabc0826d8",
+    "importSha256": "b7621037f0092141391576e8cee0ede736dc14aadce2d777e930ab9bf2be9bbe",
+    "sourceDimensions": [1440, 1001],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/snacks-match-raohe.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/snacks-match-raohe/77c57fd72d04175ec1a3810752e2ff837764823d/docs/evidence/active-1440-en.png",
+    "sourceCommit": "77c57fd72d04175ec1a3810752e2ff837764823d",
+    "sourceSha256": "c8ebdbeebfa1ade7cbf90eb995efca2a3580cc414c31e62420aaea62202322a1",
+    "importSha256": "4af8f95e43047f5f61e571fc8f438f1243a91e3216a5a0ff690d57ec1d49cd89",
+    "sourceDimensions": [1440, 1888],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/shape-match.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/shape-match/8b8bee699f1dc66fb335d6584f98417929d652bb/docs/evidence/g4-desktop-en.png",
+    "sourceCommit": "8b8bee699f1dc66fb335d6584f98417929d652bb",
+    "sourceSha256": "c9aa8db58fca77de3484b0bd3a1d5e60aba5c7a2c63ea6acac4a4ed533592f05",
+    "importSha256": "9476877d18509664ce086bd95597988b9dd30869033782743d76e34f32527ddd",
+    "sourceDimensions": [1440, 1560],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/junctioneer.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/junctioneer/b35abf0276bb9dfd0583d7dfc8d9c63b2cc824ec/docs/production-evidence/level-01-desktop.png",
+    "sourceCommit": "b35abf0276bb9dfd0583d7dfc8d9c63b2cc824ec",
+    "sourceSha256": "53a407fede408559ba3612976ec7b22c0351055faebba0510c78f5f90f005f4d",
+    "importSha256": "0deffb475888388d939280f1d891412b043d0afab1bf477342a4ff0fc3cb5025",
+    "sourceDimensions": [1440, 1323],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/my-queens.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/my-queens/5b81e5c979c76bd83cf420247349a6a933a49106/docs/desktop.png",
+    "sourceCommit": "5b81e5c979c76bd83cf420247349a6a933a49106",
+    "sourceSha256": "be121080908023803875a771661038c3669c3feac032f8885e317813093791e3",
+    "importSha256": "a155630b13908cf6d557a356267a02c1deeb54d4a1f6b72595a40fb1c7e1d044",
+    "sourceDimensions": [1280, 1126],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/nom-nom-boom.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/nom_nom_boom/a4ed9e060088afa47c76735572e6e7dda3c63910/docs/finale.png",
+    "sourceCommit": "a4ed9e060088afa47c76735572e6e7dda3c63910",
+    "sourceSha256": "a618d7cd4df8ee78aede3487fcbfe203c6bf60c8fbc50b36d1a0ae1b4c532e3c",
+    "importSha256": "fe3dd7e7444078e6f06ae9b773ac29d66c00de5522e658444115d8283ecdee2c",
+    "sourceDimensions": [1360, 900],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/launch-sequence.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/launch-sequence/8c030ec4d5e3f0e451f73e9a8de086697e737fd3/docs/screenshots/recall-en-desktop.png",
+    "sourceCommit": "8c030ec4d5e3f0e451f73e9a8de086697e737fd3",
+    "sourceSha256": "47c33c14459ba282402941d9a88ac9cc0cfc55fb67b94e0a53c6e3272f1a1192",
+    "importSha256": "2f7d482b43d1c74b2a74352803203498147ae454fd15bf1569ac163166cd29cd",
+    "sourceDimensions": [1440, 1256],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/animal-match.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/animal-match/372016711574bf216b94b9a3eb1490fa824f0090/docs/evidence/cute-en-1440.png",
+    "sourceCommit": "372016711574bf216b94b9a3eb1490fa824f0090",
+    "sourceSha256": "f21cb370f6cad77f05dd29eb53885c5dc76ab4061725457d62048be4844fd8f2",
+    "importSha256": "8044720d04b5b584dd2b7a073e944fd11ff1460b30173590c61b2415ac37f32e",
+    "sourceDimensions": [1440, 1566],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/kaiju-tournament.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/kaiju-tournament/430aa94e891f9a7738a0102037b7f7f4ebfa4216/docs/evidence/desktop-high.png",
+    "sourceCommit": "430aa94e891f9a7738a0102037b7f7f4ebfa4216",
+    "sourceSha256": "e518eb8482c3bce0f0a6d48628f293d470bbda1051f6c94bfc51d7b5a3c79216",
+    "importSha256": "7a507d1a5d2dd14595b4d3181ff6b6ac640588b709367839f177023a044b2fb4",
+    "sourceDimensions": [1280, 900],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/kaiju-demolition.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/kaiju-demolition/572a663af66f37e8cfa12b85d219aac55e23bca3/docs/evidence/play-1280x720-en.png",
+    "sourceCommit": "572a663af66f37e8cfa12b85d219aac55e23bca3",
+    "sourceSha256": "f6a89d3cb1a69fd2635cf2b052e496dbeefd5f645e17eb8389f20a661f7ff59d",
+    "importSha256": "149173983d7f7ddf91844e38c3b6ec9a2343379ba8b99813a7ae2c89ad149af9",
+    "sourceDimensions": [1280, 720],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/typhoon-defender.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/typhoon-defender/f80c3303f645545d4acaccbebc2670f3290e755c/qa/dina-desktop-en.png",
+    "sourceCommit": "f80c3303f645545d4acaccbebc2670f3290e755c",
+    "sourceSha256": "8ce8284972268307056d27ed65add25141fd279d40627422587ce20f8d1b13ab",
+    "importSha256": "adab671d4b4968c45fceb1a63d331a238e9ec67ed0551ad190b1cfe4f1e28d3d",
+    "sourceDimensions": [1440, 1159],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/pedestrian-living-hell.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/pedestrian-living-hell/0d7d054a6d873d8068f11c4bf768e11c083a3de9/docs/screenshots/v1/02-playing-en.png",
+    "sourceCommit": "0d7d054a6d873d8068f11c4bf768e11c083a3de9",
+    "sourceSha256": "32294777ddd9bb87e15120c69d0dad94242d0867253f7eff53c2479b38534bf7",
+    "importSha256": "5ee227af310a0fc5f7882e3a0e87c1301bf31770ea6aececb5c43cae15eee69b",
+    "sourceDimensions": [1440, 900],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/the-impossible-room.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/the-impossible-room/fa24693d1b71c9b3957cf53a51ccfdf36696134d/docs/screenshots/study-en-desktop.jpg",
+    "sourceCommit": "fa24693d1b71c9b3957cf53a51ccfdf36696134d",
+    "sourceSha256": "b830f72d21a5765d6deeead2cdf8f69b779a63a0c937952bb1589aafd3a5f0b9",
+    "importSha256": "8cb4c73ecaa4b2085afeaaafef9f9b5f77a18d9d0803aaf4af7b66a0fc71af45",
+    "sourceDimensions": [1440, 900],
+    "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
+    "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
   }
 ]

@@ -1,3 +1,5 @@
+> Historical Stage B preparation report. The subsequent manual deployment of `56f5a997ef12b66cce4948b770c92bc3e8c5db81` succeeded in [run 40493531104](https://github.com/jaychtw/jaychtw.github.io/actions/runs/40493531104). Its earlier “not deployed” statements describe the report-writing time. The new, unpublished platform candidate is documented in [Platform v1.0](../platform-v1/README.md).
+
 # Possibility 1.0.0-rc.1 — Stage B release report
 
 **Stage B production release candidate; public deployment is not authorized or performed.** The creator-approved visual baseline is Stage A.2 Revision 2, **`f99940ec0de18544299f5095890042584b1b1bd7`**. It is design v1.0, not a permanent creative freeze.

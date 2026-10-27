@@ -1,0 +1,32 @@
+{
+  "id": "nom-nom-boom",
+  "title": "Nom Nom BOOM!",
+  "category": "games",
+  "summary": "Eat five dumplings at a sunny picnic and grow much too big for the screen.",
+  "status": "published",
+  "featured": true,
+  "order": 130,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/nom_nom_boom/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/nom_nom_boom",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "No losing condition or time limit. Completion times are personal records stored in this browser.",
+  "approval": {
+    "url": "https://github.com/jaychtw/nom_nom_boom/blob/a4ed9e060088afa47c76735572e6e7dda3c63910/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/nom-nom-boom.webp",
+    "alt": "The apricot picnic creature grown enormous after its fifth meal."
+  },
+  "tags": ["Time Attack", "Kawaii"],
+  "maturity": "public"
+}

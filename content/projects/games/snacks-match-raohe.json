@@ -1,0 +1,32 @@
+{
+  "id": "snacks-match-raohe",
+  "title": "Snacks Match – Raohe",
+  "category": "games",
+  "summary": "Match Taiwanese snacks beneath the illuminated Raohe night-market gate.",
+  "status": "published",
+  "featured": true,
+  "order": 50,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/snacks-match-raohe/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/snacks-match-raohe",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal.",
+  "approval": {
+    "url": "https://github.com/jaychtw/snacks-match-raohe/blob/77c57fd72d04175ec1a3810752e2ff837764823d/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": "0.1.0",
+    "commit": "29886ca22efd0cb27b248aecc0415093e38cd4bb"
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/snacks-match-raohe.webp",
+    "alt": "A board of Taiwanese snack tiles beneath the illuminated night-market gate."
+  },
+  "tags": ["Matching", "Puzzle"],
+  "maturity": "released"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "junctioneer",
+  "title": "Junctioneer",
+  "category": "games",
+  "summary": "Arrange miniature railways through fifteen untimed puzzles.",
+  "status": "published",
+  "featured": true,
+  "order": 70,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/junctioneer/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/junctioneer",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal.",
+  "approval": {
+    "url": "https://github.com/jaychtw/junctioneer/blob/b35abf0276bb9dfd0583d7dfc8d9c63b2cc824ec/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/junctioneer.webp",
+    "alt": "A miniature railway loop, train and trees on a pale island."
+  },
+  "tags": ["Puzzle", "Strategy"],
+  "maturity": "public"
+}

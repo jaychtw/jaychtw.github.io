@@ -1,0 +1,32 @@
+{
+  "id": "kaiju-demolition",
+  "title": "Kaiju Demolition",
+  "category": "games",
+  "summary": "Choose one of six monsters and demolish a toy city in ninety seconds.",
+  "status": "published",
+  "featured": true,
+  "order": 170,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/kaiju-demolition/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/kaiju-demolition",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal.",
+  "approval": {
+    "url": "https://github.com/jaychtw/kaiju-demolition/blob/572a663af66f37e8cfa12b85d219aac55e23bca3/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/kaiju-demolition.webp",
+    "alt": "A colorful monster among damaged buildings in a side-scrolling toy city."
+  },
+  "tags": ["Action", "Horizontal Scroller"],
+  "maturity": "public"
+}

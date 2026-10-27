@@ -1,0 +1,32 @@
+{
+  "id": "wonderlands",
+  "title": "Wonderlands",
+  "category": "games",
+  "summary": "Shape an ocean planet, connect rivers, and discover a world of your own.",
+  "status": "published",
+  "featured": true,
+  "order": 20,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/wonderlands/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/wonderlands",
+  "languages": ["en", "zh-TW"],
+  "controls": "Choose a terrain tool and paint. Use the game’s zoom and pan controls to inspect the world.",
+  "limitations": "The game is visual. Saves are browser-local; local-server saves do not transfer automatically to the public site.",
+  "approval": {
+    "url": "https://github.com/jaychtw/wonderlands/blob/33f262a5be41d118d4ebd90ca955fbb2eb2ccb25/docs/PAGES-RELEASE.md",
+    "note": "Creator acceptance and public release recorded in the linked release report."
+  },
+  "release": {
+    "version": "1.0.0",
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/wonderlands.webp",
+    "alt": "An ocean planet with a painted island, mountains and a river."
+  },
+  "tags": ["Sandbox", "Experimental"],
+  "maturity": "released"
+}

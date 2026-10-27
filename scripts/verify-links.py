@@ -22,7 +22,7 @@ def fetch(url):
         return response.status, response.url, response.read(), response.headers.get('Content-Type')
 
 results = {'checkedAt': datetime.now(timezone.utc).isoformat(), 'method':'Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run.', 'projects':[]}
-for item in json.loads((root/'content/projects.json').read_text()):
+for item in [json.loads(path.read_text()) for path in sorted((root/'content/projects').rglob('*.json'))]:
     if item['status'] != 'published': continue
     status, final, content, mime = fetch(item['destination']['url'])
     assert status == 200 and final == item['destination']['url'] and b'<html' in content.lower()

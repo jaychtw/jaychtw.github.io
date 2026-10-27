@@ -1,0 +1,29 @@
+{
+  "id": "riot-defender",
+  "title": "Riot Defender",
+  "category": "games",
+  "summary": "Move a fence opening to admit defenders and block intruders.",
+  "status": "published",
+  "featured": true,
+  "order": 180,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/riot-defender/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/riot-defender",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal.",
+  "approval": {
+    "url": "https://github.com/jaychtw/riot-defender/blob/50529a94d0ea5f97fdfe379c1bb1a4a6e497b28c/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": null,
+  "tags": ["Strategy", "Experimental"],
+  "maturity": "public"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "formosa-quest",
+  "title": "Formosa Quest",
+  "category": "games",
+  "summary": "Explore a Taiwanese city greenway, clear hazards, and reach the transit gate.",
+  "status": "published",
+  "featured": true,
+  "order": 110,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/formosa-quest/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/formosa-quest",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal.",
+  "approval": {
+    "url": "https://github.com/jaychtw/formosa-quest/blob/98f64306da0599aac6fde5b9f6a5224048edc75d/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": null,
+  "tags": ["Action", "Horizontal Scroller"],
+  "maturity": "public"
+}

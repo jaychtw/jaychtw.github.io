@@ -19,6 +19,8 @@ export interface Project {
   approval: { url: string; note: string };
   release: { version: string | null; commit: string | null };
   thumbnail: Thumbnail | null;
+  tags: string[];
+  maturity: "released" | "public" | "evolving";
 }
 export interface Verification {
   id: string;
@@ -35,10 +37,42 @@ export interface Site {
   description: string;
   designVersion: string;
   approvedBaseline: string;
+  homepageCollection: string;
+}
+export interface Collection {
+  id: string;
+  title: string;
+  type: "gallery" | "editorial";
+  description: string;
+  order: number;
+}
+export interface Article {
+  id: string;
+  collection: string;
+  title: string;
+  date: string;
+  status: "draft" | "published";
+  excerpt: string;
+  tags: string[];
+  cover: string | null;
+  markdown: string;
+  images: string[];
+}
+export interface Media {
+  src: string;
+  srcset: string;
+  width: number;
+  height: number;
+  source: "cover" | "screenshot" | "article";
+  fallback?: string;
+  fallbackAlt?: string;
 }
 export interface RenderContext {
   site: Site;
   style: string;
   script: string;
-  images: Map<string, string>;
+  themeScript: string;
+  images: Map<string, Media>;
+  collections: Collection[];
+  activeCollections: Set<string>;
 }

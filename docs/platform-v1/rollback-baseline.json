@@ -1,0 +1,7 @@
+{
+  "scope": "Read-only observation before redesigned release-candidate publication; not a new deployment.",
+  "sourceCommit": "56f5a997ef12b66cce4948b770c92bc3e8c5db81",
+  "version": "1.0.0-rc.1",
+  "deploymentRun": "https://github.com/jaychtw/jaychtw.github.io/actions/runs/40493531104",
+  "rollback": "Manual exact-SHA workflow after authorization; keep this known-good commit on main."
+}

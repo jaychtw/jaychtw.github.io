@@ -5,6 +5,10 @@ const fs = require("node:fs"),
   { execFileSync } = require("node:child_process");
 const root = path.resolve(__dirname, ".."),
   site = JSON.parse(fs.readFileSync(path.join(root, "content/site.json")));
+const homepage = JSON.parse(
+  fs.readFileSync(path.join(root, "content/collections.json")),
+).find((c) => c.id === site.homepageCollection);
+const galleryPath = site.homepageCollection === "games" ? "/" : "/games/";
 const target = process.argv[2] || site.canonicalOrigin;
 const url = new URL(target);
 const local = process.argv.includes("--local");
@@ -14,9 +18,15 @@ if (local)
       ["localhost", "127.0.0.1"].includes(url.hostname),
   );
 else assert.equal(url.origin, site.canonicalOrigin);
-const expected = JSON.parse(
-  fs.readFileSync(path.join(root, "content/projects.json")),
-).filter((p) => p.status === "published" && p.featured).length;
+const expected = fs
+  .readdirSync(path.join(root, "content/projects", "games"))
+  .filter((f) => f.endsWith(".json"))
+  .map((f) =>
+    JSON.parse(
+      fs.readFileSync(path.join(root, "content/projects", "games", f)),
+    ),
+  )
+  .filter((p) => p.status === "published").length;
 (async () => {
   let executable = process.env.CHROMIUM_PATH;
   for (const name of ["chromium", "google-chrome"])
@@ -44,17 +54,26 @@ const expected = JSON.parse(
         if (r.status() >= 400) failed.push(r.status() + " " + r.url());
       });
       await page.goto(url.origin + "/");
-      assert.equal(await page.locator("h1").innerText(), "Possibility");
-      assert.equal(await page.locator(".work-link").count(), expected);
-      await page.mouse.wheel(0, 600);
-      await page.waitForFunction(() => scrollY > 300);
+      assert.equal(await page.locator("h1").innerText(), homepage.title);
+      if (galleryPath !== "/") await page.goto(url.origin + galleryPath);
+      assert.equal(await page.locator("[data-project]").count(), expected);
+      const tag = page.locator(".filter").nth(1);
+      if (await tag.count()) await tag.click();
+      await page.getByRole("button", { name: "All", exact: true }).click();
+      await page.getByRole("button", { name: "Switch to light theme" }).click();
       await page.goto(url.origin + "/games/");
+      await page.waitForURL(url.origin + galleryPath);
       await page.reload();
+      assert.equal(
+        await page.locator("html").getAttribute("data-theme"),
+        "light",
+      );
       assert.equal(await page.locator(".wordmark").innerText(), "Possibility");
       await page.locator(".work").last().scrollIntoViewIfNeeded();
-      await page
-        .locator("img")
-        .evaluateAll((xs) => Promise.all(xs.map((i) => i.decode())));
+      for (const image of await page.locator("img").all()) {
+        await image.scrollIntoViewIfNeeded();
+        await image.evaluate((i) => i.decode());
+      }
       assert.equal(
         await page.evaluate(
           () => document.documentElement.scrollWidth > innerWidth,

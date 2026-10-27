@@ -1,43 +1,35 @@
-# Catalog and release-to-portal contract
+# Catalog and release-to-portal update contract
 
-The single curated registry is **`content/projects.json`**. Editing it changes generated cards/routes without editing layout. It is not a live repository feed. Only `published` entries appear; drafts, approved candidates and archived entries are excluded from public output. Every published destination requires a matching successful entry in `content/link-verification.json` and a documented creator-approval reference.
+The curated source is one JSON file per project: `content/projects/<collection>/<id>.json`. `collections.json` configures shared galleries/editorial collections; `site.json` selects the homepage. There is no runtime repository feed. [Owner editing instructions](MAINTENANCE.md).
 
-## Fields and rules
+## Project fields
 
 | Field | Meaning |
 | --- | --- |
-| `id` | Stable unique lower-case hyphenated ID. Updates are idempotent by this ID. |
-| `title`, `summary` | Accurate name and concise factual premise. Summary is used in fact sheets/metadata, not the visual gallery. |
-| `category` | Extensible medium/collection slug. `games` gets `/games/`; a future real medium need not use Play. Check route conflicts before adding new route namespaces. |
-| `status` | Exactly `draft`, `approved`, `published`, or `archived`. Source publication alone does not imply released work. |
-| `featured`, `order` | Explicit editorial selection and deterministic order. Featured published work appears on the root; all published games appear on `/games/`. No star/commit-time inference. |
-| `publishedAt` | Verified `YYYY-MM-DD`, or explicit `null` for legacy work with unknown publication date. No date is inferred from a source commit; no fake recent ordering. New-release handoffs should provide the actual date/time and timezone. |
-| `destination` | `{ "action": "play", "url": "verified HTTPS URL" }` for games; an actual future medium can use `read`, `visit`, `use`, or another short action. Labels remain titles only; the action is exposed accessibly. |
-| `repositoryUrl` | Optional public HTTPS source URL, or `null`. Never infer another-repository edit permission from this field. |
-| `languages` | Verified language tags. Non-linguistic future work may use an empty array; games must record actual supported languages. |
-| `controls`, `limitations` | Concise practical information, or `null` where inapplicable to non-game work. Game facts are required; do not certify untested device support. |
-| `approval` | Public release/acceptance record URL and concise provenance note. This records a creator decision; automated tests do not grant approval. |
-| `release` | Known version and full source/release SHA, or explicit `null` for inapplicable/unknown facts. Do not invent a version or substitute a moving branch for an immutable commit. |
-| `thumbnail` | Local `{ "path": "/assets/possibility/images/…webp", "alt": "meaningful scene alternative" }`, or explicit `null`. A supplied path must exist and match provenance. Missing optional art gets an honest monogram, not a concept image. |
+| `id`, `category` | Stable lower-case hyphenated ID and configured gallery collection. Must match filename/directory. |
+| `title`, `summary` | Accurate project name and concise description, displayed on complete cards. |
+| `tags` | Ordered, optional descriptive labels. Single-selection filters are derived from published entries; All is reserved. No Commercial or Children. |
+| `status` | `draft`, `approved`, `published`, `archived`; only published appears in pages/assets. |
+| `maturity` | `released`, `public`, `evolving`. Public showcase visibility does not assert final creative acceptance. Preserve limitations honestly. |
+| `order` | Editable nonnegative integer; ascending order, stable ID for ties. `featured` is retained legacy metadata, not a second homepage subset. |
+| `publishedAt` | Actual known `YYYY-MM-DD` or null. Never infer from commit/repository dates. |
+| `destination` | HTTPS URL and action; games use `play`, Apps normally `open`. Preserve exact independently published path/spelling. |
+| `repositoryUrl` | Optional HTTPS source URL or null. |
+| `languages`, `controls`, `limitations` | Documented capabilities and honest limits. Null controls are allowed rather than guessing. Empty languages are supported for non-game media. |
+| `approval` | Source/acceptance URL and factual note. Existing approvals stay documented; evolving public projects need no invented certification. |
+| `release` | Known version/full commit or explicit nulls. Do not label an unknown/evolving build final v1.0. |
+| `thumbnail` | Authentic local screenshot `{path, alt}` or null. Custom covers are discovered automatically, independently of this screenshot field. |
 
-The build rejects duplicate IDs, unexpected/malformed fields, unsafe protocols/credentials/control characters, bad dates, invalid statuses, thumbnail traversal, missing required assets, checksum mismatches and published destinations without matching evidence. Strings are HTML-escaped; no catalog content is executed. The build can run offline using versioned evidence, while release packaging requires fresh successful public checks from the last 24 hours.
+`content/link-verification.json` holds dated successful public destination observations. The build requires matching evidence; release validation makes fresh normal-TLS requests. `content/asset-provenance.json` records screenshot origins/rights; its import checksum is a historical import observation, not a manual replacement lock. Current source/derivative checksums are generated in `.artifacts/asset-evidence.json` and the release manifest.
 
-## Add or update a released game
+## Portable future update sequence
 
-1. Finish/test it in its own repository. Obtain the creator's acceptance and explicit permission for its independent deployment. Do not modify or publish another repository as part of a portal change.
-2. Have its authorized release operator verify the canonical public URL, correct build, routing/assets and representative interaction. Preserve the actual spelling/base path. Collect title, stable ID, summary, public/source URLs, approval/version evidence, languages, actual publication date and controls/limitations.
-3. Obtain an authentic finished-work screenshot and record its source commit, checksum, crop, attribution/rights and an optimized local derivative in `content/asset-provenance.json`. Put that derivative under `public/assets/possibility/images/`. Existing screenshots are 640px square WebP; no runtime hotlinking is allowed.
-4. Prepare the entry in a local reviewed change. Only after approval/public release evidence exists, set it to `published` and run `python3 scripts/verify-links.py --record`. This verifies public URLs/resources using normal TLS and updates evidence in this repository; it does not deploy anything. A failed request must not be converted into a playable claim or bypassed by disabling verification.
-5. Run `npm run check` and `npm run verify:links`. Inspect actual crops, keyboard focus and responsive layouts; update asset hashes deliberately only when replacing the real approved preview. Ensure no unapproved entry or empty future section is exposed.
-6. Submit a PR or equivalent reviewable commit under the repository policy. Include exact released destination/build, approval record, screenshot provenance, test results and known limitations. Source pushes validate but never automatically deploy.
-7. Merge/publish the portal only under its separately agreed release authorization. Verify the resulting routes, metadata, file integrity, natural scrolling and destination links, following `DEPLOYMENT.md`.
+1. Independently release or otherwise make the project publicly available under its own authorized lifecycle. A portal change never authorizes game-repository changes or deployment.
+2. Verify the real canonical destination, project identity, resource availability and representative interaction as appropriate. Distinguish HTTP observations, browser checks and human acceptance. Preserve known limitations and actual dates; a working evolving project may be accurately showcased.
+3. Prepare its project JSON, authentic screenshot/source record or neutral fallback. Optional owner-approved cover goes at `public/assets/covers/<collection>/<id>.webp`; final artwork is created/reviewed separately. Do not depict nonexistent features as gameplay.
+4. Record matching destination evidence using the documented JSON fields or `python3 scripts/verify-links.py --record`. Repeated updates use the same stable ID, never duplicate entries or reset dates.
+5. Set published when the presentation is defensible. Run checks or commit for CI. CI validates images, catalog, rendering, accessible behavior and fresh public links. A failure does not alter the previous public portal or the independent project.
+6. Review the change. While the current manual gate remains active, publish only after separate explicit authorization. After automatic publication is separately enabled, an approved main commit follows that configured policy.
+7. Verify the public portal's build identity/routes/assets and destination. A portal rollback does not roll back any game.
 
-## Failure, retries and rollback
-
-A portal-update failure does not roll back or break an independently released game. Retry by stable ID rather than duplicating entries or changing publication dates. If a previously working destination is confirmed unavailable, prepare a reviewed status/action change; a local proxy denial alone does not establish a global outage. An unavailable new destination must remain out of published/Play output.
-
-Portal rollback uses a known-good portal commit/artifact; a game rollback remains independent. Destination/gallery migrations need verified redirects and explicit route-conflict checks, not unrequested repository renames or hosting moves.
-
-## Portable handoff
-
-This contract consists of ordinary version-controlled JSON, provenance and commands. It relies on no hidden prompts, proprietary assistant metadata, CMS or API integration. Other humans/tools can follow it. Adoption in a shared game-development/standards repository is **not performed here** and requires separate permission. The earlier Stage A contract is archived as background; this document describes the implemented schema/workflow.
+This ordinary data/document contract is portable to other tools or human maintainers. No shared standards repository was changed. Apps shares the model; Blog and What Now? share the Markdown engine and derive navigation/indexes only from published articles. [Previous Stage B contract](platform-v1/previous-catalog.md) remains archived.

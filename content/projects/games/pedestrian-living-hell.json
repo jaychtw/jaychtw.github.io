@@ -1,0 +1,32 @@
+{
+  "id": "pedestrian-living-hell",
+  "title": "Pedestrian’s Living Hell",
+  "category": "games",
+  "summary": "Watch the signals and drivers in a desktop game about crossing a Taiwanese intersection.",
+  "status": "published",
+  "featured": true,
+  "order": 200,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/pedestrian-living-hell/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/pedestrian-living-hell",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Desktop keyboard play; no touch controls. Safari and mobile are not certified.",
+  "approval": {
+    "url": "https://github.com/jaychtw/pedestrian-living-hell/blob/0d7d054a6d873d8068f11c4bf768e11c083a3de9/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/pedestrian-living-hell.webp",
+    "alt": "A pixel-art intersection with crosswalks, cars and a small pedestrian."
+  },
+  "tags": ["Arcade", "Experimental", "Narrative"],
+  "maturity": "public"
+}

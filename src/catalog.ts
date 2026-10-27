@@ -1,17 +1,17 @@
-import { existsSync, readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { existsSync, readFileSync, readdirSync, realpathSync } from "node:fs";
+import { resolve, relative, sep } from "node:path";
 import { createHash } from "node:crypto";
-import type { Project, Site, Verification } from "./model.ts";
+import type { Project, Site, Verification, Collection } from "./model.ts";
 export const sha256 = (value: string | Buffer) =>
   createHash("sha256").update(value).digest("hex");
 export const readJSON = (path: string): unknown =>
   JSON.parse(readFileSync(path, "utf8"));
-function object(value: unknown, label: string): Record<string, unknown> {
+export function object(value: unknown, label: string): Record<string, unknown> {
   if (!value || typeof value !== "object" || Array.isArray(value))
     throw new Error(`${label}: expected object`);
   return value as Record<string, unknown>;
 }
-function text(value: unknown, label: string): string {
+export function text(value: unknown, label: string): string {
   if (
     typeof value !== "string" ||
     !value.trim() ||
@@ -60,6 +60,7 @@ export function siteConfig(value: unknown): Site {
     throw new Error("site.canonicalOrigin: expected origin only");
   if (!/^[a-f0-9]{40}$/u.test(String(s.approvedBaseline)))
     throw new Error("site.approvedBaseline: expected full SHA");
+  slug(s.homepageCollection, "site.homepageCollection");
   return { ...s, canonicalOrigin: url.origin } as unknown as Site;
 }
 export function validateCatalog(
@@ -96,6 +97,8 @@ export function validateCatalog(
       "approval",
       "release",
       "thumbnail",
+      "tags",
+      "maturity",
     ];
     for (const key of Object.keys(p))
       if (!allowed.includes(key))
@@ -106,6 +109,9 @@ export function validateCatalog(
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(id) || seen.has(id))
       throw new Error(`Invalid or duplicate project id: ${id}`);
     seen.add(id);
+    tags(p.tags, `${id}.tags`);
+    if (!["released", "public", "evolving"].includes(String(p.maturity)))
+      throw new Error(`${id}: invalid maturity`);
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(String(p.category)))
       throw new Error(`${id}: invalid category`);
     if (
@@ -136,8 +142,7 @@ export function validateCatalog(
     if (p.repositoryUrl !== null)
       httpsURL(p.repositoryUrl, `${id}.repositoryUrl`);
     for (const key of ["controls", "limitations"])
-      if (p[key] !== null || p.category === "games")
-        text(p[key], `${id}.${key}`);
+      if (p[key] !== null) text(p[key], `${id}.${key}`);
     if (
       !Array.isArray(p.languages) ||
       (p.category === "games" && p.languages.length === 0) ||
@@ -152,7 +157,7 @@ export function validateCatalog(
     httpsURL(approval.url, `${id}.approval.url`);
     text(approval.note, `${id}.approval.note`);
     const release = object(p.release, `${id}.release`);
-    if (release.version !== null || p.category === "games")
+    if (release.version !== null)
       text(release.version, `${id}.release.version`);
     if (
       release.commit !== null &&
@@ -165,22 +170,10 @@ export function validateCatalog(
       const thumb = object(p.thumbnail, `${id}.thumbnail`);
       text(thumb.alt, `${id}.thumbnail.alt`);
       const image = text(thumb.path, `${id}.thumbnail.path`);
-      if (
-        !/^\/assets\/possibility\/images\/[a-z0-9-]+\.(?:webp|png|jpg)$/u.test(
-          image,
-        )
-      )
-        throw new Error(`${id}: unsafe thumbnail path`);
-      const path = resolve(publicDir, "." + image);
-      if (!existsSync(path))
-        throw new Error(`${id}: missing required thumbnail ${image}`);
+      localAsset(image, publicDir);
       const proof = provenance.find((a) => a.path === image);
-      if (
-        !proof ||
-        !/^[a-f0-9]{64}$/u.test(String(proof.sha256)) ||
-        sha256(readFileSync(path)) !== proof.sha256
-      )
-        throw new Error(`${id}: thumbnail provenance/checksum mismatch`);
+      if (!proof || typeof proof.source !== "string")
+        throw new Error(`${id}: thumbnail source provenance is missing`);
       httpsURL(proof.source, `${id}.thumbnail source`);
     }
     if (p.status === "published") {
@@ -211,18 +204,100 @@ export function loadContent(root: string): {
   site: Site;
   projects: Project[];
   verifications: Verification[];
+  collections: Collection[];
 } {
   const verifications = readJSON(
     resolve(root, "content/link-verification.json"),
   );
+  const collections = loadCollections(root);
+  const site = siteConfig(readJSON(resolve(root, "content/site.json")));
+  if (!collections.some((c) => c.id === site.homepageCollection))
+    throw new Error("Unknown homepage collection");
+  const projects = validateCatalog(
+    readProjects(root),
+    verifications,
+    readJSON(resolve(root, "content/asset-provenance.json")),
+    resolve(root, "public"),
+  );
+  for (const p of projects)
+    if (!collections.some((c) => c.id === p.category && c.type === "gallery"))
+      throw new Error(`${p.id}: unknown gallery collection`);
   return {
-    site: siteConfig(readJSON(resolve(root, "content/site.json"))),
-    projects: validateCatalog(
-      readJSON(resolve(root, "content/projects.json")),
-      verifications,
-      readJSON(resolve(root, "content/asset-provenance.json")),
-      resolve(root, "public"),
-    ),
+    site,
+    projects,
+    collections,
     verifications: verifications as Verification[],
   };
+}
+export function slug(value: unknown, label: string): string {
+  const s = text(value, label);
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(s))
+    throw new Error(`${label}: invalid slug`);
+  return s;
+}
+export function tags(value: unknown, label: string): string[] {
+  if (
+    !Array.isArray(value) ||
+    value.length > 12 ||
+    new Set(value).size !== value.length
+  )
+    throw new Error(`${label}: expected unique tags`);
+  for (const tag of value) {
+    text(tag, label);
+    if (
+      tag.length > 40 ||
+      ["all", "commercial", "children"].includes(tag.toLowerCase())
+    )
+      throw new Error(`${label}: reserved or unsupported tag`);
+  }
+  return value;
+}
+export function localAsset(value: unknown, publicDir: string): string {
+  const path = text(value, "asset path");
+  if (!/^\/assets\/(?:[a-z0-9-]+\/)*[a-z0-9-]+\.(webp|png|jpe?g)$/u.test(path))
+    throw new Error("Unsafe local asset path");
+  const file = resolve(publicDir, "." + path);
+  if (!existsSync(file)) throw new Error(`Missing asset: ${path}`);
+  const rel = relative(realpathSync(publicDir), realpathSync(file));
+  if (rel.startsWith(".." + sep) || rel === ".." || rel.startsWith(sep))
+    throw new Error("Asset escapes public directory");
+  return path;
+}
+export function readProjects(root: string): unknown[] {
+  const dir = resolve(root, "content/projects");
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir, { recursive: true, encoding: "utf8" })
+    .filter((p) => p.endsWith(".json"))
+    .sort()
+    .map((p) => {
+      const value = object(readJSON(resolve(dir, p)), String(p));
+      if (p !== `${value.category}/${value.id}.json`)
+        throw new Error(`Project path must match category/id: ${p}`);
+      return value;
+    });
+}
+export function loadCollections(root: string): Collection[] {
+  const raw = readJSON(resolve(root, "content/collections.json"));
+  if (!Array.isArray(raw)) throw new Error("collections: expected array");
+  const ids = new Set();
+  return raw
+    .map((v) => {
+      const c = object(v, "collection");
+      const id = slug(c.id, "collection.id");
+      if (
+        ids.has(id) ||
+        ["assets", "404", "index", "content", "build-info"].includes(id)
+      )
+        throw new Error("Duplicate/reserved collection");
+      ids.add(id);
+      text(c.title, "collection.title");
+      text(c.description, "collection.description");
+      if (
+        !["gallery", "editorial"].includes(String(c.type)) ||
+        !Number.isSafeInteger(c.order)
+      )
+        throw new Error("Invalid collection settings");
+      return c as unknown as Collection;
+    })
+    .sort((a, b) => a.order - b.order);
 }

@@ -1,0 +1,29 @@
+{
+  "id": "the-other-ninty-percent",
+  "title": "The Other 90%",
+  "category": "games",
+  "summary": "Explore five illustrated scenes and distinguish evidence from inference.",
+  "status": "published",
+  "featured": true,
+  "order": 210,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/the-other-ninty-percent/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/the-other-ninty-percent",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal.",
+  "approval": {
+    "url": "https://github.com/jaychtw/the-other-ninty-percent/blob/60b31f84040769b2a76e7444e8cbe295c255a289/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": null,
+  "tags": ["Experimental", "Narrative"],
+  "maturity": "public"
+}

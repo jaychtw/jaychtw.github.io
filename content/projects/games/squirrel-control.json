@@ -1,0 +1,32 @@
+{
+  "id": "squirrel-control",
+  "title": "Squirrel Control",
+  "category": "games",
+  "summary": "Find ten squirrels in Miss Bunny’s increasingly chaotic cottage.",
+  "status": "published",
+  "featured": true,
+  "order": 30,
+  "publishedAt": "2026-10-25",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/squirrel-control/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/squirrel-control",
+  "languages": ["en", "zh-TW"],
+  "controls": "Select visible squirrels; use the optical magnifier for a closer look. The game supplies pause and comfort settings.",
+  "limitations": "Finding small illustrated characters is a visual task. Progress and preferences stay in this browser.",
+  "approval": {
+    "url": "https://github.com/jaychtw/squirrel-control/blob/4ce1d4a5997ef300a57cc3cc3a0d5ba8816f8660/docs/DEPLOYMENT.md",
+    "note": "Creator acceptance and public release recorded in the linked release report."
+  },
+  "release": {
+    "version": "1.0.0-rc.1",
+    "commit": "b7ca1dffd55eff650979d5ed828f78b37f4dfd31"
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/squirrel-control.webp",
+    "alt": "Miss Bunny beside a sofa and squirrels hiding in her cottage."
+  },
+  "tags": ["Puzzle", "Kawaii"],
+  "maturity": "released"
+}

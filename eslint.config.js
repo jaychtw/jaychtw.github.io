@@ -17,6 +17,7 @@ export default [
         fetch: "readonly",
         URL: "readonly",
         axe: "readonly",
+        Object: "readonly",
         scrollTo: "readonly",
         scrollY: "readonly",
         getComputedStyle: "readonly",

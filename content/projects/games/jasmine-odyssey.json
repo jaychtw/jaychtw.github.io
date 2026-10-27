@@ -1,0 +1,29 @@
+{
+  "id": "jasmine-odyssey",
+  "title": "Jasmine’s Odyssey",
+  "category": "games",
+  "summary": "Find a way home through ten forest mazes with a magical lantern.",
+  "status": "published",
+  "featured": true,
+  "order": 100,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/jasmine-odyssey/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/jasmine-odyssey",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal.",
+  "approval": {
+    "url": "https://github.com/jaychtw/jasmine-odyssey/blob/78306ed91ab39fecff6034f14dcb9a284c8a0f10/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": null,
+  "tags": ["Maze", "Exploration", "Time Attack"],
+  "maturity": "public"
+}

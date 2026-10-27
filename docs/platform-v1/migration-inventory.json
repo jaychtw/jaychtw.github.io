@@ -1,0 +1,222 @@
+[
+  {
+    "id": "republic-of-chickens",
+    "repository": "reppublic-of-chickens",
+    "inspectedHead": "f5a2511ea87ba03c461d7e49222c25e1459a02f3",
+    "identitySource": "https://github.com/jaychtw/reppublic-of-chickens/blob/f5a2511ea87ba03c461d7e49222c25e1459a02f3/docs/DEPLOYMENT.md",
+    "destination": "https://jaychtw.github.io/reppublic-of-chickens/",
+    "maturity": "released",
+    "image": "https://raw.githubusercontent.com/jaychtw/reppublic-of-chickens/f5a2511ea87ba03c461d7e49222c25e1459a02f3/docs/screenshots/overview-desktop.png",
+    "limitations": "The game is visual and progress is stored in this browser."
+  },
+  {
+    "id": "wonderlands",
+    "repository": "wonderlands",
+    "inspectedHead": "33f262a5be41d118d4ebd90ca955fbb2eb2ccb25",
+    "identitySource": "https://github.com/jaychtw/wonderlands/blob/33f262a5be41d118d4ebd90ca955fbb2eb2ccb25/docs/PAGES-RELEASE.md",
+    "destination": "https://jaychtw.github.io/wonderlands/",
+    "maturity": "released",
+    "image": "https://raw.githubusercontent.com/jaychtw/wonderlands/33f262a5be41d118d4ebd90ca955fbb2eb2ccb25/evidence/desktop-after.png",
+    "limitations": "The game is visual. Saves are browser-local; local-server saves do not transfer automatically to the public site."
+  },
+  {
+    "id": "squirrel-control",
+    "repository": "squirrel-control",
+    "inspectedHead": "4ce1d4a5997ef300a57cc3cc3a0d5ba8816f8660",
+    "identitySource": "https://github.com/jaychtw/squirrel-control/blob/4ce1d4a5997ef300a57cc3cc3a0d5ba8816f8660/docs/DEPLOYMENT.md",
+    "destination": "https://jaychtw.github.io/squirrel-control/",
+    "maturity": "released",
+    "image": "https://raw.githubusercontent.com/jaychtw/squirrel-control/4ce1d4a5997ef300a57cc3cc3a0d5ba8816f8660/docs/evidence/gameplay-1440-en-tidy.png",
+    "limitations": "Finding small illustrated characters is a visual task. Progress and preferences stay in this browser."
+  },
+  {
+    "id": "the-last-lantern",
+    "repository": "the-last-lantern",
+    "inspectedHead": "99dcad1f29c7a6d5e389ac274046eb8d6e24a5a6",
+    "identitySource": "https://github.com/jaychtw/the-last-lantern/blob/99dcad1f29c7a6d5e389ac274046eb8d6e24a5a6/docs/RELEASE-1.0.0.md",
+    "destination": "https://jaychtw.github.io/the-last-lantern/",
+    "maturity": "released",
+    "image": "https://raw.githubusercontent.com/jaychtw/the-last-lantern/99dcad1f29c7a6d5e389ac274046eb8d6e24a5a6/docs/evidence/gameplay-1440-en.png",
+    "limitations": "The game is visual. Saves are local to the browser; local-play progress does not automatically transfer to the public site."
+  },
+  {
+    "id": "snacks-match-raohe",
+    "repository": "snacks-match-raohe",
+    "inspectedHead": "77c57fd72d04175ec1a3810752e2ff837764823d",
+    "identitySource": "https://github.com/jaychtw/snacks-match-raohe/blob/77c57fd72d04175ec1a3810752e2ff837764823d/README.md",
+    "destination": "https://jaychtw.github.io/snacks-match-raohe/",
+    "maturity": "released",
+    "image": "https://raw.githubusercontent.com/jaychtw/snacks-match-raohe/77c57fd72d04175ec1a3810752e2ff837764823d/docs/evidence/active-1440-en.png",
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "shape-match",
+    "repository": "shape-match",
+    "inspectedHead": "8b8bee699f1dc66fb335d6584f98417929d652bb",
+    "identitySource": "https://github.com/jaychtw/shape-match/blob/8b8bee699f1dc66fb335d6584f98417929d652bb/README.md",
+    "destination": "https://jaychtw.github.io/shape-match/",
+    "maturity": "released",
+    "image": "https://raw.githubusercontent.com/jaychtw/shape-match/8b8bee699f1dc66fb335d6584f98417929d652bb/docs/evidence/g4-desktop-en.png",
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "junctioneer",
+    "repository": "junctioneer",
+    "inspectedHead": "b35abf0276bb9dfd0583d7dfc8d9c63b2cc824ec",
+    "identitySource": "https://github.com/jaychtw/junctioneer/blob/b35abf0276bb9dfd0583d7dfc8d9c63b2cc824ec/README.md",
+    "destination": "https://jaychtw.github.io/junctioneer/",
+    "maturity": "public",
+    "image": "https://raw.githubusercontent.com/jaychtw/junctioneer/b35abf0276bb9dfd0583d7dfc8d9c63b2cc824ec/docs/production-evidence/level-01-desktop.png",
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "my-queens",
+    "repository": "my-queens",
+    "inspectedHead": "5b81e5c979c76bd83cf420247349a6a933a49106",
+    "identitySource": "https://github.com/jaychtw/my-queens/blob/5b81e5c979c76bd83cf420247349a6a933a49106/README.md",
+    "destination": "https://jaychtw.github.io/my-queens/",
+    "maturity": "public",
+    "image": "https://raw.githubusercontent.com/jaychtw/my-queens/5b81e5c979c76bd83cf420247349a6a933a49106/docs/desktop.png",
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "tidelight",
+    "repository": "tidelight",
+    "inspectedHead": "9a1cea4b93833664af25a4a2005e9d35cfbc4c04",
+    "identitySource": "https://github.com/jaychtw/tidelight/blob/9a1cea4b93833664af25a4a2005e9d35cfbc4c04/README.md",
+    "destination": "https://jaychtw.github.io/tidelight/",
+    "maturity": "public",
+    "image": null,
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "jasmine-odyssey",
+    "repository": "jasmine-odyssey",
+    "inspectedHead": "78306ed91ab39fecff6034f14dcb9a284c8a0f10",
+    "identitySource": "https://github.com/jaychtw/jasmine-odyssey/blob/78306ed91ab39fecff6034f14dcb9a284c8a0f10/README.md",
+    "destination": "https://jaychtw.github.io/jasmine-odyssey/",
+    "maturity": "public",
+    "image": null,
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "formosa-quest",
+    "repository": "formosa-quest",
+    "inspectedHead": "98f64306da0599aac6fde5b9f6a5224048edc75d",
+    "identitySource": "https://github.com/jaychtw/formosa-quest/blob/98f64306da0599aac6fde5b9f6a5224048edc75d/README.md",
+    "destination": "https://jaychtw.github.io/formosa-quest/",
+    "maturity": "public",
+    "image": null,
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "jeremy-odyssey",
+    "repository": "jeremy-odyssey",
+    "inspectedHead": "bb77e034df5837ed0d98f0d7040a693f530e6360",
+    "identitySource": "https://github.com/jaychtw/jeremy-odyssey/blob/bb77e034df5837ed0d98f0d7040a693f530e6360/README.md",
+    "destination": "https://jaychtw.github.io/jeremy-odyssey/",
+    "maturity": "public",
+    "image": null,
+    "limitations": "Keyboard-driven arcade play. Story text supports English and Traditional Chinese; HUD and controls remain English."
+  },
+  {
+    "id": "nom-nom-boom",
+    "repository": "nom_nom_boom",
+    "inspectedHead": "a4ed9e060088afa47c76735572e6e7dda3c63910",
+    "identitySource": "https://github.com/jaychtw/nom_nom_boom/blob/a4ed9e060088afa47c76735572e6e7dda3c63910/README.md",
+    "destination": "https://jaychtw.github.io/nom_nom_boom/",
+    "maturity": "public",
+    "image": "https://raw.githubusercontent.com/jaychtw/nom_nom_boom/a4ed9e060088afa47c76735572e6e7dda3c63910/docs/finale.png",
+    "limitations": "No losing condition or time limit. Completion times are personal records stored in this browser."
+  },
+  {
+    "id": "launch-sequence",
+    "repository": "launch-sequence",
+    "inspectedHead": "8c030ec4d5e3f0e451f73e9a8de086697e737fd3",
+    "identitySource": "https://github.com/jaychtw/launch-sequence/blob/8c030ec4d5e3f0e451f73e9a8de086697e737fd3/README.md",
+    "destination": "https://jaychtw.github.io/launch-sequence/",
+    "maturity": "public",
+    "image": "https://raw.githubusercontent.com/jaychtw/launch-sequence/8c030ec4d5e3f0e451f73e9a8de086697e737fd3/docs/screenshots/recall-en-desktop.png",
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "animal-match",
+    "repository": "animal-match",
+    "inspectedHead": "372016711574bf216b94b9a3eb1490fa824f0090",
+    "identitySource": "https://github.com/jaychtw/animal-match/blob/372016711574bf216b94b9a3eb1490fa824f0090/README.md",
+    "destination": "https://jaychtw.github.io/animal-match/",
+    "maturity": "evolving",
+    "image": "https://raw.githubusercontent.com/jaychtw/animal-match/372016711574bf216b94b9a3eb1490fa824f0090/docs/evidence/cute-en-1440.png",
+    "limitations": "Publicly available and evolving; final creative acceptance is documented as pending. Progress stays in this browser."
+  },
+  {
+    "id": "kaiju-tournament",
+    "repository": "kaiju-tournament",
+    "inspectedHead": "430aa94e891f9a7738a0102037b7f7f4ebfa4216",
+    "identitySource": "https://github.com/jaychtw/kaiju-tournament/blob/430aa94e891f9a7738a0102037b7f7f4ebfa4216/README.md",
+    "destination": "https://jaychtw.github.io/kaiju-tournament/",
+    "maturity": "public",
+    "image": "https://raw.githubusercontent.com/jaychtw/kaiju-tournament/430aa94e891f9a7738a0102037b7f7f4ebfa4216/docs/evidence/desktop-high.png",
+    "limitations": "Published release candidate with limited pose animation; physical phones and Safari remain unverified."
+  },
+  {
+    "id": "kaiju-demolition",
+    "repository": "kaiju-demolition",
+    "inspectedHead": "572a663af66f37e8cfa12b85d219aac55e23bca3",
+    "identitySource": "https://github.com/jaychtw/kaiju-demolition/blob/572a663af66f37e8cfa12b85d219aac55e23bca3/README.md",
+    "destination": "https://jaychtw.github.io/kaiju-demolition/",
+    "maturity": "public",
+    "image": "https://raw.githubusercontent.com/jaychtw/kaiju-demolition/572a663af66f37e8cfa12b85d219aac55e23bca3/docs/evidence/play-1280x720-en.png",
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "riot-defender",
+    "repository": "riot-defender",
+    "inspectedHead": "50529a94d0ea5f97fdfe379c1bb1a4a6e497b28c",
+    "identitySource": "https://github.com/jaychtw/riot-defender/blob/50529a94d0ea5f97fdfe379c1bb1a4a6e497b28c/README.md",
+    "destination": "https://jaychtw.github.io/riot-defender/",
+    "maturity": "public",
+    "image": null,
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "typhoon-defender",
+    "repository": "typhoon-defender",
+    "inspectedHead": "f80c3303f645545d4acaccbebc2670f3290e755c",
+    "identitySource": "https://github.com/jaychtw/typhoon-defender/blob/f80c3303f645545d4acaccbebc2670f3290e755c/README.md",
+    "destination": "https://jaychtw.github.io/typhoon-defender/",
+    "maturity": "public",
+    "image": "https://raw.githubusercontent.com/jaychtw/typhoon-defender/f80c3303f645545d4acaccbebc2670f3290e755c/qa/dina-desktop-en.png",
+    "limitations": "Fictional storm-neutralization technology; this is a tactical game, not emergency guidance."
+  },
+  {
+    "id": "pedestrian-living-hell",
+    "repository": "pedestrian-living-hell",
+    "inspectedHead": "0d7d054a6d873d8068f11c4bf768e11c083a3de9",
+    "identitySource": "https://github.com/jaychtw/pedestrian-living-hell/blob/0d7d054a6d873d8068f11c4bf768e11c083a3de9/README.md",
+    "destination": "https://jaychtw.github.io/pedestrian-living-hell/",
+    "maturity": "public",
+    "image": "https://raw.githubusercontent.com/jaychtw/pedestrian-living-hell/0d7d054a6d873d8068f11c4bf768e11c083a3de9/docs/screenshots/v1/02-playing-en.png",
+    "limitations": "Desktop keyboard play; no touch controls. Safari and mobile are not certified."
+  },
+  {
+    "id": "the-other-ninty-percent",
+    "repository": "the-other-ninty-percent",
+    "inspectedHead": "60b31f84040769b2a76e7444e8cbe295c255a289",
+    "identitySource": "https://github.com/jaychtw/the-other-ninty-percent/blob/60b31f84040769b2a76e7444e8cbe295c255a289/README.md",
+    "destination": "https://jaychtw.github.io/the-other-ninty-percent/",
+    "maturity": "public",
+    "image": null,
+    "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal."
+  },
+  {
+    "id": "the-impossible-room",
+    "repository": "the-impossible-room",
+    "inspectedHead": "fa24693d1b71c9b3957cf53a51ccfdf36696134d",
+    "identitySource": "https://github.com/jaychtw/the-impossible-room/blob/fa24693d1b71c9b3957cf53a51ccfdf36696134d/README.md",
+    "destination": "https://jaychtw.github.io/the-impossible-room/",
+    "maturity": "public",
+    "image": "https://raw.githubusercontent.com/jaychtw/the-impossible-room/fa24693d1b71c9b3957cf53a51ccfdf36696134d/docs/screenshots/study-en-desktop.jpg",
+    "limitations": "Contains a non-graphic death. Independent-player and physical-device acceptance remain separate from automated checks."
+  }
+]

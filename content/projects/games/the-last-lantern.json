@@ -1,0 +1,32 @@
+{
+  "id": "the-last-lantern",
+  "title": "The Last Lantern",
+  "category": "games",
+  "summary": "Explore Hearthmere and the surrounding wilderness in a single-hero fantasy adventure.",
+  "status": "published",
+  "featured": true,
+  "order": 40,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/the-last-lantern/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/the-last-lantern",
+  "languages": ["en", "zh-TW"],
+  "controls": "Move with arrow keys or WASD and use the game’s Interact and menu controls. Touch controls are provided by the game.",
+  "limitations": "The game is visual. Saves are local to the browser; local-play progress does not automatically transfer to the public site.",
+  "approval": {
+    "url": "https://github.com/jaychtw/the-last-lantern/blob/99dcad1f29c7a6d5e389ac274046eb8d6e24a5a6/docs/RELEASE-1.0.0.md",
+    "note": "Creator acceptance and public release recorded in the linked release report."
+  },
+  "release": {
+    "version": "1.0.0",
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/the-last-lantern.webp",
+    "alt": "Rowan among timber cottages and trees in Hearthmere."
+  },
+  "tags": ["Experimental", "RPG"],
+  "maturity": "released"
+}

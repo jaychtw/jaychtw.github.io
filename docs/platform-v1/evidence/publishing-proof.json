@@ -1,0 +1,20 @@
+{
+  "scope": "Local synthetic fixtures only; no production article or custom artwork published.",
+  "cover": {
+    "sourcePath": "public/assets/covers/games/republic-of-chickens.webp",
+    "first": "/assets/covers/games/republic-of-chickens.960.c500f744bab7.webp",
+    "replacement": "/assets/covers/games/republic-of-chickens.960.470b4670b1da.webp",
+    "changed": true,
+    "priority": "custom cover > authentic screenshot > neutral placeholder"
+  },
+  "markdown": {
+    "published": [
+      "/blog/publishing-fixture/",
+      "/what-now/publishing-fixture/"
+    ],
+    "draftOmitted": true,
+    "indexesGenerated": true,
+    "sharedEngine": true
+  },
+  "passed": true
+}

@@ -1,0 +1,32 @@
+{
+  "id": "republic-of-chickens",
+  "title": "Republic of Chickens",
+  "category": "games",
+  "summary": "Care for a small republic and meet its rather opinionated chickens.",
+  "status": "published",
+  "featured": true,
+  "order": 10,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/reppublic-of-chickens/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/reppublic-of-chickens",
+  "languages": ["en", "zh-TW"],
+  "controls": "Use the on-screen hall entrances and controls. Keyboard users can tab between controls.",
+  "limitations": "The game is visual and progress is stored in this browser.",
+  "approval": {
+    "url": "https://github.com/jaychtw/reppublic-of-chickens/blob/f5a2511ea87ba03c461d7e49222c25e1459a02f3/docs/DEPLOYMENT.md",
+    "note": "Creator acceptance and public release recorded in the linked release report."
+  },
+  "release": {
+    "version": "1.0",
+    "commit": "4ad62e03ef16242b995105e2e5c0c7caf63b9d73"
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/republic-of-chickens.webp",
+    "alt": "A sunlit village square populated by chickens."
+  },
+  "tags": ["Experimental", "Narrative"],
+  "maturity": "released"
+}

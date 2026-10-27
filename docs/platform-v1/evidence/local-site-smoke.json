@@ -1,0 +1,12 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "local": true,
+  "browser": "154.0.8037.57",
+  "widths": [
+    390,
+    1440
+  ],
+  "errors": [],
+  "failed": [],
+  "passed": true
+}

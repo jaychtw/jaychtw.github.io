@@ -1,0 +1,30 @@
+[
+  {
+    "id": "games",
+    "title": "Games",
+    "type": "gallery",
+    "description": "Independent games to explore and play.",
+    "order": 10
+  },
+  {
+    "id": "apps",
+    "title": "Apps",
+    "type": "gallery",
+    "description": "Applications and interactive experiments.",
+    "order": 20
+  },
+  {
+    "id": "blog",
+    "title": "Blog",
+    "type": "editorial",
+    "description": "Observations, essays, and reflections.",
+    "order": 30
+  },
+  {
+    "id": "what-now",
+    "title": "What Now?",
+    "type": "editorial",
+    "description": "Discoveries across disciplines.",
+    "order": 40
+  }
+]

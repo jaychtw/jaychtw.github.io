@@ -1,0 +1,32 @@
+{
+  "id": "kaiju-tournament",
+  "title": "World Kaiju Tournament",
+  "category": "games",
+  "summary": "Choose a kaiju, explore a coastal festival, and challenge five contenders.",
+  "status": "published",
+  "featured": true,
+  "order": 160,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/kaiju-tournament/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/kaiju-tournament",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Published release candidate with limited pose animation; physical phones and Safari remain unverified.",
+  "approval": {
+    "url": "https://github.com/jaychtw/kaiju-tournament/blob/430aa94e891f9a7738a0102037b7f7f4ebfa4216/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/kaiju-tournament.webp",
+    "alt": "Two illustrated kaiju facing one another in a coastal tournament arena."
+  },
+  "tags": ["Combat", "Strategy", "Tournament"],
+  "maturity": "public"
+}

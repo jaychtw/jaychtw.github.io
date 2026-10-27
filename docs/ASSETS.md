@@ -1,18 +1,19 @@
-# Asset provenance and attribution
+# Artwork, screenshots and generated assets
 
-Production uses four **actual gameplay screenshots**, cropped and optimized during the approved Stage A.2 work. `content/asset-provenance.json` records original pinned public URLs/commits, original and derivative SHA-256, exact crop boxes, dimensions and treatment. The build verifies the derivative's checksum before copying it to a fingerprinted production URL.
+The current candidate has **16 authentic documented gameplay captures and six neutral monogram fallbacks**. `content/asset-provenance.json` records pinned original URLs/commits, original/import checksums, dimensions, treatment and rights notes. `docs/platform-v1/migration-inventory.json` maps every migrated work to its identity source, screenshot or fallback. Existing four square derivatives/original Stage A captures remain archived; no historical evidence was deleted.
 
-| Work | Image source / production role |
-| --- | --- |
-| Republic of Chickens | Actual illustrated republic overview; square crop retains the village square. |
-| Wonderlands | Actual world painted through the running game's controls, not the historical Stage A island concept. |
-| Squirrel Control | Actual Miss Bunny/cottage gameplay, retaining the host and hiding places. |
-| The Last Lantern | Actual Hearthmere gameplay, retaining village/characters; original source-authored renders and their notices remain in that game. |
+New source screenshots live under `public/assets/screenshots/games/`. They are resized WebP imports of actual documented game captures, not final promotional art. The builder generates centered 16:9 card crops at available 480/960/1600 widths without enlargement; article body images retain their proportions. Cover creation/approval remains with the creator and ChatGPT, separately from engineering. No stock art, example projects, or independently generated final covers are shipped.
 
-Original full screenshots remain archived under `docs/stage-a/assets/`; production ships only the four optimized local derivatives (432,416 bytes total). No illustrative project titles/art from the handoff mood sheet, stock photo, or synthetic gameplay replacement is shipped.
+## Priority and replacement
 
-The creator approved use in this owner portfolio. No new open-source license or blanket commercial-rights clearance is assigned to project art. Original generated/source-authored art provenance, references and third-party notices remain with each game's independent repository. The chicken game's own quotation-attribution caveat is not a new commercial-rights claim by this portal.
+1. Valid custom WebP at `public/assets/covers/<collection>/<id>.webp`.
+2. Metadata's authentic screenshot.
+3. A neutral title monogram.
 
-Portal light is local HTML/SVG/CSS, not a photograph or video asset. The initial wordmark/favicon is plain typography. Fonts use installed system serif/sans stacks; no external font service or redistributed font package is needed.
+Owner-approved custom covers should be 16:9, preferably at least 1600×900. Keep high-resolution originals separately; only web delivery sources belong in this path. Replacing the same source automatically generates new content-fingerprinted URLs and responsive `srcset` output; no code or manual hash update is required. Invalid custom artwork warns and falls back. Runtime failure tries the available screenshot, then a monogram, retaining the open/play action.
 
-The creator leads concept, design, acceptance and release decisions. Implementation and tests are AI-assisted; there is no claim that all code/art was personally handcrafted. This factual note stays in development documentation rather than becoming a homepage technology showcase.
+`.artifacts/asset-evidence.json` records each build's actual source checksums, derivatives and priority selection; release manifests hash every emitted file. Historical import hashes do not pretend a replacement has the original bytes. A routine screenshot replacement must still be authentic and retain an accurate source record; a newly approved cover can be integrated through the dedicated owner-controlled path without editing the game.
+
+Fonts use installed system serif/sans stacks. Only the small theme orb uses a glossy gradient; no ornamental background/arcade art is added. Project notices and third-party rights remain with their sources. Owner portfolio use does not assign a blanket open-source/commercial license to artwork. Code and tests are AI-assisted; no handcrafted-authorship claim is introduced.
+
+[Owner replacement steps](MAINTENANCE.md) · [Historical asset record](platform-v1/previous-assets.md).

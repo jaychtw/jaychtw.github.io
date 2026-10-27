@@ -1,0 +1,32 @@
+{
+  "id": "the-impossible-room",
+  "title": "The Impossible Room",
+  "category": "games",
+  "summary": "Investigate a locked study and reconstruct an original Greyhaven detective case.",
+  "status": "published",
+  "featured": true,
+  "order": 220,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/the-impossible-room/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/the-impossible-room",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Contains a non-graphic death. Independent-player and physical-device acceptance remain separate from automated checks.",
+  "approval": {
+    "url": "https://github.com/jaychtw/the-impossible-room/blob/fa24693d1b71c9b3957cf53a51ccfdf36696134d/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/the-impossible-room.webp",
+    "alt": "A dimly lit study with a bolted door, desk and rain at the window."
+  },
+  "tags": ["Experimental", "Narrative"],
+  "maturity": "public"
+}

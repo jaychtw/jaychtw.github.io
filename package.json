@@ -1,6 +1,6 @@
 {
   "name": "possibility",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-platform-rc.1",
   "private": true,
   "type": "module",
   "engines": {
@@ -12,7 +12,7 @@
     "dev": "npm run build && npm run preview",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/client tests/*.cjs scripts/*.cjs && npm run format:check",
-    "test": "node --test tests/catalog.test.ts",
+    "test": "node --test tests/*.test.ts",
     "test:browser": "npm run build && node tests/browser.cjs",
     "verify:links": "python3 scripts/verify-links.py",
     "check": "npm run typecheck && npm run lint && npm test && npm run test:browser",
@@ -24,9 +24,11 @@
     "@types/node": "24.10.0",
     "axe-core": "4.14.0",
     "eslint": "10.13.0",
+    "markdown-it": "15.0.3",
     "playwright": "1.64.1",
-    "pngjs": "7.0.0",
     "prettier": "3.6.2",
-    "typescript": "5.9.3"
+    "sharp": "0.35.5",
+    "typescript": "5.9.3",
+    "yaml": "2.9.1"
   }
 }

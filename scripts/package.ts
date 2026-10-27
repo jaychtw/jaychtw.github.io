@@ -62,7 +62,9 @@ function files(dir: string): string[] {
 const manifest = {
   version: info.version,
   sourceCommit: head,
-  visualBaseline: site.approvedBaseline,
+  designVersion: site.designVersion,
+  designAuthority: "Platform v1.0 textual amendment",
+  previousVisualBaseline: site.approvedBaseline,
   files: files(dist)
     .sort()
     .map((p) => ({

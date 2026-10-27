@@ -1,0 +1,32 @@
+{
+  "id": "animal-match",
+  "title": "Cute Animal Match",
+  "category": "games",
+  "summary": "An evolving animal match-3 game with fifteen levels and unlimited Free Play.",
+  "status": "published",
+  "featured": true,
+  "order": 150,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/animal-match/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/animal-match",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Publicly available and evolving; final creative acceptance is documented as pending. Progress stays in this browser.",
+  "approval": {
+    "url": "https://github.com/jaychtw/animal-match/blob/372016711574bf216b94b9a3eb1490fa824f0090/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/animal-match.webp",
+    "alt": "A purple board of animal tiles with level objectives and match controls."
+  },
+  "tags": ["Matching", "Puzzle"],
+  "maturity": "evolving"
+}

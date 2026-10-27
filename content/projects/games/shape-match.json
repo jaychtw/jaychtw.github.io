@@ -1,0 +1,32 @@
+{
+  "id": "shape-match",
+  "title": "Shape Match",
+  "category": "games",
+  "summary": "Match geometric shapes across fifteen levels or settle into Free Play.",
+  "status": "published",
+  "featured": true,
+  "order": 60,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/shape-match/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/shape-match",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal.",
+  "approval": {
+    "url": "https://github.com/jaychtw/shape-match/blob/8b8bee699f1dc66fb335d6584f98417929d652bb/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": "1.0.0",
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/shape-match.webp",
+    "alt": "A colorful board of geometric match-three pieces beside level information."
+  },
+  "tags": ["Matching", "Puzzle"],
+  "maturity": "released"
+}

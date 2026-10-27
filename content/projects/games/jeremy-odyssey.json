@@ -1,0 +1,29 @@
+{
+  "id": "jeremy-odyssey",
+  "title": "Jeremy’s Odyssey",
+  "category": "games",
+  "summary": "Climb five alien-controlled school floors with an oversized pencil case.",
+  "status": "published",
+  "featured": true,
+  "order": 120,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/jeremy-odyssey/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/jeremy-odyssey",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Keyboard-driven arcade play. Story text supports English and Traditional Chinese; HUD and controls remain English.",
+  "approval": {
+    "url": "https://github.com/jaychtw/jeremy-odyssey/blob/bb77e034df5837ed0d98f0d7040a693f530e6360/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": null,
+  "tags": ["Platformer", "Action", "Vertical Scroller"],
+  "maturity": "public"
+}

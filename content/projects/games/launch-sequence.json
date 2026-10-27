@@ -1,0 +1,32 @@
+{
+  "id": "launch-sequence",
+  "title": "Launch Sequence",
+  "category": "games",
+  "summary": "Remember launch codes and send seven scientific probes toward Neptune.",
+  "status": "published",
+  "featured": true,
+  "order": 140,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/launch-sequence/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/launch-sequence",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Visual browser game. Physical-device coverage and final acceptance are not independently established by the portal.",
+  "approval": {
+    "url": "https://github.com/jaychtw/launch-sequence/blob/8c030ec4d5e3f0e451f73e9a8de086697e737fd3/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/launch-sequence.webp",
+    "alt": "The launch-code recall screen with a numeric keypad and BEEP."
+  },
+  "tags": ["Puzzle", "Kawaii"],
+  "maturity": "public"
+}

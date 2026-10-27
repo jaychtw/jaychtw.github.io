@@ -1,18 +1,122 @@
 [
   {
+    "id": "animal-match",
+    "url": "https://jaychtw.github.io/animal-match/",
+    "finalUrl": "https://jaychtw.github.io/animal-match/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "formosa-quest",
+    "url": "https://jaychtw.github.io/formosa-quest/",
+    "finalUrl": "https://jaychtw.github.io/formosa-quest/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "jasmine-odyssey",
+    "url": "https://jaychtw.github.io/jasmine-odyssey/",
+    "finalUrl": "https://jaychtw.github.io/jasmine-odyssey/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "jeremy-odyssey",
+    "url": "https://jaychtw.github.io/jeremy-odyssey/",
+    "finalUrl": "https://jaychtw.github.io/jeremy-odyssey/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "junctioneer",
+    "url": "https://jaychtw.github.io/junctioneer/",
+    "finalUrl": "https://jaychtw.github.io/junctioneer/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "kaiju-demolition",
+    "url": "https://jaychtw.github.io/kaiju-demolition/",
+    "finalUrl": "https://jaychtw.github.io/kaiju-demolition/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "kaiju-tournament",
+    "url": "https://jaychtw.github.io/kaiju-tournament/",
+    "finalUrl": "https://jaychtw.github.io/kaiju-tournament/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "launch-sequence",
+    "url": "https://jaychtw.github.io/launch-sequence/",
+    "finalUrl": "https://jaychtw.github.io/launch-sequence/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "my-queens",
+    "url": "https://jaychtw.github.io/my-queens/",
+    "finalUrl": "https://jaychtw.github.io/my-queens/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "nom-nom-boom",
+    "url": "https://jaychtw.github.io/nom_nom_boom/",
+    "finalUrl": "https://jaychtw.github.io/nom_nom_boom/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "pedestrian-living-hell",
+    "url": "https://jaychtw.github.io/pedestrian-living-hell/",
+    "finalUrl": "https://jaychtw.github.io/pedestrian-living-hell/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
     "id": "republic-of-chickens",
     "url": "https://jaychtw.github.io/reppublic-of-chickens/",
     "finalUrl": "https://jaychtw.github.io/reppublic-of-chickens/",
     "status": 200,
-    "checkedAt": "2026-10-27T07:07:14.161365+00:00",
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
     "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
   },
   {
-    "id": "wonderlands",
-    "url": "https://jaychtw.github.io/wonderlands/",
-    "finalUrl": "https://jaychtw.github.io/wonderlands/",
+    "id": "riot-defender",
+    "url": "https://jaychtw.github.io/riot-defender/",
+    "finalUrl": "https://jaychtw.github.io/riot-defender/",
     "status": 200,
-    "checkedAt": "2026-10-27T07:07:14.161365+00:00",
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "shape-match",
+    "url": "https://jaychtw.github.io/shape-match/",
+    "finalUrl": "https://jaychtw.github.io/shape-match/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "snacks-match-raohe",
+    "url": "https://jaychtw.github.io/snacks-match-raohe/",
+    "finalUrl": "https://jaychtw.github.io/snacks-match-raohe/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
     "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
   },
   {
@@ -20,7 +124,15 @@
     "url": "https://jaychtw.github.io/squirrel-control/",
     "finalUrl": "https://jaychtw.github.io/squirrel-control/",
     "status": 200,
-    "checkedAt": "2026-10-27T07:07:14.161365+00:00",
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "the-impossible-room",
+    "url": "https://jaychtw.github.io/the-impossible-room/",
+    "finalUrl": "https://jaychtw.github.io/the-impossible-room/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
     "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
   },
   {
@@ -28,7 +140,39 @@
     "url": "https://jaychtw.github.io/the-last-lantern/",
     "finalUrl": "https://jaychtw.github.io/the-last-lantern/",
     "status": 200,
-    "checkedAt": "2026-10-27T07:07:14.161365+00:00",
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "the-other-ninty-percent",
+    "url": "https://jaychtw.github.io/the-other-ninty-percent/",
+    "finalUrl": "https://jaychtw.github.io/the-other-ninty-percent/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "tidelight",
+    "url": "https://jaychtw.github.io/tidelight/",
+    "finalUrl": "https://jaychtw.github.io/tidelight/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "typhoon-defender",
+    "url": "https://jaychtw.github.io/typhoon-defender/",
+    "finalUrl": "https://jaychtw.github.io/typhoon-defender/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "wonderlands",
+    "url": "https://jaychtw.github.io/wonderlands/",
+    "finalUrl": "https://jaychtw.github.io/wonderlands/",
+    "status": 200,
+    "checkedAt": "2026-10-27T16:37:30.326756+00:00",
     "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
   }
 ]

@@ -1,0 +1,32 @@
+{
+  "id": "typhoon-defender",
+  "title": "Typhoon Defender",
+  "category": "games",
+  "summary": "Read forecasts and place pulses to protect Haven Island from five storms.",
+  "status": "published",
+  "featured": true,
+  "order": 190,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/typhoon-defender/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/typhoon-defender",
+  "languages": ["en", "zh-TW"],
+  "controls": null,
+  "limitations": "Fictional storm-neutralization technology; this is a tactical game, not emergency guidance.",
+  "approval": {
+    "url": "https://github.com/jaychtw/typhoon-defender/blob/f80c3303f645545d4acaccbebc2670f3290e755c/README.md",
+    "note": "Public project identity and capabilities documented here; public reachability is distinct from final creative acceptance."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/typhoon-defender.webp",
+    "alt": "Haven Island on a sea grid beside forecast and pulse-targeting controls."
+  },
+  "tags": ["Strategy", "Experimental"],
+  "maturity": "public"
+}

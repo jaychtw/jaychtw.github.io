@@ -3,169 +3,160 @@ const fs = require("node:fs"),
   path = require("node:path"),
   assert = require("node:assert/strict");
 const { spawn, execFileSync } = require("node:child_process");
-const { PNG } = require("pngjs");
 const root = path.resolve(__dirname, ".."),
-  out = path.join(root, ".artifacts/browser"),
-  cache = path.join(root, ".cache");
+  out = path.join(root, ".artifacts/browser");
 fs.mkdirSync(out, { recursive: true });
-fs.mkdirSync(cache, { recursive: true });
-const widths = [320, 390, 768, 1024, 1440];
-const catalog = JSON.parse(
-  fs.readFileSync(path.join(root, "content/projects.json")),
-)
+const catalog = fs
+  .readdirSync(path.join(root, "content/projects/games"))
+  .filter((f) => f.endsWith(".json"))
+  .map((f) =>
+    JSON.parse(fs.readFileSync(path.join(root, "content/projects/games", f))),
+  )
   .filter((p) => p.status === "published")
-  .sort((a, b) => a.order - b.order);
+  .sort((a, b) => a.order - b.order || a.id.localeCompare(b.id));
+const site = JSON.parse(fs.readFileSync(path.join(root, "content/site.json")));
+const collections = JSON.parse(
+  fs.readFileSync(path.join(root, "content/collections.json")),
+);
+const homepage = collections.find((c) => c.id === site.homepageCollection);
+const origin = "http://127.0.0.1:4175";
+const galleryURL =
+  origin + (site.homepageCollection === "games" ? "/" : "/games/");
+const active = new Set(
+  fs
+    .readdirSync(path.join(root, "content/projects"), { recursive: true })
+    .filter((f) => f.endsWith(".json"))
+    .map((f) =>
+      JSON.parse(fs.readFileSync(path.join(root, "content/projects", f))),
+    )
+    .filter((p) => p.status === "published")
+    .map((p) => p.category),
+);
+for (const c of collections.filter((c) => c.type === "editorial")) {
+  const dir = path.join(root, "content/articles", c.id);
+  if (
+    fs.existsSync(dir) &&
+    fs
+      .readdirSync(dir)
+      .filter((f) => f.endsWith(".md"))
+      .some((f) => {
+        const match = fs
+          .readFileSync(path.join(dir, f), "utf8")
+          .match(/^---\r?\n([\s\S]*?)\r?\n---/u);
+        return match && require("yaml").parse(match[1]).status === "published";
+      })
+  )
+    active.add(c.id);
+}
+const keyboardTag = catalog.some((p) => p.tags.includes("Puzzle"))
+  ? "Puzzle"
+  : catalog.flatMap((p) => p.tags)[0] || "All";
+const touchTag = catalog.some((p) => p.tags.includes("Kawaii"))
+  ? "Kawaii"
+  : keyboardTag;
 const result = {
   scope:
-    "Production build in local Chromium; not a deployed site, device certification, or fresh live-game browser testing.",
-  routes: [],
+    "Local Chromium, emulated viewport/touch; production and explicitly isolated publishing fixtures. No public deployment or physical-device certification.",
+  layouts: [],
+  filters: [],
   accessibility: [],
-  contrast: [],
-  fixtures: [],
   behavior: [],
-  baseline: [],
+  fixtures: [],
 };
-let browser, server, baseline;
-async function start(port, script) {
+let browser;
+const servers = [];
+async function server(port, dir) {
   try {
     await fetch(`http://127.0.0.1:${port}`);
-    throw new Error(`Port ${port} is occupied`);
+    throw new Error(`Port ${port} occupied`);
   } catch (e) {
     if (e.message.includes("occupied")) throw e;
   }
   const child = spawn(
     "python3",
-    Array.isArray(script) ? script : [script, "--port", String(port)],
+    [
+      "-m",
+      "http.server",
+      String(port),
+      "--bind",
+      "127.0.0.1",
+      "--directory",
+      dir,
+    ],
     { cwd: root, stdio: "ignore" },
   );
-  for (let i = 0; i < 40; i++) {
-    if (child.exitCode !== null) throw new Error("Preview server failed");
+  servers.push(child);
+  for (let i = 0; i < 50; i++) {
     try {
-      if ((await fetch(`http://127.0.0.1:${port}`)).ok) return child;
+      if ((await fetch(`http://127.0.0.1:${port}`)).ok) return;
     } catch {}
     await new Promise((r) => setTimeout(r, 100));
   }
-  child.kill();
-  throw new Error("Preview did not become ready");
+  throw new Error("Local preview failed");
 }
-async function ready(page) {
-  await page.waitForSelector(".gallery");
-  await page.locator(".work").last().scrollIntoViewIfNeeded();
-  await page
-    .locator(".work img")
-    .evaluateAll((xs) => Promise.all(xs.map((i) => i.decode())));
-  await page.evaluate(() => scrollTo(0, 0));
-  await page.waitForTimeout(50);
-}
-async function time(page, t) {
-  await page.evaluate((t) => {
-    for (const a of document.getAnimations()) {
-      a.pause();
-      a.currentTime = t;
-    }
-  }, t);
-}
-async function geometry(page, count) {
-  const d = await page.evaluate(() => {
-    const tiles = [...document.querySelectorAll(".work-link")].map((e) => {
-      const r = e.getBoundingClientRect();
-      return { x: r.x, y: r.y, right: r.right, bottom: r.bottom };
-    });
-    return {
-      count: tiles.length,
-      square: [...document.querySelectorAll(".work-media")].every(
-        (e) =>
-          Math.abs(
-            e.getBoundingClientRect().width - e.getBoundingClientRect().height,
-          ) < 0.1,
-      ),
-      overlap: tiles.some((r, i) =>
-        tiles
-          .slice(i + 1)
-          .some(
-            (s) =>
-              r.x < s.right &&
-              r.right > s.x &&
-              r.y < s.bottom &&
-              r.bottom > s.y,
-          ),
-      ),
-      overflow: document.documentElement.scrollWidth > innerWidth,
-      offset: tiles.length < 2 || Math.abs(tiles[0].y - tiles[1].y) > 10,
-      snap: [
-        getComputedStyle(document.documentElement).scrollSnapType,
-        getComputedStyle(document.body).scrollSnapType,
-      ],
-    };
-  });
-  assert.equal(d.count, count);
-  assert(d.square && d.offset && !d.overlap && !d.overflow);
-  assert.deepEqual(d.snap, ["none", "none"]);
-  return d;
+async function theme(page, value) {
+  if ((await page.locator("html").getAttribute("data-theme")) !== value)
+    await page
+      .getByRole("button", { name: `Switch to ${value} theme` })
+      .click();
+  assert.equal(await page.locator("html").getAttribute("data-theme"), value);
 }
 async function axe(page, label) {
-  const scan = await page.evaluate(() =>
-    axe.run(document, {
+  // Same-origin test instrumentation retains the production CSP unchanged.
+  await page.route("**/__test__/axe.js", (route) =>
+    route.fulfill({
+      contentType: "application/javascript",
+      body: fs.readFileSync(require.resolve("axe-core/axe.min.js"), "utf8"),
+    }),
+  );
+  await page.addScriptTag({
+    url: new URL("/__test__/axe.js", page.url()).href,
+  });
+  const a = await page.evaluate(async () =>
+    window.axe.run(document, {
       runOnly: {
         type: "tag",
         values: ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"],
       },
     }),
   );
-  const violations = scan.violations.map((v) => ({
-    id: v.id,
-    impact: v.impact,
-    targets: v.nodes.map((n) => n.target),
-  }));
   result.accessibility.push({
     label,
-    violations,
-    incomplete: scan.incomplete.map((v) => ({ id: v.id, impact: v.impact })),
+    violations: a.violations.map((v) => ({
+      id: v.id,
+      nodes: v.nodes.map((n) => n.target),
+    })),
+    incomplete: a.incomplete.map((v) => ({
+      id: v.id,
+      nodes: v.nodes.map((n) => n.target),
+    })),
   });
-  assert.deepEqual(violations, [], label);
+  assert.deepEqual(
+    a.violations.map((v) => v.id),
+    [],
+    label,
+  );
 }
-const lum = (a) =>
-  a
-    .map((v) => v / 255)
-    .map((v) => (v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4))
-    .reduce((s, v, i) => s + v * [0.2126, 0.7152, 0.0722][i], 0);
-const ratio = (a, b) =>
-  (Math.max(lum(a), lum(b)) + 0.05) / (Math.min(lum(a), lum(b)) + 0.05);
-function sampled(buffer, rects) {
-  const p = PNG.sync.read(buffer);
-  let min = 100;
-  for (const r of rects)
-    for (
-      let y = Math.max(0, Math.floor(r.y));
-      y < Math.min(p.height, Math.ceil(r.y + r.height));
-      y += 5
-    )
-      for (
-        let x = Math.max(0, Math.floor(r.x));
-        x < Math.min(p.width, Math.ceil(r.x + r.width));
-        x += 5
-      ) {
-        const i = (y * p.width + x) * 4;
-        min = Math.min(
-          min,
-          ratio([p.data[i], p.data[i + 1], p.data[i + 2]], [50, 46, 41]),
-        );
-      }
-  return min;
+async function capture(page, name) {
+  for (const image of await page.locator("img").all()) {
+    await image.scrollIntoViewIfNeeded();
+    await image.evaluate((i) => i.decode());
+  }
+  await page.evaluate(() => scrollTo(0, 0));
+  await page.screenshot({
+    path: path.join(out, name + ".png"),
+    fullPage: true,
+  });
 }
 (async () => {
-  server = await start(4173, "scripts/serve.py");
-  baseline = await start(8766, [
-    "-m",
-    "http.server",
-    "8766",
-    "--bind",
-    "127.0.0.1",
-    "--directory",
-    path.join(root, "tests/visual-reference"),
-  ]);
+  execFileSync(process.execPath, ["tests/fixtures.ts", "--cover"], {
+    cwd: root,
+    stdio: "pipe",
+  });
+  await server(4175, path.join(root, "dist"));
+  await server(4176, path.join(root, ".artifacts/fixtures/publishing/dist"));
   let executable = process.env.CHROMIUM_PATH;
-  for (const name of ["chromium", "google-chrome", "chromium-browser"])
+  for (const name of ["chromium", "google-chrome"])
     if (!executable) {
       try {
         executable = execFileSync("which", [name], { encoding: "utf8" }).trim();
@@ -176,441 +167,332 @@ function sampled(buffer, rects) {
     args: ["--no-sandbox"],
     env: {
       ...process.env,
-      XDG_CONFIG_HOME: path.join(cache, "config"),
-      XDG_CACHE_HOME: path.join(cache, "cache"),
+      XDG_CONFIG_HOME: path.join(root, ".cache/config"),
+      XDG_CACHE_HOME: path.join(root, ".cache/cache"),
     },
   });
   result.browser = browser.version();
-  result.playwright = require("playwright/package.json").version;
-  result.axe = require("axe-core/package.json").version;
-  const context = await browser.newContext();
-  await context.addInitScript({ path: require.resolve("axe-core/axe.min.js") });
-  for (const route of ["/", "/games/"])
-    for (const width of widths) {
-      const page = await context.newPage();
-      await page.setViewportSize({ width, height: width < 600 ? 844 : 960 });
-      const errors = [],
-        failed = [],
-        requests = [];
+  const errors = [];
+  for (const width of [320, 390, 768, 1024, 1440])
+    for (const appearance of ["dark", "light"]) {
+      const page = await browser.newPage({ viewport: { width, height: 900 } });
       page.on("pageerror", (e) => errors.push(e.message));
-      page.on("response", (r) => {
-        if (r.status() >= 400) failed.push(r.status() + " " + r.url());
+      const foreign = [];
+      page.on("request", (r) => {
+        if (!r.url().startsWith("http://127.0.0.1:4175/"))
+          foreign.push(r.url());
       });
-      page.on("request", (r) => requests.push(r.url()));
-      const response = await page.goto("http://127.0.0.1:4173" + route);
-      assert.equal(response.status(), 200);
-      await ready(page);
-      const g = await geometry(page, catalog.length);
-      assert.deepEqual(
-        await page.locator(".work-title").allTextContents(),
-        catalog.map((p) => p.title),
-      );
-      assert.deepEqual(
-        await page
-          .locator(".work-link")
-          .evaluateAll((xs) => xs.map((x) => x.href)),
-        catalog.map((p) => p.destination.url),
-      );
+      await page.goto(origin + "/");
+      assert.equal(await page.locator("h1").innerText(), homepage.title);
+      if (galleryURL !== origin + "/") await page.goto(galleryURL);
+      await theme(page, appearance);
+      assert.equal(await page.locator("h1").innerText(), "Games");
       assert.equal(
-        await page.locator(".work p,.work button,.work time").count(),
-        0,
+        await page.locator("[data-project]").count(),
+        catalog.length,
       );
-      assert(requests.every((u) => u.startsWith("http://127.0.0.1:4173/")));
-      assert(
-        !requests.some(
-          (u) => u.includes("catalog.json") || u.includes("github"),
+      const geometry = await page.evaluate(() => ({
+        columns: getComputedStyle(
+          document.querySelector(".gallery"),
+        ).gridTemplateColumns.split(" ").length,
+        overflow: document.documentElement.scrollWidth > innerWidth,
+        firstY: document.querySelector(".gallery").getBoundingClientRect().top,
+        ratios: [...document.querySelectorAll(".work-media")].map(
+          (e) =>
+            e.getBoundingClientRect().width / e.getBoundingClientRect().height,
         ),
+      }));
+      assert.equal(geometry.columns, width >= 1024 ? 3 : width >= 640 ? 2 : 1);
+      assert.equal(geometry.overflow, false);
+      for (const ratio of geometry.ratios)
+        assert(Math.abs(ratio - 16 / 9) < 0.015);
+      assert(geometry.firstY < 650, "No landing screen before gallery");
+      assert.equal(
+        await page.locator('nav[aria-label="Collections"] a').count(),
+        active.size,
       );
+      assert.deepEqual(foreign, []);
+      result.layouts.push({ width, appearance, ...geometry });
+      // Each tag must hide complete articles, close holes and preserve relative order.
+      if (width === 390 || width === 1440) {
+        for (const tag of [...new Set(catalog.flatMap((p) => p.tags))]) {
+          await page.getByRole("button", { name: tag, exact: true }).click();
+          const expected = catalog
+            .filter((p) => p.tags.includes(tag))
+            .map((p) => p.id);
+          assert.deepEqual(
+            await page
+              .locator("[data-project]:visible")
+              .evaluateAll((xs) => xs.map((x) => x.dataset.project)),
+            expected,
+          );
+          assert.equal(
+            await page.locator('.filter[aria-pressed="true"]').count(),
+            1,
+          );
+          const first = await page
+            .locator("[data-project]:visible")
+            .first()
+            .boundingBox();
+          const grid = await page.locator(".gallery").boundingBox();
+          assert(Math.abs(first.y - grid.y) < 1);
+          assert(Math.abs(first.x - grid.x) < 1);
+          result.filters.push({
+            width,
+            appearance,
+            tag,
+            count: expected.length,
+          });
+        }
+        await page.getByRole("button", { name: "All", exact: true }).click();
+        assert.equal(
+          await page.locator("[data-project]:visible").count(),
+          catalog.length,
+        );
+        await axe(page, `gallery-${width}-${appearance}`);
+        await capture(page, `gallery-${width}-${appearance}`);
+      }
       await page.reload();
-      await ready(page);
-      await geometry(page, catalog.length);
-      if (route === "/") {
-        const h0 = await page.locator("h1").boundingBox();
-        await time(page, 9000);
-        assert.deepEqual(await page.locator("h1").boundingBox(), h0);
-        const positions = await page.evaluate(() => ({
-          height: document
-            .querySelector(".landing-scene")
-            .getBoundingClientRect().height,
-          below: document.querySelector("#portfolio").getBoundingClientRect().y,
-          viewport: innerHeight,
-        }));
-        assert.equal(positions.height, positions.viewport);
-        assert.equal(positions.below, positions.viewport);
-        assert.equal(
-          await page.locator(".scene-content").innerText(),
-          "Possibility\njay.yc.chen@gmail.com",
-        );
-        assert.equal(
-          await page.locator(".contact").getAttribute("href"),
-          "mailto:jay.yc.chen@gmail.com",
-        );
-        const rects = await page
-          .locator("h1,.contact,.scroll-cue")
-          .evaluateAll((es) =>
-            es.map((e) => {
-              const r = e.getBoundingClientRect();
-              return { x: r.x, y: r.y, width: r.width, height: r.height };
-            }),
-          );
-        await page
-          .locator(".scene-content")
-          .evaluate((e) => (e.style.visibility = "hidden"));
-        let min = 100;
-        for (let t = 0; t <= 120000; t += 10000) {
-          await time(page, t);
-          min = Math.min(min, sampled(await page.screenshot(), rects));
-        }
-        assert(min >= 4.5);
-        await page
-          .locator(".scene-content")
-          .evaluate((e) => (e.style.visibility = ""));
-        const colors = await page.evaluate(() => ({
-          base: [
-            ...getComputedStyle(
-              document.querySelector(".daylight"),
-            ).backgroundImage.matchAll(/rgb\((\d+), (\d+), (\d+)\)/g),
-          ].map((m) => m.slice(1).map(Number)),
-          shadows: [...document.querySelectorAll(".glass-edge")].map((e) => ({
-            rgb: getComputedStyle(e).fill.match(/\d+/g).map(Number),
-            alpha: Number(getComputedStyle(e).opacity),
-          })),
-        }));
-        let bound = [0, 1, 2].map((i) =>
-          Math.min(...colors.base.map((c) => c[i])),
-        );
-        for (const s of colors.shadows)
-          bound = bound.map((c, i) => c * (1 - s.alpha) + s.rgb[i] * s.alpha);
-        const lower = ratio(bound.map(Math.floor), [50, 46, 41]);
-        assert(lower >= 4.5);
-        result.contrast.push({
-          width,
-          minimumSampledRatio: min,
-          phases: 13,
-          seconds: 120,
-          conservativeAllPhaseRatio: lower,
-          boundRGB: bound.map(Math.floor),
-        });
-        await time(page, 9000);
-      }
-      if ([390, 1440].includes(width)) {
-        await page.screenshot({
-          path: path.join(
-            out,
-            `${route === "/" ? "home" : "games"}-${width}.png`,
-          ),
-          fullPage: true,
-        });
-        await axe(page, route + width);
-      }
-      if (route === "/" && [390, 1440].includes(width)) {
-        const approved = await browser.newPage({
-          viewport: { width, height: width === 390 ? 844 : 960 },
-        });
-        await approved.goto("http://127.0.0.1:8766/");
-        await approved.locator(".landing-scene").waitFor();
-        await time(approved, 9000);
-        const a = PNG.sync.read(
-            await page.locator(".landing-scene").screenshot(),
-          ),
-          b = PNG.sync.read(
-            await approved.locator(".landing-scene").screenshot(),
-          );
-        assert.equal(a.data.length, b.data.length);
-        let changed = 0,
-          max = 0;
-        for (let i = 0; i < a.data.length; i += 4) {
-          const d = Math.max(
-            ...[0, 1, 2].map((c) => Math.abs(a.data[i + c] - b.data[i + c])),
-          );
-          if (d > 3) changed++;
-          max = Math.max(max, d);
-        }
-        const fraction = changed / (a.width * a.height);
-        result.baseline.push({
-          width,
-          pixelsOverTolerance: fraction,
-          maxChannelDifference: max,
-          approvedBaseline: JSON.parse(
-            fs.readFileSync(
-              path.join(root, "tests/visual-reference/baseline.json"),
-            ),
-          ).approvedCommit,
-        });
-        assert(fraction < 0.003, "Approved landing differs materially");
-        await approved.close();
-      }
-      assert.deepEqual(errors, []);
-      assert.deepEqual(failed, []);
-      result.routes.push({
-        route,
-        width,
-        ...g,
-        noExternalRuntimeRequests: true,
-        reload: true,
-      });
+      assert.equal(
+        await page.locator("html").getAttribute("data-theme"),
+        appearance,
+      );
+      await page.goto("http://127.0.0.1:4175/games/");
+      await page.waitForURL(galleryURL);
+      assert.equal(
+        await page.locator("[data-project]").count(),
+        catalog.length,
+      );
       await page.close();
     }
-  for (const project of catalog) {
-    const page = await context.newPage();
-    const route = "/" + project.category + "/" + project.id + "/";
+  const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+  await page.goto(galleryURL);
+  await page.keyboard.press("Tab");
+  assert.equal(
+    await page.evaluate(() => document.activeElement.textContent),
+    "Skip to content",
+  );
+  await page.keyboard.press("Enter");
+  assert.equal(await page.evaluate(() => document.activeElement.id), "main");
+  await page.getByRole("button", { name: keyboardTag, exact: true }).focus();
+  assert.equal(
+    await page.evaluate(
+      () => getComputedStyle(document.activeElement).outlineStyle,
+    ),
+    "solid",
+  );
+  await page.keyboard.press("Space");
+  assert.equal(
+    await page
+      .getByRole("button", { name: keyboardTag, exact: true })
+      .getAttribute("aria-pressed"),
+    "true",
+  );
+  await page.screenshot({ path: path.join(out, "keyboard-focus.png") });
+  result.behavior.push("Keyboard skip, visible focus and Space filtering");
+  for (const id of [
+    "republic-of-chickens",
+    "wonderlands",
+    "squirrel-control",
+    "the-last-lantern",
+  ]) {
+    await page.goto(`http://127.0.0.1:4175/games/${id}/`);
     assert.equal(
-      (await page.goto("http://127.0.0.1:4173" + route)).status(),
-      200,
+      await page.locator("h1").innerText(),
+      catalog.find((p) => p.id === id).title,
     );
-    await page.reload();
-    assert.equal(await page.locator("h1").innerText(), project.title);
-    assert.equal(
-      await page.locator(".primary-action").getAttribute("href"),
-      project.destination.url,
-    );
-    assert((await page.locator("body").innerText()).includes(project.controls));
-    await axe(page, route);
-    result.behavior.push({ type: "project-detail", route, reload: true });
-    await page.close();
+    await axe(page, `fact-sheet-${id}`);
   }
-  const nojs = await browser.newContext({ javaScriptEnabled: false });
-  for (const route of ["/", "/games/"]) {
-    const page = await nojs.newPage();
-    await page.goto("http://127.0.0.1:4173" + route);
-    assert.equal(await page.locator(".work-link").count(), catalog.length);
+  result.behavior.push("Four historical fact-sheet URLs preserved");
+  await page.goto(galleryURL);
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  assert.equal(
+    await page
+      .locator(".work-media img")
+      .first()
+      .evaluate((e) => getComputedStyle(e).transitionDuration),
+    "0s",
+  );
+  result.behavior.push("Reduced-motion transitions suppressed");
+  for (const appearance of ["dark", "light"]) {
+    await theme(page, appearance);
+    await page.evaluate(() => {
+      document.documentElement.style.fontSize = "200%";
+    });
     assert.equal(
-      await page.locator(".work-link").first().getAttribute("href"),
-      catalog[0].destination.url,
+      await page.evaluate(
+        () => document.documentElement.scrollWidth > innerWidth,
+      ),
+      false,
     );
-    result.behavior.push({ type: "no-javascript", route, staticContent: true });
-    await page.close();
+    await page.evaluate(() => (document.documentElement.style.fontSize = ""));
   }
+  result.behavior.push("200% text reflow in both themes");
+  await page.emulateMedia({ forcedColors: "active" });
+  assert(
+    await page.getByRole("button", { name: "All", exact: true }).isVisible(),
+  );
+  result.behavior.push("Forced-colors controls remain available");
+  await page.close();
+  const touch = await browser.newPage({
+    viewport: { width: 390, height: 844 },
+    isMobile: true,
+    hasTouch: true,
+  });
+  await touch.goto(galleryURL);
+  await touch.getByRole("button", { name: touchTag, exact: true }).tap();
+  assert.equal(
+    await touch.locator("[data-project]:visible").count(),
+    touchTag === "All"
+      ? catalog.length
+      : catalog.filter((p) => p.tags.includes(touchTag)).length,
+  );
+  await touch.getByRole("button", { name: "Switch to light theme" }).tap();
+  result.behavior.push("Emulated touch filtering and theme switch");
+  await touch.close();
+  const nojs = await browser.newPage({
+    javaScriptEnabled: false,
+    viewport: { width: 390, height: 844 },
+  });
+  await nojs.goto(galleryURL);
+  assert.equal(await nojs.locator("[data-project]").count(), catalog.length);
+  assert.equal(await nojs.locator(".filters").isVisible(), false);
+  assert.equal(await nojs.locator(".theme-toggle").isVisible(), false);
+  result.behavior.push("No-JavaScript full catalog and functional links");
   await nojs.close();
-  for (const width of [390, 1440]) {
-    const page = await context.newPage({
-      viewport: { width, height: width === 390 ? 844 : 960 },
-    });
-    await page.emulateMedia({ reducedMotion: "reduce" });
-    await page.goto("http://127.0.0.1:4173/");
-    await ready(page);
-    assert.equal(await page.evaluate(() => document.getAnimations().length), 0);
-    const a = await page.screenshot();
-    await page.waitForTimeout(200);
-    assert(a.equals(await page.screenshot()));
-    await page.screenshot({ path: path.join(out, `reduced-${width}.png`) });
-    await page.mouse.wheel(0, 450);
-    await page.waitForFunction(() => scrollY > 200);
-    result.behavior.push({
-      type: "reduced-motion",
-      width,
-      stillAndScroll: true,
-    });
-    await page.close();
-  }
-  const keyboard = await context.newPage();
-  await keyboard.setViewportSize({ width: 390, height: 844 });
-  await keyboard.goto("http://127.0.0.1:4173/");
-  await ready(keyboard);
-  await keyboard.keyboard.press("PageDown");
-  await keyboard.waitForFunction(() => scrollY > 300);
-  await keyboard.evaluate(() => scrollTo(0, 0));
-  await keyboard.keyboard.press("Tab");
-  assert.equal(
-    await keyboard.locator(":focus").getAttribute("href"),
-    "mailto:jay.yc.chen@gmail.com",
-  );
-  await keyboard.keyboard.press("Tab");
-  assert.equal(
-    await keyboard.locator(":focus").getAttribute("href"),
-    "#portfolio",
-  );
-  await keyboard.keyboard.press("Enter");
-  await keyboard.waitForURL((u) => u.hash === "#portfolio");
-  for (const p of catalog) {
-    await keyboard.keyboard.press("Tab");
-    assert.equal(
-      await keyboard.locator(":focus").getAttribute("href"),
-      p.destination.url,
-    );
-    assert.equal(
-      await keyboard
-        .locator(":focus")
-        .evaluate((e) => getComputedStyle(e).outlineStyle),
-      "solid",
-    );
-  }
-  await keyboard.screenshot({ path: path.join(out, "keyboard-focus.png") });
-  result.behavior.push({ type: "keyboard", pageDownAndCueAndOrder: true });
-  await keyboard.close();
-  const tc = await browser.newContext({
-      hasTouch: true,
-      viewport: { width: 390, height: 844 },
+  const blocked = await browser.newPage();
+  await blocked.addInitScript(() =>
+    Object.defineProperty(window, "localStorage", {
+      get() {
+        throw new Error("Storage disabled");
+      },
     }),
-    touch = await tc.newPage();
-  await touch.goto("http://127.0.0.1:4173/");
-  await ready(touch);
-  const cdp = await tc.newCDPSession(touch);
-  await cdp.send("Input.dispatchTouchEvent", {
-    type: "touchStart",
-    touchPoints: [{ x: 195, y: 700 }],
-  });
-  for (let y = 670; y >= 190; y -= 30)
-    await cdp.send("Input.dispatchTouchEvent", {
-      type: "touchMove",
-      touchPoints: [{ x: 195, y }],
-    });
-  await cdp.send("Input.dispatchTouchEvent", {
-    type: "touchEnd",
-    touchPoints: [],
-  });
-  await touch.waitForFunction(() => scrollY > 200);
-  assert.equal(new URL(touch.url()).hash, "");
-  result.behavior.push({ type: "touch", naturalSwipe: true });
-  await tc.close();
-  const missing = await context.newPage();
-  await missing.route("**/images/*.webp", (r) => r.abort());
-  await missing.goto("http://127.0.0.1:4173/games/");
-  await missing.waitForSelector(".work-media.is-fallback");
-  assert.equal(await missing.locator(".work-title").count(), catalog.length);
-  assert.equal(
-    await missing.locator(".work-media.is-fallback").count(),
-    catalog.length,
   );
+  await blocked.goto(galleryURL);
+  await blocked.getByRole("button", { name: "Switch to light theme" }).click();
   assert.equal(
-    await missing.locator(".thumb-fallback").first().innerText(),
-    "RC",
+    await blocked.locator("html").getAttribute("data-theme"),
+    "light",
   );
-  result.behavior.push({ type: "missing-art", designedFallbackAndLinks: true });
-  await missing.close();
-  const pause = await context.newPage();
-  await pause.goto("http://127.0.0.1:4173/");
-  await ready(pause);
-  await pause.locator("#portfolio").scrollIntoViewIfNeeded();
-  await pause.waitForFunction(
-    () => document.querySelector(".daylight").dataset.paused === "true",
+  result.behavior.push("Blocked storage leaves theme switch usable");
+  await blocked.close();
+  const failed = await browser.newPage();
+  await failed.route(
+    "**/assets/screenshots/games/republic-of-chickens.*",
+    (route) => route.abort(),
+  );
+  await failed.goto(galleryURL);
+  await failed.waitForFunction(() =>
+    document
+      .querySelector('[data-project="republic-of-chickens"] .work-media')
+      .classList.contains("is-fallback"),
   );
   assert(
-    await pause.evaluate(() =>
-      document.getAnimations().every((a) => a.playState === "paused"),
-    ),
+    await failed
+      .locator('[data-project="republic-of-chickens"] .launch')
+      .isVisible(),
   );
-  await pause.evaluate(() => scrollTo(0, 0));
-  await pause.waitForFunction(
-    () => document.querySelector(".daylight").dataset.paused === "false",
+  result.behavior.push("Failed screenshot retains placeholder and Play link");
+  await failed.close();
+  const coverFailure = await browser.newPage();
+  await coverFailure.route("**/assets/covers/games/**", (route) =>
+    route.abort(),
   );
-  result.behavior.push({ type: "offscreen-motion", pausesAndResumes: true });
-  await pause.close();
-  for (const count of [3, 4, 5, 8, 12])
-    for (const width of widths) {
-      const page = await context.newPage();
-      await page.setViewportSize({ width, height: 844 });
-      await page.goto("http://127.0.0.1:4173/games/");
-      await ready(page);
-      await page.evaluate((count) => {
-        const g = document.querySelector(".gallery");
-        g.replaceChildren();
-        g.classList.toggle("many", count > 4);
-        for (let i = 0; i < count; i++) {
-          const li = document.createElement("li");
-          li.className = "work";
-          const a = document.createElement("a");
-          a.className = "work-link";
-          a.href = "#fixture-" + i;
-          const media = document.createElement("span");
-          media.className = "work-media";
-          const h = document.createElement("h2");
-          h.className = "work-title";
-          h.textContent =
-            "Layout fixture " +
-            i +
-            (i === 2 ? " with a long wrapping title" : "");
-          a.append(media, h);
-          li.append(a);
-          g.append(li);
-        }
-      }, count);
-      result.fixtures.push({ count, width, ...(await geometry(page, count)) });
-      await page.close();
-    }
-  const extra = await context.newPage();
-  await extra.setViewportSize({ width: 844, height: 390 });
-  await extra.goto("http://127.0.0.1:4173/");
-  await ready(extra);
-  await geometry(extra, 4);
-  assert(await extra.locator(".contact").isVisible());
-  result.behavior.push({
-    type: "short-landscape",
-    width: 844,
-    height: 390,
-    noOverflow: true,
+  await coverFailure.goto("http://127.0.0.1:4176/");
+  await coverFailure.waitForFunction(() => {
+    const image = document.querySelector(
+      '[data-project="republic-of-chickens"] img',
+    );
+    return (
+      image.src.includes("/screenshots/") &&
+      image.complete &&
+      image.naturalWidth > 0
+    );
   });
-  await extra.goto("http://127.0.0.1:4173/missing-route/");
-  assert.equal(await extra.locator("h1").innerText(), "Page not found");
-  await extra.close();
-  for (const route of ["/", "/games/"])
-    for (const width of [320, 390]) {
-      const page = await context.newPage();
-      await page.setViewportSize({ width, height: 844 });
-      await page.goto("http://127.0.0.1:4173" + route);
-      await ready(page);
-      await page.evaluate(
-        () => (document.documentElement.style.fontSize = "200%"),
-      );
-      await geometry(page, catalog.length);
-      if (route === "/") {
-        const h = await page.locator("h1").boundingBox(),
-          mail = await page.locator(".contact").boundingBox();
-        assert(
-          h.x >= 15 && h.x + h.width <= width - 15 && h.y + h.height < mail.y,
-        );
-      }
-      result.behavior.push({
-        type: "text-resize-200-percent",
-        route,
-        width,
-        reflow: true,
-      });
-      await page.close();
-    }
-  const high = await context.newPage();
-  await high.emulateMedia({ forcedColors: "active" });
-  await high.goto("http://127.0.0.1:4173/");
-  await ready(high);
   assert.equal(
-    await high
-      .locator(".window-shadow")
-      .evaluate((e) => getComputedStyle(e).display),
-    "none",
+    await coverFailure
+      .locator('[data-project="republic-of-chickens"] img')
+      .getAttribute("alt"),
+    catalog.find((p) => p.id === "republic-of-chickens").thumbnail.alt,
   );
-  assert.equal(await high.locator("h1").innerText(), "Possibility");
-  result.behavior.push({
-    type: "forced-colors",
-    decorativeLightSuppressed: true,
+  result.behavior.push(
+    "Runtime custom-cover failure restores authentic screenshot and its alt text",
+  );
+  await coverFailure.close();
+  const allFailure = await browser.newPage();
+  await allFailure.route("**/assets/covers/games/**", (route) => route.abort());
+  await allFailure.route("**/assets/screenshots/games/**", (route) =>
+    route.abort(),
+  );
+  await allFailure.goto("http://127.0.0.1:4176/");
+  await allFailure.waitForFunction(() =>
+    document
+      .querySelector('[data-project="republic-of-chickens"] .work-media')
+      .classList.contains("is-fallback"),
+  );
+  assert(
+    await allFailure
+      .locator('[data-project="republic-of-chickens"] .launch')
+      .isVisible(),
+  );
+  result.behavior.push(
+    "Runtime cover and screenshot failure retains a neutral placeholder and launch action",
+  );
+  await allFailure.close();
+  const fixture = await browser.newPage({
+    viewport: { width: 390, height: 844 },
   });
-  await high.close();
-  result.summary = {
-    routes: result.routes.length,
-    behavior: result.behavior.length,
-    fixtures: result.fixtures.length,
-    axeScans: result.accessibility.length,
-    contrastCases: result.contrast.length,
-    visualComparisons: result.baseline.length,
-    failures: 0,
-  };
+  for (const route of [
+    "/apps/",
+    "/blog/",
+    "/what-now/",
+    "/blog/publishing-fixture/",
+    "/what-now/publishing-fixture/",
+  ]) {
+    await fixture.goto("http://127.0.0.1:4176" + route);
+    assert.equal(
+      await fixture.locator('nav[aria-label="Collections"] a').count(),
+      4,
+    );
+    assert.equal(
+      await fixture.evaluate(
+        () => document.documentElement.scrollWidth > innerWidth,
+      ),
+      false,
+    );
+    await axe(fixture, `fixture-${route}`);
+    result.fixtures.push(route);
+  }
+  await capture(fixture, "what-now-fixture-dark");
+  await theme(fixture, "light");
+  await capture(fixture, "what-now-fixture-light");
+  const routeText = await fixture.locator(".prose").innerText();
+  assert(routeText.includes("<script>"));
+  assert.equal(await fixture.locator(".prose script").count(), 0);
+  await fixture.close();
+  assert.deepEqual(errors, []);
+  result.passed = true;
+  console.log(
+    JSON.stringify({
+      layouts: result.layouts.length,
+      filterCases: result.filters.length,
+      axeScans: result.accessibility.length,
+      behavior: result.behavior.length,
+      fixtures: result.fixtures.length,
+      passed: true,
+    }),
+  );
 })()
   .catch((e) => {
     result.failure = e.stack;
+    console.error(e);
     process.exitCode = 1;
   })
   .finally(async () => {
     if (browser) await browser.close();
-    if (server) server.kill("SIGTERM");
-    if (baseline) baseline.kill("SIGTERM");
+    for (const s of servers) s.kill();
     fs.writeFileSync(
       path.join(out, "results.json"),
       JSON.stringify(result, null, 2) + "\n",
-    );
-    console.log(
-      JSON.stringify(
-        { summary: result.summary, failure: result.failure },
-        null,
-        2,
-      ),
     );
   });
