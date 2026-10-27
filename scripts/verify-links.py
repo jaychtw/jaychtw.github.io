@@ -47,10 +47,13 @@ for item in json.loads((root/'content/projects.json').read_text()):
     results['projects'].append(game)
     print(item['title'],status,len(game['assets']),'runtime assets passed')
 status, final, content, mime = fetch('https://jaychtw.github.io/')
-results['existingRoot']={'url':final,'status':status,'sha256':sha256(content).hexdigest(),'placeholderPresent':b'Portal of jaychtw' in content,'scope':'Existing JC placeholder; not modified.'}
-status, final, content, mime = fetch('https://api.github.com/repos/jaychtw/jaychtw.github.io/pages')
-config = json.loads(content)
-results['pagesSettings']={key:config.get(key) for key in ['status','cname','html_url','build_type','source','https_enforced']}
+results['existingRoot']={'url':final,'status':status,'sha256':sha256(content).hexdigest(),'placeholderPresent':b'Portal of jaychtw' in content,'scope':'Current public root, read only; this verifier does not deploy or modify it.'}
+# Host-settings inspection is an operator preflight, not a public-link check.
+# Public Pages configuration APIs can require authentication; CI needs no extra token.
+if '--inspect-host' in __import__('sys').argv:
+    status, final, content, mime = fetch('https://api.github.com/repos/jaychtw/jaychtw.github.io/pages')
+    config = json.loads(content)
+    results['pagesSettings']={key:config.get(key) for key in ['status','cname','html_url','build_type','source','https_enforced']}
 (evidence/'live-links.json').write_text(json.dumps(results,indent=2)+'\n')
 
 assert results['projects'], 'No verified published work: release is incomplete'

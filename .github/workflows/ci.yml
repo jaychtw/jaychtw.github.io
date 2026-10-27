@@ -24,7 +24,24 @@ jobs:
           node-version: "24"
           cache: npm
       - run: npm ci --no-audit --no-fund
-      - run: npm run release:check
+      - name: Validate and preserve the original exit status
+        run: |
+          mkdir -p .artifacts
+          set -o pipefail
+          npm run release:check 2>&1 | tee .artifacts/validation.log
+      - name: Expose actionable failure diagnostics
+        if: failure()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          result=Path('.artifacts/browser/results.json')
+          message=json.loads(result.read_text()).get('failure') if result.exists() else None
+          log=Path('.artifacts/validation.log')
+          message=message or (log.read_text()[-6000:] if log.exists() else 'Validation failed before the runner produced a log.')
+          escaped=message.replace('%','%25').replace('\r','%0D').replace('\n','%0A')
+          print('::error title=Release validation diagnostic::'+escaped)
+          PY
       - name: Save reviewed release and evidence (no deployment)
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
