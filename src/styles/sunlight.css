@@ -1,0 +1,174 @@
+.landing-scene {
+  position: relative;
+  height: 100svh;
+  overflow: clip;
+  isolation: isolate;
+  background: #ece5d6;
+}
+.daylight {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: linear-gradient(
+    116deg,
+    #d8d1c2 0%,
+    #eee6d6 39%,
+    #fbf2dc 77%,
+    #e9dfc9 100%
+  );
+}
+.illumination {
+  position: absolute;
+  inset: -14%;
+  background: radial-gradient(
+    ellipse at 76% 39%,
+    #fff6da 0%,
+    #fff3d5b8 24%,
+    transparent 61%
+  );
+  animation: daylight-breathe var(--motion-brightness) ease-in-out infinite;
+}
+.window-shadow {
+  position: absolute;
+  left: -12%;
+  top: -22%;
+  width: 124%;
+  height: 144%;
+  overflow: visible;
+  filter: blur(4px);
+  transform: rotate(-20deg) translate(-8px, -5px);
+  animation: window-drift var(--motion-drift) ease-in-out infinite alternate;
+}
+.glass-edge {
+  fill: #66563e;
+}
+.vertical-edge {
+  opacity: 0.19;
+  animation: imperfect-vertical var(--motion-vertical) ease-in-out infinite
+    alternate;
+}
+.horizontal-edge {
+  opacity: 0.16;
+  animation: imperfect-horizontal var(--motion-horizontal) ease-in-out infinite
+    alternate;
+}
+.glass-light {
+  position: absolute;
+  inset: -18%;
+  background:
+    radial-gradient(ellipse at 82% 70%, #fff9e997, transparent 45%),
+    linear-gradient(120deg, transparent 20%, #fff9e34d 50%, transparent 77%);
+  opacity: 0.55;
+  animation: glass-shift var(--motion-glass) ease-in-out infinite alternate;
+}
+.scene-content {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+}
+.scene-content h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: clamp(2.7rem, 9.2vw, 8.5rem);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: 0.045em;
+  white-space: normal;
+  inline-size: max-content;
+  max-inline-size: calc(100% - 32px);
+  overflow-wrap: anywhere;
+}
+.contact {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + max(clamp(65px, 8vw, 118px), 3rem));
+  transform: translateX(-50%);
+  font-size: 0.875rem;
+  letter-spacing: 0.045em;
+  white-space: normal;
+  inline-size: max-content;
+  max-inline-size: calc(100% - 32px);
+  overflow-wrap: anywhere;
+  padding: 12px 6px;
+}
+.scroll-cue {
+  position: absolute;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+}
+.contact:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+@keyframes window-drift {
+  from {
+    transform: rotate(-20deg) translate(-8px, -5px);
+  }
+  to {
+    transform: rotate(-19.5deg) translate(12px, 8px);
+  }
+}
+@keyframes daylight-breathe {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  22% {
+    opacity: 0.8;
+  }
+  49% {
+    opacity: 0.66;
+  }
+  78% {
+    opacity: 0.84;
+  }
+}
+@keyframes glass-shift {
+  from {
+    transform: translate(-1%, -1%);
+    opacity: 0.48;
+  }
+  to {
+    transform: translate(1%, 1%);
+    opacity: 0.62;
+  }
+}
+/* Broad, gently changing Bezier edges: imperfect glass, with no noise/ripple field.
+   The SVG d attributes remain a still fallback if CSS path morphing is unsupported. */
+@keyframes imperfect-vertical {
+  from {
+    d: path(
+      "M580 -180 C575 170 594 350 584 480 C575 670 600 890 580 1180 L646 1180 C662 890 640 670 650 480 C660 350 641 170 648 -180 Z"
+    );
+  }
+  to {
+    d: path(
+      "M584 -180 C590 170 581 350 590 480 C598 670 583 890 588 1180 L655 1180 C644 890 660 670 657 480 C645 350 658 170 652 -180 Z"
+    );
+  }
+}
+@keyframes imperfect-horizontal {
+  from {
+    d: path(
+      "M-200 431 C230 420 420 444 710 431 C990 418 1220 441 1640 430 L1640 484 C1220 495 990 472 710 485 C420 498 230 474 -200 485 Z"
+    );
+  }
+  to {
+    d: path(
+      "M-200 438 C230 446 420 426 710 437 C990 448 1220 429 1640 438 L1640 490 C1220 482 990 499 710 490 C420 481 230 500 -200 492 Z"
+    );
+  }
+}
+
+.daylight[data-paused="true"] * {
+  animation-play-state: paused;
+}

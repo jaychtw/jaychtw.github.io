@@ -1,0 +1,32 @@
+{
+  "name": "possibility",
+  "version": "1.0.0-rc.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "node scripts/build.ts",
+    "preview": "python3 scripts/serve.py",
+    "dev": "npm run build && npm run preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/client tests/*.cjs scripts/*.cjs && npm run format:check",
+    "test": "node --test tests/catalog.test.ts",
+    "test:browser": "npm run build && node tests/browser.cjs",
+    "verify:links": "python3 scripts/verify-links.py",
+    "check": "npm run typecheck && npm run lint && npm test && npm run test:browser",
+    "release:check": "npm run check && npm run verify:links && node scripts/package.ts",
+    "format": "prettier --write --ignore-unknown src scripts tests/*.ts tests/*.cjs content .github/workflows/*.yml package.json tsconfig.json eslint.config.js",
+    "format:check": "prettier --check --ignore-unknown src scripts tests/*.ts tests/*.cjs content .github/workflows/*.yml package.json tsconfig.json eslint.config.js"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "axe-core": "4.14.0",
+    "eslint": "10.13.0",
+    "playwright": "1.64.1",
+    "pngjs": "7.0.0",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,38 @@
+export default [
+  {
+    files: ["src/client/**/*.js", "tests/**/*.cjs", "scripts/**/*.cjs"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+      globals: {
+        document: "readonly",
+        window: "readonly",
+        IntersectionObserver: "readonly",
+        require: "readonly",
+        process: "readonly",
+        __dirname: "readonly",
+        Buffer: "readonly",
+        console: "readonly",
+        setTimeout: "readonly",
+        fetch: "readonly",
+        URL: "readonly",
+        axe: "readonly",
+        scrollTo: "readonly",
+        scrollY: "readonly",
+        getComputedStyle: "readonly",
+        innerWidth: "readonly",
+        innerHeight: "readonly",
+      },
+    },
+    rules: {
+      "no-undef": "error",
+      "no-eval": "error",
+      "no-implied-eval": "error",
+      "no-unreachable": "error",
+      "no-constant-condition": "error",
+      "no-debugger": "error",
+      "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+      eqeqeq: "error",
+    },
+  },
+];

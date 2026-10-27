@@ -1,0 +1,34 @@
+[
+  {
+    "id": "republic-of-chickens",
+    "url": "https://jaychtw.github.io/reppublic-of-chickens/",
+    "finalUrl": "https://jaychtw.github.io/reppublic-of-chickens/",
+    "status": 200,
+    "checkedAt": "2026-10-27T07:07:14.161365+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "wonderlands",
+    "url": "https://jaychtw.github.io/wonderlands/",
+    "finalUrl": "https://jaychtw.github.io/wonderlands/",
+    "status": 200,
+    "checkedAt": "2026-10-27T07:07:14.161365+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "squirrel-control",
+    "url": "https://jaychtw.github.io/squirrel-control/",
+    "finalUrl": "https://jaychtw.github.io/squirrel-control/",
+    "status": 200,
+    "checkedAt": "2026-10-27T07:07:14.161365+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  },
+  {
+    "id": "the-last-lantern",
+    "url": "https://jaychtw.github.io/the-last-lantern/",
+    "finalUrl": "https://jaychtw.github.io/the-last-lantern/",
+    "status": 200,
+    "checkedAt": "2026-10-27T07:07:14.161365+00:00",
+    "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
+  }
+]

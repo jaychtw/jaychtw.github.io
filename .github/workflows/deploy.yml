@@ -1,0 +1,89 @@
+name: Publish approved Possibility release
+# Only an explicitly authorized human dispatch may publish. Pushes never deploy.
+on:
+  workflow_dispatch:
+    inputs:
+      release_commit:
+        description: Exact approved full commit SHA on main
+        required: true
+        type: string
+      authorization:
+        description: After explicit creator authorization, type PUBLISH POSSIBILITY
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: possibility-pages
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      CHROMIUM_PATH: /usr/bin/google-chrome
+      RELEASE_COMMIT: ${{ inputs.release_commit }}
+      AUTHORIZATION: ${{ inputs.authorization }}
+    steps:
+      - name: Require deliberate authorization and a full SHA
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$AUTHORIZATION" == 'PUBLISH POSSIBILITY' ]]
+          [[ "$RELEASE_COMMIT" =~ ^[0-9a-f]{40}$ ]]
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ inputs.release_commit }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Confirm the reviewed commit is on main
+        run: git merge-base --is-ancestor "$RELEASE_COMMIT" origin/main
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run release:check
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  publish:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      CHROMIUM_PATH: /usr/bin/google-chrome
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ inputs.release_commit }}
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build
+      - uses: actions/deploy-pages@v4
+        id: deployment
+      - name: Verify exact public files and browser behavior
+        run: |
+          python3 scripts/verify-published.py
+          node scripts/smoke-site.cjs
+          npm run verify:links
+      - name: Save public verification evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: possibility-public-verification-${{ inputs.release_commit }}
+          path: .artifacts/
+          include-hidden-files: true
+          retention-days: 30

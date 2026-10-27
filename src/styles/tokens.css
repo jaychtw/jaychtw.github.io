@@ -1,0 +1,9 @@
+/* Approved design v1.0. Change a component/token intentionally; the baseline is
+   an acceptance reference, not a permanent creative freeze. */
+:root {
+  --motion-vertical: 18s;
+  --motion-horizontal: 26s;
+  --motion-drift: 44s;
+  --motion-brightness: 31s;
+  --motion-glass: 38s;
+}

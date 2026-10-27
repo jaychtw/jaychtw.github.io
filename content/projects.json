@@ -1,0 +1,122 @@
+[
+  {
+    "id": "republic-of-chickens",
+    "title": "Republic of Chickens",
+    "category": "games",
+    "summary": "Care for a small republic and meet its rather opinionated chickens.",
+    "status": "published",
+    "featured": true,
+    "order": 10,
+    "publishedAt": null,
+    "destination": {
+      "action": "play",
+      "url": "https://jaychtw.github.io/reppublic-of-chickens/"
+    },
+    "repositoryUrl": "https://github.com/jaychtw/reppublic-of-chickens",
+    "languages": ["en", "zh-TW"],
+    "controls": "Use the on-screen hall entrances and controls. Keyboard users can tab between controls.",
+    "limitations": "The game is visual and progress is stored in this browser.",
+    "approval": {
+      "url": "https://github.com/jaychtw/reppublic-of-chickens/blob/f5a2511ea87ba03c461d7e49222c25e1459a02f3/docs/DEPLOYMENT.md",
+      "note": "Creator acceptance and public release recorded in the linked release report."
+    },
+    "release": {
+      "version": "1.0",
+      "commit": "4ad62e03ef16242b995105e2e5c0c7caf63b9d73"
+    },
+    "thumbnail": {
+      "path": "/assets/possibility/images/republic-of-chickens.webp",
+      "alt": "A sunlit village square populated by chickens."
+    }
+  },
+  {
+    "id": "wonderlands",
+    "title": "Wonderlands",
+    "category": "games",
+    "summary": "Shape an ocean planet, connect rivers, and discover a world of your own.",
+    "status": "published",
+    "featured": true,
+    "order": 20,
+    "publishedAt": null,
+    "destination": {
+      "action": "play",
+      "url": "https://jaychtw.github.io/wonderlands/"
+    },
+    "repositoryUrl": "https://github.com/jaychtw/wonderlands",
+    "languages": ["en", "zh-TW"],
+    "controls": "Choose a terrain tool and paint. Use the game’s zoom and pan controls to inspect the world.",
+    "limitations": "The game is visual. Saves are browser-local; local-server saves do not transfer automatically to the public site.",
+    "approval": {
+      "url": "https://github.com/jaychtw/wonderlands/blob/33f262a5be41d118d4ebd90ca955fbb2eb2ccb25/docs/PAGES-RELEASE.md",
+      "note": "Creator acceptance and public release recorded in the linked release report."
+    },
+    "release": {
+      "version": "1.0.0",
+      "commit": null
+    },
+    "thumbnail": {
+      "path": "/assets/possibility/images/wonderlands.webp",
+      "alt": "An ocean planet with a painted island, mountains and a river."
+    }
+  },
+  {
+    "id": "squirrel-control",
+    "title": "Squirrel Control",
+    "category": "games",
+    "summary": "Find ten squirrels in Miss Bunny’s increasingly chaotic cottage.",
+    "status": "published",
+    "featured": true,
+    "order": 30,
+    "publishedAt": "2026-10-25",
+    "destination": {
+      "action": "play",
+      "url": "https://jaychtw.github.io/squirrel-control/"
+    },
+    "repositoryUrl": "https://github.com/jaychtw/squirrel-control",
+    "languages": ["en", "zh-TW"],
+    "controls": "Select visible squirrels; use the optical magnifier for a closer look. The game supplies pause and comfort settings.",
+    "limitations": "Finding small illustrated characters is a visual task. Progress and preferences stay in this browser.",
+    "approval": {
+      "url": "https://github.com/jaychtw/squirrel-control/blob/4ce1d4a5997ef300a57cc3cc3a0d5ba8816f8660/docs/DEPLOYMENT.md",
+      "note": "Creator acceptance and public release recorded in the linked release report."
+    },
+    "release": {
+      "version": "1.0.0-rc.1",
+      "commit": "b7ca1dffd55eff650979d5ed828f78b37f4dfd31"
+    },
+    "thumbnail": {
+      "path": "/assets/possibility/images/squirrel-control.webp",
+      "alt": "Miss Bunny beside a sofa and squirrels hiding in her cottage."
+    }
+  },
+  {
+    "id": "the-last-lantern",
+    "title": "The Last Lantern",
+    "category": "games",
+    "summary": "Explore Hearthmere and the surrounding wilderness in a single-hero fantasy adventure.",
+    "status": "published",
+    "featured": true,
+    "order": 40,
+    "publishedAt": null,
+    "destination": {
+      "action": "play",
+      "url": "https://jaychtw.github.io/the-last-lantern/"
+    },
+    "repositoryUrl": "https://github.com/jaychtw/the-last-lantern",
+    "languages": ["en", "zh-TW"],
+    "controls": "Move with arrow keys or WASD and use the game’s Interact and menu controls. Touch controls are provided by the game.",
+    "limitations": "The game is visual. Saves are local to the browser; local-play progress does not automatically transfer to the public site.",
+    "approval": {
+      "url": "https://github.com/jaychtw/the-last-lantern/blob/99dcad1f29c7a6d5e389ac274046eb8d6e24a5a6/docs/RELEASE-1.0.0.md",
+      "note": "Creator acceptance and public release recorded in the linked release report."
+    },
+    "release": {
+      "version": "1.0.0",
+      "commit": null
+    },
+    "thumbnail": {
+      "path": "/assets/possibility/images/the-last-lantern.webp",
+      "alt": "Rowan among timber cottages and trees in Hearthmere."
+    }
+  }
+]

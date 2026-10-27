@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-10-27T07:07:14.161365+00:00",
+  "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run.",
+  "projects": [
+    {
+      "id": "republic-of-chickens",
+      "url": "https://jaychtw.github.io/reppublic-of-chickens/",
+      "status": 200,
+      "htmlSha256": "a3e48c238bfff65602cc4665048d8dc7818f9234178edab1d2a2fe1cf1df1669",
+      "assets": [
+        {
+          "url": "https://jaychtw.github.io/reppublic-of-chickens/assets/index-BqxP_84i.css",
+          "status": 200,
+          "bytes": 157528,
+          "sha256": "ec2938f12cd797f3203e5048d4926e18cbaa0a318e55f5f9137eadf0719700c4"
+        },
+        {
+          "url": "https://jaychtw.github.io/reppublic-of-chickens/assets/index-Bz9Y8Vwu.js",
+          "status": 200,
+          "bytes": 257898,
+          "sha256": "3e4fe13dd0a922b73525165f3a77979e9a92d67a8430c3f767a46a40f210961c"
+        }
+      ]
+    },
+    {
+      "id": "wonderlands",
+      "url": "https://jaychtw.github.io/wonderlands/",
+      "status": 200,
+      "htmlSha256": "a109e6826a8bae6799d1edee37b619fdb97c2f5dc8fa7d70cd48d97aac9cf780",
+      "assets": [
+        {
+          "url": "https://jaychtw.github.io/wonderlands/src/app.js",
+          "status": 200,
+          "bytes": 23737,
+          "sha256": "558e9ee7d1666e095cf721c2fabd0fe1ba48f6d8d70cd5c4c5ab3690a7369709"
+        },
+        {
+          "url": "https://jaychtw.github.io/wonderlands/style.css",
+          "status": 200,
+          "bytes": 21104,
+          "sha256": "775825fe4c44a689f019f03f699ff54c23698d634c8a0b4dc26afee419010591"
+        }
+      ]
+    },
+    {
+      "id": "squirrel-control",
+      "url": "https://jaychtw.github.io/squirrel-control/",
+      "status": 200,
+      "htmlSha256": "a60fec14d1d6ec143eda3e090db6d6494f2bc6c6175a7aeaa7ef9aa5c6ce38cf",
+      "assets": [
+        {
+          "url": "https://jaychtw.github.io/squirrel-control/assets/index-BqoC0M3G.js",
+          "status": 200,
+          "bytes": 58739,
+          "sha256": "55403aec683d0bc3e56d8eb356594039e4f242b10f6baff726e492c0b9121871"
+        },
+        {
+          "url": "https://jaychtw.github.io/squirrel-control/assets/index-C1sReZpG.css",
+          "status": 200,
+          "bytes": 29603,
+          "sha256": "f6eef53e45045935b3e0e613c6fb1493567f5b29483ae3632360c5f9a9479d05"
+        }
+      ],
+      "releaseManifest": {
+        "releaseCommit": "b7ca1dffd55eff650979d5ed828f78b37f4dfd31",
+        "gameSourceCommit": "4c1f7886148626b2c9ff3f59d5fa0bdddee4b3de",
+        "version": "1.0.0-rc.1",
+        "javascript": {
+          "path": "assets/index-BqoC0M3G.js",
+          "sha256": "55403aec683d0bc3e56d8eb356594039e4f242b10f6baff726e492c0b9121871"
+        }
+      },
+      "releaseManifestHashMatched": true
+    },
+    {
+      "id": "the-last-lantern",
+      "url": "https://jaychtw.github.io/the-last-lantern/",
+      "status": 200,
+      "htmlSha256": "634a9a51794eb2be070023866d6758acef1138eef9ef3def921b1a9e78c2b012",
+      "assets": [
+        {
+          "url": "https://jaychtw.github.io/the-last-lantern/assets/index-CkKa9k9b.js",
+          "status": 200,
+          "bytes": 93938,
+          "sha256": "9077ecae54e76bd224bbcbb565310211a76311c77e8db1c3298813173bc9782c"
+        },
+        {
+          "url": "https://jaychtw.github.io/the-last-lantern/assets/index-R7wCqtNX.css",
+          "status": 200,
+          "bytes": 34282,
+          "sha256": "c1ac719e6cf5b0da6357a26ee90aa62198bd81b27bd5d59d841aa1efe5eb5b96"
+        }
+      ]
+    }
+  ],
+  "existingRoot": {
+    "url": "https://jaychtw.github.io/",
+    "status": 200,
+    "sha256": "9aa374f71fa7bb5dbc0fb7d0de9024574a57e8a2d0b6cea0a0562390dde3b96a",
+    "placeholderPresent": true,
+    "scope": "Existing JC placeholder; not modified."
+  },
+  "pagesSettings": {
+    "status": "built",
+    "cname": null,
+    "html_url": "https://jaychtw.github.io/",
+    "build_type": "workflow",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "https_enforced": true
+  }
+}

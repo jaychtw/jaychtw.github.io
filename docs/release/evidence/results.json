@@ -1,0 +1,689 @@
+{
+  "scope": "Production build in local Chromium; not a deployed site, device certification, or fresh live-game browser testing.",
+  "routes": [
+    {
+      "route": "/",
+      "width": 320,
+      "count": 4,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ],
+      "noExternalRuntimeRequests": true,
+      "reload": true
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "count": 4,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ],
+      "noExternalRuntimeRequests": true,
+      "reload": true
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "count": 4,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ],
+      "noExternalRuntimeRequests": true,
+      "reload": true
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "count": 4,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ],
+      "noExternalRuntimeRequests": true,
+      "reload": true
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "count": 4,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ],
+      "noExternalRuntimeRequests": true,
+      "reload": true
+    },
+    {
+      "route": "/games/",
+      "width": 320,
+      "count": 4,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ],
+      "noExternalRuntimeRequests": true,
+      "reload": true
+    },
+    {
+      "route": "/games/",
+      "width": 390,
+      "count": 4,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ],
+      "noExternalRuntimeRequests": true,
+      "reload": true
+    },
+    {
+      "route": "/games/",
+      "width": 768,
+      "count": 4,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ],
+      "noExternalRuntimeRequests": true,
+      "reload": true
+    },
+    {
+      "route": "/games/",
+      "width": 1024,
+      "count": 4,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ],
+      "noExternalRuntimeRequests": true,
+      "reload": true
+    },
+    {
+      "route": "/games/",
+      "width": 1440,
+      "count": 4,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ],
+      "noExternalRuntimeRequests": true,
+      "reload": true
+    }
+  ],
+  "accessibility": [
+    {
+      "label": "/390",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    },
+    {
+      "label": "/1440",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    },
+    {
+      "label": "/games/390",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "/games/1440",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "/games/republic-of-chickens/",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "/games/wonderlands/",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "/games/squirrel-control/",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "/games/the-last-lantern/",
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "contrast": [
+    {
+      "width": 320,
+      "minimumSampledRatio": 7.752933270321729,
+      "phases": 13,
+      "seconds": 120,
+      "conservativeAllPhaseRatio": 5.799906680399661,
+      "boundRGB": [
+        179,
+        169,
+        151
+      ]
+    },
+    {
+      "width": 390,
+      "minimumSampledRatio": 7.703410573863728,
+      "phases": 13,
+      "seconds": 120,
+      "conservativeAllPhaseRatio": 5.799906680399661,
+      "boundRGB": [
+        179,
+        169,
+        151
+      ]
+    },
+    {
+      "width": 768,
+      "minimumSampledRatio": 7.614808601363569,
+      "phases": 13,
+      "seconds": 120,
+      "conservativeAllPhaseRatio": 5.799906680399661,
+      "boundRGB": [
+        179,
+        169,
+        151
+      ]
+    },
+    {
+      "width": 1024,
+      "minimumSampledRatio": 7.627898216547996,
+      "phases": 13,
+      "seconds": 120,
+      "conservativeAllPhaseRatio": 5.799906680399661,
+      "boundRGB": [
+        179,
+        169,
+        151
+      ]
+    },
+    {
+      "width": 1440,
+      "minimumSampledRatio": 7.637910179956484,
+      "phases": 13,
+      "seconds": 120,
+      "conservativeAllPhaseRatio": 5.799906680399661,
+      "boundRGB": [
+        179,
+        169,
+        151
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "count": 3,
+      "width": 320,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 3,
+      "width": 390,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 3,
+      "width": 768,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 3,
+      "width": 1024,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 3,
+      "width": 1440,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 4,
+      "width": 320,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 4,
+      "width": 390,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 4,
+      "width": 768,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 4,
+      "width": 1024,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 4,
+      "width": 1440,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 5,
+      "width": 320,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 5,
+      "width": 390,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 5,
+      "width": 768,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 5,
+      "width": 1024,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 5,
+      "width": 1440,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 8,
+      "width": 320,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 8,
+      "width": 390,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 8,
+      "width": 768,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 8,
+      "width": 1024,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 8,
+      "width": 1440,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 12,
+      "width": 320,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 12,
+      "width": 390,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 12,
+      "width": 768,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 12,
+      "width": 1024,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    },
+    {
+      "count": 12,
+      "width": 1440,
+      "square": true,
+      "overlap": false,
+      "overflow": false,
+      "offset": true,
+      "snap": [
+        "none",
+        "none"
+      ]
+    }
+  ],
+  "behavior": [
+    {
+      "type": "project-detail",
+      "route": "/games/republic-of-chickens/",
+      "reload": true
+    },
+    {
+      "type": "project-detail",
+      "route": "/games/wonderlands/",
+      "reload": true
+    },
+    {
+      "type": "project-detail",
+      "route": "/games/squirrel-control/",
+      "reload": true
+    },
+    {
+      "type": "project-detail",
+      "route": "/games/the-last-lantern/",
+      "reload": true
+    },
+    {
+      "type": "no-javascript",
+      "route": "/",
+      "staticContent": true
+    },
+    {
+      "type": "no-javascript",
+      "route": "/games/",
+      "staticContent": true
+    },
+    {
+      "type": "reduced-motion",
+      "width": 390,
+      "stillAndScroll": true
+    },
+    {
+      "type": "reduced-motion",
+      "width": 1440,
+      "stillAndScroll": true
+    },
+    {
+      "type": "keyboard",
+      "pageDownAndCueAndOrder": true
+    },
+    {
+      "type": "touch",
+      "naturalSwipe": true
+    },
+    {
+      "type": "missing-art",
+      "designedFallbackAndLinks": true
+    },
+    {
+      "type": "offscreen-motion",
+      "pausesAndResumes": true
+    },
+    {
+      "type": "short-landscape",
+      "width": 844,
+      "height": 390,
+      "noOverflow": true
+    },
+    {
+      "type": "text-resize-200-percent",
+      "route": "/",
+      "width": 320,
+      "reflow": true
+    },
+    {
+      "type": "text-resize-200-percent",
+      "route": "/",
+      "width": 390,
+      "reflow": true
+    },
+    {
+      "type": "text-resize-200-percent",
+      "route": "/games/",
+      "width": 320,
+      "reflow": true
+    },
+    {
+      "type": "text-resize-200-percent",
+      "route": "/games/",
+      "width": 390,
+      "reflow": true
+    },
+    {
+      "type": "forced-colors",
+      "decorativeLightSuppressed": true
+    }
+  ],
+  "baseline": [
+    {
+      "width": 390,
+      "pixelsOverTolerance": 0,
+      "maxChannelDifference": 0,
+      "approvedBaseline": "f99940ec0de18544299f5095890042584b1b1bd7"
+    },
+    {
+      "width": 1440,
+      "pixelsOverTolerance": 0,
+      "maxChannelDifference": 0,
+      "approvedBaseline": "f99940ec0de18544299f5095890042584b1b1bd7"
+    }
+  ],
+  "browser": "154.0.8037.57",
+  "playwright": "1.64.1",
+  "axe": "4.14.0",
+  "summary": {
+    "routes": 10,
+    "behavior": 18,
+    "fixtures": 25,
+    "axeScans": 8,
+    "contrastCases": 5,
+    "visualComparisons": 2,
+    "failures": 0
+  }
+}
