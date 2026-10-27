@@ -6,7 +6,7 @@ A personal creative publishing platform. **Platform v1.0 is a development releas
 
 [Platform release report, inventory, screenshots and limits](docs/platform-v1/README.md) · [Routine publishing](docs/MAINTENANCE.md) · [Deployment gate](docs/DEPLOYMENT.md)
 
-[Focused visual review](docs/cover-poc-v1/README.md): compact-filter comparisons are available; the supplied cover POC awaits its original downloadable image file.
+[Focused visual review](docs/cover-poc-v1/README.md): the supplied Republic of Chickens cover POC is integrated for review, with both-theme desktop/tablet/mobile captures and preserved filter comparisons. Final artwork approval and public deployment remain separate.
 
 ```sh
 # Node 24, Python 3 and a supported Chromium/Chrome for browser checks

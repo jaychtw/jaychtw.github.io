@@ -1,0 +1,512 @@
+{
+  "scope": "Supplied cover POC in actual local gallery, not creative approval or public deployment.",
+  "baseline": "f0d0a70f9e219d7abc47ac1040a6bdc038695aac",
+  "coverSourceSha256": "f66ff14d6313f6526a94093dd316664a0c1500d12394f60f1ee8e3b3ebb72341",
+  "sourceCommit": "6307495799fc7a6184cacb68d36ea490e88ad88e",
+  "sourceDirty": true,
+  "deviceScaleFactor": 1,
+  "cases": [
+    {
+      "device": "desktop",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "mode": "before",
+      "filterCount": 20,
+      "filterRows": 2,
+      "filterHeight": 92,
+      "minTargetHeight": 42,
+      "firstCoverTop": 272,
+      "card": {
+        "width": 378.65625,
+        "height": 380.890625
+      },
+      "media": {
+        "width": 378.65625,
+        "height": 212.984375
+      },
+      "columns": 3,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 379,
+        "naturalHeight": 213,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "desktop",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "mode": "after",
+      "filterCount": 20,
+      "filterRows": 2,
+      "filterHeight": 78,
+      "minTargetHeight": 36,
+      "firstCoverTop": 248,
+      "card": {
+        "width": 378.65625,
+        "height": 380.890625
+      },
+      "media": {
+        "width": 378.65625,
+        "height": 212.984375
+      },
+      "columns": 3,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 379,
+        "naturalHeight": 213,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "desktop",
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "mode": "before",
+      "filterCount": 20,
+      "filterRows": 2,
+      "filterHeight": 92,
+      "minTargetHeight": 42,
+      "firstCoverTop": 272,
+      "card": {
+        "width": 378.65625,
+        "height": 380.890625
+      },
+      "media": {
+        "width": 378.65625,
+        "height": 212.984375
+      },
+      "columns": 3,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 379,
+        "naturalHeight": 213,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "desktop",
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "mode": "after",
+      "filterCount": 20,
+      "filterRows": 2,
+      "filterHeight": 78,
+      "minTargetHeight": 36,
+      "firstCoverTop": 248,
+      "card": {
+        "width": 378.65625,
+        "height": 380.890625
+      },
+      "media": {
+        "width": 378.65625,
+        "height": 212.984375
+      },
+      "columns": 3,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 379,
+        "naturalHeight": 213,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "tablet",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "mode": "before",
+      "filterCount": 20,
+      "filterRows": 3,
+      "filterHeight": 142,
+      "minTargetHeight": 42,
+      "firstCoverTop": 298,
+      "card": {
+        "width": 348,
+        "height": 363.65625
+      },
+      "media": {
+        "width": 348,
+        "height": 195.75
+      },
+      "columns": 2,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 347,
+        "naturalHeight": 195,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "tablet",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "mode": "after",
+      "filterCount": 20,
+      "filterRows": 3,
+      "filterHeight": 120,
+      "minTargetHeight": 36,
+      "firstCoverTop": 276,
+      "card": {
+        "width": 348,
+        "height": 363.65625
+      },
+      "media": {
+        "width": 348,
+        "height": 195.75
+      },
+      "columns": 2,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 347,
+        "naturalHeight": 195,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "tablet",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "mode": "before",
+      "filterCount": 20,
+      "filterRows": 3,
+      "filterHeight": 142,
+      "minTargetHeight": 42,
+      "firstCoverTop": 298,
+      "card": {
+        "width": 348,
+        "height": 363.65625
+      },
+      "media": {
+        "width": 348,
+        "height": 195.75
+      },
+      "columns": 2,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 347,
+        "naturalHeight": 195,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "tablet",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "mode": "after",
+      "filterCount": 20,
+      "filterRows": 3,
+      "filterHeight": 120,
+      "minTargetHeight": 36,
+      "firstCoverTop": 276,
+      "card": {
+        "width": 348,
+        "height": 363.65625
+      },
+      "media": {
+        "width": 348,
+        "height": 195.75
+      },
+      "columns": 2,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 347,
+        "naturalHeight": 195,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "mode": "before",
+      "filterCount": 20,
+      "filterRows": 6,
+      "filterHeight": 287,
+      "minTargetHeight": 42,
+      "firstCoverTop": 425,
+      "card": {
+        "width": 350,
+        "height": 364.78125
+      },
+      "media": {
+        "width": 350,
+        "height": 196.875
+      },
+      "columns": 1,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 349,
+        "naturalHeight": 196,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "mode": "after",
+      "filterCount": 20,
+      "filterRows": 5,
+      "filterHeight": 204,
+      "minTargetHeight": 36,
+      "firstCoverTop": 338,
+      "card": {
+        "width": 350,
+        "height": 364.78125
+      },
+      "media": {
+        "width": 350,
+        "height": 196.875
+      },
+      "columns": 1,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 349,
+        "naturalHeight": 196,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "mode": "before",
+      "filterCount": 20,
+      "filterRows": 6,
+      "filterHeight": 287,
+      "minTargetHeight": 42,
+      "firstCoverTop": 425,
+      "card": {
+        "width": 350,
+        "height": 364.78125
+      },
+      "media": {
+        "width": 350,
+        "height": 196.875
+      },
+      "columns": 1,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 349,
+        "naturalHeight": 196,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "mode": "after",
+      "filterCount": 20,
+      "filterRows": 5,
+      "filterHeight": 204,
+      "minTargetHeight": 36,
+      "firstCoverTop": 338,
+      "card": {
+        "width": 350,
+        "height": 364.78125
+      },
+      "media": {
+        "width": 350,
+        "height": 196.875
+      },
+      "columns": 1,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 349,
+        "naturalHeight": 196,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "narrow",
+      "width": 320,
+      "height": 900,
+      "theme": "dark",
+      "mode": "before",
+      "filterCount": 20,
+      "filterRows": 7,
+      "filterHeight": 336,
+      "minTargetHeight": 42,
+      "firstCoverTop": 474,
+      "card": {
+        "width": 280,
+        "height": 325.40625
+      },
+      "media": {
+        "width": 280,
+        "height": 157.5
+      },
+      "columns": 1,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 280,
+        "naturalHeight": 157,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "narrow",
+      "width": 320,
+      "height": 900,
+      "theme": "dark",
+      "mode": "after",
+      "filterCount": 20,
+      "filterRows": 7,
+      "filterHeight": 288,
+      "minTargetHeight": 36,
+      "firstCoverTop": 422,
+      "card": {
+        "width": 280,
+        "height": 325.40625
+      },
+      "media": {
+        "width": 280,
+        "height": 157.5
+      },
+      "columns": 1,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 280,
+        "naturalHeight": 157,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "narrow",
+      "width": 320,
+      "height": 900,
+      "theme": "light",
+      "mode": "before",
+      "filterCount": 20,
+      "filterRows": 7,
+      "filterHeight": 336,
+      "minTargetHeight": 42,
+      "firstCoverTop": 474,
+      "card": {
+        "width": 280,
+        "height": 325.40625
+      },
+      "media": {
+        "width": 280,
+        "height": 157.5
+      },
+      "columns": 1,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 280,
+        "naturalHeight": 157,
+        "objectFit": "cover",
+        "complete": true
+      }
+    },
+    {
+      "device": "narrow",
+      "width": 320,
+      "height": 900,
+      "theme": "light",
+      "mode": "after",
+      "filterCount": 20,
+      "filterRows": 7,
+      "filterHeight": 288,
+      "minTargetHeight": 36,
+      "firstCoverTop": 422,
+      "card": {
+        "width": 280,
+        "height": 325.40625
+      },
+      "media": {
+        "width": 280,
+        "height": 157.5
+      },
+      "columns": 1,
+      "overflow": false,
+      "image": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "renderedImage": {
+        "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+        "naturalWidth": 280,
+        "naturalHeight": 157,
+        "objectFit": "cover",
+        "complete": true
+      }
+    }
+  ],
+  "browser": "154.0.8037.57",
+  "highDensity": {
+    "deviceScaleFactor": 2,
+    "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+    "cssWidth": 378.65625,
+    "cssHeight": 212.984375
+  },
+  "fallbacks": [
+    {
+      "case": "Cover request blocked",
+      "selected": "screenshot",
+      "launchURL": "https://jaychtw.github.io/reppublic-of-chickens/",
+      "passed": true
+    },
+    {
+      "case": "Cover and screenshot requests blocked",
+      "selected": "placeholder",
+      "launchURL": "https://jaychtw.github.io/reppublic-of-chickens/",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,21 @@
+{
+  "status": "POC only; final production artwork approval pending",
+  "source": "Owner-supplied 1651.jpg, received as an accessible local attachment",
+  "original": {
+    "path": "docs/cover-poc-v1/original/1651.jpg",
+    "width": 1280,
+    "height": 720,
+    "bytes": 171948,
+    "sha256": "d74a51327789d2a39b562bb5c9239c43a401837cf656689d3bbf8a524ddc6a95"
+  },
+  "customCover": {
+    "path": "public/assets/covers/games/republic-of-chickens.webp",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1160618,
+    "sha256": "f66ff14d6313f6526a94093dd316664a0c1500d12394f60f1ee8e3b3ebb72341"
+  },
+  "conversion": "Lossless WebP encoding of decoded JPEG pixels. No resize, crop, upscaling, regeneration or artistic modification.",
+  "decodedPixelsIdentical": true,
+  "productionDelivery": "Existing build generates optimized, fingerprinted responsive derivatives; source originals are not copied directly to the public build."
+}

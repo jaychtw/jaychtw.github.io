@@ -1,0 +1,34 @@
+{
+  "scope": "Actual supplied-cover POC through the existing builder; not final creative approval.",
+  "selected": {
+    "project": "republic-of-chickens",
+    "selected": "cover",
+    "source": "/assets/covers/games/republic-of-chickens.webp"
+  },
+  "sourceSha256": "f66ff14d6313f6526a94093dd316664a0c1500d12394f60f1ee8e3b3ebb72341",
+  "sourceDimensions": {
+    "width": 1280,
+    "height": 720
+  },
+  "sourceAspectRatio": "16:9",
+  "variants": [
+    {
+      "src": "/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+      "width": 480,
+      "height": 270,
+      "sha256": "9a82c53512b76ddd9ebb379d2924aa70cc66e64d393a85b7462103b7f2ddd730",
+      "bytes": 40660,
+      "equalsUncroppedFullFrameResize": true
+    },
+    {
+      "src": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+      "width": 960,
+      "height": 540,
+      "sha256": "21e7788f657b123ee8c2193532dad3d2360ce98b8db137963c80050fe26af625",
+      "bytes": 105220,
+      "equalsUncroppedFullFrameResize": true
+    }
+  ],
+  "sourceOriginalNotShippedDirectly": true,
+  "passed": true
+}

@@ -4,6 +4,7 @@ const fs = require("node:fs"),
   assert = require("node:assert/strict");
 const { spawn, execFileSync } = require("node:child_process");
 const { chromium } = require("playwright");
+const { createHash } = require("node:crypto");
 const root = path.resolve(__dirname, "..");
 const filtersOnly = process.argv.includes("--filters-only");
 const cover = path.join(
@@ -28,9 +29,12 @@ const out = path.join(
 fs.mkdirSync(out, { recursive: true });
 const receipt = {
   scope: filtersOnly
-    ? "Filter-only review with existing authentic screenshot; supplied cover not integrated because original file is unavailable."
+    ? "Filter presentation comparison using current gallery assets; this mode alone does not certify supplied-cover integration."
     : "Supplied cover POC in actual local gallery, not creative approval or public deployment.",
   baseline,
+  coverSourceSha256: fs.existsSync(cover)
+    ? createHash("sha256").update(fs.readFileSync(cover)).digest("hex")
+    : null,
   sourceCommit: execFileSync("git", ["rev-parse", "HEAD"], {
     cwd: root,
     encoding: "utf8",
@@ -109,6 +113,15 @@ let browser, server;
         const card = page.locator('[data-project="republic-of-chickens"]');
         const image = card.locator("img");
         await image.evaluate((i) => i.decode());
+        for (const visibleImage of await page.locator(".work img").all()) {
+          if (
+            await visibleImage.evaluate((i) => {
+              const r = i.getBoundingClientRect();
+              return r.top < innerHeight && r.bottom > 0;
+            })
+          )
+            await visibleImage.evaluate((i) => i.decode());
+        }
         if (!filtersOnly)
           assert(
             (await image.getAttribute("src")).includes("/assets/covers/games/"),
@@ -152,10 +165,14 @@ let browser, server;
         );
         const name = `${device}-${theme}-${mode}`;
         await page.screenshot({ path: path.join(out, name + ".png") });
-        if (mode === "after")
+        if (mode === "after") {
           await card.screenshot({
             path: path.join(out, `${device}-${theme}-card-1x.png`),
           });
+          await card.locator(".work-media").screenshot({
+            path: path.join(out, `${device}-${theme}-artwork-1x.png`),
+          });
+        }
         receipt.cases.push({
           device,
           width,
@@ -164,9 +181,87 @@ let browser, server;
           mode,
           ...metrics,
           image: await image.getAttribute("src"),
+          renderedImage: await image.evaluate((i) => ({
+            currentSrc: i.currentSrc,
+            naturalWidth: i.naturalWidth,
+            naturalHeight: i.naturalHeight,
+            objectFit: getComputedStyle(i).objectFit,
+            complete: i.complete,
+          })),
         });
         await page.close();
       }
+  if (!filtersOnly) {
+    const page = await browser.newPage({
+      viewport: { width: 1440, height: 900 },
+      deviceScaleFactor: 2,
+    });
+    await page.goto("http://127.0.0.1:4180/");
+    const image = page.locator('[data-project="republic-of-chickens"] img');
+    await image.evaluate((i) => i.decode());
+    receipt.highDensity = await image.evaluate((i) => ({
+      deviceScaleFactor: window.devicePixelRatio,
+      currentSrc: i.currentSrc,
+      cssWidth: i.getBoundingClientRect().width,
+      cssHeight: i.getBoundingClientRect().height,
+    }));
+    assert(
+      receipt.highDensity.currentSrc.includes(".960."),
+      "2x display should select the 960px cover rendition",
+    );
+    await page.close();
+    receipt.fallbacks = [];
+    for (const failScreenshot of [false, true]) {
+      const page = await browser.newPage({
+        viewport: { width: 390, height: 844 },
+        deviceScaleFactor: 1,
+      });
+      await page.route("**/assets/covers/games/republic-of-chickens.*", (r) =>
+        r.abort(),
+      );
+      if (failScreenshot)
+        await page.route(
+          "**/assets/screenshots/games/republic-of-chickens.*",
+          (r) => r.abort(),
+        );
+      await page.goto("http://127.0.0.1:4180/");
+      if (failScreenshot)
+        await page.waitForFunction(() =>
+          document
+            .querySelector('[data-project="republic-of-chickens"] .work-media')
+            .classList.contains("is-fallback"),
+        );
+      else
+        await page.waitForFunction(() => {
+          const i = document.querySelector(
+            '[data-project="republic-of-chickens"] img',
+          );
+          return (
+            i.currentSrc.includes("/assets/screenshots/") &&
+            i.complete &&
+            i.naturalWidth > 0
+          );
+        });
+      const card = page.locator('[data-project="republic-of-chickens"]');
+      assert.equal(
+        await card.locator(".launch").getAttribute("href"),
+        "https://jaychtw.github.io/reppublic-of-chickens/",
+      );
+      const name = failScreenshot
+        ? "fallback-placeholder-mobile"
+        : "fallback-screenshot-mobile";
+      await page.screenshot({ path: path.join(out, name + ".png") });
+      receipt.fallbacks.push({
+        case: failScreenshot
+          ? "Cover and screenshot requests blocked"
+          : "Cover request blocked",
+        selected: failScreenshot ? "placeholder" : "screenshot",
+        launchURL: await card.locator(".launch").getAttribute("href"),
+        passed: true,
+      });
+      await page.close();
+    }
+  }
   receipt.passed = true;
   console.log(
     JSON.stringify(
