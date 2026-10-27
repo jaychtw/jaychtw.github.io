@@ -183,9 +183,7 @@ img {
   color: var(--muted);
   font-size: 0.8rem;
   line-height: 1.4;
-  transition:
-    background-color 0.16s,
-    color 0.16s;
+  /* Switch opposing text/background pairs atomically to preserve contrast. */
 }
 .filter[aria-pressed="true"] {
   background: var(--selected);

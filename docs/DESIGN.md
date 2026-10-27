@@ -23,6 +23,8 @@ Homepage selection is `homepageCollection` in site settings. A collection must h
 
 All projects render and open without JavaScript; enhanced controls stay hidden rather than pretending to work when JavaScript is disabled. Filters preserve source ordering, use `aria-pressed`, and announce result counts. Native buttons/links, a skip link, visible focus, reflow, reduced motion and forced colors support accessible browsing. The orb has a 44px target and an action label independent of its appearance.
 
+Filter foreground/background pairs change together, without a color transition: interpolating opposite light/dark pairs can briefly make their text unreadable. Hover feedback remains restrained and cover transforms honor reduced motion. Browser tests measure actual filter contrast across interaction phases as well as running axe.
+
 ## Future refinement
 
 Change the relevant component or styles, inspect real content in both themes and responsive sizes, run checks, and capture fresh evidence. Update approved visual references when the creator approves a new direction; do not preserve obsolete pixel comparisons as a permanent freeze. Content additions, reorderings and cover replacement require ordinary data/assets, not component changes.

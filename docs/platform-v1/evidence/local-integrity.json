@@ -1,19 +1,19 @@
 {
   "url": "http://127.0.0.1:4173/",
   "local": true,
-  "sourceCommit": "56f5a997ef12b66cce4948b770c92bc3e8c5db81",
+  "sourceCommit": "28ea63eccc05ec22822c5a97643c9909b7937cc5",
   "files": [
     {
       "path": "404.html",
-      "sha256": "49555d6870d24aa0eaea76dce0efdc2b6394e6654e2c0032c4cfaf703d6c91a0"
+      "sha256": "f149bdf5f6b336c511722f13bb82b87498fada9f7872462276b6d95f17113c96"
     },
     {
       "path": "assets/possibility/site.3212fa47c785.js",
       "sha256": "3212fa47c78591cf9b9a41c713060d58546ad43f62c720d213b0031e6f4f838a"
     },
     {
-      "path": "assets/possibility/site.8c2bac240248.css",
-      "sha256": "8c2bac240248738803f944ef0213c04b35ca9e80e0a2562b815882df7f339057"
+      "path": "assets/possibility/site.504fe266c5de.css",
+      "sha256": "504fe266c5de622b5b596a27d77765a59555afd7915a12474bb9d676c22443e8"
     },
     {
       "path": "assets/possibility/theme.431213d01350.js",
@@ -149,7 +149,7 @@
     },
     {
       "path": "build-info.json",
-      "sha256": "832a512f04717a923d0c5c1854e984a7b024b60901c6d1826c31010c5ddedfe3"
+      "sha256": "078cd3fe232b37bd9ce77e1bc9bff31e3619b5137e63d983fe3f0a28dab7a6a1"
     },
     {
       "path": "favicon.svg",
@@ -157,99 +157,99 @@
     },
     {
       "path": "games/animal-match/index.html",
-      "sha256": "f9a801e374d19f1d45543162a6caa6b3686ec305b16a4c5ef7678909d947251a"
+      "sha256": "b1f240fc1ff796f796993232adb8227e60485d70573b065d6fbdce99c054dddc"
     },
     {
       "path": "games/formosa-quest/index.html",
-      "sha256": "e9d49ad8e9a1f5b38825068a6f47aced26dc6cec29b1fc12542a2cc0f4930997"
+      "sha256": "ff0a1a2b14b465904c84ea5171d60b9c5f67b4704314dddc9e3c3c16884337ae"
     },
     {
       "path": "games/index.html",
-      "sha256": "1f28dedf740b00ecb740703fe926f044639627415cb0a2aa0ce28b9f0db91ca0"
+      "sha256": "50dac35d851f8cad8aa1615458c772b5ef760c2b6986d2fe9b7fc7aa76fe983e"
     },
     {
       "path": "games/jasmine-odyssey/index.html",
-      "sha256": "8a7fb9671134c72b82037461d9e85d6fdce295025c327461a19c7decc2184f29"
+      "sha256": "f052b9cf2ff00065b2866e47fdcaa4dab25298292ca50c6cf5382abae2ad010b"
     },
     {
       "path": "games/jeremy-odyssey/index.html",
-      "sha256": "841f69c14c9a47e49f036eb0037883f6019dafd530c102438879aa6b3c930a2e"
+      "sha256": "eed99febf98fcd3710bda3b7a3427fd6469c0e40f59a2dc3d357af98c0dd9600"
     },
     {
       "path": "games/junctioneer/index.html",
-      "sha256": "c6bd713941e8d5b81b21585923d88140ea94fd648637597c31acee81dfb94416"
+      "sha256": "1f8ee1e0077a16f56a804ac2698b3be7e3bccd19b8249c53b60747db61836bb6"
     },
     {
       "path": "games/kaiju-demolition/index.html",
-      "sha256": "b0df99396539132a323ed3a6326b410fcec508378ce8e9bd85530d5b5f8bf094"
+      "sha256": "fd17a86f95f7244f2d083b2a4a5504f2e50d30b6322c26eca9442eb7cf21fe50"
     },
     {
       "path": "games/kaiju-tournament/index.html",
-      "sha256": "fa0054a2a23474238df5aa7a075703806b1c3e50247dd649b33ff5768fc73e71"
+      "sha256": "4b4cd41eb3cbc2e5c8dd0107ac62772fcf86166bc547ef11605b777b785f6e98"
     },
     {
       "path": "games/launch-sequence/index.html",
-      "sha256": "62af8b59196b3d73c3067b90732cae6e993a6f1192ded89758fb720abf4322a8"
+      "sha256": "47b007dbfc07b036de93508b422e2bd594f351702c3e769d8ebe551e4df9f0d6"
     },
     {
       "path": "games/my-queens/index.html",
-      "sha256": "3572d1d36b5c1d7a72904a5778487e0e06d2ec947a2f453761b31c3df3f3ac22"
+      "sha256": "58dffe55bc1a081cd9769077b90a2411cae8b10b433223409088e8ab0c4cf2b0"
     },
     {
       "path": "games/nom-nom-boom/index.html",
-      "sha256": "f06c240d91cf0d75289b86e0fba555124ac52a01583e33580cb738e5083d69c2"
+      "sha256": "0968e7c9259d80c0e2aa83e38496ace4fb1c066e2e9d7dc73a80126342283acf"
     },
     {
       "path": "games/pedestrian-living-hell/index.html",
-      "sha256": "3ee5960ff2ee5f0724794fb2214461eb1ba51b3c8714895c170cf713db9f7403"
+      "sha256": "d9cfe4ea930ba150bbe5447baf6a3e77a23e8335f890de9e964f9a64ea31f850"
     },
     {
       "path": "games/republic-of-chickens/index.html",
-      "sha256": "2af793ed9cd21255d71dba49e1f1e5fa7b8d4af839d394f7dd2c3197b5ef865f"
+      "sha256": "b7d0f4561d12038828a3cf2f75b4d7acfcc634fb243b7daec3ce67c6a1343b1a"
     },
     {
       "path": "games/riot-defender/index.html",
-      "sha256": "f93237b3c96c98d39f7bb425a42676223c311d7cd168b318e0e4e9f6d051e8a4"
+      "sha256": "e6450fa6c44fc0d7430b640b490d79b547ad2e656dff9c438bbdd96af17222e3"
     },
     {
       "path": "games/shape-match/index.html",
-      "sha256": "7d62388ab7ff78295f5411c3607fdb380e207a832dcf517cbc6166b0a8968c25"
+      "sha256": "d9b999f31fa888525ec056cbc73490a24201e6c4b62f166d563bb31faa409d9b"
     },
     {
       "path": "games/snacks-match-raohe/index.html",
-      "sha256": "4ab8d78425299e98e5a3277db0fbc60aa0ddfcfb7ef180786bdc2fec349f3f02"
+      "sha256": "01e830045ae6d8c2ce53c104edc754aaa8a14c51595be0374c3480104f637ee5"
     },
     {
       "path": "games/squirrel-control/index.html",
-      "sha256": "f3904353c7c26cc2c13a3ca876c0f98980aa56aaa589012f787d480358989933"
+      "sha256": "a93d0681688f3ea1a8682c9d390604dcf89a89af5a26da4eb7600694904e3e09"
     },
     {
       "path": "games/the-impossible-room/index.html",
-      "sha256": "1c5f7454a08cd4dd5c9ccd26c97ff6465a6fb26d37d583c7630c766df5b45725"
+      "sha256": "8ab3b9ea67015ec7f73890514581617e908e972d20ebbe770eb064533309fa21"
     },
     {
       "path": "games/the-last-lantern/index.html",
-      "sha256": "c27a136c45acfa2a7e7fc3add859653b40b322655fb8c263df45c2ba328e5747"
+      "sha256": "14890c5e07c01fc62f76f2a09905f2b79a999e2b5cc060dd8dc1b3844e14e5b6"
     },
     {
       "path": "games/the-other-ninty-percent/index.html",
-      "sha256": "23568e3bd2978ae2e31f927453fd80ab954a5181b076cb987fa9002b9d6f5fd4"
+      "sha256": "37375a214a6ad38ebaacedee797dd8141eec5b9d2f4ae06a56f74302db26a056"
     },
     {
       "path": "games/tidelight/index.html",
-      "sha256": "6c0b82a096fd821b4cb91db07517eec0d3339ad4c6badaae3b3216c961877d72"
+      "sha256": "bc015140f356776102ed9f56cb55f76b5ce501683a4a0207c65265ab67c4cd7e"
     },
     {
       "path": "games/typhoon-defender/index.html",
-      "sha256": "a7c11c78c8f935bec839921e8b113f235f7c2aa847ccab6045e0361f77d39ff4"
+      "sha256": "5f152537e7bcf51cfdfbf992df2899ef0a0eb1b8eac3dea68b2415a10de241f1"
     },
     {
       "path": "games/wonderlands/index.html",
-      "sha256": "9e51fc0bfd66f6309f176a9856999fa9a8b75d455df36b98ad0eb170f227b177"
+      "sha256": "439b4474eaa06bb55bc9c74c7b81cfb060721fed430d33bbf8e3757e25eaaea2"
     },
     {
       "path": "index.html",
-      "sha256": "e1204c980f0a98dfa133678aa47f2b9f26a953afb091f0ada64c59d385b6af2d"
+      "sha256": "69d95bcd296351ffe091d3561d69b1758ff2b1a4cf0aec40aedea39cd9a2623d"
     },
     {
       "path": "robots.txt",

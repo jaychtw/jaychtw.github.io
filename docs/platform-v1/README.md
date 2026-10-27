@@ -40,6 +40,7 @@ Browser checks cover both themes at 320/390/768/1024/1440px, every supplied filt
 | Theme/responsive cases | 10 passed across five widths and both appearances |
 | Single-selection filtering | 76 cases passed; complete-card hiding, relative order and gap closure |
 | Accessibility | 13 axe scans; zero violations and zero incomplete checks |
+| Filter interaction contrast | Eight theme/phase measurements passed; minimum 5.42:1 |
 | Interaction/resilience | 11 scenarios passed, including runtime cover → screenshot → placeholder failure handling |
 | Isolated Apps/editorial routes | Five passed; fixtures excluded from production |
 | Publication verifiers | Local browser smoke and byte verification of all 64 public build files passed; this is not redesigned public deployment evidence |

@@ -837,6 +837,48 @@
       "incomplete": []
     }
   ],
+  "contrast": [
+    {
+      "appearance": "dark",
+      "phaseMs": 0,
+      "minimum": 7.706644730183235
+    },
+    {
+      "appearance": "dark",
+      "phaseMs": 30,
+      "minimum": 7.706644730183235
+    },
+    {
+      "appearance": "dark",
+      "phaseMs": 70,
+      "minimum": 7.706644730183235
+    },
+    {
+      "appearance": "dark",
+      "phaseMs": 130,
+      "minimum": 7.706644730183235
+    },
+    {
+      "appearance": "light",
+      "phaseMs": 0,
+      "minimum": 5.422093807375919
+    },
+    {
+      "appearance": "light",
+      "phaseMs": 30,
+      "minimum": 5.422093807375919
+    },
+    {
+      "appearance": "light",
+      "phaseMs": 70,
+      "minimum": 5.422093807375919
+    },
+    {
+      "appearance": "light",
+      "phaseMs": 130,
+      "minimum": 5.422093807375919
+    }
+  ],
   "behavior": [
     "Keyboard skip, visible focus and Space filtering",
     "Four historical fact-sheet URLs preserved",

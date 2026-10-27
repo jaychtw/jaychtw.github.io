@@ -36,7 +36,10 @@ jobs:
           from pathlib import Path
           import json
           result=Path('.artifacts/browser/results.json')
-          message=json.loads(result.read_text()).get('failure') if result.exists() else None
+          data=json.loads(result.read_text()) if result.exists() else {}
+          message=data.get('failure')
+          failures=[case for case in data.get('accessibility',[]) if case.get('violations')]
+          if failures: message=(message or 'Accessibility failure')+'\n'+json.dumps(failures)[:12000]
           log=Path('.artifacts/validation.log')
           message=message or (log.read_text()[-6000:] if log.exists() else 'Validation failed before the runner produced a log.')
           escaped=message.replace('%','%25').replace('\r','%0D').replace('\n','%0A')

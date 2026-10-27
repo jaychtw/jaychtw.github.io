@@ -60,6 +60,7 @@ const result = {
   layouts: [],
   filters: [],
   accessibility: [],
+  contrast: [],
   behavior: [],
   fixtures: [],
 };
@@ -266,6 +267,55 @@ async function capture(page, name) {
       await page.close();
     }
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+  for (const appearance of ["dark", "light"]) {
+    await page.goto(galleryURL);
+    await theme(page, appearance);
+    await page.getByRole("button", { name: keyboardTag, exact: true }).click();
+    let elapsed = 0;
+    for (const delay of [0, 30, 40, 60]) {
+      await page.waitForTimeout(delay);
+      elapsed += delay;
+      const minimum = await page.evaluate(() => {
+        const canvas = document.createElement("canvas");
+        canvas.width = canvas.height = 1;
+        const context = canvas.getContext("2d");
+        const luminance = (rgb) =>
+          rgb
+            .slice(0, 3)
+            .map((x) => {
+              x /= 255;
+              return x <= 0.04045 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4;
+            })
+            .reduce((a, x, i) => a + x * [0.2126, 0.7152, 0.0722][i], 0);
+        return Math.min(
+          ...[...document.querySelectorAll(".filter")].map((button) => {
+            const style = getComputedStyle(button);
+            context.fillStyle = getComputedStyle(document.body).backgroundColor;
+            context.fillRect(0, 0, 1, 1);
+            context.fillStyle = style.backgroundColor;
+            context.fillRect(0, 0, 1, 1);
+            const background = luminance([
+              ...context.getImageData(0, 0, 1, 1).data,
+            ]);
+            context.fillStyle = style.color;
+            context.fillRect(0, 0, 1, 1);
+            const foreground = luminance([
+              ...context.getImageData(0, 0, 1, 1).data,
+            ]);
+            return (
+              (Math.max(foreground, background) + 0.05) /
+              (Math.min(foreground, background) + 0.05)
+            );
+          }),
+        );
+      });
+      result.contrast.push({ appearance, phaseMs: elapsed, minimum });
+      assert(
+        minimum >= 4.5,
+        `Filter contrast ${appearance} at ${elapsed}ms: ${minimum}`,
+      );
+    }
+  }
   await page.goto(galleryURL);
   await page.keyboard.press("Tab");
   assert.equal(
