@@ -8,7 +8,7 @@ from urllib.request import Request, urlopen
 import json
 
 root = Path(__file__).resolve().parents[1]
-evidence = root.parents[1] / 'docs/stage-a2/evidence'
+evidence = root.parents[1] / 'docs/stage-a2/revision-2/evidence'
 evidence.mkdir(parents=True, exist_ok=True)
 class Assets(HTMLParser):
     def __init__(self): super().__init__(); self.paths = []

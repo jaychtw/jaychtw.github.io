@@ -1,5 +1,7 @@
 # Stage A.2 implementation, checks and limits
 
+> Original Stage A.2 record, before the continuous-scroll revision. See the [current revision-2 implementation and evidence](revision-2/README.md).
+
 Date: **2026-10-27, Asia/Taipei**. Scope: interactive art-direction POC only. The creator authorized following the v1.1 guidelines after a review-only pass. This does not approve full Stage B or public deployment.
 
 ## Architecture and content

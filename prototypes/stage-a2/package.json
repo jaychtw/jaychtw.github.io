@@ -7,7 +7,8 @@
     "dev": "python3 serve.py",
     "test": "node tests/check.cjs",
     "verify:live": "python3 tests/verify-live.py",
-    "test:bundle": "node tests/smoke-bundle.cjs"
+    "test:bundle": "node tests/smoke-bundle.cjs",
+    "proof": "node tests/motion.cjs"
   },
   "devDependencies": {
     "axe-core": "4.14.0",

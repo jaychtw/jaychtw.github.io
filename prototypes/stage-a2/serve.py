@@ -9,7 +9,7 @@ parser.add_argument('--port', type=int, default=8766)
 args = parser.parse_args()
 handler = partial(SimpleHTTPRequestHandler, directory=str(Path(__file__).resolve().parent))
 server = ThreadingHTTPServer(('127.0.0.1', args.port), handler)
-print(f'Stage A.2 local POC on port {args.port}; Ctrl+C stops it.', flush=True)
+print(f'Local Stage A.2 revision 2 (not published):\nhttp://localhost:{args.port}/\nhttp://localhost:{args.port}/games/\nCtrl+C stops the server.', flush=True)
 try:
     server.serve_forever()
 except KeyboardInterrupt:

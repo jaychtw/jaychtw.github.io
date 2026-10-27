@@ -1,7 +1,7 @@
 'use strict';
 // Review variants live in URLs rather than adding controls to the composition.
 const choices = new URLSearchParams(location.search);
-const light = ['diffuse', 'window'].includes(choices.get('light')) ? choices.get('light') : 'diffuse';
+const light = ['diffuse', 'window'].includes(choices.get('light')) ? choices.get('light') : 'window';
 const pattern = ['drift', 'cadence'].includes(choices.get('pattern')) ? choices.get('pattern') : 'drift';
 document.body.dataset.light = light;
 document.body.dataset.pattern = pattern;

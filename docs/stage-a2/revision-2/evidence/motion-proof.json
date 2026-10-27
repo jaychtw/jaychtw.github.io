@@ -1,0 +1,39 @@
+{
+  "browser": "154.0.8037.57",
+  "normal": {
+    "method": "Native Chromium screencast frames over 24 wall-clock seconds; original frame timestamps preserved by concat durations. No animation seeking or playback speed change.",
+    "capturedFrames": 369,
+    "recordedSpanSeconds": 24.197484016418457,
+    "format": {
+      "duration": "24.280000",
+      "size": "697513"
+    }
+  },
+  "accelerated": {
+    "method": "Actual CSS rendering sampled once per animation second for 120 seconds, encoded at 10fps: 10x.",
+    "format": {
+      "duration": "12.000000",
+      "size": "284541"
+    }
+  },
+  "stationaryTitle": true,
+  "changingEdge": true,
+  "first": {
+    "title": {
+      "x": 271.640625,
+      "y": 253.640625,
+      "width": 416.71875,
+      "height": 92.71875
+    },
+    "edge": "path(\"M 580 -180 C 575 170 594 350 584 480 C 575 670 600 890 580 1180 L 646 1180 C 662 890 640 670 650 480 C 660 350 641 170 648 -180 Z\")"
+  },
+  "last": {
+    "title": {
+      "x": 271.640625,
+      "y": 253.640625,
+      "width": 416.71875,
+      "height": 92.71875
+    },
+    "edge": "path(\"M 582.946 -180 C 586.047 170 584.426 350 588.419 480 C 591.939 670 587.48 890 585.892 1180 L 652.628 1180 C 648.743 890 654.73 670 655.155 480 C 648.953 350 653.52 170 650.946 -180 Z\")"
+  }
+}

@@ -3,7 +3,7 @@ Portal of jaychtw
 
 ## Possibility — current Stage A.2 review
 
-[Review the interactive visual pivot](docs/stage-a2/README.md): minimal sunlit landing, two light variants, and two white staggered gallery patterns with authentic square gameplay thumbnails. Includes desktop/mobile evidence, a 20× motion proof, local review ZIP, accessibility/contrast checks and source provenance.
+[Review Stage A.2 revision 2](docs/stage-a2/revision-2/README.md): living window sunlight followed by a white, staggered portfolio on the same naturally scrollable page, with `/games/` preserved. Includes normal-speed and 10× motion proofs, desktop/mobile screenshots, a local review ZIP with exact localhost instructions, and accessibility/contrast evidence.
 
 **Visual approval is pending. Stage B has not started.** No production portal, deployment workflow or game-repository change is included.
 

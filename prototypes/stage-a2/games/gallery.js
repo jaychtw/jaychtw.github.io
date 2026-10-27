@@ -1,7 +1,8 @@
 'use strict';
+const catalogURL = new URL('../catalog.json', document.currentScript.src);
 (async () => {
   try {
-    const response = await fetch('../catalog.json');
+    const response = await fetch(catalogURL);
     if (!response.ok) throw new Error('Catalog unavailable');
     const entries = await response.json();
     if (!Array.isArray(entries) || !entries.length) throw new Error('Empty catalog');
@@ -19,13 +20,14 @@
       link.href = url.href;
       link.rel = 'external';
       const image = document.createElement('img');
-      image.src = '../' + entry.image;
+      image.src = new URL(entry.image, catalogURL).href;
       image.alt = entry.alt;
       image.width = 640;
       image.height = 640;
       image.decoding = 'async';
       image.loading = fragment.childElementCount < 2 ? 'eager' : 'lazy';
-      const title = document.createElement('h2');
+      const title = document.createElement(document.querySelector('.gallery').dataset.headingLevel === '3' ? 'h3' : 'h2');
+      title.className = 'work-title';
       title.textContent = entry.title;
       link.append(image, title);
       item.append(link);

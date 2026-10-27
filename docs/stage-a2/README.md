@@ -1,5 +1,7 @@
 # Possibility — Stage A.2 interactive visual review
 
+> The [revision-2 living sunlight and continuous-scroll prototype](revision-2/README.md) is the current review. The original two-page evidence below is archived and does not describe the current prototype.
+
 **Status: awaiting approval of the light and gallery composition. Stage B has not started.** This follows the [v1.1 visual-pivot handoff](handoff/README.md); the earlier A/B/C boards remain archived exploration.
 
 **Recommended pair: Window light + Drift gallery.** Window makes the architectural source of the light clearer; Drift gives each work more breathing room. Diffuse is gentler and more abstract; Cadence compresses the vertical rhythm slightly. Neither choice adds product controls, copy, projects or decoration.

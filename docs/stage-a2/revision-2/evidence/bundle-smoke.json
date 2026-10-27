@@ -1,0 +1,27 @@
+{
+  "browser": "154.0.8037.57",
+  "cases": [
+    {
+      "query": "",
+      "passed": true,
+      "continuousScroll": true,
+      "directGalleryRefresh": true,
+      "imagesDecoded": true
+    },
+    {
+      "query": "?light=diffuse&pattern=drift",
+      "passed": true,
+      "continuousScroll": true,
+      "directGalleryRefresh": true,
+      "imagesDecoded": true
+    },
+    {
+      "query": "?light=window&pattern=cadence",
+      "passed": true,
+      "continuousScroll": true,
+      "directGalleryRefresh": true,
+      "imagesDecoded": true
+    }
+  ],
+  "failures": 0
+}
