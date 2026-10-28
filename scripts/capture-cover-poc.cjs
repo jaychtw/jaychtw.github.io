@@ -244,7 +244,7 @@ let browser, server;
         });
       const card = page.locator('[data-project="republic-of-chickens"]');
       assert.equal(
-        await card.locator(".launch").getAttribute("href"),
+        await card.getAttribute("href"),
         "https://jaychtw.github.io/reppublic-of-chickens/",
       );
       const name = failScreenshot
@@ -256,7 +256,7 @@ let browser, server;
           ? "Cover and screenshot requests blocked"
           : "Cover request blocked",
         selected: failScreenshot ? "placeholder" : "screenshot",
-        launchURL: await card.locator(".launch").getAttribute("href"),
+        launchURL: await card.getAttribute("href"),
         passed: true,
       });
       await page.close();

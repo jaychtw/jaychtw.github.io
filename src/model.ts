@@ -68,6 +68,7 @@ export interface Media {
   fallbackAlt?: string;
 }
 export interface RenderContext {
+  favicon: string;
   site: Site;
   style: string;
   script: string;

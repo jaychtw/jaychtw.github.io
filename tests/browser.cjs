@@ -192,6 +192,16 @@ async function capture(page, name) {
         await page.locator("[data-project]").count(),
         catalog.length,
       );
+      assert.equal(await page.locator("[data-project] a, .launch").count(), 0);
+      for (const project of catalog) {
+        const card = page.locator(`[data-project="${project.id}"]`);
+        assert.equal(await card.evaluate((element) => element.tagName), "A");
+        assert.equal(await card.getAttribute("href"), project.destination.url);
+        assert.equal(
+          await card.getAttribute("aria-label"),
+          `${project.destination.action === "play" ? "Play" : "Open"} ${project.title}`,
+        );
+      }
       const geometry = await page.evaluate(() => ({
         columns: getComputedStyle(
           document.querySelector(".gallery"),
@@ -340,6 +350,43 @@ async function capture(page, name) {
   );
   await page.screenshot({ path: path.join(out, "keyboard-focus.png") });
   result.behavior.push("Keyboard skip, visible focus and Space filtering");
+  await page.goto(galleryURL);
+  await page.route("https://jaychtw.github.io/**", (route) =>
+    route.fulfill({
+      contentType: "text/html",
+      body: "<!doctype html><title>Isolated navigation target</title>",
+    }),
+  );
+  for (const project of catalog) {
+    await page.goto(galleryURL);
+    await page
+      .locator(`[data-project="${project.id}"] .card-description`)
+      .click();
+    await page.waitForURL(project.destination.url);
+  }
+  await page.goto(galleryURL);
+  const firstCard = page.locator("[data-project]").first();
+  await firstCard.focus();
+  assert.equal(
+    await firstCard.evaluate(
+      (element) => getComputedStyle(element).outlineStyle,
+    ),
+    "solid",
+  );
+  await page.keyboard.press("Tab");
+  assert.equal(
+    await page.evaluate(() => document.activeElement.dataset.project),
+    catalog[1].id,
+  );
+  await firstCard.focus();
+  await page.keyboard.press("Enter");
+  await page.waitForURL(catalog[0].destination.url);
+  await page.goto(galleryURL);
+  await page.locator("[data-project] .work-media").first().click();
+  await page.waitForURL(catalog[0].destination.url);
+  result.behavior.push(
+    "Every card navigates from its description; one keyboard stop per card, visible focus, Enter and cover click work (isolated destination responses)",
+  );
   for (const id of [
     "republic-of-chickens",
     "wonderlands",
@@ -399,6 +446,16 @@ async function capture(page, name) {
   );
   await touch.getByRole("button", { name: "Switch to light theme" }).tap();
   result.behavior.push("Emulated touch filtering and theme switch");
+  await touch.getByRole("button", { name: "All", exact: true }).tap();
+  await touch.route("https://jaychtw.github.io/**", (route) =>
+    route.fulfill({
+      contentType: "text/html",
+      body: "<!doctype html><title>Isolated touch navigation target</title>",
+    }),
+  );
+  await touch.locator("[data-project] .card-description").first().tap();
+  await touch.waitForURL(catalog[0].destination.url);
+  result.behavior.push("Emulated touch opens the card from below its cover");
   await touch.close();
   const nojs = await browser.newPage({
     javaScriptEnabled: false,
@@ -442,12 +499,10 @@ async function capture(page, name) {
       .classList.contains("is-fallback"),
   );
   assert(
-    await failed
-      .locator('[data-project="republic-of-chickens"] .launch')
-      .isVisible(),
+    await failed.locator('[data-project="republic-of-chickens"]').isVisible(),
   );
   result.behavior.push(
-    "Failed preview chain retains placeholder and Play link",
+    "Failed preview chain retains placeholder and clickable card",
   );
   await failed.close();
   const coverFailure = await browser.newPage();
@@ -488,11 +543,11 @@ async function capture(page, name) {
   );
   assert(
     await allFailure
-      .locator('[data-project="republic-of-chickens"] .launch')
+      .locator('[data-project="republic-of-chickens"]')
       .isVisible(),
   );
   result.behavior.push(
-    "Runtime cover and screenshot failure retains a neutral placeholder and launch action",
+    "Runtime cover and screenshot failure retains a neutral placeholder and clickable card",
   );
   await allFailure.close();
   const fixture = await browser.newPage({

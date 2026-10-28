@@ -66,6 +66,7 @@ export async function build(inputRoot = root): Promise<void> {
     style: fingerprint("src/styles/platform.css", "site"),
     script: fingerprint("src/client/site.js", "site"),
     themeScript: fingerprint("src/client/theme.js", "theme"),
+    favicon: fingerprint("public/favicon.svg", "favicon"),
   };
   const assets: Record<string, unknown>[] = [];
   const cache = new Map<string, Media>();

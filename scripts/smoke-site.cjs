@@ -18,7 +18,7 @@ if (local)
       ["localhost", "127.0.0.1"].includes(url.hostname),
   );
 else assert.equal(url.origin, site.canonicalOrigin);
-const expected = fs
+const projects = fs
   .readdirSync(path.join(root, "content/projects", "games"))
   .filter((f) => f.endsWith(".json"))
   .map((f) =>
@@ -26,7 +26,7 @@ const expected = fs
       fs.readFileSync(path.join(root, "content/projects", "games", f)),
     ),
   )
-  .filter((p) => p.status === "published").length;
+  .filter((p) => p.status === "published");
 (async () => {
   let executable = process.env.CHROMIUM_PATH;
   for (const name of ["chromium", "google-chrome"])
@@ -56,7 +56,20 @@ const expected = fs
       await page.goto(url.origin + "/");
       assert.equal(await page.locator("h1").innerText(), homepage.title);
       if (galleryPath !== "/") await page.goto(url.origin + galleryPath);
-      assert.equal(await page.locator("[data-project]").count(), expected);
+      assert.equal(
+        await page.locator("[data-project]").count(),
+        projects.length,
+      );
+      assert.equal(await page.locator("[data-project] a, .launch").count(), 0);
+      for (const project of projects) {
+        const card = page.locator(`[data-project="${project.id}"]`);
+        assert.equal(await card.evaluate((element) => element.tagName), "A");
+        assert.equal(await card.getAttribute("href"), project.destination.url);
+        assert.equal(
+          await card.getAttribute("aria-label"),
+          `${project.destination.action === "play" ? "Play" : "Open"} ${project.title}`,
+        );
+      }
       const tag = page.locator(".filter").nth(1);
       if (await tag.count()) await tag.click();
       await page.getByRole("button", { name: "All", exact: true }).click();

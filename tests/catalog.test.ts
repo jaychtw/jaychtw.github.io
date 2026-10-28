@@ -27,6 +27,7 @@ const ctx: RenderContext = {
   style: "/style.css",
   script: "/site.js",
   themeScript: "/theme.js",
+  favicon: "/favicon.svg",
 };
 test("published projects retain verified current URLs and respect editable editorial order", () => {
   const p = published(validate(data()));

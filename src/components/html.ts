@@ -43,6 +43,6 @@ export function page(
 ${options.noindex ? '<meta name="robots" content="noindex">' : ""}${options.redirect ? `<meta http-equiv="refresh" content="0;url=${escape(options.redirect)}">` : ""}<link rel="canonical" href="${escape(canonical)}">
 <meta property="og:type" content="website"><meta property="og:site_name" content="${escape(ctx.site.name)}"><meta property="og:title" content="${escape(options.title)}"><meta property="og:description" content="${escape(options.description)}"><meta property="og:url" content="${escape(canonical)}">
 ${options.image ? `<meta property="og:image" content="${escape(ctx.site.canonicalOrigin + options.image)}"><meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"><script src="${escape(ctx.themeScript)}"></script><link rel="stylesheet" href="${escape(ctx.style)}"><script src="${escape(ctx.script)}" defer></script>
+<link rel="icon" href="${escape(ctx.favicon)}" type="image/svg+xml"><script src="${escape(ctx.themeScript)}"></script><link rel="stylesheet" href="${escape(ctx.style)}"><script src="${escape(ctx.script)}" defer></script>
 </head><body class="${escape(options.className || "")}" data-design-version="${escape(ctx.site.designVersion)}">${header(ctx, options.active)}${options.body}</body></html>\n`;
 }
