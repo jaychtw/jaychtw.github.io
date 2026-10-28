@@ -27,6 +27,28 @@ const projects = fs
     ),
   )
   .filter((p) => p.status === "published");
+const buildInfo = JSON.parse(
+  fs.readFileSync(path.join(root, "dist/build-info.json")),
+);
+const assetEvidence = JSON.parse(
+  fs.readFileSync(path.join(root, ".artifacts/asset-evidence.json")),
+);
+const selectedAssets = new Map(
+  assetEvidence
+    .filter((entry) => entry.project)
+    .map((entry) => [entry.project, entry]),
+);
+const imageAssets = new Map(
+  assetEvidence
+    .filter((entry) => entry.sourcePath && entry.variants)
+    .map((entry) => [entry.sourcePath, entry]),
+);
+const screenshotDirectory = path.join(
+  root,
+  ".artifacts",
+  local ? "local-gallery" : "public-gallery",
+);
+fs.mkdirSync(screenshotDirectory, { recursive: true });
 (async () => {
   let executable = process.env.CHROMIUM_PATH;
   for (const name of ["chromium", "google-chrome"])
@@ -45,7 +67,8 @@ const projects = fs
     },
   });
   const errors = [],
-    failed = [];
+    failed = [],
+    views = [];
   try {
     for (const width of [390, 1440]) {
       const page = await browser.newPage({ viewport: { width, height: 844 } });
@@ -54,6 +77,13 @@ const projects = fs
         if (r.status() >= 400) failed.push(r.status() + " " + r.url());
       });
       await page.goto(url.origin + "/");
+      const identityResponse = await page.request.get(
+        url.origin + "/build-info.json",
+      );
+      assert(identityResponse.ok());
+      const identity = await identityResponse.json();
+      assert.equal(identity.sourceCommit, buildInfo.sourceCommit);
+      if (!local) assert.equal(identity.sourceDirty, false);
       assert.equal(await page.locator("h1").innerText(), homepage.title);
       if (galleryPath !== "/") await page.goto(url.origin + galleryPath);
       assert.equal(
@@ -73,7 +103,61 @@ const projects = fs
       const tag = page.locator(".filter").nth(1);
       if (await tag.count()) await tag.click();
       await page.getByRole("button", { name: "All", exact: true }).click();
-      await page.getByRole("button", { name: "Switch to light theme" }).click();
+      const icon = await page.locator('link[rel="icon"]').getAttribute("href");
+      assert.match(
+        icon,
+        /^\/assets\/possibility\/favicon\.[0-9a-f]{12}\.svg$/u,
+      );
+      const iconResponse = await page.request.get(
+        new URL(icon, url.origin).href,
+      );
+      assert(iconResponse.ok());
+      assert.deepEqual(
+        await iconResponse.body(),
+        fs.readFileSync(path.join(root, "public/favicon.svg")),
+      );
+      for (const appearance of ["dark", "light"]) {
+        if (
+          (await page.locator("html").getAttribute("data-theme")) !== appearance
+        )
+          await page
+            .getByRole("button", { name: `Switch to ${appearance} theme` })
+            .click();
+        const cards = [];
+        for (const project of projects) {
+          const card = page.locator(`[data-project="${project.id}"]`);
+          const expected = selectedAssets.get(project.id);
+          assert(expected, `Missing image evidence for ${project.id}`);
+          const image = card.locator("img");
+          let currentSrc = null;
+          if (expected.selected === "placeholder") {
+            assert.equal(await image.count(), 0);
+          } else {
+            await image.scrollIntoViewIfNeeded();
+            await image.evaluate((element) => element.decode());
+            currentSrc = await image.evaluate((element) => element.currentSrc);
+            const variants = imageAssets.get(expected.source)?.variants;
+            assert(
+              variants?.some(
+                (variant) => variant.src === new URL(currentSrc).pathname,
+              ),
+              `Wrong image for ${project.id}`,
+            );
+          }
+          cards.push({
+            id: project.id,
+            selected: expected.selected,
+            currentSrc,
+          });
+        }
+        await page.evaluate(() => window.scrollTo(0, 0));
+        const screenshot = `gallery-${width}-${appearance}.png`;
+        await page.screenshot({
+          path: path.join(screenshotDirectory, screenshot),
+          fullPage: true,
+        });
+        views.push({ width, appearance, icon, cards, screenshot });
+      }
       await page.goto(url.origin + "/games/");
       await page.waitForURL(url.origin + galleryPath);
       await page.reload();
@@ -104,8 +188,10 @@ const projects = fs
         {
           url: target,
           local,
+          sourceCommit: buildInfo.sourceCommit,
           browser: browser.version(),
           widths: [390, 1440],
+          views,
           errors,
           failed,
           passed: true,

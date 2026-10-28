@@ -1,5 +1,7 @@
 # Cover completion and single-link cards — interim candidate
 
+**Historical interim report.** The attachment-size blocker below is resolved by the three reissued archives. See [the completed integration and release report](../cover-completion/README.md) for current artwork, tests, screenshots and release steps. This record retains the earlier card/favicon implementation evidence.
+
 **Not release ready: the 18-cover attachment could not be downloaded because it exceeds the executor's 32 MiB transfer limit.** Its README, manifest, checksums and artwork mappings have therefore not been inspected. No additional approved artwork has been imported, substituted or generated. Supply the same files in ZIPs smaller than 32 MiB each to finish the authorized work.
 
 ## Implemented independently of the attachment

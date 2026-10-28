@@ -1,0 +1,725 @@
+{
+  "scope": "All 18 frozen pairs checksum-verified and decoded-pixel identical; all four Batch 01 source files retained byte-for-byte; all 22 build selections are custom covers. No source artwork edits or enlargement. Existing delivery pipeline unchanged.",
+  "passed": true,
+  "projects": [
+    {
+      "id": "republic-of-chickens",
+      "selected": "cover",
+      "source": "/assets/covers/games/republic-of-chickens.webp",
+      "sourceSha256": "f66ff14d6313f6526a94093dd316664a0c1500d12394f60f1ee8e3b3ebb72341",
+      "sourceDimensions": [
+        1280,
+        720
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "9a82c53512b76ddd9ebb379d2924aa70cc66e64d393a85b7462103b7f2ddd730",
+          "bytes": 40660
+        },
+        {
+          "src": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "21e7788f657b123ee8c2193532dad3d2360ce98b8db137963c80050fe26af625",
+          "bytes": 105220
+        }
+      ]
+    },
+    {
+      "id": "wonderlands",
+      "selected": "cover",
+      "source": "/assets/covers/games/wonderlands.webp",
+      "sourceSha256": "9aa8caaccc0c686f9f5710503581ec3f0bc2d04d80258110245f829832c69a5b",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/wonderlands.480.efccdf2c920d.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "efccdf2c920d8a392a5bc0cf5a8b72cb715cba673804fe1e0256ec423fa9b93b",
+          "bytes": 49532
+        },
+        {
+          "src": "/assets/covers/games/wonderlands.960.38c34d036723.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "38c34d03672335a0a6705910a19d0827715ec3b116443d05cea152435e191049",
+          "bytes": 146488
+        },
+        {
+          "src": "/assets/covers/games/wonderlands.1600.3ef6af6cdea1.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "3ef6af6cdea165ceace54ad3bb4c50d130dab9b1746a3fa87c1e8acb0234c3d7",
+          "bytes": 292322
+        }
+      ]
+    },
+    {
+      "id": "squirrel-control",
+      "selected": "cover",
+      "source": "/assets/covers/games/squirrel-control.webp",
+      "sourceSha256": "70173337ad7e0b882d16c4a20996cc4b6494a4eded51a457c4243e0948ffbd33",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/squirrel-control.480.43333a565b48.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "43333a565b4870b45ec93d019a80e720ba9b7662fa2f0e63690e67096eff10c1",
+          "bytes": 43608
+        },
+        {
+          "src": "/assets/covers/games/squirrel-control.960.07194bba7cfa.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "07194bba7cfa5997e8f794e6febe3371ee0344a7e118c798cc7f39ce7c94c8d0",
+          "bytes": 122342
+        },
+        {
+          "src": "/assets/covers/games/squirrel-control.1600.77ab8e504ac1.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "77ab8e504ac1a60ef7fdfc66c77cb41511b4d8771f25e8b53ea2f1a0bfaeb003",
+          "bytes": 230160
+        }
+      ]
+    },
+    {
+      "id": "the-last-lantern",
+      "selected": "cover",
+      "source": "/assets/covers/games/the-last-lantern.webp",
+      "sourceSha256": "55ac80359a7044512b16b79d5f75710ae14eeecc3af758e7aaecfae6dcde0bb9",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/the-last-lantern.480.68522505d26f.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "68522505d26f0a7ad2c0d9ec5ea8dd5da74811af7188e2f8b6ff1a0959580184",
+          "bytes": 51666
+        },
+        {
+          "src": "/assets/covers/games/the-last-lantern.960.2dd77db9a3b6.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "2dd77db9a3b6508607c622611473581ffb367d983cf9cbf9d9afd0b6aa0e2dd9",
+          "bytes": 152862
+        },
+        {
+          "src": "/assets/covers/games/the-last-lantern.1600.031fe9f207ce.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "031fe9f207cea9a87be913db3ca43c3ab9972d8a85b575841e6fbb538a11f27c",
+          "bytes": 300654
+        }
+      ]
+    },
+    {
+      "id": "snacks-match-raohe",
+      "selected": "cover",
+      "source": "/assets/covers/games/snacks-match-raohe.webp",
+      "sourceSha256": "f0d66e4509f195127396d30c9324153f5857c525bf082d54415cf6411d6d6561",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/snacks-match-raohe.480.9657a139105c.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "9657a139105cb1a20b3c50ef5ed607cea96df75da9c8545aa9dd233611dfa0e6",
+          "bytes": 49860
+        },
+        {
+          "src": "/assets/covers/games/snacks-match-raohe.960.1e47fccbade8.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "1e47fccbade8e438fcfe79d2b90d43577b83f7d094a5f2b4a38d4f129a9303fd",
+          "bytes": 137882
+        },
+        {
+          "src": "/assets/covers/games/snacks-match-raohe.1600.eddfffd01726.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "eddfffd017261ccee24f6f10f13d02b58904bf5118532e101152134aa2ca3440",
+          "bytes": 262918
+        }
+      ]
+    },
+    {
+      "id": "shape-match",
+      "selected": "cover",
+      "source": "/assets/covers/games/shape-match.webp",
+      "sourceSha256": "b2d173642749e4b513175aeb665e01713cfdd2c7bc3c32c2250352844bb5d5e2",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/shape-match.480.e1a6b77a0442.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "e1a6b77a0442053a0342a618a555a1bed584a47d3028d083baf318e4ef58cda9",
+          "bytes": 38818
+        },
+        {
+          "src": "/assets/covers/games/shape-match.960.45643e20199b.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "45643e20199b70ab0c387941177035b34c5412920b5961e94bb8d8962923fc26",
+          "bytes": 95718
+        },
+        {
+          "src": "/assets/covers/games/shape-match.1600.51ff0b07bf94.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "51ff0b07bf9402666b65a61be0bb9fabbba7fef192eab543556e40b097682a42",
+          "bytes": 175824
+        }
+      ]
+    },
+    {
+      "id": "junctioneer",
+      "selected": "cover",
+      "source": "/assets/covers/games/junctioneer.webp",
+      "sourceSha256": "65226e506f2d0f75628c35a57640c929b97652955c57b700d659e8898283d0c7",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/junctioneer.480.97a77b716e1d.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "97a77b716e1d34408c05d6432ad7d736a6aba653029cf740bed16ecb738275f4",
+          "bytes": 47332
+        },
+        {
+          "src": "/assets/covers/games/junctioneer.960.03d50b60ac08.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "03d50b60ac089ff8d97dbb17029cf0cb45cf87f2c913dcfe02845935c24d8ca1",
+          "bytes": 138254
+        },
+        {
+          "src": "/assets/covers/games/junctioneer.1600.81905478f876.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "81905478f8764cfeff8cdffd6ab8fb3402d95a4b16bbd26d60c27aeeb1865b0e",
+          "bytes": 260562
+        }
+      ]
+    },
+    {
+      "id": "my-queens",
+      "selected": "cover",
+      "source": "/assets/covers/games/my-queens.webp",
+      "sourceSha256": "6b9f9b8ec0defd378b57c29977e1a75aefbfe3d53d59d988a429c74e8e4d1fcb",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/my-queens.480.91bb8ebcfdc2.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "91bb8ebcfdc27c5510c6a82d0e1f17584c95520fdc6839ae106b299aebc5d687",
+          "bytes": 41910
+        },
+        {
+          "src": "/assets/covers/games/my-queens.960.f845cdd70475.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "f845cdd704750e74f5af490647afc0c717910b0534e4398fc0d69aae42d31f2e",
+          "bytes": 111424
+        },
+        {
+          "src": "/assets/covers/games/my-queens.1600.e13c050ff14c.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "e13c050ff14c33a3271e4be03680c65795d7cae593c675b36a5509395f905987",
+          "bytes": 216106
+        }
+      ]
+    },
+    {
+      "id": "tidelight",
+      "selected": "cover",
+      "source": "/assets/covers/games/tidelight.webp",
+      "sourceSha256": "7ef9907882cd2b4027887d313c6d855cbff7552a8c4e6f5a0b6e39cc365d2cbb",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/tidelight.480.80c824dd39f3.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "80c824dd39f32d837b5710c8c797b7aeb036b759e3ae5b5705801ce4e491a3d8",
+          "bytes": 34792
+        },
+        {
+          "src": "/assets/covers/games/tidelight.960.b1e378672684.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "b1e37867268429f2d7125fd2ba193b90260f7e425f74553d340abc7b848ce7bc",
+          "bytes": 103648
+        },
+        {
+          "src": "/assets/covers/games/tidelight.1600.9eead930a071.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "9eead930a071ff9df336acdd79c4202078328b4b7f2a909de0f36958d01a6564",
+          "bytes": 205186
+        }
+      ]
+    },
+    {
+      "id": "jasmine-odyssey",
+      "selected": "cover",
+      "source": "/assets/covers/games/jasmine-odyssey.webp",
+      "sourceSha256": "86f94bc08470ac8d8045954f8c23201fd37678523b09286beb104567cc203838",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/jasmine-odyssey.480.5171cc1c464e.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "5171cc1c464e640d59ad5b7d9a574a2bd025436a063624e8ef7f0b57b9ec62b4",
+          "bytes": 34674
+        },
+        {
+          "src": "/assets/covers/games/jasmine-odyssey.960.3eb66343e450.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "3eb66343e4500bd45ef5b0328d10e73565bce4ea52b07843859597ba3c17f7f0",
+          "bytes": 93486
+        },
+        {
+          "src": "/assets/covers/games/jasmine-odyssey.1600.26e6532083bb.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "26e6532083bbb016bb5fb9c2a98ff1d6f05f353cd67c1dedfcc2561c7056f165",
+          "bytes": 177126
+        }
+      ]
+    },
+    {
+      "id": "formosa-quest",
+      "selected": "cover",
+      "source": "/assets/covers/games/formosa-quest.webp",
+      "sourceSha256": "59b18aef90867438d550ca71416962f9f73553eff85e5850e992b13452a567d7",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/formosa-quest.480.bfc301bcab00.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "bfc301bcab004d0088f021b2d86b1e0a4362906415c95e7170cbc380f706dd9e",
+          "bytes": 33512
+        },
+        {
+          "src": "/assets/covers/games/formosa-quest.960.ff321e9a3e34.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "ff321e9a3e3412d41c6e99c77fb680b266e9e9af4df68cf02d901b86e1b5b546",
+          "bytes": 97190
+        },
+        {
+          "src": "/assets/covers/games/formosa-quest.1600.b8c018614fae.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "b8c018614faef142704a43eecea5fbaf6167d6ffdb82d49edb30fe17e29ba2f9",
+          "bytes": 197276
+        }
+      ]
+    },
+    {
+      "id": "jeremy-odyssey",
+      "selected": "cover",
+      "source": "/assets/covers/games/jeremy-odyssey.webp",
+      "sourceSha256": "9f80a41b446decc8afaf85e4d647950d80ea3e3b880e7380d1c35eb0a1d231d4",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/jeremy-odyssey.480.73d2f0ee1113.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "73d2f0ee11134420f400dd2cd0858e19b060ece7c25ce2affc3dc9fa2bc64c4b",
+          "bytes": 40320
+        },
+        {
+          "src": "/assets/covers/games/jeremy-odyssey.960.9747b6c86fc1.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "9747b6c86fc1a0074df93f697e535f9d6901e20fae9a1aafbd5bc79abb7c6967",
+          "bytes": 112878
+        },
+        {
+          "src": "/assets/covers/games/jeremy-odyssey.1600.5be27b9a8e36.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "5be27b9a8e3631603a1784eb90272bdf3ebc12ff8794f0a59aa7f6f91b8571df",
+          "bytes": 216068
+        }
+      ]
+    },
+    {
+      "id": "nom-nom-boom",
+      "selected": "cover",
+      "source": "/assets/covers/games/nom-nom-boom.webp",
+      "sourceSha256": "22b5bf113d868e328c1bd688eac1234446320346cffa86f6d45c2f78fa2b8b9d",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/nom-nom-boom.480.f21b50f439e3.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "f21b50f439e34da5effbbe056880d6f7eecce7eb3119fb60ae1b6781611a288e",
+          "bytes": 36118
+        },
+        {
+          "src": "/assets/covers/games/nom-nom-boom.960.a1d6f4fbb5d8.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "a1d6f4fbb5d8bf1a6786bfb091c6d1724a3868e12d91d65c0beb9218010927b1",
+          "bytes": 91294
+        },
+        {
+          "src": "/assets/covers/games/nom-nom-boom.1600.8491e40c167d.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "8491e40c167d4879ac2921ebcbef45e7fa186ec6bff16ca099e8f06b459c25c0",
+          "bytes": 166982
+        }
+      ]
+    },
+    {
+      "id": "launch-sequence",
+      "selected": "cover",
+      "source": "/assets/covers/games/launch-sequence.webp",
+      "sourceSha256": "e95005a11a3310efc349da24fbee2e0878f93b6125f0a204093a53c831a49bab",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/launch-sequence.480.57fbfc3ae221.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "57fbfc3ae221ec3eebb9a064924f2fc73f68341e244bf724809dc9fb55256e19",
+          "bytes": 36702
+        },
+        {
+          "src": "/assets/covers/games/launch-sequence.960.62239046acdc.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "62239046acdc059d90666fd2d60714ee5290950b2207df3e2f4dc61ec283f2df",
+          "bytes": 109316
+        },
+        {
+          "src": "/assets/covers/games/launch-sequence.1600.fe8cee21366a.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "fe8cee21366a801a728daf8f6dc8a0dd7f1e4d912c943ab277fd356cb29820bb",
+          "bytes": 218060
+        }
+      ]
+    },
+    {
+      "id": "animal-match",
+      "selected": "cover",
+      "source": "/assets/covers/games/animal-match.webp",
+      "sourceSha256": "e48e887d8530b90df72fe27a49fdc73bc323a6d647a6c36430e8a2b8a3fe95bb",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/animal-match.480.3e4538675ae3.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "3e4538675ae3dc81ab0dc938d4c1650b8f22021a278e88c96eca59c5da528d90",
+          "bytes": 43540
+        },
+        {
+          "src": "/assets/covers/games/animal-match.960.c767086c47cd.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "c767086c47cd1747f23e10892439c7ca13a2344ff6fc4014638cb7c069f1d961",
+          "bytes": 111316
+        },
+        {
+          "src": "/assets/covers/games/animal-match.1600.0625f67d1753.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "0625f67d17535770c73de8e18f0bf7333fbeb95ecbc7666ca79f5072ce927fba",
+          "bytes": 201820
+        }
+      ]
+    },
+    {
+      "id": "kaiju-tournament",
+      "selected": "cover",
+      "source": "/assets/covers/games/kaiju-tournament.webp",
+      "sourceSha256": "2b8f756d1cf42eae9f6125a2b79a4381c8657356fa5a763e5fd0eed4d8c7e8e1",
+      "sourceDimensions": [
+        1671,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/kaiju-tournament.480.3c416001bc40.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "3c416001bc4019b58cf4a1affbe764f999acd0e51f8d21707b1080258f554c3a",
+          "bytes": 58918
+        },
+        {
+          "src": "/assets/covers/games/kaiju-tournament.960.6c5fe282cac4.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "6c5fe282cac4f6c604e79600bbeb5cf29e183de7c7d35a867fa127f4e223f22f",
+          "bytes": 180258
+        },
+        {
+          "src": "/assets/covers/games/kaiju-tournament.1600.ff3f8bd2c4a2.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "ff3f8bd2c4a23187322b11dad0dba097938ada5cdaef2720d2b834a701320d33",
+          "bytes": 355492
+        }
+      ]
+    },
+    {
+      "id": "kaiju-demolition",
+      "selected": "cover",
+      "source": "/assets/covers/games/kaiju-demolition.webp",
+      "sourceSha256": "bbf80a238fa872ad58580d8371db6fcbf225e963ef0f5bf2c67daead48e84e7c",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/kaiju-demolition.480.7899a3a218ad.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "7899a3a218ad22ae73ed75728fb3d1235d9232cb2b73e1f2caaef4e1eade1d79",
+          "bytes": 49384
+        },
+        {
+          "src": "/assets/covers/games/kaiju-demolition.960.d281737355c7.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "d281737355c773161369d208b9eed62d506bf7bcd1c92bd2fa522a7488d0b50c",
+          "bytes": 149656
+        },
+        {
+          "src": "/assets/covers/games/kaiju-demolition.1600.dbb4d7261042.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "dbb4d7261042ed0a5d12add5e0592f006b08474bf321f838b2115b6eca493f12",
+          "bytes": 296068
+        }
+      ]
+    },
+    {
+      "id": "riot-defender",
+      "selected": "cover",
+      "source": "/assets/covers/games/riot-defender.webp",
+      "sourceSha256": "ddd3f5f2db78289046cbc33f58bc309168a1f22b117c30d4067ecc5af3b254aa",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/riot-defender.480.6ecf0eaebde7.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "6ecf0eaebde7e6cdfb59f24a60416e644bf9f81de366eec270ce60ea7cdc2b59",
+          "bytes": 45706
+        },
+        {
+          "src": "/assets/covers/games/riot-defender.960.a203df1fb536.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "a203df1fb5360e55dc6bac7b1c6b04492259951d3a3c7812f3ac7cf515c4e66f",
+          "bytes": 141750
+        },
+        {
+          "src": "/assets/covers/games/riot-defender.1600.fb6cedcf3247.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "fb6cedcf3247fe3697fabe7d5f9a3886f01d691d4e76a42207c604587d93dfe0",
+          "bytes": 290886
+        }
+      ]
+    },
+    {
+      "id": "typhoon-defender",
+      "selected": "cover",
+      "source": "/assets/covers/games/typhoon-defender.webp",
+      "sourceSha256": "d7d098b1e4e2577e1f35fc2a107369883a1e9948d5559436667da6d432f2390d",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/typhoon-defender.480.00b3756b23e8.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "00b3756b23e867b16c05bea99c0bf6201f9fe3d05217794dd9925d32f8aba795",
+          "bytes": 48280
+        },
+        {
+          "src": "/assets/covers/games/typhoon-defender.960.128312fa4610.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "128312fa4610c115d64681459ce715586e8209244d3994cb41e3981202305581",
+          "bytes": 151096
+        },
+        {
+          "src": "/assets/covers/games/typhoon-defender.1600.484b417715c8.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "484b417715c81eac00a272b2b8bbbf478b075e024ec2e72e6f14536ce819856a",
+          "bytes": 303608
+        }
+      ]
+    },
+    {
+      "id": "pedestrian-living-hell",
+      "selected": "cover",
+      "source": "/assets/covers/games/pedestrian-living-hell.webp",
+      "sourceSha256": "dca7c83290efc86bf881fddb5adb529c74a2e7341baf6c9111e4350960ca250c",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/pedestrian-living-hell.480.b155afd6f567.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "b155afd6f5673c5b81853816fa3555c5df273d32b5bce9c2b9c1446af2fbdb58",
+          "bytes": 53018
+        },
+        {
+          "src": "/assets/covers/games/pedestrian-living-hell.960.3a6a7b8a04dd.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "3a6a7b8a04dda2d898ca32ffe561526e7a442d757c46328a67bf31cb26b0226d",
+          "bytes": 149604
+        },
+        {
+          "src": "/assets/covers/games/pedestrian-living-hell.1600.55c24305a706.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "55c24305a7061078cfa85fca62d167d6c0bd2f2f1dd5c48e6296202988f478b9",
+          "bytes": 285404
+        }
+      ]
+    },
+    {
+      "id": "the-other-ninty-percent",
+      "selected": "cover",
+      "source": "/assets/covers/games/the-other-ninty-percent.webp",
+      "sourceSha256": "31dc952045f1b9d7669dc9768a680963326605b4368eb76ba24ca9004de6bcab",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/the-other-ninty-percent.480.ecdb3a8b60bb.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "ecdb3a8b60bb1e763055a0d16853ac7c882e77789be02fcf3fabe53794e90ac8",
+          "bytes": 40698
+        },
+        {
+          "src": "/assets/covers/games/the-other-ninty-percent.960.32d897867a3b.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "32d897867a3b1066679e187afc1ed185a4d6c72f2a648c9366ebeca34036fc97",
+          "bytes": 104784
+        },
+        {
+          "src": "/assets/covers/games/the-other-ninty-percent.1600.87861aaa3df7.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "87861aaa3df7a5ec261827957f2644beac5fcc24f111f1977be5292a58097e25",
+          "bytes": 191026
+        }
+      ]
+    },
+    {
+      "id": "the-impossible-room",
+      "selected": "cover",
+      "source": "/assets/covers/games/the-impossible-room.webp",
+      "sourceSha256": "8e40a8a918b77b31fe71cc51fce6a81f3f7a6427d5ffa773ed50a2afdf7df914",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "variants": [
+        {
+          "src": "/assets/covers/games/the-impossible-room.480.2391407f7381.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "2391407f7381b61548bfadb6f0a192ab98c555e1b515d5fabb831a8b790c1e36",
+          "bytes": 39566
+        },
+        {
+          "src": "/assets/covers/games/the-impossible-room.960.522d864117e5.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "522d864117e5aa96cacfc3a4e5e8d20dbecd7a755fa6e9277511b6574c4a70c1",
+          "bytes": 115672
+        },
+        {
+          "src": "/assets/covers/games/the-impossible-room.1600.b47ef70f46a9.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "b47ef70f46a9afb30f2e6ebff4e584704571a1f5910bbe48a6d611ed36800345",
+          "bytes": 225580
+        }
+      ]
+    }
+  ]
+}

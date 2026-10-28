@@ -1,0 +1,280 @@
+{
+  "scope": "Local actual 22-game gallery, injected image request failures; every full-card destination retained.",
+  "results": [
+    {
+      "blocked": "covers only",
+      "projects": [
+        {
+          "id": "animal-match",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/animal-match/",
+          "passed": true
+        },
+        {
+          "id": "formosa-quest",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/formosa-quest/",
+          "passed": true
+        },
+        {
+          "id": "jasmine-odyssey",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/jasmine-odyssey/",
+          "passed": true
+        },
+        {
+          "id": "jeremy-odyssey",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/jeremy-odyssey/",
+          "passed": true
+        },
+        {
+          "id": "junctioneer",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/junctioneer/",
+          "passed": true
+        },
+        {
+          "id": "kaiju-demolition",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/kaiju-demolition/",
+          "passed": true
+        },
+        {
+          "id": "kaiju-tournament",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/kaiju-tournament/",
+          "passed": true
+        },
+        {
+          "id": "launch-sequence",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/launch-sequence/",
+          "passed": true
+        },
+        {
+          "id": "my-queens",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/my-queens/",
+          "passed": true
+        },
+        {
+          "id": "nom-nom-boom",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/nom_nom_boom/",
+          "passed": true
+        },
+        {
+          "id": "pedestrian-living-hell",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/pedestrian-living-hell/",
+          "passed": true
+        },
+        {
+          "id": "republic-of-chickens",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/reppublic-of-chickens/",
+          "passed": true
+        },
+        {
+          "id": "riot-defender",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/riot-defender/",
+          "passed": true
+        },
+        {
+          "id": "shape-match",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/shape-match/",
+          "passed": true
+        },
+        {
+          "id": "snacks-match-raohe",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/snacks-match-raohe/",
+          "passed": true
+        },
+        {
+          "id": "squirrel-control",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/squirrel-control/",
+          "passed": true
+        },
+        {
+          "id": "the-impossible-room",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/the-impossible-room/",
+          "passed": true
+        },
+        {
+          "id": "the-last-lantern",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/the-last-lantern/",
+          "passed": true
+        },
+        {
+          "id": "the-other-ninty-percent",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/the-other-ninty-percent/",
+          "passed": true
+        },
+        {
+          "id": "tidelight",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/tidelight/",
+          "passed": true
+        },
+        {
+          "id": "typhoon-defender",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/typhoon-defender/",
+          "passed": true
+        },
+        {
+          "id": "wonderlands",
+          "expected": "screenshot",
+          "href": "https://jaychtw.github.io/wonderlands/",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "blocked": "covers and screenshots",
+      "projects": [
+        {
+          "id": "animal-match",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/animal-match/",
+          "passed": true
+        },
+        {
+          "id": "formosa-quest",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/formosa-quest/",
+          "passed": true
+        },
+        {
+          "id": "jasmine-odyssey",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/jasmine-odyssey/",
+          "passed": true
+        },
+        {
+          "id": "jeremy-odyssey",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/jeremy-odyssey/",
+          "passed": true
+        },
+        {
+          "id": "junctioneer",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/junctioneer/",
+          "passed": true
+        },
+        {
+          "id": "kaiju-demolition",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/kaiju-demolition/",
+          "passed": true
+        },
+        {
+          "id": "kaiju-tournament",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/kaiju-tournament/",
+          "passed": true
+        },
+        {
+          "id": "launch-sequence",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/launch-sequence/",
+          "passed": true
+        },
+        {
+          "id": "my-queens",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/my-queens/",
+          "passed": true
+        },
+        {
+          "id": "nom-nom-boom",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/nom_nom_boom/",
+          "passed": true
+        },
+        {
+          "id": "pedestrian-living-hell",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/pedestrian-living-hell/",
+          "passed": true
+        },
+        {
+          "id": "republic-of-chickens",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/reppublic-of-chickens/",
+          "passed": true
+        },
+        {
+          "id": "riot-defender",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/riot-defender/",
+          "passed": true
+        },
+        {
+          "id": "shape-match",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/shape-match/",
+          "passed": true
+        },
+        {
+          "id": "snacks-match-raohe",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/snacks-match-raohe/",
+          "passed": true
+        },
+        {
+          "id": "squirrel-control",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/squirrel-control/",
+          "passed": true
+        },
+        {
+          "id": "the-impossible-room",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/the-impossible-room/",
+          "passed": true
+        },
+        {
+          "id": "the-last-lantern",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/the-last-lantern/",
+          "passed": true
+        },
+        {
+          "id": "the-other-ninty-percent",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/the-other-ninty-percent/",
+          "passed": true
+        },
+        {
+          "id": "tidelight",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/tidelight/",
+          "passed": true
+        },
+        {
+          "id": "typhoon-defender",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/typhoon-defender/",
+          "passed": true
+        },
+        {
+          "id": "wonderlands",
+          "expected": "placeholder",
+          "href": "https://jaychtw.github.io/wonderlands/",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

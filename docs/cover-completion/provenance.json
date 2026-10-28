@@ -1,0 +1,370 @@
+{
+  "archives": [
+    {
+      "part": 1,
+      "filename": "Possibility_Covers_Part_1_of_3_REISSUED.zip",
+      "bytes": 27934633,
+      "sha256": "fcedee39d1210c7c8ff1f91d4ae1e4acf9c44878c809b9efdc9f6ea68c6df218",
+      "partInfo": "Part 1 of 3; contains 6 game cover pairs. README and manifest are full copies. Combine all parts before integration.\n"
+    },
+    {
+      "part": 2,
+      "filename": "Possibility_Covers_Part_2_of_3_REISSUED.zip",
+      "bytes": 27394563,
+      "sha256": "d506d096747b04584158cf2f52a8ece99d540601b3c7324393c7be83ab7baa11",
+      "partInfo": "Part 2 of 3; contains 6 game cover pairs. README and manifest are full copies. Combine all parts before integration.\n"
+    },
+    {
+      "part": 3,
+      "filename": "Possibility_Covers_Part_3_of_3_REISSUED.zip",
+      "bytes": 27643206,
+      "sha256": "7d7be4de4e7c0d4f50de6949237f272159e69b8c48c83e19fd765f4f6174b047",
+      "partInfo": "Part 3 of 3; contains 6 game cover pairs. README and manifest are full copies. Combine all parts before integration.\n"
+    }
+  ],
+  "identicalManifests": true,
+  "assets": [
+    {
+      "id": "formosa-quest",
+      "master": "masters/formosa-quest.png",
+      "webp": "publishing/formosa-quest.webp",
+      "target": "public/assets/covers/games/formosa-quest.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "15c35cffa68bdfd30ee2ab5a3dab931d84b1e32b7191dd1ed89b4134ba959b24",
+      "webp_sha256": "59b18aef90867438d550ca71416962f9f73553eff85e5850e992b13452a567d7",
+      "catalogId": "formosa-quest",
+      "catalogTitle": "Formosa Quest",
+      "actualTarget": "public/assets/covers/games/formosa-quest.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "jeremys-odyssey",
+      "master": "masters/jeremys-odyssey.png",
+      "webp": "publishing/jeremys-odyssey.webp",
+      "target": "public/assets/covers/games/jeremys-odyssey.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "da6a55fbfec0d11b50500c99d379d9977482e06f239dfd96c470e21a93bed247",
+      "webp_sha256": "9f80a41b446decc8afaf85e4d647950d80ea3e3b880e7380d1c35eb0a1d231d4",
+      "catalogId": "jeremy-odyssey",
+      "catalogTitle": "Jeremy\u2019s Odyssey",
+      "actualTarget": "public/assets/covers/games/jeremy-odyssey.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "jasmines-odyssey",
+      "master": "masters/jasmines-odyssey.png",
+      "webp": "publishing/jasmines-odyssey.webp",
+      "target": "public/assets/covers/games/jasmines-odyssey.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "a3adcdccefe7af7d88cac2d916eab95cfede0ce44da783c661f3767638a05202",
+      "webp_sha256": "86f94bc08470ac8d8045954f8c23201fd37678523b09286beb104567cc203838",
+      "catalogId": "jasmine-odyssey",
+      "catalogTitle": "Jasmine\u2019s Odyssey",
+      "actualTarget": "public/assets/covers/games/jasmine-odyssey.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "tidelight",
+      "master": "masters/tidelight.png",
+      "webp": "publishing/tidelight.webp",
+      "target": "public/assets/covers/games/tidelight.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "e76bbb1ffbd18b9b159965a2a2b4dc865eaca78d69dcf84fb7e15acb87d330eb",
+      "webp_sha256": "7ef9907882cd2b4027887d313c6d855cbff7552a8c4e6f5a0b6e39cc365d2cbb",
+      "catalogId": "tidelight",
+      "catalogTitle": "Tidelight",
+      "actualTarget": "public/assets/covers/games/tidelight.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "my-queens",
+      "master": "masters/my-queens.png",
+      "webp": "publishing/my-queens.webp",
+      "target": "public/assets/covers/games/my-queens.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "e2476c76c0a51d80968108d9f1229850713f19d829f14a9b41a0e4b9c7d80b74",
+      "webp_sha256": "6b9f9b8ec0defd378b57c29977e1a75aefbfe3d53d59d988a429c74e8e4d1fcb",
+      "catalogId": "my-queens",
+      "catalogTitle": "My Queens",
+      "actualTarget": "public/assets/covers/games/my-queens.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "kaiju-tournament",
+      "master": "masters/kaiju-tournament.png",
+      "webp": "publishing/kaiju-tournament.webp",
+      "target": "public/assets/covers/games/kaiju-tournament.webp",
+      "dimensions": [
+        1671,
+        941
+      ],
+      "master_sha256": "cd60722e1d6ae386be3900dd82c778d728f0c7521000d88673d83ec62567295f",
+      "webp_sha256": "2b8f756d1cf42eae9f6125a2b79a4381c8657356fa5a763e5fd0eed4d8c7e8e1",
+      "catalogId": "kaiju-tournament",
+      "catalogTitle": "World Kaiju Tournament",
+      "actualTarget": "public/assets/covers/games/kaiju-tournament.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "nom-nom-boom",
+      "master": "masters/nom-nom-boom.png",
+      "webp": "publishing/nom-nom-boom.webp",
+      "target": "public/assets/covers/games/nom-nom-boom.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "26c6cf1f745a8472a5b3cdaf173f6666baaabf0cc229c92501fcadb8858e633c",
+      "webp_sha256": "22b5bf113d868e328c1bd688eac1234446320346cffa86f6d45c2f78fa2b8b9d",
+      "catalogId": "nom-nom-boom",
+      "catalogTitle": "Nom Nom BOOM!",
+      "actualTarget": "public/assets/covers/games/nom-nom-boom.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "pedestrian-living-hell",
+      "master": "masters/pedestrian-living-hell.png",
+      "webp": "publishing/pedestrian-living-hell.webp",
+      "target": "public/assets/covers/games/pedestrian-living-hell.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "5ea408882b78f7d2af354958d6183d6b7e08c2f13b41ac65e7696e52bb530169",
+      "webp_sha256": "dca7c83290efc86bf881fddb5adb529c74a2e7341baf6c9111e4350960ca250c",
+      "catalogId": "pedestrian-living-hell",
+      "catalogTitle": "Pedestrian\u2019s Living Hell",
+      "actualTarget": "public/assets/covers/games/pedestrian-living-hell.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "riot-defender",
+      "master": "masters/riot-defender.png",
+      "webp": "publishing/riot-defender.webp",
+      "target": "public/assets/covers/games/riot-defender.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "d5099d63ce76d012fc2e0ab2058fedfcea7fca32e98891abc028e9889702a95d",
+      "webp_sha256": "ddd3f5f2db78289046cbc33f58bc309168a1f22b117c30d4067ecc5af3b254aa",
+      "catalogId": "riot-defender",
+      "catalogTitle": "Riot Defender",
+      "actualTarget": "public/assets/covers/games/riot-defender.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "kaiju-demolition",
+      "master": "masters/kaiju-demolition.png",
+      "webp": "publishing/kaiju-demolition.webp",
+      "target": "public/assets/covers/games/kaiju-demolition.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "c058dfb3ffdd7218e85d63e8a2d0e042b5c997ef6433eb7a66ba5744007036a9",
+      "webp_sha256": "bbf80a238fa872ad58580d8371db6fcbf225e963ef0f5bf2c67daead48e84e7c",
+      "catalogId": "kaiju-demolition",
+      "catalogTitle": "Kaiju Demolition",
+      "actualTarget": "public/assets/covers/games/kaiju-demolition.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "launch-sequence",
+      "master": "masters/launch-sequence.png",
+      "webp": "publishing/launch-sequence.webp",
+      "target": "public/assets/covers/games/launch-sequence.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "cded0941f7091a98f13cf175e6e8a97445a13f59fa0c060c87e5dd39886f1113",
+      "webp_sha256": "e95005a11a3310efc349da24fbee2e0878f93b6125f0a204093a53c831a49bab",
+      "catalogId": "launch-sequence",
+      "catalogTitle": "Launch Sequence",
+      "actualTarget": "public/assets/covers/games/launch-sequence.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "the-other-ninty-percent",
+      "master": "masters/the-other-ninty-percent.png",
+      "webp": "publishing/the-other-ninty-percent.webp",
+      "target": "public/assets/covers/games/the-other-ninty-percent.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "dd3c5739fddd2120a50984cf0f86df08705c1b5c0002e3cf82133829589e3e68",
+      "webp_sha256": "31dc952045f1b9d7669dc9768a680963326605b4368eb76ba24ca9004de6bcab",
+      "catalogId": "the-other-ninty-percent",
+      "catalogTitle": "The Other 90%",
+      "actualTarget": "public/assets/covers/games/the-other-ninty-percent.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "the-impossible-room",
+      "master": "masters/the-impossible-room.png",
+      "webp": "publishing/the-impossible-room.webp",
+      "target": "public/assets/covers/games/the-impossible-room.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "e7e081aec49ed8ca7b4938d2772cb320aab763d65b5a465ef53d34678b973fac",
+      "webp_sha256": "8e40a8a918b77b31fe71cc51fce6a81f3f7a6427d5ffa773ed50a2afdf7df914",
+      "catalogId": "the-impossible-room",
+      "catalogTitle": "The Impossible Room",
+      "actualTarget": "public/assets/covers/games/the-impossible-room.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "typhoon-defender",
+      "master": "masters/typhoon-defender.png",
+      "webp": "publishing/typhoon-defender.webp",
+      "target": "public/assets/covers/games/typhoon-defender.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "902421ea660e8ff110eee95120ebee33c86562715cd821050966f9d019feac63",
+      "webp_sha256": "d7d098b1e4e2577e1f35fc2a107369883a1e9948d5559436667da6d432f2390d",
+      "catalogId": "typhoon-defender",
+      "catalogTitle": "Typhoon Defender",
+      "actualTarget": "public/assets/covers/games/typhoon-defender.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "junctioneer",
+      "master": "masters/junctioneer.png",
+      "webp": "publishing/junctioneer.webp",
+      "target": "public/assets/covers/games/junctioneer.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "3365cca293d91dcc5ccaf659c73d2e25290b79ac50dfadfabb1f61a04671b514",
+      "webp_sha256": "65226e506f2d0f75628c35a57640c929b97652955c57b700d659e8898283d0c7",
+      "catalogId": "junctioneer",
+      "catalogTitle": "Junctioneer",
+      "actualTarget": "public/assets/covers/games/junctioneer.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "shape-match",
+      "master": "masters/shape-match.png",
+      "webp": "publishing/shape-match.webp",
+      "target": "public/assets/covers/games/shape-match.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "735a2b562a9b0f35b819736ab4190984ae15e7e0084c7ea6ffb0a5966ee28f5d",
+      "webp_sha256": "b2d173642749e4b513175aeb665e01713cfdd2c7bc3c32c2250352844bb5d5e2",
+      "catalogId": "shape-match",
+      "catalogTitle": "Shape Match",
+      "actualTarget": "public/assets/covers/games/shape-match.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "animal-match",
+      "master": "masters/animal-match.png",
+      "webp": "publishing/animal-match.webp",
+      "target": "public/assets/covers/games/animal-match.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "3205e7150137b1eb0f3c56e52664a7774ed527624254d06794b4529d1cecc991",
+      "webp_sha256": "e48e887d8530b90df72fe27a49fdc73bc323a6d647a6c36430e8a2b8a3fe95bb",
+      "catalogId": "animal-match",
+      "catalogTitle": "Cute Animal Match",
+      "actualTarget": "public/assets/covers/games/animal-match.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    },
+    {
+      "id": "snacks-match-raohe",
+      "master": "masters/snacks-match-raohe.png",
+      "webp": "publishing/snacks-match-raohe.webp",
+      "target": "public/assets/covers/games/snacks-match-raohe.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "master_sha256": "e2e21bff3d1000f4f4d8b54a1228d8b928e06f93710a4b555b2f9627c6c0a27b",
+      "webp_sha256": "f0d66e4509f195127396d30c9324153f5857c525bf082d54415cf6411d6d6561",
+      "catalogId": "snacks-match-raohe",
+      "catalogTitle": "Snacks Match \u2013 Raohe",
+      "actualTarget": "public/assets/covers/games/snacks-match-raohe.webp",
+      "checksumsVerified": true,
+      "decodedPixelsIdentical": true
+    }
+  ],
+  "retainedBatch01": [
+    {
+      "id": "republic-of-chickens",
+      "path": "public/assets/covers/games/republic-of-chickens.webp",
+      "sha256": "f66ff14d6313f6526a94093dd316664a0c1500d12394f60f1ee8e3b3ebb72341"
+    },
+    {
+      "id": "squirrel-control",
+      "path": "public/assets/covers/games/squirrel-control.webp",
+      "sha256": "70173337ad7e0b882d16c4a20996cc4b6494a4eded51a457c4243e0948ffbd33"
+    },
+    {
+      "id": "the-last-lantern",
+      "path": "public/assets/covers/games/the-last-lantern.webp",
+      "sha256": "55ac80359a7044512b16b79d5f75710ae14eeecc3af758e7aaecfae6dcde0bb9"
+    },
+    {
+      "id": "wonderlands",
+      "path": "public/assets/covers/games/wonderlands.webp",
+      "sha256": "9aa8caaccc0c686f9f5710503581ec3f0bc2d04d80258110245f829832c69a5b"
+    }
+  ],
+  "preservedOwnerRootUploads": [
+    "formosa-quest.png",
+    "jeremys-odyssey.png",
+    "jasmines-odyssey.png",
+    "tidelight.png",
+    "my-queens.png",
+    "nom-nom-boom.png",
+    "riot-defender.png",
+    "kaiju-demolition.png",
+    "launch-sequence.png",
+    "junctioneer.png",
+    "snacks-match-raohe.png"
+  ],
+  "scope": "Master originals archived byte-for-byte; included lossless WebPs copied unchanged under actual existing catalog IDs. Original manifest IDs preserved as provenance, not used to rename catalog entries."
+}

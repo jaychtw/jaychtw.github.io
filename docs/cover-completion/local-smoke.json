@@ -1,0 +1,487 @@
+{
+  "url": "http://127.0.0.1:4180",
+  "local": true,
+  "sourceCommit": "0aa7104d740c21b3c81bb03be923834e6c367d96",
+  "browser": "154.0.8037.57",
+  "widths": [
+    390,
+    1440
+  ],
+  "views": [
+    {
+      "width": 390,
+      "appearance": "dark",
+      "icon": "/assets/possibility/favicon.5bbdefd497a4.svg",
+      "cards": [
+        {
+          "id": "animal-match",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/animal-match.480.3e4538675ae3.webp"
+        },
+        {
+          "id": "formosa-quest",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/formosa-quest.480.bfc301bcab00.webp"
+        },
+        {
+          "id": "jasmine-odyssey",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/jasmine-odyssey.480.5171cc1c464e.webp"
+        },
+        {
+          "id": "jeremy-odyssey",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/jeremy-odyssey.480.73d2f0ee1113.webp"
+        },
+        {
+          "id": "junctioneer",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/junctioneer.480.97a77b716e1d.webp"
+        },
+        {
+          "id": "kaiju-demolition",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/kaiju-demolition.480.7899a3a218ad.webp"
+        },
+        {
+          "id": "kaiju-tournament",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/kaiju-tournament.480.3c416001bc40.webp"
+        },
+        {
+          "id": "launch-sequence",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/launch-sequence.480.57fbfc3ae221.webp"
+        },
+        {
+          "id": "my-queens",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/my-queens.480.91bb8ebcfdc2.webp"
+        },
+        {
+          "id": "nom-nom-boom",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/nom-nom-boom.480.f21b50f439e3.webp"
+        },
+        {
+          "id": "pedestrian-living-hell",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/pedestrian-living-hell.480.b155afd6f567.webp"
+        },
+        {
+          "id": "republic-of-chickens",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp"
+        },
+        {
+          "id": "riot-defender",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/riot-defender.480.6ecf0eaebde7.webp"
+        },
+        {
+          "id": "shape-match",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/shape-match.480.e1a6b77a0442.webp"
+        },
+        {
+          "id": "snacks-match-raohe",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/snacks-match-raohe.480.9657a139105c.webp"
+        },
+        {
+          "id": "squirrel-control",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp"
+        },
+        {
+          "id": "the-impossible-room",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-impossible-room.480.2391407f7381.webp"
+        },
+        {
+          "id": "the-last-lantern",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp"
+        },
+        {
+          "id": "the-other-ninty-percent",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-other-ninty-percent.480.ecdb3a8b60bb.webp"
+        },
+        {
+          "id": "tidelight",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/tidelight.480.80c824dd39f3.webp"
+        },
+        {
+          "id": "typhoon-defender",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/typhoon-defender.480.00b3756b23e8.webp"
+        },
+        {
+          "id": "wonderlands",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp"
+        }
+      ],
+      "screenshot": "gallery-390-dark.png"
+    },
+    {
+      "width": 390,
+      "appearance": "light",
+      "icon": "/assets/possibility/favicon.5bbdefd497a4.svg",
+      "cards": [
+        {
+          "id": "animal-match",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/animal-match.480.3e4538675ae3.webp"
+        },
+        {
+          "id": "formosa-quest",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/formosa-quest.480.bfc301bcab00.webp"
+        },
+        {
+          "id": "jasmine-odyssey",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/jasmine-odyssey.480.5171cc1c464e.webp"
+        },
+        {
+          "id": "jeremy-odyssey",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/jeremy-odyssey.480.73d2f0ee1113.webp"
+        },
+        {
+          "id": "junctioneer",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/junctioneer.480.97a77b716e1d.webp"
+        },
+        {
+          "id": "kaiju-demolition",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/kaiju-demolition.480.7899a3a218ad.webp"
+        },
+        {
+          "id": "kaiju-tournament",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/kaiju-tournament.480.3c416001bc40.webp"
+        },
+        {
+          "id": "launch-sequence",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/launch-sequence.480.57fbfc3ae221.webp"
+        },
+        {
+          "id": "my-queens",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/my-queens.480.91bb8ebcfdc2.webp"
+        },
+        {
+          "id": "nom-nom-boom",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/nom-nom-boom.480.f21b50f439e3.webp"
+        },
+        {
+          "id": "pedestrian-living-hell",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/pedestrian-living-hell.480.b155afd6f567.webp"
+        },
+        {
+          "id": "republic-of-chickens",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp"
+        },
+        {
+          "id": "riot-defender",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/riot-defender.480.6ecf0eaebde7.webp"
+        },
+        {
+          "id": "shape-match",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/shape-match.480.e1a6b77a0442.webp"
+        },
+        {
+          "id": "snacks-match-raohe",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/snacks-match-raohe.480.9657a139105c.webp"
+        },
+        {
+          "id": "squirrel-control",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp"
+        },
+        {
+          "id": "the-impossible-room",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-impossible-room.480.2391407f7381.webp"
+        },
+        {
+          "id": "the-last-lantern",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp"
+        },
+        {
+          "id": "the-other-ninty-percent",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-other-ninty-percent.480.ecdb3a8b60bb.webp"
+        },
+        {
+          "id": "tidelight",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/tidelight.480.80c824dd39f3.webp"
+        },
+        {
+          "id": "typhoon-defender",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/typhoon-defender.480.00b3756b23e8.webp"
+        },
+        {
+          "id": "wonderlands",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp"
+        }
+      ],
+      "screenshot": "gallery-390-light.png"
+    },
+    {
+      "width": 1440,
+      "appearance": "dark",
+      "icon": "/assets/possibility/favicon.5bbdefd497a4.svg",
+      "cards": [
+        {
+          "id": "animal-match",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/animal-match.480.3e4538675ae3.webp"
+        },
+        {
+          "id": "formosa-quest",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/formosa-quest.480.bfc301bcab00.webp"
+        },
+        {
+          "id": "jasmine-odyssey",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/jasmine-odyssey.480.5171cc1c464e.webp"
+        },
+        {
+          "id": "jeremy-odyssey",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/jeremy-odyssey.480.73d2f0ee1113.webp"
+        },
+        {
+          "id": "junctioneer",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/junctioneer.480.97a77b716e1d.webp"
+        },
+        {
+          "id": "kaiju-demolition",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/kaiju-demolition.480.7899a3a218ad.webp"
+        },
+        {
+          "id": "kaiju-tournament",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/kaiju-tournament.480.3c416001bc40.webp"
+        },
+        {
+          "id": "launch-sequence",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/launch-sequence.480.57fbfc3ae221.webp"
+        },
+        {
+          "id": "my-queens",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/my-queens.480.91bb8ebcfdc2.webp"
+        },
+        {
+          "id": "nom-nom-boom",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/nom-nom-boom.480.f21b50f439e3.webp"
+        },
+        {
+          "id": "pedestrian-living-hell",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/pedestrian-living-hell.480.b155afd6f567.webp"
+        },
+        {
+          "id": "republic-of-chickens",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp"
+        },
+        {
+          "id": "riot-defender",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/riot-defender.480.6ecf0eaebde7.webp"
+        },
+        {
+          "id": "shape-match",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/shape-match.480.e1a6b77a0442.webp"
+        },
+        {
+          "id": "snacks-match-raohe",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/snacks-match-raohe.480.9657a139105c.webp"
+        },
+        {
+          "id": "squirrel-control",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp"
+        },
+        {
+          "id": "the-impossible-room",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-impossible-room.480.2391407f7381.webp"
+        },
+        {
+          "id": "the-last-lantern",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp"
+        },
+        {
+          "id": "the-other-ninty-percent",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-other-ninty-percent.480.ecdb3a8b60bb.webp"
+        },
+        {
+          "id": "tidelight",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/tidelight.480.80c824dd39f3.webp"
+        },
+        {
+          "id": "typhoon-defender",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/typhoon-defender.480.00b3756b23e8.webp"
+        },
+        {
+          "id": "wonderlands",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp"
+        }
+      ],
+      "screenshot": "gallery-1440-dark.png"
+    },
+    {
+      "width": 1440,
+      "appearance": "light",
+      "icon": "/assets/possibility/favicon.5bbdefd497a4.svg",
+      "cards": [
+        {
+          "id": "animal-match",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/animal-match.480.3e4538675ae3.webp"
+        },
+        {
+          "id": "formosa-quest",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/formosa-quest.480.bfc301bcab00.webp"
+        },
+        {
+          "id": "jasmine-odyssey",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/jasmine-odyssey.480.5171cc1c464e.webp"
+        },
+        {
+          "id": "jeremy-odyssey",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/jeremy-odyssey.480.73d2f0ee1113.webp"
+        },
+        {
+          "id": "junctioneer",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/junctioneer.480.97a77b716e1d.webp"
+        },
+        {
+          "id": "kaiju-demolition",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/kaiju-demolition.480.7899a3a218ad.webp"
+        },
+        {
+          "id": "kaiju-tournament",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/kaiju-tournament.480.3c416001bc40.webp"
+        },
+        {
+          "id": "launch-sequence",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/launch-sequence.480.57fbfc3ae221.webp"
+        },
+        {
+          "id": "my-queens",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/my-queens.480.91bb8ebcfdc2.webp"
+        },
+        {
+          "id": "nom-nom-boom",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/nom-nom-boom.480.f21b50f439e3.webp"
+        },
+        {
+          "id": "pedestrian-living-hell",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/pedestrian-living-hell.480.b155afd6f567.webp"
+        },
+        {
+          "id": "republic-of-chickens",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp"
+        },
+        {
+          "id": "riot-defender",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/riot-defender.480.6ecf0eaebde7.webp"
+        },
+        {
+          "id": "shape-match",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/shape-match.480.e1a6b77a0442.webp"
+        },
+        {
+          "id": "snacks-match-raohe",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/snacks-match-raohe.480.9657a139105c.webp"
+        },
+        {
+          "id": "squirrel-control",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp"
+        },
+        {
+          "id": "the-impossible-room",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-impossible-room.480.2391407f7381.webp"
+        },
+        {
+          "id": "the-last-lantern",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp"
+        },
+        {
+          "id": "the-other-ninty-percent",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-other-ninty-percent.480.ecdb3a8b60bb.webp"
+        },
+        {
+          "id": "tidelight",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/tidelight.480.80c824dd39f3.webp"
+        },
+        {
+          "id": "typhoon-defender",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/typhoon-defender.480.00b3756b23e8.webp"
+        },
+        {
+          "id": "wonderlands",
+          "selected": "cover",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp"
+        }
+      ],
+      "screenshot": "gallery-1440-light.png"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "passed": true
+}
