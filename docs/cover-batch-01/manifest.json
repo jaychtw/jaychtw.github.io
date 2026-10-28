@@ -1,0 +1,52 @@
+{
+  "collection": "Possibility Games",
+  "batch": "01",
+  "status": "Owner-approved and frozen",
+  "notes": "Master images are supplied unchanged. Do not regenerate. Codex should optimize derivative WebP publishing assets and preserve masters.",
+  "assets": [
+    {
+      "id": "republic-of-chickens",
+      "master": "masters/republic-of-chickens.png",
+      "target": "public/assets/covers/games/republic-of-chickens.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "a6b3363ac7a1fbe66d3221c109cd8c3cf18d93b5ed1128892a876df7e3d1d7c5",
+      "note": "Approved ROC cover, blue banner and gold dimensional title"
+    },
+    {
+      "id": "wonderlands",
+      "master": "masters/wonderlands.png",
+      "target": "public/assets/covers/games/wonderlands.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "f99b880a1d71912ad9b5a839124cdeb60c2b7ea05dd46aefffc2660975cde3c3",
+      "note": "Approved terraforming panorama, no characters"
+    },
+    {
+      "id": "squirrel-control",
+      "master": "masters/squirrel-control.png",
+      "target": "public/assets/covers/games/squirrel-control.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "bef1c26fbabbceac5ea058813c08aa6b2dadf6c7cb5534476da40e7dbe0cce8c",
+      "note": "Approved cottage with Miss Bunny and hidden squirrels; v1.1 concept reference"
+    },
+    {
+      "id": "the-last-lantern",
+      "master": "masters/the-last-lantern.png",
+      "target": "public/assets/covers/games/the-last-lantern.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "ad4a4f52833278a4c05cbef87eac5591f60a057146a4912641e6c36fb945856c",
+      "note": "Approved lantern-bearing courier and distant beacon"
+    }
+  ]
+}

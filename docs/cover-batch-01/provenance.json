@@ -1,0 +1,78 @@
+{
+  "batch": "01",
+  "archive": "Original PNGs, manifest and README archived byte-for-byte from the supplied ZIP.",
+  "assets": [
+    {
+      "id": "republic-of-chickens",
+      "master": "masters/republic-of-chickens.png",
+      "masterSha256": "a6b3363ac7a1fbe66d3221c109cd8c3cf18d93b5ed1128892a876df7e3d1d7c5",
+      "masterDimensions": [
+        1672,
+        941
+      ],
+      "target": "public/assets/covers/games/republic-of-chickens.webp",
+      "targetSha256": "f66ff14d6313f6526a94093dd316664a0c1500d12394f60f1ee8e3b3ebb72341",
+      "targetDimensions": [
+        1280,
+        720
+      ],
+      "targetBytes": 1160618,
+      "retained": true,
+      "conversion": "Existing POC retained: visually same approved artwork, original 1280x720 JPG decoded losslessly to WebP; not byte-identical to supplied higher-resolution PNG."
+    },
+    {
+      "id": "wonderlands",
+      "master": "masters/wonderlands.png",
+      "masterSha256": "f99b880a1d71912ad9b5a839124cdeb60c2b7ea05dd46aefffc2660975cde3c3",
+      "masterDimensions": [
+        1672,
+        941
+      ],
+      "target": "public/assets/covers/games/wonderlands.webp",
+      "targetSha256": "9aa8caaccc0c686f9f5710503581ec3f0bc2d04d80258110245f829832c69a5b",
+      "targetDimensions": [
+        1672,
+        941
+      ],
+      "targetBytes": 2335488,
+      "retained": false,
+      "conversion": "Lossless WebP, effort 6; decoded RGB verified identical to PNG; no resize, crop or artistic modification."
+    },
+    {
+      "id": "squirrel-control",
+      "master": "masters/squirrel-control.png",
+      "masterSha256": "bef1c26fbabbceac5ea058813c08aa6b2dadf6c7cb5534476da40e7dbe0cce8c",
+      "masterDimensions": [
+        1672,
+        941
+      ],
+      "target": "public/assets/covers/games/squirrel-control.webp",
+      "targetSha256": "70173337ad7e0b882d16c4a20996cc4b6494a4eded51a457c4243e0948ffbd33",
+      "targetDimensions": [
+        1672,
+        941
+      ],
+      "targetBytes": 2071234,
+      "retained": false,
+      "conversion": "Lossless WebP, effort 6; decoded RGB verified identical to PNG; no resize, crop or artistic modification."
+    },
+    {
+      "id": "the-last-lantern",
+      "master": "masters/the-last-lantern.png",
+      "masterSha256": "ad4a4f52833278a4c05cbef87eac5591f60a057146a4912641e6c36fb945856c",
+      "masterDimensions": [
+        1672,
+        941
+      ],
+      "target": "public/assets/covers/games/the-last-lantern.webp",
+      "targetSha256": "55ac80359a7044512b16b79d5f75710ae14eeecc3af758e7aaecfae6dcde0bb9",
+      "targetDimensions": [
+        1672,
+        941
+      ],
+      "targetBytes": 2379814,
+      "retained": false,
+      "conversion": "Lossless WebP, effort 6; decoded RGB verified identical to PNG; no resize, crop or artistic modification."
+    }
+  ]
+}

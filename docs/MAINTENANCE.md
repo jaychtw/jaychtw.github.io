@@ -4,10 +4,20 @@ Routine edits require GitHub file changes, not application-code changes. **Curre
 
 ## Replace artwork
 
-1. Export an owner-approved WebP, ideally 1600×900 or larger, retaining the focal point and avoiding unnecessary embedded text. Keep the approved high-resolution original in your separate artwork archive.
+1. Export the owner-approved artwork as WebP, preserving its complete composition and approved title lettering. Use the original resolution; do not enlarge a smaller source to reach a suggested size. Keep the original master and its provenance in your artwork archive. Approved Batch 01 masters are preserved in [cover-batch-01/masters](cover-batch-01/masters/).
 2. In GitHub, upload/replace `public/assets/covers/games/<project-id>.webp` (or `apps/<project-id>.webp`). Match the ID in its metadata filename.
 3. Commit. No metadata, code, or checksum edit is required. The custom cover automatically takes priority; 480/960/1600px renditions are generated when the source permits, and every rendition gets a content fingerprint. Smaller sources are not enlarged.
 4. Review the check results. After publication is authorized, deployment serves the HTML pointing to the new fingerprint. Reload the page normally; if a CDN briefly retains older HTML, wait for the successful deployment/build identity, then hard-refresh. Do not repeatedly rename the source file or edit code to defeat caching.
+
+The shortest repeatable GitHub procedure is: replace that one WebP on a `platform/` review branch, commit, wait for **Validate release candidate**, merge into main, and wait for main's check. While automatic publication remains inactive, an authorized owner then runs **Publish approved Possibility release** from main with that exact full main SHA and `PUBLISH POSSIBILITY`. Wait for both jobs and public verification to pass. A commit alone does not publish today.
+
+For a PNG master, the existing local dependency can make a lossless publishing source without resizing or cropping (run after `npm ci`, substituting actual paths):
+
+```sh
+node --input-type=module -e 'import sharp from "sharp"; await sharp(process.argv[1]).webp({lossless:true,effort:6}).toFile(process.argv[2]);' approved-master.png public/assets/covers/games/project-id.webp
+```
+
+The build, not the owner, creates the smaller delivery variants and their fingerprints. Source WebPs and archived masters are not copied directly into the public release.
 
 Removing the custom cover restores the screenshot; no screenshot yields a neutral monogram. A malformed custom file produces a warning and uses the same fallback chain. Runtime image failure also retains a usable Play/Open action. Portal covers never require a game-repository change.
 
