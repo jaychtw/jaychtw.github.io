@@ -1,0 +1,452 @@
+{
+  "scope": "Local actual gallery; not public deployment verification",
+  "sourceCommit": "58d4afe651d336c24887d3f048a7ee925b79d7f1",
+  "sourceDirty": true,
+  "deviceScaleFactor": 1,
+  "cases": [
+    {
+      "device": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshotHeight": 1080,
+      "screenshotNote": "Canvas extended vertically after card checks to include all four approved covers; width and layout unchanged",
+      "theme": "light",
+      "columns": 3,
+      "cards": [
+        {
+          "id": "republic-of-chickens",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+          "naturalWidth": 379,
+          "naturalHeight": 213,
+          "cssWidth": 378.65625,
+          "cssHeight": 212.984375,
+          "alt": "Republic of Chickens cover artwork"
+        },
+        {
+          "id": "wonderlands",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp",
+          "naturalWidth": 379,
+          "naturalHeight": 213,
+          "cssWidth": 378.671875,
+          "cssHeight": 213,
+          "alt": "Wonderlands cover artwork"
+        },
+        {
+          "id": "squirrel-control",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp",
+          "naturalWidth": 379,
+          "naturalHeight": 213,
+          "cssWidth": 378.65625,
+          "cssHeight": 212.984375,
+          "alt": "Squirrel Control cover artwork"
+        },
+        {
+          "id": "the-last-lantern",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp",
+          "naturalWidth": 379,
+          "naturalHeight": 213,
+          "cssWidth": 378.65625,
+          "cssHeight": 212.984375,
+          "alt": "The Last Lantern cover artwork"
+        }
+      ],
+      "errors": [],
+      "screenshot": "screenshots/desktop-light.png"
+    },
+    {
+      "device": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshotHeight": 1080,
+      "screenshotNote": "Canvas extended vertically after card checks to include all four approved covers; width and layout unchanged",
+      "theme": "dark",
+      "columns": 3,
+      "cards": [
+        {
+          "id": "republic-of-chickens",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+          "naturalWidth": 379,
+          "naturalHeight": 213,
+          "cssWidth": 378.65625,
+          "cssHeight": 212.984375,
+          "alt": "Republic of Chickens cover artwork"
+        },
+        {
+          "id": "wonderlands",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp",
+          "naturalWidth": 379,
+          "naturalHeight": 213,
+          "cssWidth": 378.671875,
+          "cssHeight": 213,
+          "alt": "Wonderlands cover artwork"
+        },
+        {
+          "id": "squirrel-control",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp",
+          "naturalWidth": 379,
+          "naturalHeight": 213,
+          "cssWidth": 378.65625,
+          "cssHeight": 212.984375,
+          "alt": "Squirrel Control cover artwork"
+        },
+        {
+          "id": "the-last-lantern",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp",
+          "naturalWidth": 379,
+          "naturalHeight": 213,
+          "cssWidth": 378.65625,
+          "cssHeight": 212.984375,
+          "alt": "The Last Lantern cover artwork"
+        }
+      ],
+      "errors": [],
+      "screenshot": "screenshots/desktop-dark.png"
+    },
+    {
+      "device": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshotHeight": 1066,
+      "screenshotNote": "Canvas extended vertically after card checks to include all four approved covers; width and layout unchanged",
+      "theme": "light",
+      "columns": 2,
+      "cards": [
+        {
+          "id": "republic-of-chickens",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+          "naturalWidth": 347,
+          "naturalHeight": 195,
+          "cssWidth": 348,
+          "cssHeight": 195.75,
+          "alt": "Republic of Chickens cover artwork"
+        },
+        {
+          "id": "wonderlands",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp",
+          "naturalWidth": 347,
+          "naturalHeight": 195,
+          "cssWidth": 348,
+          "cssHeight": 195.75,
+          "alt": "Wonderlands cover artwork"
+        },
+        {
+          "id": "squirrel-control",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp",
+          "naturalWidth": 347,
+          "naturalHeight": 195,
+          "cssWidth": 348,
+          "cssHeight": 195.75,
+          "alt": "Squirrel Control cover artwork"
+        },
+        {
+          "id": "the-last-lantern",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp",
+          "naturalWidth": 347,
+          "naturalHeight": 195,
+          "cssWidth": 348,
+          "cssHeight": 195.75,
+          "alt": "The Last Lantern cover artwork"
+        }
+      ],
+      "errors": [],
+      "screenshot": "screenshots/tablet-light.png"
+    },
+    {
+      "device": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshotHeight": 1066,
+      "screenshotNote": "Canvas extended vertically after card checks to include all four approved covers; width and layout unchanged",
+      "theme": "dark",
+      "columns": 2,
+      "cards": [
+        {
+          "id": "republic-of-chickens",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+          "naturalWidth": 347,
+          "naturalHeight": 195,
+          "cssWidth": 348,
+          "cssHeight": 195.75,
+          "alt": "Republic of Chickens cover artwork"
+        },
+        {
+          "id": "wonderlands",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp",
+          "naturalWidth": 347,
+          "naturalHeight": 195,
+          "cssWidth": 348,
+          "cssHeight": 195.75,
+          "alt": "Wonderlands cover artwork"
+        },
+        {
+          "id": "squirrel-control",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp",
+          "naturalWidth": 347,
+          "naturalHeight": 195,
+          "cssWidth": 348,
+          "cssHeight": 195.75,
+          "alt": "Squirrel Control cover artwork"
+        },
+        {
+          "id": "the-last-lantern",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp",
+          "naturalWidth": 347,
+          "naturalHeight": 195,
+          "cssWidth": 348,
+          "cssHeight": 195.75,
+          "alt": "The Last Lantern cover artwork"
+        }
+      ],
+      "errors": [],
+      "screenshot": "screenshots/tablet-dark.png"
+    },
+    {
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "screenshotHeight": 1924,
+      "screenshotNote": "Canvas extended vertically after card checks to include all four approved covers; width and layout unchanged",
+      "theme": "light",
+      "columns": 1,
+      "cards": [
+        {
+          "id": "republic-of-chickens",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+          "naturalWidth": 349,
+          "naturalHeight": 196,
+          "cssWidth": 350,
+          "cssHeight": 196.875,
+          "alt": "Republic of Chickens cover artwork"
+        },
+        {
+          "id": "wonderlands",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp",
+          "naturalWidth": 349,
+          "naturalHeight": 196,
+          "cssWidth": 350,
+          "cssHeight": 196.875,
+          "alt": "Wonderlands cover artwork"
+        },
+        {
+          "id": "squirrel-control",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp",
+          "naturalWidth": 349,
+          "naturalHeight": 196,
+          "cssWidth": 350,
+          "cssHeight": 196.875,
+          "alt": "Squirrel Control cover artwork"
+        },
+        {
+          "id": "the-last-lantern",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp",
+          "naturalWidth": 349,
+          "naturalHeight": 196,
+          "cssWidth": 350,
+          "cssHeight": 196.875,
+          "alt": "The Last Lantern cover artwork"
+        }
+      ],
+      "errors": [],
+      "screenshot": "screenshots/mobile-light.png"
+    },
+    {
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "screenshotHeight": 1924,
+      "screenshotNote": "Canvas extended vertically after card checks to include all four approved covers; width and layout unchanged",
+      "theme": "dark",
+      "columns": 1,
+      "cards": [
+        {
+          "id": "republic-of-chickens",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+          "naturalWidth": 349,
+          "naturalHeight": 196,
+          "cssWidth": 350,
+          "cssHeight": 196.875,
+          "alt": "Republic of Chickens cover artwork"
+        },
+        {
+          "id": "wonderlands",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp",
+          "naturalWidth": 349,
+          "naturalHeight": 196,
+          "cssWidth": 350,
+          "cssHeight": 196.875,
+          "alt": "Wonderlands cover artwork"
+        },
+        {
+          "id": "squirrel-control",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp",
+          "naturalWidth": 349,
+          "naturalHeight": 196,
+          "cssWidth": 350,
+          "cssHeight": 196.875,
+          "alt": "Squirrel Control cover artwork"
+        },
+        {
+          "id": "the-last-lantern",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp",
+          "naturalWidth": 349,
+          "naturalHeight": 196,
+          "cssWidth": 350,
+          "cssHeight": 196.875,
+          "alt": "The Last Lantern cover artwork"
+        }
+      ],
+      "errors": [],
+      "screenshot": "screenshots/mobile-dark.png"
+    },
+    {
+      "device": "narrow",
+      "width": 320,
+      "height": 900,
+      "screenshotHeight": 1873,
+      "screenshotNote": "Canvas extended vertically after card checks to include all four approved covers; width and layout unchanged",
+      "theme": "light",
+      "columns": 1,
+      "cards": [
+        {
+          "id": "republic-of-chickens",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+          "naturalWidth": 280,
+          "naturalHeight": 157,
+          "cssWidth": 280,
+          "cssHeight": 157.5,
+          "alt": "Republic of Chickens cover artwork"
+        },
+        {
+          "id": "wonderlands",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp",
+          "naturalWidth": 280,
+          "naturalHeight": 157,
+          "cssWidth": 280,
+          "cssHeight": 157.5,
+          "alt": "Wonderlands cover artwork"
+        },
+        {
+          "id": "squirrel-control",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp",
+          "naturalWidth": 280,
+          "naturalHeight": 157,
+          "cssWidth": 280,
+          "cssHeight": 157.5,
+          "alt": "Squirrel Control cover artwork"
+        },
+        {
+          "id": "the-last-lantern",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp",
+          "naturalWidth": 280,
+          "naturalHeight": 157,
+          "cssWidth": 280,
+          "cssHeight": 157.5,
+          "alt": "The Last Lantern cover artwork"
+        }
+      ],
+      "errors": [],
+      "screenshot": "screenshots/narrow-light.png"
+    },
+    {
+      "device": "narrow",
+      "width": 320,
+      "height": 900,
+      "screenshotHeight": 1873,
+      "screenshotNote": "Canvas extended vertically after card checks to include all four approved covers; width and layout unchanged",
+      "theme": "dark",
+      "columns": 1,
+      "cards": [
+        {
+          "id": "republic-of-chickens",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+          "naturalWidth": 280,
+          "naturalHeight": 157,
+          "cssWidth": 280,
+          "cssHeight": 157.5,
+          "alt": "Republic of Chickens cover artwork"
+        },
+        {
+          "id": "wonderlands",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/wonderlands.480.efccdf2c920d.webp",
+          "naturalWidth": 280,
+          "naturalHeight": 157,
+          "cssWidth": 280,
+          "cssHeight": 157.5,
+          "alt": "Wonderlands cover artwork"
+        },
+        {
+          "id": "squirrel-control",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/squirrel-control.480.43333a565b48.webp",
+          "naturalWidth": 280,
+          "naturalHeight": 157,
+          "cssWidth": 280,
+          "cssHeight": 157.5,
+          "alt": "Squirrel Control cover artwork"
+        },
+        {
+          "id": "the-last-lantern",
+          "currentSrc": "http://127.0.0.1:4180/assets/covers/games/the-last-lantern.480.68522505d26f.webp",
+          "naturalWidth": 280,
+          "naturalHeight": 157,
+          "cssWidth": 280,
+          "cssHeight": 157.5,
+          "alt": "The Last Lantern cover artwork"
+        }
+      ],
+      "errors": [],
+      "screenshot": "screenshots/narrow-dark.png"
+    }
+  ],
+  "fallbacks": [
+    {
+      "id": "republic-of-chickens",
+      "blocked": "cover",
+      "result": "screenshot, Play intact",
+      "passed": true
+    },
+    {
+      "id": "republic-of-chickens",
+      "blocked": "cover and screenshot",
+      "result": "placeholder, Play intact",
+      "passed": true
+    },
+    {
+      "id": "wonderlands",
+      "blocked": "cover",
+      "result": "screenshot, Play intact",
+      "passed": true
+    },
+    {
+      "id": "wonderlands",
+      "blocked": "cover and screenshot",
+      "result": "placeholder, Play intact",
+      "passed": true
+    },
+    {
+      "id": "squirrel-control",
+      "blocked": "cover",
+      "result": "screenshot, Play intact",
+      "passed": true
+    },
+    {
+      "id": "squirrel-control",
+      "blocked": "cover and screenshot",
+      "result": "placeholder, Play intact",
+      "passed": true
+    },
+    {
+      "id": "the-last-lantern",
+      "blocked": "cover",
+      "result": "screenshot, Play intact",
+      "passed": true
+    },
+    {
+      "id": "the-last-lantern",
+      "blocked": "cover and screenshot",
+      "result": "placeholder, Play intact",
+      "passed": true
+    }
+  ],
+  "browser": "154.0.8037.57",
+  "passed": true
+}

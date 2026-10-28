@@ -1,0 +1,122 @@
+{
+  "pipeline": "Existing builder unchanged. Full source dimensions preserved. Standard 16:9 delivery normalization removes at most 0.5 source pixel vertically for 1672x941 masters; no compositional recrop or upscaling.",
+  "assets": [
+    {
+      "id": "republic-of-chickens",
+      "masterChecksumVerified": true,
+      "sourceRetainedByteForByte": true,
+      "losslessDecodedPixelsVerified": "Previously verified original JPG -> retained WebP; supplied PNG is the same visual artwork at a different resolution",
+      "selected": "cover",
+      "variants": [
+        {
+          "src": "/assets/covers/games/republic-of-chickens.480.9a82c53512b7.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "9a82c53512b76ddd9ebb379d2924aa70cc66e64d393a85b7462103b7f2ddd730",
+          "bytes": 40660
+        },
+        {
+          "src": "/assets/covers/games/republic-of-chickens.960.21e7788f657b.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "21e7788f657b123ee8c2193532dad3d2360ce98b8db137963c80050fe26af625",
+          "bytes": 105220
+        }
+      ],
+      "sourceAspectNormalizationPixels": 0
+    },
+    {
+      "id": "wonderlands",
+      "masterChecksumVerified": true,
+      "sourceRetainedByteForByte": false,
+      "losslessDecodedPixelsVerified": true,
+      "selected": "cover",
+      "variants": [
+        {
+          "src": "/assets/covers/games/wonderlands.480.efccdf2c920d.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "efccdf2c920d8a392a5bc0cf5a8b72cb715cba673804fe1e0256ec423fa9b93b",
+          "bytes": 49532
+        },
+        {
+          "src": "/assets/covers/games/wonderlands.960.38c34d036723.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "38c34d03672335a0a6705910a19d0827715ec3b116443d05cea152435e191049",
+          "bytes": 146488
+        },
+        {
+          "src": "/assets/covers/games/wonderlands.1600.3ef6af6cdea1.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "3ef6af6cdea165ceace54ad3bb4c50d130dab9b1746a3fa87c1e8acb0234c3d7",
+          "bytes": 292322
+        }
+      ],
+      "sourceAspectNormalizationPixels": 0.5
+    },
+    {
+      "id": "squirrel-control",
+      "masterChecksumVerified": true,
+      "sourceRetainedByteForByte": false,
+      "losslessDecodedPixelsVerified": true,
+      "selected": "cover",
+      "variants": [
+        {
+          "src": "/assets/covers/games/squirrel-control.480.43333a565b48.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "43333a565b4870b45ec93d019a80e720ba9b7662fa2f0e63690e67096eff10c1",
+          "bytes": 43608
+        },
+        {
+          "src": "/assets/covers/games/squirrel-control.960.07194bba7cfa.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "07194bba7cfa5997e8f794e6febe3371ee0344a7e118c798cc7f39ce7c94c8d0",
+          "bytes": 122342
+        },
+        {
+          "src": "/assets/covers/games/squirrel-control.1600.77ab8e504ac1.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "77ab8e504ac1a60ef7fdfc66c77cb41511b4d8771f25e8b53ea2f1a0bfaeb003",
+          "bytes": 230160
+        }
+      ],
+      "sourceAspectNormalizationPixels": 0.5
+    },
+    {
+      "id": "the-last-lantern",
+      "masterChecksumVerified": true,
+      "sourceRetainedByteForByte": false,
+      "losslessDecodedPixelsVerified": true,
+      "selected": "cover",
+      "variants": [
+        {
+          "src": "/assets/covers/games/the-last-lantern.480.68522505d26f.webp",
+          "width": 480,
+          "height": 270,
+          "sha256": "68522505d26f0a7ad2c0d9ec5ea8dd5da74811af7188e2f8b6ff1a0959580184",
+          "bytes": 51666
+        },
+        {
+          "src": "/assets/covers/games/the-last-lantern.960.2dd77db9a3b6.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "2dd77db9a3b6508607c622611473581ffb367d983cf9cbf9d9afd0b6aa0e2dd9",
+          "bytes": 152862
+        },
+        {
+          "src": "/assets/covers/games/the-last-lantern.1600.031fe9f207ce.webp",
+          "width": 1600,
+          "height": 900,
+          "sha256": "031fe9f207cea9a87be913db3ca43c3ab9972d8a85b575841e6fbb538a11f27c",
+          "bytes": 300654
+        }
+      ],
+      "sourceAspectNormalizationPixels": 0.5
+    }
+  ]
+}
