@@ -22,6 +22,12 @@ The curated source is one JSON file per project: `content/projects/<collection>/
 
 `content/link-verification.json` holds dated successful public destination observations. The build requires matching evidence; release validation makes fresh normal-TLS requests. `content/asset-provenance.json` records screenshot origins/rights; its import checksum is a historical import observation, not a manual replacement lock. Current source/derivative checksums are generated in `.artifacts/asset-evidence.json` and the release manifest.
 
+## Cross-project conversation handoff
+
+For routine new-game or new-app publication, the **individual project's development conversation** owns preparing and coordinating the Possibility entry, with the released project as the factual source. This does not give that conversation authority to redesign the portal. Site-wide presentation, navigation, localization, legal/governance and architecture changes remain in the Possibility platform workstream. Follow the shared [AICP §10](https://github.com/jaychtw/game-development-standards/blob/main/AI-COLLABORATION-PROTOCOL.md) together with **this repository's current** catalog, maintenance and deployment rules.
+
+Record **independent project deployment** and **Possibility entry publication** as separate verified outcomes. A public project does not automatically become a portal entry, and a successful portal commit/check is not proof of public deployment. Preserve owner approval gates and the actual configured release workflow; recheck it rather than trusting potentially stale historical release documents. For bilingual entries, inspect the *implemented* localization schema before writing or inventing fields. Do not add unapproved artwork or make unrelated platform changes.
+
 ## Portable future update sequence
 
 1. Independently release or otherwise make the project publicly available under its own authorized lifecycle. A portal change never authorizes game-repository changes or deployment.
