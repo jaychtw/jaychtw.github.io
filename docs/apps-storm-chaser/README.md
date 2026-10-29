@@ -1,5 +1,7 @@
 # Apps activation and Storm Chaser publication
 
+**Completed:** Apps is [publicly live](https://jaychtw.github.io/apps/) and independently verified at source `f8ca326efa4eee919c336cdceac18334a480746a`. [Final delivery and exact release evidence](DELIVERY.md).
+
 Assignment: owner-supplied **Possibility — Activate Apps and Publish Storm Chaser**, October 30, 2026 (Asia/Taipei). Dedicated branch: `platform/apps-storm-chaser`. Scope is one Apps catalog entry, authentic screenshot/provenance, matching link evidence, regression checks and authorized manual publication after exact-source validation. No new platform visual framework, localization system, deployment policy or project feature is introduced.
 
 ## Authority and source reconciliation
@@ -30,7 +32,7 @@ Catalog tests now validate each gallery rather than assuming every project belon
 
 The exact development commit, local/CI results, deployment run and public verification receipts are reported at delivery; a local build or catalog `published` status alone does not establish public publication. Raw reproducible build/browser/link/release receipts are generated under ignored `.artifacts/`. No physical-device, screen-reader, future uptime or human visual-acceptance certification is inferred.
 
-Independent app deployment: **deployed and publicly verified**, source/run above. Possibility entry: **prepared for exact-commit release checks** until a successful manual deployment and independent public verification are recorded. These statuses are separate; no Storm Chaser repository or pipeline is changed by this portal task.
+Independent app deployment: **deployed and publicly verified**, source/run above. Possibility entry: **deployed and publicly verified** at `f8ca326efa4eee919c336cdceac18334a480746a`, [manual publication run 40919100948](https://github.com/jaychtw/jaychtw.github.io/actions/runs/40919100948). These statuses are separate; no Storm Chaser repository or pipeline is changed by this portal task. See [public-browser.json](public-browser.json) and [public-integrity.json](public-integrity.json).
 
 Rollback: manual workflow, full pre-Apps SHA `570e17e6ef3a3f1e144a5bea41c27ef3738469a5`; current baseline build identity and run evidence are retained under `.artifacts/apps-storm-chaser/` and in the immutable links above. No force push, automatic deployment activation, repository-permission change, paid service, billing enrollment, tag, package release or shared-standard change is authorized or performed. New expenditure remains $0.
 
