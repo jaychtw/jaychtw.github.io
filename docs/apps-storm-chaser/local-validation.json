@@ -1,0 +1,46 @@
+{
+  "type": "local-precommit-validation",
+  "commands": [
+    "npm run check",
+    "npm run verify:links"
+  ],
+  "typecheck": "passed",
+  "lintAndFormatting": "passed",
+  "catalogAndPublishingTests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "build": {
+    "canonicalRoutes": 25,
+    "projects": 23,
+    "publishedArticles": 0
+  },
+  "existingBrowser": {
+    "layouts": 10,
+    "filterCases": 76,
+    "axeScans": 13,
+    "behaviorChecks": 13,
+    "fixtureRoutes": 5,
+    "passed": true
+  },
+  "appsBrowser": {
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "themes": [
+      "dark",
+      "light"
+    ],
+    "axeScans": 10,
+    "passed": true
+  },
+  "links": {
+    "projects": 23,
+    "passed": true
+  },
+  "limits": "Chromium emulation; no physical devices, screen-reader or independent human acceptance."
+}

@@ -158,5 +158,15 @@
     "sourceDimensions": [1440, 900],
     "treatment": "Authentic documented gameplay capture, resized and encoded to WebP. No generated cover art.",
     "rights": "Owner portfolio use; original project notices apply. No blanket license assigned."
+  },
+  {
+    "path": "/assets/screenshots/apps/storm-chaser.webp",
+    "source": "https://jaychtw.github.io/storm-chaser/",
+    "sourceCommit": "64615b55c5b7d75720fa0b7b7e5b3b722030d98a",
+    "sourceSha256": "33a50f96f5e49ffdcd7b7e194be5329a3e634c2c48680e0f9518422d6d865a1b",
+    "importSha256": "aef21ff13b3104bc3e99740604d8e5ff4be0a978cf7e8541d107d3e7ff0ca068",
+    "sourceDimensions": [1600, 900],
+    "treatment": "Authentic public Chromium viewport screenshot captured October 30, 2026 Asia/Taipei; original retained at docs/apps-storm-chaser/public-capture.png. Lossless WebP encoding, no resizing, compositing or generated artwork. Build generates standard fingerprinted 16:9 variants.",
+    "rights": "Owner-authorized portfolio screenshot use. JMA extraction/visualization and Natural Earth notices remain those of the application; no blanket artwork license assigned."
   }
 ]

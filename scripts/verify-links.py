@@ -27,8 +27,8 @@ for item in [json.loads(path.read_text()) for path in sorted((root/'content/proj
     status, final, content, mime = fetch(item['destination']['url'])
     assert status == 200 and final == item['destination']['url'] and b'<html' in content.lower()
     parser = Assets(); parser.feed(content.decode())
-    is_game=item['category']=='games' and item['destination']['action']=='play'
-    if is_game: assert parser.paths, 'No runtime resources in public game'
+    is_interactive=(item['category']=='games' and item['destination']['action']=='play') or (item['category']=='apps' and item['destination']['action']=='open')
+    if is_interactive: assert parser.paths, 'No runtime resources in public game/application'
     else: parser.paths=[]
     game = {'id':item['id'],'url':final,'status':status,'htmlSha256':sha256(content).hexdigest(),'assets':[]}
     for path in sorted(set(parser.paths)):
