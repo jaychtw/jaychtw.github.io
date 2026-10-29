@@ -1,0 +1,32 @@
+{
+  "id": "storm-chaser",
+  "title": "Storm Chaser",
+  "category": "apps",
+  "summary": "Explore official tropical cyclone information through an interactive regional map and forecast timeline.",
+  "status": "published",
+  "featured": false,
+  "order": 10,
+  "publishedAt": "2026-10-30",
+  "destination": {
+    "action": "open",
+    "url": "https://jaychtw.github.io/storm-chaser/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/storm-chaser",
+  "languages": ["en", "zh-TW"],
+  "controls": "Select a storm, pan or zoom the map, and step through published forecast times.",
+  "limitations": "Independent viewer of official JMA information, not an official warning service or independent forecast. The public Pages edition updates periodically; collection may be stale, delayed or unavailable. Recent bulletins only, not complete basin coverage. Local Node/SQLite archival capabilities belong to the separate local-first edition.",
+  "approval": {
+    "url": "https://github.com/jaychtw/storm-chaser/blob/86f4b677248235cca224e30e1c2887548d089bab/docs/pages/distribution.md",
+    "note": "Owner-accepted local-first v1.0 baseline with a separately authorized public Pages edition. Successful deployment run 40912955062 published source 64615b55c5b7d75720fa0b7b7e5b3b722030d98a at 2026-10-29T16:35:15Z (October 30 Asia/Taipei). Public browser verification is recorded separately in docs/apps-storm-chaser/."
+  },
+  "release": {
+    "version": "1.0.0-rc.1",
+    "commit": "64615b55c5b7d75720fa0b7b7e5b3b722030d98a"
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/apps/storm-chaser.webp",
+    "alt": "Storm Chaser public interface showing the western North Pacific map and JMA published cyclone track."
+  },
+  "tags": ["Weather", "Visualization", "Interactive"],
+  "maturity": "public"
+}

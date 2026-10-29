@@ -1,5 +1,13 @@
 # Deployment, review gate and rollback
 
+## Current verified publication state — October 30, 2026
+
+The live `build-info.json` now identifies **`570e17e6ef3a3f1e144a5bea41c27ef3738469a5`**, clean Platform v1.0 Games gallery. [Manual publication run 40691518469](https://github.com/jaychtw/jaychtw.github.io/actions/runs/40691518469) succeeded on October 28. Current main `cea7ad271c5d3084129dcd389fd4bfaebce78f31` adds only six lines of catalog handoff documentation to that deployed source. Thus the historical undeployed-design statements below no longer describe the observed public site; they are retained as the earlier development gate, not silently rewritten as evidence of approval. Automatic publication remains disabled and the exact-SHA manual workflow remains unchanged.
+
+The owner's subsequent **Activate Apps and Publish Storm Chaser** assignment authorizes the narrow Apps addition and manual publication if comparison reveals no unrelated unapproved platform changes. That comparison passed: no platform runtime/design code differs from the deployed gallery. [Apps change and evidence](apps-storm-chaser/README.md). Preserve `570e17e6ef3a3f1e144a5bea41c27ef3738469a5` as the immediate pre-Apps rollback reference; the older references below remain historical.
+
+## Historical Platform v1.0 candidate gate
+
 **The redesigned Platform v1.0 is not authorized for public deployment. Automatic production publication remains disabled.** Pushes to main/review branches run validation only. `.github/workflows/deploy.yml` retains the existing manual gate unchanged.
 
 The current public rollback baseline is full SHA **`56f5a997ef12b66cce4948b770c92bc3e8c5db81`**, successfully published in [run 40493531104](https://github.com/jaychtw/jaychtw.github.io/actions/runs/40493531104). Preserve this commit and its release evidence. Root `build-info.json` identified it during preparation. The earlier [deployment guide](platform-v1/previous-deployment.md) remains historical context.

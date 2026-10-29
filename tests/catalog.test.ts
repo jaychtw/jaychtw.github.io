@@ -106,7 +106,7 @@ test("invalid dates, statuses, language duplicates and implicit commit versions 
     { destination: { action: "open", url: "https://example.org/" } },
   ]) {
     const a = data();
-    Object.assign(a[0], patch);
+    Object.assign(a.find((p) => p.category === "games")!, patch);
     assert.throws(() => validate(a));
   }
 });
@@ -130,23 +130,36 @@ test("draft/approved/archived projects stay out of galleries", () => {
   p[0].status = "draft";
   p[1].status = "approved";
   p[2].status = "archived";
-  const html = collectionPage(content.collections[0], p, [], ctx);
-  for (const id of ["republic-of-chickens", "wonderlands", "squirrel-control"])
-    assert(!html.includes(`data-project="${id}"`));
+  for (const collection of content.collections.filter(
+    (c) => c.type === "gallery",
+  )) {
+    const html = collectionPage(collection, p, [], ctx);
+    for (const excluded of p.slice(0, 3))
+      assert(!html.includes(`data-project="${excluded.id}"`));
+    for (const included of published(p).filter(
+      (v) => v.category === collection.id,
+    ))
+      assert(html.includes(`data-project="${included.id}"`));
+  }
 });
 test("gallery escapes metadata, includes complete cards, and hides empty navigation", () => {
-  const p = data();
-  p[0].title = '<img src=x onerror="alert(1)">';
-  const html = collectionPage(content.collections[0], p, [], ctx);
-  assert(!html.includes("<img src=x"));
-  assert(html.includes("&lt;img"));
-  assert.equal(
-    (html.match(/data-project=/gu) || []).length,
-    published(p).length,
-  );
-  assert(html.includes(p[0].summary));
-  assert(!html.includes('href="/apps/"'));
-  assert(!html.includes("landing-scene"));
+  for (const collection of content.collections.filter(
+    (c) => c.type === "gallery",
+  )) {
+    const p = data().filter((p) => p.category === collection.id);
+    if (!p.length) continue;
+    p[0].title = '<img src=x onerror="alert(1)">';
+    const html = collectionPage(collection, p, [], ctx);
+    assert(!html.includes("<img src=x"));
+    assert(html.includes("&lt;img"));
+    assert.equal(
+      (html.match(/data-project=/gu) || []).length,
+      published(p).length,
+    );
+    assert(html.includes(p[0].summary));
+    assert(!html.includes('href="/apps/"'));
+    assert(!html.includes("landing-scene"));
+  }
 });
 test("identity settings reject email injection, subpath origins and unknown homepage", () => {
   const s = load("site.json") as any;

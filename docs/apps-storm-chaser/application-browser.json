@@ -1,0 +1,81 @@
+{
+  "at": "2026-10-29T17:03:41.244Z",
+  "base": "https://jaychtw.github.io/storm-chaser/",
+  "checks": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "collectionAgeMinutes": 28.690333333333335,
+      "lastSuccessAt": "2026-10-29T16:35:02.228Z",
+      "issuedAt": [
+        "2026-10-29T15:45:00.000Z"
+      ],
+      "advisories": 1,
+      "points": [
+        7
+      ],
+      "health": "stale",
+      "source": "https://www.data.jma.go.jp/developer/xml/data/20261029154009_0_VPTW61_010000.xml",
+      "before": "2026-10-29T15:00:00.000Z",
+      "after": "2026-10-30T03:00:00.000Z",
+      "axeViolations": []
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "collectionAgeMinutes": 28.747433333333333,
+      "lastSuccessAt": "2026-10-29T16:35:02.228Z",
+      "issuedAt": [
+        "2026-10-29T15:45:00.000Z"
+      ],
+      "advisories": 1,
+      "points": [
+        7
+      ],
+      "health": "stale",
+      "source": "https://www.data.jma.go.jp/developer/xml/data/20261029154009_0_VPTW61_010000.xml",
+      "before": "2026-10-29T15:00:00.000Z",
+      "after": "2026-10-30T03:00:00.000Z",
+      "axeViolations": []
+    },
+    {
+      "locale": "zh-TW",
+      "width": 1440,
+      "collectionAgeMinutes": 28.794483333333332,
+      "lastSuccessAt": "2026-10-29T16:35:02.228Z",
+      "issuedAt": [
+        "2026-10-29T15:45:00.000Z"
+      ],
+      "advisories": 1,
+      "points": [
+        7
+      ],
+      "health": "stale",
+      "source": "https://www.data.jma.go.jp/developer/xml/data/20261029154009_0_VPTW61_010000.xml",
+      "before": "2026-10-29T15:00:00.000Z",
+      "after": "2026-10-30T03:00:00.000Z",
+      "axeViolations": []
+    },
+    {
+      "locale": "zh-TW",
+      "width": 390,
+      "collectionAgeMinutes": 28.84155,
+      "lastSuccessAt": "2026-10-29T16:35:02.228Z",
+      "issuedAt": [
+        "2026-10-29T15:45:00.000Z"
+      ],
+      "advisories": 1,
+      "points": [
+        7
+      ],
+      "health": "stale",
+      "source": "https://www.data.jma.go.jp/developer/xml/data/20261029154009_0_VPTW61_010000.xml",
+      "before": "2026-10-29T15:00:00.000Z",
+      "after": "2026-10-30T03:00:00.000Z",
+      "axeViolations": []
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "external": []
+}
