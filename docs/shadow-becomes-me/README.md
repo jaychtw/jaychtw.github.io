@@ -1,3 +1,5 @@
+**Delivered:** [Public release, verification and rollback record](DELIVERY.md). Source49d043fbc59d44d6d7675b963713dc90773239a8 is live.
+
 # Shadow Becomes Me — authorized portal publication
 
 Game gate passed: https://jaychtw.github.io/shadow-becomes-me/, accepted Round3 build r3-5c7c6e926759 / runtime ed2ca26. Successful public run [41282628622](https://github.com/jaychtw/shadow-becomes-me/actions/runs/41282628622), workflow source c5faf728a54660add3af3989c22847c59fe6b50b; independently verified63 runtime hashes and real keyboard/touch Transform, Spike, full Devour, exit/restart. Owner expressly authorized this entry and portal publication at $0. This is a Playable Demo / POC, not a complete campaign.
@@ -10,4 +12,4 @@ Optional summaryZhTW and coverAlt extend the existing schema, preserving default
 
 Games default to known publication date descending, unknowns follow, ties use editorial order and stable ID. Games-only orderOverride provides explicit pins. Non-Games order and existing filter-label sequence/semantics remain. Shadow has observed publication date2026-11-01; no project-ID exception makes it permanently first. Unknown older dates remain null.
 
-Targeted units cover dates/nulls/future entries, overrides, other collections, stable ties, input immutability, escaping and filter order. Existing full publishing/browser/Apps suites remain; the Shadow supplement checks ten width/theme views, bilingual card/detail copy, responsive art and actual public navigation. Release only after exact-source checks, then manual deploy.yml with full release_commit and PUBLISH POSSIBILITY. Live verification/report pending at this implementation checkpoint. No game mechanics, accepted assets, unrelated catalog entries or shared standards changed.
+Targeted units cover dates/nulls/future entries, overrides, other collections, stable ties, input immutability, escaping and filter order. Existing full publishing/browser/Apps suites remain; the Shadow supplement checks ten width/theme views, bilingual card/detail copy, responsive art and actual public navigation. Release only after exact-source checks, then manual deploy.yml with full release_commit and PUBLISH POSSIBILITY. Live publication and independent verification now passed; details in DELIVERY.md. No game mechanics, accepted assets, unrelated catalog entries or shared standards changed.

@@ -1,6 +1,10 @@
 # Deployment, review gate and rollback
 
-## Current verified publication state — October 30, 2026
+## Current verified publication state — November 1, 2026
+
+Shadow Becomes Me is published as the newest Games entry at source **49d043fbc59d44d6d7675b963713dc90773239a8**, successful [manual run41284500241](https://github.com/jaychtw/jaychtw.github.io/actions/runs/41284500241). Independent139-file verification and actual responsive/card/game interaction checks passed. [Delivery/rollback](shadow-becomes-me/DELIVERY.md). Immediate pre-change rollback source is **f8ca326efa4eee919c336cdceac18334a480746a**. Workflow/automatic-publication policy is unchanged. Earlier release paragraphs below are historical, superseded for current live identity.
+
+## Previous verified publication state — October 30, 2026
 
 Apps and Storm Chaser have subsequently been published at **`f8ca326efa4eee919c336cdceac18334a480746a`**, successful [manual run 40919100948](https://github.com/jaychtw/jaychtw.github.io/actions/runs/40919100948). Independent verification matched 135 public files and passed public Apps navigation/card interaction plus ten accessibility scans across both themes and five widths. [Delivery record](apps-storm-chaser/DELIVERY.md). Immediate pre-Apps rollback remains `570e17e6ef3a3f1e144a5bea41c27ef3738469a5`; no publication policy or permission changed. The evidence-only handoff commit after this release does not change its public build identity.
 

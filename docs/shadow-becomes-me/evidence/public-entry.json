@@ -1,0 +1,130 @@
+{
+  "public": true,
+  "views": [
+    {
+      "width": 320,
+      "theme": "light",
+      "first": "shadow-becomes-me",
+      "bilingualCopy": true,
+      "art": {
+        "src": "https://jaychtw.github.io/assets/covers/games/shadow-becomes-me.480.4d5eeceaea04.webp",
+        "loaded": true,
+        "fit": "cover"
+      },
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "first": "shadow-becomes-me",
+      "bilingualCopy": true,
+      "art": {
+        "src": "https://jaychtw.github.io/assets/covers/games/shadow-becomes-me.480.4d5eeceaea04.webp",
+        "loaded": true,
+        "fit": "cover"
+      },
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "first": "shadow-becomes-me",
+      "bilingualCopy": true,
+      "art": {
+        "src": "https://jaychtw.github.io/assets/covers/games/shadow-becomes-me.480.4d5eeceaea04.webp",
+        "loaded": true,
+        "fit": "cover"
+      },
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "first": "shadow-becomes-me",
+      "bilingualCopy": true,
+      "art": {
+        "src": "https://jaychtw.github.io/assets/covers/games/shadow-becomes-me.480.4d5eeceaea04.webp",
+        "loaded": true,
+        "fit": "cover"
+      },
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "first": "shadow-becomes-me",
+      "bilingualCopy": true,
+      "art": {
+        "src": "https://jaychtw.github.io/assets/covers/games/shadow-becomes-me.480.4d5eeceaea04.webp",
+        "loaded": true,
+        "fit": "cover"
+      },
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "first": "shadow-becomes-me",
+      "bilingualCopy": true,
+      "art": {
+        "src": "https://jaychtw.github.io/assets/covers/games/shadow-becomes-me.480.4d5eeceaea04.webp",
+        "loaded": true,
+        "fit": "cover"
+      },
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "first": "shadow-becomes-me",
+      "bilingualCopy": true,
+      "art": {
+        "src": "https://jaychtw.github.io/assets/covers/games/shadow-becomes-me.480.4d5eeceaea04.webp",
+        "loaded": true,
+        "fit": "cover"
+      },
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "first": "shadow-becomes-me",
+      "bilingualCopy": true,
+      "art": {
+        "src": "https://jaychtw.github.io/assets/covers/games/shadow-becomes-me.480.4d5eeceaea04.webp",
+        "loaded": true,
+        "fit": "cover"
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "first": "shadow-becomes-me",
+      "bilingualCopy": true,
+      "art": {
+        "src": "https://jaychtw.github.io/assets/covers/games/shadow-becomes-me.480.4d5eeceaea04.webp",
+        "loaded": true,
+        "fit": "cover"
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "first": "shadow-becomes-me",
+      "bilingualCopy": true,
+      "art": {
+        "src": "https://jaychtw.github.io/assets/covers/games/shadow-becomes-me.480.4d5eeceaea04.webp",
+        "loaded": true,
+        "fit": "cover"
+      },
+      "overflow": false
+    }
+  ],
+  "portalToActualGameLocales": [
+    "en",
+    "zh-TW"
+  ],
+  "note": "Portal chrome remains English; both entry summaries are present with language markup. Actual game has two live-switchable language modes."
+}

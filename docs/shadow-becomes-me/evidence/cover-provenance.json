@@ -1,0 +1,11 @@
+{
+  "original": "docs/shadow-becomes-me/masters/shadow-becomes-me-approved-cover.png",
+  "originalSha256": "3764649da4cfb79a32849c10b569da34a0c104af649d942a776efa89812c0d34",
+  "sourceWebP": "public/assets/covers/games/shadow-becomes-me.webp",
+  "sourceSha256": "0e23cb98844f81ba8e681e473f71184f092cc7f941f90dbca4a526ba483a78f0",
+  "losslessDecodedPixelsIdentical": true,
+  "width": 1672,
+  "height": 941,
+  "standardVariantRoundingCropSourcePixels": 0.5,
+  "note": "Original and lossless source preserve all pixels. Existing 16:9 responsive exports have less than one source pixel of aspect-ratio rounding; title and Shadow are well inside frame. No art regeneration or overlay."
+}
