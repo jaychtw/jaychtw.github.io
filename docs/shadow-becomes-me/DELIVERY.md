@@ -1,3 +1,5 @@
+**Later owner correction:** Chinese text was removed from the catalog card in [source72dc332 / current receipt](CARD_COPY_UPDATE.md); fact-sheet/game translation remains. The initial publication evidence below is historical.
+
 # Shadow Becomes Me — published Games entry
 
 **Published and independently verified, 2026-11-01 (Asia/Taipei).** [Possibility Games](https://jaychtw.github.io/) · [fact sheet](https://jaychtw.github.io/games/shadow-becomes-me/) · [actual playable demo](https://jaychtw.github.io/shadow-becomes-me/).

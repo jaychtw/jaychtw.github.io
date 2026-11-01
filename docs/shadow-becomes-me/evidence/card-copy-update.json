@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-11-01T07:59:57.961758+00:00",
+  "sourceCommit": "72dc332181b3530a0dc0a1c7178fed220d606af9",
+  "publicationRun": 41286666846,
+  "validationRun": 41286485306,
+  "url": "https://jaychtw.github.io/",
+  "catalogChineseParagraphs": 0,
+  "englishDescriptionPresent": true,
+  "factSheetTranslationPreserved": true,
+  "independentPublicHashesMatched": 139,
+  "publicWidthThemeViewsPassed": 10,
+  "renderDiff": {
+    "catalogOnlyDiffIsChineseParagraphRemoval": true,
+    "factSheetByteUnchanged": true
+  },
+  "firstBulkProbe": "HTTP503; unchanged-source retry passed",
+  "gameChanges": false
+}
