@@ -1,6 +1,6 @@
 # Possibility
 
-A personal creative publishing platform. **Platform v1.0 is a development release candidate; the redesigned site is not publicly deployed.** The existing sunlight site remains live. The current workflow validates pushes and publishes only after manual authorization.
+A personal creative publishing platform. **The Games and Apps galleries are publicly live.** See the current release records; historical development-candidate notes below do not describe the current deployment. The current workflow validates pushes and publishes only after manual authorization.
 
 ## Review and run
 

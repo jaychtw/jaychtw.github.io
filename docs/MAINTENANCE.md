@@ -29,7 +29,7 @@ Use `draft` until the URL and identity are verified; published means visible and
 
 For a newly published destination, add a matching record to `content/link-verification.json`: `id`, `url`, `finalUrl`, `status: 200`, actual ISO `checkedAt`, and factual `method`. This is an ordinary data edit, not a hidden tool requirement. An operator with the local tooling can instead run `python3 scripts/verify-links.py --record`. CI repeats fresh URL/resource checks; an invented verification record does not bypass that release check. Do not use a repository URL as the Play URL.
 
-Reorder cards by editing their `order` values. Numbers need not be consecutive. Ties sort by stable ID. No test hardcodes the total catalog size or provisional order; additions and reorderings require no test edits.
+Games default to newest known `publishedAt` first. For an explicit manual Games pin, set `orderOverride` to a nonnegative rank; remove/set null to restore date order. Equal/unknown dates use `order`, then stable ID. `order` still controls other collections and filter-label ordering. Dates must be observed, not inferred. Optional `summaryZhTW` displays alongside English; `coverAlt` supplies artwork-specific alt text. See the catalog contract.
 
 ## Publish an article
 

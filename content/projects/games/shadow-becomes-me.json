@@ -1,0 +1,31 @@
+{
+  "id": "shadow-becomes-me",
+  "title": "Shadow Becomes Me",
+  "category": "games",
+  "summary": "A playable laboratory stealth demo. Become a featureless shadow, disguise yourself as familiar shapes, and escape using Shadow Spike or a silent Shadow Devour.",
+  "summaryZhTW": "實驗室潛行試玩版。化為純黑暗影，變形為環境中的熟悉物件，運用暗影尖刺或無聲吞噬突破守衛，抵達出口。",
+  "coverAlt": "Shadow Becomes Me — Playable Demo cover showing a black Shadow silhouette and a patrolling guard in an illuminated laboratory.",
+  "status": "published",
+  "featured": true,
+  "order": 230,
+  "publishedAt": "2026-11-01",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/shadow-becomes-me/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/shadow-becomes-me",
+  "languages": ["en", "zh-TW"],
+  "controls": "A/D or arrow keys move; C or Transform cycles Shadow → Box → Chair → Shadow. X/Space or Spike triggers the contextual attack. Keyboard, mouse and touch supported.",
+  "limitations": "Accepted single-laboratory proof of concept, not a complete campaign. Physical devices, Safari/Firefox and screen readers remain unverified.",
+  "approval": {
+    "url": "https://github.com/jaychtw/shadow-becomes-me/blob/c5faf728a54660add3af3989c22847c59fe6b50b/docs/POC_ACCEPTANCE_CLOSURE.md",
+    "note": "Owner accepted and closed Round 3 laboratory POC; separately authorized game and Possibility publication. Public deployment run 41282628622 and independent live verification recorded."
+  },
+  "release": {
+    "version": "Laboratory POC / Round 3",
+    "commit": "c5faf728a54660add3af3989c22847c59fe6b50b"
+  },
+  "thumbnail": null,
+  "tags": ["Experimental", "Action", "Horizontal Scroller"],
+  "maturity": "public"
+}

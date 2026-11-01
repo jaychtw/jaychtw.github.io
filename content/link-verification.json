@@ -182,5 +182,13 @@
     "status": 200,
     "checkedAt": "2026-10-29T17:04:33.192318+00:00",
     "method": "Python urllib HTTPS with default CA/TLS verification; separate real public Chromium EN/zh-TW desktop/mobile interaction checks in docs/apps-storm-chaser/application-browser.json. Reachability does not assert current weather-data availability."
+  },
+  {
+    "id": "shadow-becomes-me",
+    "url": "https://jaychtw.github.io/shadow-becomes-me/",
+    "finalUrl": "https://jaychtw.github.io/shadow-becomes-me/",
+    "status": 200,
+    "checkedAt": "2026-11-01T07:04:54.135515+00:00",
+    "method": "HTTPS canonical root/BUILD.json and all63 frozen runtime hashes verified; independent actual Chromium keyboard/touch Transform, Spike, Devour, exit and restart checks passed."
   }
 ]

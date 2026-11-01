@@ -85,6 +85,9 @@ export function validateCatalog(
       "title",
       "category",
       "summary",
+      "summaryZhTW",
+      "coverAlt",
+      "orderOverride",
       "status",
       "featured",
       "order",
@@ -105,6 +108,18 @@ export function validateCatalog(
         throw new Error(`Unknown project field: ${key}`);
     for (const key of ["id", "title", "category", "summary", "status"])
       text(p[key], `project.${key}`);
+    for (const key of ["summaryZhTW", "coverAlt"])
+      if (p[key] !== undefined) text(p[key], `project.${key}`);
+    if (
+      p.orderOverride !== undefined &&
+      p.orderOverride !== null &&
+      (p.category !== "games" ||
+        !Number.isSafeInteger(p.orderOverride) ||
+        Number(p.orderOverride) < 0)
+    )
+      throw new Error(
+        "project.orderOverride: expected nonnegative Games override or null",
+      );
     const id = String(p.id);
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(id) || seen.has(id))
       throw new Error(`Invalid or duplicate project id: ${id}`);
@@ -194,12 +209,31 @@ export function validateCatalog(
   }
   return value as Project[];
 }
-export const published = (projects: Project[]) =>
-  projects
+export const editorialOrder = (a: Project, b: Project) =>
+  a.order - b.order || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+export function published(projects: Project[]): Project[] {
+  const visible = projects
     .filter((p) => p.status === "published")
-    .sort(
-      (a, b) => a.order - b.order || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0),
-    );
+    .sort(editorialOrder);
+  const games = visible
+    .filter((p) => p.category === "games")
+    .sort((a, b) => {
+      const ao = a.orderOverride,
+        bo = b.orderOverride;
+      if (ao != null || bo != null) {
+        if (ao == null) return 1;
+        if (bo == null) return -1;
+        return ao - bo || editorialOrder(a, b);
+      }
+      return (
+        (b.publishedAt || "").localeCompare(a.publishedAt || "") ||
+        editorialOrder(a, b)
+      );
+    });
+  // Replace Games slots only; other collections retain exact editorial ordering.
+  let index = 0;
+  return visible.map((p) => (p.category === "games" ? games[index++] : p));
+}
 export function loadContent(root: string): {
   site: Site;
   projects: Project[];

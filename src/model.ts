@@ -7,6 +7,9 @@ export interface Project {
   title: string;
   category: string;
   summary: string;
+  summaryZhTW?: string;
+  coverAlt?: string;
+  orderOverride?: number | null;
   status: "draft" | "approved" | "published" | "archived";
   featured: boolean;
   order: number;

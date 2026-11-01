@@ -10,6 +10,7 @@ import {
   siteConfig,
   readJSON,
   readProjects,
+  editorialOrder,
 } from "../src/catalog.ts";
 import { collectionPage } from "../src/render.ts";
 import type { Project, RenderContext } from "../src/model.ts";
@@ -32,10 +33,17 @@ const ctx: RenderContext = {
 test("published projects retain verified current URLs and respect editable editorial order", () => {
   const p = published(validate(data()));
   assert(p.length > 0);
-  assert(p.every((v, i) => i === 0 || p[i - 1].order <= v.order));
+  assert.deepEqual(
+    p.filter((v) => v.category !== "games"),
+    [...p].filter((v) => v.category !== "games").sort(editorialOrder),
+  );
   const custom = data();
-  custom[0].order = 0;
-  assert.equal(published(custom)[0].id, custom[0].id);
+  const pin = custom.find((p) => p.category === "games")!;
+  pin.orderOverride = 0;
+  assert.equal(
+    published(custom).filter((p) => p.category === "games")[0].id,
+    pin.id,
+  );
   for (const old of JSON.parse(
     readFileSync(
       resolve(root, "docs/platform-v1/previous-projects.json"),
@@ -168,4 +176,69 @@ test("identity settings reject email injection, subpath origins and unknown home
     siteConfig({ ...s, canonicalOrigin: "https://example.org/subpath/" }),
   );
   assert.throws(() => siteConfig({ ...s, homepageCollection: "../games" }));
+});
+
+test("Games default to newest known publication, null dates retain editorial order, and Apps never reorder", () => {
+  const base = data().find((p) => p.category === "games")!;
+  const game = (
+    id: string,
+    publishedAt: string | null,
+    order: number,
+  ): Project => ({ ...base, id, publishedAt, order, orderOverride: null });
+  const items = [
+    game("unknown-b", null, 20),
+    game("older", "2024-01-01", 10),
+    game("newer", "2026-11-01", 60),
+    game("unknown-a", null, 20),
+    game("future", "2027-01-01", 70),
+    { ...game("app-b", "2028-01-01", 25), category: "apps" },
+    { ...game("app-a", null, 15), category: "apps" },
+  ];
+  const before = structuredClone(items);
+  const result = published(items);
+  assert.deepEqual(
+    result.filter((p) => p.category === "games").map((p) => p.id),
+    ["future", "newer", "older", "unknown-a", "unknown-b"],
+  );
+  assert.deepEqual(
+    result.filter((p) => p.category === "apps").map((p) => p.id),
+    ["app-a", "app-b"],
+  );
+  assert.deepEqual(items, before);
+  items[0].orderOverride = 0;
+  assert.equal(
+    published(items).filter((p) => p.category === "games")[0].id,
+    "unknown-b",
+  );
+});
+
+test("new optional copy and override fields validate, escape, and keep filter labels in editorial order", () => {
+  const games = data().filter((p) => p.category === "games");
+  const p = games.find((p) => p.id === "shadow-becomes-me")!;
+  assert(p && p.summaryZhTW);
+  const expected = [
+    ...new Set([...games].sort(editorialOrder).flatMap((p) => p.tags)),
+  ];
+  p.summaryZhTW = "<script>unsafe</script>";
+  const html = collectionPage(
+    content.collections.find((c) => c.id === "games")!,
+    games,
+    [],
+    ctx,
+  );
+  assert(html.includes('lang="zh-TW">&lt;script&gt;unsafe&lt;/script&gt;'));
+  assert.deepEqual(
+    [...html.matchAll(/data-filter="([^"]+)"/g)].map((m) => m[1]),
+    ["All", ...expected],
+  );
+  for (const patch of [
+    { summaryZhTW: "" },
+    { coverAlt: 3 },
+    { orderOverride: -1 },
+    { orderOverride: 1.5 },
+  ]) {
+    const a = data();
+    Object.assign(a.find((p) => p.category === "games")!, patch);
+    assert.throws(() => validate(a));
+  }
 });

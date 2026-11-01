@@ -6,14 +6,15 @@ const { spawn, execFileSync } = require("node:child_process");
 const root = path.resolve(__dirname, ".."),
   out = path.join(root, ".artifacts/browser");
 fs.mkdirSync(out, { recursive: true });
-const catalog = fs
-  .readdirSync(path.join(root, "content/projects/games"))
-  .filter((f) => f.endsWith(".json"))
-  .map((f) =>
-    JSON.parse(fs.readFileSync(path.join(root, "content/projects/games", f))),
-  )
-  .filter((p) => p.status === "published")
-  .sort((a, b) => a.order - b.order || a.id.localeCompare(b.id));
+const { published } = require("../src/catalog.ts");
+const catalog = published(
+  fs
+    .readdirSync(path.join(root, "content/projects/games"))
+    .filter((f) => f.endsWith(".json"))
+    .map((f) =>
+      JSON.parse(fs.readFileSync(path.join(root, "content/projects/games", f))),
+    ),
+);
 const site = JSON.parse(fs.readFileSync(path.join(root, "content/site.json")));
 const collections = JSON.parse(
   fs.readFileSync(path.join(root, "content/collections.json")),
@@ -361,6 +362,7 @@ async function capture(page, name) {
     await page.goto(galleryURL);
     await page
       .locator(`[data-project="${project.id}"] .card-description`)
+      .first()
       .click();
     await page.waitForURL(project.destination.url);
   }

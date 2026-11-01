@@ -1,4 +1,5 @@
 import type { Project, RenderContext, Media } from "../model.ts";
+import { editorialOrder } from "../catalog.ts";
 import { escape } from "./html.ts";
 export function initials(title: string): string {
   return title
@@ -26,15 +27,17 @@ export function thumbnail(
   sizes?: string,
 ): string {
   const media = ctx.images.get(`project:${p.id}`);
-  return `<div class="work-media${media ? "" : " is-fallback"}"><span class="image-placeholder" aria-hidden="true">${escape(initials(p.title))}</span>${media ? picture(media, media.source === "cover" ? `${p.title} cover artwork` : p.thumbnail?.alt || `${p.title} screenshot`, eager, sizes) : `<span class="visually-hidden">${escape(p.title)} — preview unavailable</span>`}</div>`;
+  return `<div class="work-media${media ? "" : " is-fallback"}"><span class="image-placeholder" aria-hidden="true">${escape(initials(p.title))}</span>${media ? picture(media, media.source === "cover" ? p.coverAlt || `${p.title} cover artwork` : p.thumbnail?.alt || `${p.title} screenshot`, eager, sizes) : `<span class="visually-hidden">${escape(p.title)} — preview unavailable</span>`}</div>`;
 }
 export function gallery(projects: Project[], ctx: RenderContext): string {
-  const allTags = [...new Set(projects.flatMap((p) => p.tags))];
+  const allTags = [
+    ...new Set([...projects].sort(editorialOrder).flatMap((p) => p.tags)),
+  ];
   const filters = ["All", ...allTags]
     .map(
       (tag, i) =>
         `<button type="button" class="filter" data-filter="${escape(tag)}" aria-pressed="${i === 0}" aria-controls="project-grid">${escape(tag)}</button>`,
     )
     .join("");
-  return `<div class="filters" role="group" aria-label="Filter projects by tag" hidden>${filters}</div><p class="visually-hidden" role="status" aria-live="polite" data-filter-status></p><div class="gallery" id="project-grid">${projects.map((p, i) => `<a class="work" data-project="${escape(p.id)}" data-tags="${escape(JSON.stringify(p.tags))}" href="${escape(p.destination.url)}" aria-label="${escape(`${p.destination.action === "play" ? "Play" : "Open"} ${p.title}`)}" rel="external noopener noreferrer">${thumbnail(p, ctx, i === 0)}<h2>${escape(p.title)}</h2>${p.tags.length ? `<p class="card-tags">${p.tags.map(escape).join(' <span aria-hidden="true">·</span> ')}</p>` : ""}<p class="card-description">${escape(p.summary)}</p></a>`).join("")}</div>`;
+  return `<div class="filters" role="group" aria-label="Filter projects by tag" hidden>${filters}</div><p class="visually-hidden" role="status" aria-live="polite" data-filter-status></p><div class="gallery" id="project-grid">${projects.map((p, i) => `<a class="work" data-project="${escape(p.id)}" data-tags="${escape(JSON.stringify(p.tags))}" href="${escape(p.destination.url)}" aria-label="${escape(`${p.destination.action === "play" ? "Play" : "Open"} ${p.title}`)}" rel="external noopener noreferrer">${thumbnail(p, ctx, i === 0)}<h2>${escape(p.title)}</h2>${p.tags.length ? `<p class="card-tags">${p.tags.map(escape).join(' <span aria-hidden="true">·</span> ')}</p>` : ""}<p class="card-description"${p.summaryZhTW ? ' lang="en"' : ""}>${escape(p.summary)}</p>${p.summaryZhTW ? `<p class="card-description" lang="zh-TW">${escape(p.summaryZhTW)}</p>` : ""}</a>`).join("")}</div>`;
 }

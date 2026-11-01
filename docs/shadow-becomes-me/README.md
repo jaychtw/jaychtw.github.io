@@ -1,0 +1,13 @@
+# Shadow Becomes Me — authorized portal publication
+
+Game gate passed: https://jaychtw.github.io/shadow-becomes-me/, accepted Round3 build r3-5c7c6e926759 / runtime ed2ca26. Successful public run [41282628622](https://github.com/jaychtw/shadow-becomes-me/actions/runs/41282628622), workflow source c5faf728a54660add3af3989c22847c59fe6b50b; independently verified63 runtime hashes and real keyboard/touch Transform, Spike, full Devour, exit/restart. Owner expressly authorized this entry and portal publication at $0. This is a Playable Demo / POC, not a complete campaign.
+
+Pre-change portal public source: f8ca326efa4eee919c336cdceac18334a480746a; pre-change main23c91035642e343a845fbc4a95db6c6edb6f16e9 is a documentation-only descendant. Preserve that live source for manual-workflow rollback. No automatic deployment policy/settings change.
+
+The exact approved original is archived in masters/shadow-becomes-me-approved-cover.png, SHA2563764649da4cfb79a32849c10b569da34a0c104af649d942a776efa89812c0d34. `node scripts/shadow-cover.mjs` reproducibly creates the lossless WebP source and verifies decoded pixels are identical. Existing responsive exports produce480/960/1600px fingerprinted variants. The original's aspect difference from16:9 is less than one source pixel; title and Shadow stay inside the frame at all reviewed widths. No generated/reinterpreted artwork or overlay lettering; ordinary card heading remains below the image.
+
+Optional summaryZhTW and coverAlt extend the existing schema, preserving defaults for other entries. English and Traditional Chinese descriptions appear together with language markup; the portal still has English chrome and no locale switch. Public checks open the actual game and exercise both game language modes. No full portal localization system is introduced.
+
+Games default to known publication date descending, unknowns follow, ties use editorial order and stable ID. Games-only orderOverride provides explicit pins. Non-Games order and existing filter-label sequence/semantics remain. Shadow has observed publication date2026-11-01; no project-ID exception makes it permanently first. Unknown older dates remain null.
+
+Targeted units cover dates/nulls/future entries, overrides, other collections, stable ties, input immutability, escaping and filter order. Existing full publishing/browser/Apps suites remain; the Shadow supplement checks ten width/theme views, bilingual card/detail copy, responsive art and actual public navigation. Release only after exact-source checks, then manual deploy.yml with full release_commit and PUBLISH POSSIBILITY. Live verification/report pending at this implementation checkpoint. No game mechanics, accepted assets, unrelated catalog entries or shared standards changed.
