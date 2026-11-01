@@ -90,10 +90,7 @@ let server, browser;
         await card.locator('[lang="en"]').innerText(),
         entry.summary,
       );
-      assert.equal(
-        await card.locator('[lang="zh-TW"]').innerText(),
-        entry.summaryZhTW,
-      );
+      assert.equal(await card.locator('[lang="zh-TW"]').count(), 0);
       assert.equal(
         await card.locator("img").getAttribute("alt"),
         entry.coverAlt,
@@ -175,7 +172,7 @@ let server, browser;
         public: isPublic,
         views,
         portalToActualGameLocales: isPublic ? ["en", "zh-TW"] : [],
-        note: "Portal chrome remains English; both entry summaries are present with language markup. Actual game has two live-switchable language modes.",
+        note: "Portal chrome remains English; catalog summaries are English; Traditional Chinese remains on the fact sheet. Actual game has two live-switchable language modes.",
       },
       null,
       2,

@@ -7,7 +7,7 @@ The curated source is one JSON file per project: `content/projects/<collection>/
 | Field | Meaning |
 | --- | --- |
 | `id`, `category` | Stable lower-case hyphenated ID and configured gallery collection. Must match filename/directory. |
-| `title`, `summary` | Accurate project name and concise English description. Optional `summaryZhTW` adds Traditional Chinese text with language markup on card/detail; it does not introduce a portal locale switch. Optional `coverAlt` describes approved custom artwork. |
+| `title`, `summary` | Accurate project name and concise English description. Optional `summaryZhTW` adds Traditional Chinese text with language markup on the fact sheet; catalog cards use the English summary; it does not introduce a portal locale switch. Optional `coverAlt` describes approved custom artwork. |
 | `tags` | Ordered, optional descriptive labels. Single-selection filters are derived from published entries; All is reserved. No Commercial or Children. |
 | `status` | `draft`, `approved`, `published`, `archived`; only published appears in pages/assets. |
 | `maturity` | `released`, `public`, `evolving`. Public showcase visibility does not assert final creative acceptance. Preserve limitations honestly. |

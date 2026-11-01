@@ -12,7 +12,7 @@ import {
   readProjects,
   editorialOrder,
 } from "../src/catalog.ts";
-import { collectionPage } from "../src/render.ts";
+import { collectionPage, detail } from "../src/render.ts";
 import type { Project, RenderContext } from "../src/model.ts";
 const root = resolve(import.meta.dirname, "..");
 const load = (name: string) => readJSON(resolve(root, "content", name));
@@ -226,7 +226,10 @@ test("new optional copy and override fields validate, escape, and keep filter la
     [],
     ctx,
   );
-  assert(html.includes('lang="zh-TW">&lt;script&gt;unsafe&lt;/script&gt;'));
+  assert(!html.includes('lang="zh-TW"'));
+  assert(
+    detail(p, ctx).includes('lang="zh-TW">&lt;script&gt;unsafe&lt;/script&gt;'),
+  );
   assert.deepEqual(
     [...html.matchAll(/data-filter="([^"]+)"/g)].map((m) => m[1]),
     ["All", ...expected],
