@@ -190,5 +190,13 @@
     "status": 200,
     "checkedAt": "2026-11-01T07:04:54.135515+00:00",
     "method": "HTTPS canonical root/BUILD.json and all63 frozen runtime hashes verified; independent actual Chromium keyboard/touch Transform, Spike, Devour, exit and restart checks passed."
+  },
+  {
+    "id": "armorheart",
+    "url": "https://jaychtw.github.io/armorheart/",
+    "finalUrl": "https://jaychtw.github.io/armorheart/",
+    "status": 200,
+    "checkedAt": "2026-11-05T01:44:32.644402+00:00",
+    "method": "Normal system-CA urllib HTTPS; exact accepted HTML SHA-256 matched. Separate actual Chromium keyboard/touch victory/unlock/language/reload verification is recorded in Armorheart publication evidence."
   }
 ]

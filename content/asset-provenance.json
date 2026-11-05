@@ -168,5 +168,15 @@
     "sourceDimensions": [1600, 900],
     "treatment": "Authentic public Chromium viewport screenshot captured October 30, 2026 Asia/Taipei; original retained at docs/apps-storm-chaser/public-capture.png. Lossless WebP encoding, no resizing, compositing or generated artwork. Build generates standard fingerprinted 16:9 variants.",
     "rights": "Owner-authorized portfolio screenshot use. JMA extraction/visualization and Natural Earth notices remain those of the application; no blanket artwork license assigned."
+  },
+  {
+    "path": "/assets/screenshots/games/armorheart.webp",
+    "source": "https://raw.githubusercontent.com/jaychtw/armorheart/90cabce03c82947ecf146aa5f21aed425b93fcd1/evidence/publication/live-game/desktop-arena.png",
+    "sourceCommit": "90cabce03c82947ecf146aa5f21aed425b93fcd1",
+    "sourceSha256": "e2ff21c8ff2017cffdd4dad01c4d82f4a5f2e1a79c3a1cc12b536ad4ad496fd8",
+    "importSha256": "813c972eeb83bd99109ac8c5b9e01826c0d776b248106a5dad5695f5c90686fe",
+    "sourceDimensions": [640, 641],
+    "treatment": "Authentic unmodified public-game Canvas capture at deployed source 824618bed223c147a34562ff415e86a922594f7b; encoded losslessly as WebP, no resize/crop/generated artwork.",
+    "rights": "Explicit owner-authorized Armorheart/Possibility publication; original project provenance qualifications remain. No blanket third-party or stock-art license assigned."
   }
 ]

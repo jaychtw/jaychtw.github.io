@@ -1,0 +1,33 @@
+{
+  "id": "armorheart",
+  "category": "games",
+  "title": "Armorheart",
+  "summary": "Four tank missions: open an evacuation route, confront a giant gorilla, intercept a battleship and defeat a fortress. Earn a collection of four cosmetic tanks.",
+  "summaryZhTW": "四個戰車任務：打通撤離路線、迎戰巨獸、攔截戰艦、攻克砲壘。首次完成不同任務可逐步收藏四款戰車外觀。",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 240,
+  "publishedAt": "2026-11-05",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/armorheart/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/armorheart",
+  "languages": ["en", "zh-TW"],
+  "controls": "Arrows/WASD move and face; hold Space to fire. Touch supports simultaneous direction and Fire. Pause, retry, mute, reduced motion and live language switching.",
+  "limitations": "Progress is local to this browser/device. All four tank designs are cosmetic and share identical mechanics. Short landscape screens scroll. Physical-phone, independent first-time-player, other-engine and human assistive-technology tests remain unperformed; full nonvisual Canvas support is incomplete. Accepted fast-win strategies and tank/transport overlap remain. Asset provenance qualifications are retained in the source release preflight.",
+  "approval": {
+    "url": "https://github.com/jaychtw/armorheart/blob/3b8d7fe4d6a46f451d2c4fdb6e808f4bba900d72/docs/V1_PUBLICATION_AUTHORIZATION.md",
+    "note": "Owner accepted integrated RC1 and separately authorized game and Games catalog publication. Manual game run41950065569 published the exact reviewed executable. Independent public identity, keyboard/touch wins, unlocks, bilingual switching and persistence passed; no broader human/hardware certification is implied."
+  },
+  "release": {
+    "version": "1.0.0",
+    "commit": "824618bed223c147a34562ff415e86a922594f7b"
+  },
+  "thumbnail": {
+    "path": "/assets/screenshots/games/armorheart.webp",
+    "alt": "Actual Armorheart Colossus gameplay: Guardian faces the natural gorilla in the open battlefield."
+  },
+  "tags": ["Action"]
+}
