@@ -171,12 +171,12 @@
   },
   {
     "path": "/assets/screenshots/games/armorheart.webp",
-    "source": "https://raw.githubusercontent.com/jaychtw/armorheart/90cabce03c82947ecf146aa5f21aed425b93fcd1/evidence/publication/live-game/desktop-arena.png",
-    "sourceCommit": "90cabce03c82947ecf146aa5f21aed425b93fcd1",
-    "sourceSha256": "e2ff21c8ff2017cffdd4dad01c4d82f4a5f2e1a79c3a1cc12b536ad4ad496fd8",
-    "importSha256": "813c972eeb83bd99109ac8c5b9e01826c0d776b248106a5dad5695f5c90686fe",
-    "sourceDimensions": [640, 641],
-    "treatment": "Authentic unmodified public-game Canvas capture at deployed source 824618bed223c147a34562ff415e86a922594f7b; encoded losslessly as WebP, no resize/crop/generated artwork.",
+    "source": "https://raw.githubusercontent.com/jaychtw/armorheart/ebdc3ab80452ae242f414d8136a039dad46f70b3/evidence/publication/live-game/portal-gameplay-wide.png",
+    "sourceCommit": "ebdc3ab80452ae242f414d8136a039dad46f70b3",
+    "sourceSha256": "366306bf0d090c11cc5aa52d94a06c5d668e9642e533df4f84b8da47c375bc8c",
+    "importSha256": "e13d5f8fbf4b5a1a8685869a207d66fff28d26362fea27dc4f166d584da6c8e9",
+    "sourceDimensions": [640, 360],
+    "treatment": "Authentic16:9 browser capture of the central public-game Canvas after native movement/fire; no generated artwork, repaint or resize. Full Canvas and input/capture metadata are preserved beside the source PNG. Framed to keep both Guardian and Colossus visible under the existing portal card aspect ratio.",
     "rights": "Explicit owner-authorized Armorheart/Possibility publication; original project provenance qualifications remain. No blanket third-party or stock-art license assigned."
   }
 ]
