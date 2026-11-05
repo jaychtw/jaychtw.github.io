@@ -1,0 +1,19 @@
+{
+  "original": "docs/armorheart-cover/masters/Armorheart_approved_cover_master.png",
+  "originalSha256": "9f8e834beb95cdf383132e881cf37255332bad7b826fdec69b90b28a10f34a4c",
+  "sourceWebP": "public/assets/covers/games/armorheart.webp",
+  "sourceSha256": "fe75df86f1a0b00fd0856c6021aaf2f321e3baa7d140a311795653dff9c81c79",
+  "originalBytes": 2719981,
+  "webpBytes": 1975710,
+  "width": 1672,
+  "height": 941,
+  "losslessDecodedPixelsIdentical": true,
+  "sourceArchiveSha256": "460164655a1dc7e2dba5bf3c03483a0816a07938a7d2eb4c7d1541c1e221ab1b",
+  "sourceArchiveBytes": 2687027,
+  "approval": "Owner-approved final Armorheart v1.0 Possibility cover and explicit publication authorization in current conversation",
+  "provenance": "Owner-supplied AI-generated and subsequently edited promotional artwork. Original PNG/provenance/checksum archived byte-for-byte; no broader game-asset rights guarantee.",
+  "treatment": "Lossless original-resolution WebP; no regeneration, repaint, creative crop, stretch, overlay or typography modification",
+  "delivery": "Existing unchanged 16:9 pipeline normalizes less than one source pixel (0.5px vertically) for rounding; original/publishing source preserve every pixel",
+  "rollbackPublishedSource": "691eea8286c18a05a04c4db9fd2f775760e12ca0",
+  "preChangeMain": "aa05a62ece2021f5fb9573f4a91f3bc8423d84b5"
+}
