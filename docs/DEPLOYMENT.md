@@ -1,5 +1,9 @@
 # Deployment, review gate and rollback
 
+## Current verified publication state — November 5, 2026
+
+Armorheart v1.0 is the newest Games entry at **691eea8286c18a05a04c4db9fd2f775760e12ca0**, successful [manual run41952856732](https://github.com/jaychtw/jaychtw.github.io/actions/runs/41952856732). Independent141-file and eight-view gallery/fact-sheet/Play verification passed, including real public-game victories. [Delivery/rollback](armorheart/DELIVERY.md). Immediate pre-framing public source67e2b889ee60204d6ec73db487eaf85fd4736fab; pre-Armorheart source72dc332181b3530a0dc0a1c7178fed220d606af9. Independent game deployment/source is recorded separately. Later receipt-only main commits do not change public build identity. Existing manual workflow/automatic-publication policy is unchanged.
+
 ## Current verified publication state — November 1, 2026
 
 Catalog card copy correction is live at **72dc332181b3530a0dc0a1c7178fed220d606af9**, successful [manual run41286666846](https://github.com/jaychtw/jaychtw.github.io/actions/runs/41286666846). Shadow’s card now shows only its English description; the fact-sheet translation remains. Independent139-file/10-view public verification passed. [Receipt/rollback](shadow-becomes-me/CARD_COPY_UPDATE.md). Immediate previous public source: **49d043fbc59d44d6d7675b963713dc90773239a8**.

@@ -1,5 +1,7 @@
 # Armorheart v1.0 — authorized Games entry
 
+**Final status: both releases deployed and verified.** [Delivery, evidence and rollback](DELIVERY.md). The following preserves the preparation and first-publication history.
+
 November5,2026 Asia/Taipei. The owner explicitly authorizes this bounded entry and manual publication after independent game verification: [authorization](https://github.com/jaychtw/armorheart/blob/3b8d7fe4d6a46f451d2c4fdb6e808f4bba900d72/docs/V1_PUBLICATION_AUTHORIZATION.md). This is not authority for portal redesign or automatic publishing.
 
 ## Verified independent game
