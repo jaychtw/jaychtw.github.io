@@ -1,0 +1,60 @@
+{
+  "public": false,
+  "sourceCommit": "0e319e780ed4d066eaec6e779b06a4a7a358763d",
+  "checkedAt": "2026-11-05T04:18:03.621Z",
+  "views": [
+    {
+      "width": 320,
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "passed": true
+}

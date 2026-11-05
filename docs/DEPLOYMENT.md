@@ -1,5 +1,9 @@
 # Deployment, review gate and rollback
 
+## Current verified publication state — November 5, 2026, Armorheart final cover
+
+Owner-approved final Armorheart promotional cover is live at **ce469f863305e428dd45bfc587285a28eeeecd54**, successful [manual run41967440753](https://github.com/jaychtw/jaychtw.github.io/actions/runs/41967440753). Independent144-file integrity, ten actual viewport/theme cover states, four focused axe audits and continued keyboard/touch Play behavior passed. [Original master, provenance, delivery and rollback](armorheart-cover/DELIVERY.md). Previous public rollback is691eea8286c18a05a04c4db9fd2f775760e12ca0. Armorheart metadata, first-place order, other entries, game repository and publication policy are unchanged; automatic publication remains disabled. Later receipt-only main commits do not change this deployed identity.
+
 ## Current verified publication state — November 5, 2026
 
 Armorheart v1.0 is the newest Games entry at **691eea8286c18a05a04c4db9fd2f775760e12ca0**, successful [manual run41952856732](https://github.com/jaychtw/jaychtw.github.io/actions/runs/41952856732). Independent141-file and eight-view gallery/fact-sheet/Play verification passed, including real public-game victories. [Delivery/rollback](armorheart/DELIVERY.md). Immediate pre-framing public source67e2b889ee60204d6ec73db487eaf85fd4736fab; pre-Armorheart source72dc332181b3530a0dc0a1c7178fed220d606af9. Independent game deployment/source is recorded separately. Later receipt-only main commits do not change public build identity. Existing manual workflow/automatic-publication policy is unchanged.

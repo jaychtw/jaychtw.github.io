@@ -1,0 +1,268 @@
+{
+  "passed": true,
+  "public": false,
+  "sourceCommit": "0e319e780ed4d066eaec6e779b06a4a7a358763d",
+  "checkedAt": "2026-11-05T04:19:04.339Z",
+  "cover": {
+    "sourcePath": "/assets/covers/games/armorheart.webp",
+    "sourceSha256": "fe75df86f1a0b00fd0856c6021aaf2f321e3baa7d140a311795653dff9c81c79",
+    "kind": "cover",
+    "crop": "16:9 center crop",
+    "variants": [
+      {
+        "src": "/assets/covers/games/armorheart.480.79f3e053a673.webp",
+        "width": 480,
+        "height": 270,
+        "sha256": "79f3e053a6734408c4b3947bc83e48fa9d88a64f64bef380bd754b64e3b6a6c5"
+      },
+      {
+        "src": "/assets/covers/games/armorheart.960.4f2027ace700.webp",
+        "width": 960,
+        "height": 540,
+        "sha256": "4f2027ace7003c7ff044cc73429b3c360ce390bf75b1018a5f4be04bc3a0a731"
+      },
+      {
+        "src": "/assets/covers/games/armorheart.1600.cb954b39aaf4.webp",
+        "width": 1600,
+        "height": 900,
+        "sha256": "cb954b39aaf43a6ef34611bb98e485fa35c4c1613a643209fd57e721ac9737fd"
+      }
+    ]
+  },
+  "views": [
+    {
+      "width": 320,
+      "height": 740,
+      "theme": "light",
+      "image": {
+        "src": "http://127.0.0.1:4186/assets/covers/games/armorheart.960.4f2027ace700.webp",
+        "naturalWidth": 280,
+        "naturalHeight": 157,
+        "width": 280,
+        "height": 157.5,
+        "fit": "cover",
+        "alt": "Armorheart cover artwork",
+        "fallback": "/assets/screenshots/games/armorheart.480.6d8a57481f94.webp"
+      },
+      "first": "armorheart",
+      "metadataUnchanged": true,
+      "bilingualFactsheet": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "theme": "dark",
+      "image": {
+        "src": "http://127.0.0.1:4186/assets/covers/games/armorheart.960.4f2027ace700.webp",
+        "naturalWidth": 280,
+        "naturalHeight": 157,
+        "width": 280,
+        "height": 157.5,
+        "fit": "cover",
+        "alt": "Armorheart cover artwork",
+        "fallback": "/assets/screenshots/games/armorheart.480.6d8a57481f94.webp"
+      },
+      "first": "armorheart",
+      "metadataUnchanged": true,
+      "bilingualFactsheet": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "image": {
+        "src": "http://127.0.0.1:4186/assets/covers/games/armorheart.960.4f2027ace700.webp",
+        "naturalWidth": 349,
+        "naturalHeight": 196,
+        "width": 350,
+        "height": 196.875,
+        "fit": "cover",
+        "alt": "Armorheart cover artwork",
+        "fallback": "/assets/screenshots/games/armorheart.480.6d8a57481f94.webp"
+      },
+      "first": "armorheart",
+      "metadataUnchanged": true,
+      "bilingualFactsheet": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "image": {
+        "src": "http://127.0.0.1:4186/assets/covers/games/armorheart.960.4f2027ace700.webp",
+        "naturalWidth": 349,
+        "naturalHeight": 196,
+        "width": 350,
+        "height": 196.875,
+        "fit": "cover",
+        "alt": "Armorheart cover artwork",
+        "fallback": "/assets/screenshots/games/armorheart.480.6d8a57481f94.webp"
+      },
+      "first": "armorheart",
+      "metadataUnchanged": true,
+      "bilingualFactsheet": true,
+      "noOverflow": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "image": {
+        "src": "http://127.0.0.1:4186/assets/covers/games/armorheart.480.79f3e053a673.webp",
+        "naturalWidth": 347,
+        "naturalHeight": 195,
+        "width": 348,
+        "height": 195.75,
+        "fit": "cover",
+        "alt": "Armorheart cover artwork",
+        "fallback": "/assets/screenshots/games/armorheart.480.6d8a57481f94.webp"
+      },
+      "first": "armorheart",
+      "metadataUnchanged": true,
+      "bilingualFactsheet": true,
+      "noOverflow": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "image": {
+        "src": "http://127.0.0.1:4186/assets/covers/games/armorheart.480.79f3e053a673.webp",
+        "naturalWidth": 347,
+        "naturalHeight": 195,
+        "width": 348,
+        "height": 195.75,
+        "fit": "cover",
+        "alt": "Armorheart cover artwork",
+        "fallback": "/assets/screenshots/games/armorheart.480.6d8a57481f94.webp"
+      },
+      "first": "armorheart",
+      "metadataUnchanged": true,
+      "bilingualFactsheet": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "image": {
+        "src": "http://127.0.0.1:4186/assets/covers/games/armorheart.480.79f3e053a673.webp",
+        "naturalWidth": 379,
+        "naturalHeight": 213,
+        "width": 378.65625,
+        "height": 212.984375,
+        "fit": "cover",
+        "alt": "Armorheart cover artwork",
+        "fallback": "/assets/screenshots/games/armorheart.480.6d8a57481f94.webp"
+      },
+      "first": "armorheart",
+      "metadataUnchanged": true,
+      "bilingualFactsheet": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "theme": "dark",
+      "image": {
+        "src": "http://127.0.0.1:4186/assets/covers/games/armorheart.480.79f3e053a673.webp",
+        "naturalWidth": 379,
+        "naturalHeight": 213,
+        "width": 378.65625,
+        "height": 212.984375,
+        "fit": "cover",
+        "alt": "Armorheart cover artwork",
+        "fallback": "/assets/screenshots/games/armorheart.480.6d8a57481f94.webp"
+      },
+      "first": "armorheart",
+      "metadataUnchanged": true,
+      "bilingualFactsheet": true,
+      "noOverflow": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "image": {
+        "src": "http://127.0.0.1:4186/assets/covers/games/armorheart.480.79f3e053a673.webp",
+        "naturalWidth": 385,
+        "naturalHeight": 217,
+        "width": 386,
+        "height": 217.125,
+        "fit": "cover",
+        "alt": "Armorheart cover artwork",
+        "fallback": "/assets/screenshots/games/armorheart.480.6d8a57481f94.webp"
+      },
+      "first": "armorheart",
+      "metadataUnchanged": true,
+      "bilingualFactsheet": true,
+      "noOverflow": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "image": {
+        "src": "http://127.0.0.1:4186/assets/covers/games/armorheart.480.79f3e053a673.webp",
+        "naturalWidth": 385,
+        "naturalHeight": 217,
+        "width": 386,
+        "height": 217.125,
+        "fit": "cover",
+        "alt": "Armorheart cover artwork",
+        "fallback": "/assets/screenshots/games/armorheart.480.6d8a57481f94.webp"
+      },
+      "first": "armorheart",
+      "metadataUnchanged": true,
+      "bilingualFactsheet": true,
+      "noOverflow": true
+    }
+  ],
+  "audits": [
+    {
+      "width": 390,
+      "theme": "light",
+      "violations": [],
+      "incomplete": [],
+      "passes": 22
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "violations": [],
+      "incomplete": [],
+      "passes": 22
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "violations": [],
+      "incomplete": [],
+      "passes": 22
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "violations": [],
+      "incomplete": [],
+      "passes": 22
+    }
+  ],
+  "plays": [
+    {
+      "from": "Games card/touch",
+      "url": "https://jaychtw.github.io/armorheart/",
+      "movedAndFired": true
+    },
+    {
+      "from": "fact-sheet Play/keyboard",
+      "url": "https://jaychtw.github.io/armorheart/",
+      "movedAndFired": true
+    }
+  ],
+  "errors": [],
+  "limitations": "Managed Chromium/viewport emulation, not physical phones, independent player or assistive-technology certification. Title/subject readability is assistant visual inspection of actual card captures; no creative edits."
+}

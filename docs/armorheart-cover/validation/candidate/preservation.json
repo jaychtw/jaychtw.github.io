@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "base": "aa05a62ece2021f5fb9573f4a91f3bc8423d84b5",
+  "candidate": "0e319e780ed4d066eaec6e779b06a4a7a358763d",
+  "onlyShippingInputChange": [
+    "public/assets/covers/games/armorheart.webp"
+  ],
+  "allExistingMetadataRuntimeWorkflowsDependenciesAndOtherAssetsByteUnchanged": true,
+  "masterHashVerified": true,
+  "assistantVisualInspection": "Actual CSS280px,350px and379px card captures: full ARMORHEART title readable; tank/Kong/battleship/distant fortress remain represented; no meaningful content cropped; light/dark checked. Not an additional owner approval or physical-device test."
+}
