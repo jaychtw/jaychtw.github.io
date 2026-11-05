@@ -11,11 +11,21 @@ root = Path(__file__).resolve().parents[1]
 evidence = root / '.artifacts'
 evidence.mkdir(parents=True, exist_ok=True)
 class Assets(HTMLParser):
-    def __init__(self): super().__init__(); self.paths = []
+    def __init__(self): super().__init__(); self.paths = []; self.inline_scripts = []; self._inline = None
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
-        if tag == 'script' and attrs.get('src'): self.paths.append(attrs['src'])
+        if tag == 'script':
+            if attrs.get('src'): self.paths.append(attrs['src'])
+            elif attrs.get('type', '').lower() in ['', 'module', 'text/javascript', 'application/javascript']: self._inline = []
         if tag == 'link' and attrs.get('href') and attrs.get('rel') in ['stylesheet', 'modulepreload']: self.paths.append(attrs['href'])
+
+    def handle_data(self, data):
+        if self._inline is not None: self._inline.append(data)
+    def handle_endtag(self, tag):
+        if tag == 'script' and self._inline is not None:
+            raw=''.join(self._inline).strip().encode()
+            if raw: self.inline_scripts.append({'bytes':len(raw),'sha256':sha256(raw).hexdigest()})
+            self._inline=None
 
 def fetch(url):
     with urlopen(Request(url, headers={'User-Agent':'Possibility-Stage-A2-Read-Only'}), timeout=40) as response:
@@ -28,9 +38,9 @@ for item in [json.loads(path.read_text()) for path in sorted((root/'content/proj
     assert status == 200 and final == item['destination']['url'] and b'<html' in content.lower()
     parser = Assets(); parser.feed(content.decode())
     is_interactive=(item['category']=='games' and item['destination']['action']=='play') or (item['category']=='apps' and item['destination']['action']=='open')
-    if is_interactive: assert parser.paths, 'No runtime resources in public game/application'
+    if is_interactive: assert parser.paths or parser.inline_scripts, 'No external or embedded executable runtime in public game/application'
     else: parser.paths=[]
-    game = {'id':item['id'],'url':final,'status':status,'htmlSha256':sha256(content).hexdigest(),'assets':[]}
+    game = {'id':item['id'],'url':final,'status':status,'htmlSha256':sha256(content).hexdigest(),'assets':[],'inlineScripts':parser.inline_scripts}
     for path in sorted(set(parser.paths)):
         url = urljoin(final, path)
         assert urlsplit(url).scheme == 'https' and urlsplit(url).hostname == urlsplit(final).hostname
