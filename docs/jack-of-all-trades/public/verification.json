@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-08T05:26:53.085Z",
+  "base": "https://jaychtw.github.io",
+  "live": true,
+  "cases": [
+    {
+      "width": 390,
+      "theme": "dark",
+      "firstCard": true,
+      "approvedCover": "https://jaychtw.github.io/assets/covers/games/jack-of-all-trades.480.f892c9986d27.webp",
+      "localizedFactSheet": true,
+      "correctPlay": true,
+      "axeViolations": 0,
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "firstCard": true,
+      "approvedCover": "https://jaychtw.github.io/assets/covers/games/jack-of-all-trades.480.f892c9986d27.webp",
+      "localizedFactSheet": true,
+      "correctPlay": true,
+      "axeViolations": 0,
+      "pageErrors": []
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "firstCard": true,
+      "approvedCover": "https://jaychtw.github.io/assets/covers/games/jack-of-all-trades.480.f892c9986d27.webp",
+      "localizedFactSheet": true,
+      "correctPlay": true,
+      "axeViolations": 0,
+      "pageErrors": []
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "firstCard": true,
+      "approvedCover": "https://jaychtw.github.io/assets/covers/games/jack-of-all-trades.480.f892c9986d27.webp",
+      "localizedFactSheet": true,
+      "correctPlay": true,
+      "axeViolations": 0,
+      "pageErrors": []
+    }
+  ],
+  "status": "Pass"
+}

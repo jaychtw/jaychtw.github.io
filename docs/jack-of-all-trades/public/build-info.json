@@ -1,0 +1,42 @@
+{
+  "name": "Possibility",
+  "version": "1.0.0-platform-rc.1",
+  "sourceCommit": "6833dfc191569e465fee37200740cbe94cd7261d",
+  "sourceDirty": false,
+  "designVersion": "1.0",
+  "designAuthority": "Platform v1.0 textual amendment",
+  "homepageCollection": "games",
+  "routes": [
+    "/",
+    "/apps/",
+    "/games/jack-of-all-trades/",
+    "/apps/storm-chaser/",
+    "/games/armorheart/",
+    "/games/shadow-becomes-me/",
+    "/games/squirrel-control/",
+    "/games/republic-of-chickens/",
+    "/games/wonderlands/",
+    "/games/the-last-lantern/",
+    "/games/snacks-match-raohe/",
+    "/games/shape-match/",
+    "/games/junctioneer/",
+    "/games/my-queens/",
+    "/games/tidelight/",
+    "/games/jasmine-odyssey/",
+    "/games/formosa-quest/",
+    "/games/jeremy-odyssey/",
+    "/games/nom-nom-boom/",
+    "/games/launch-sequence/",
+    "/games/animal-match/",
+    "/games/kaiju-tournament/",
+    "/games/kaiju-demolition/",
+    "/games/riot-defender/",
+    "/games/typhoon-defender/",
+    "/games/pedestrian-living-hell/",
+    "/games/the-other-ninty-percent/",
+    "/games/the-impossible-room/"
+  ],
+  "compatibility": [
+    "/games/"
+  ]
+}

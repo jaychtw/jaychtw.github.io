@@ -1,0 +1,30 @@
+{
+  "status": "Pass",
+  "sourceCommit": "337a7af7ffb4a52a22583547f62aea1a35ed7c7d",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 1828,
+      "sha256": "8ae0bfd10a7ca184780a448a7431f701c0d6fe1bbfceb389dc9d9b6c9364cc32",
+      "matchesProductionArtifact": true
+    },
+    {
+      "path": "assets/index-BUyqxbQ9.css",
+      "bytes": 4067,
+      "sha256": "68d87453dcd2bc33d2d58af9373e03d576a31ed3065588c9757bcb2aabb84d2e",
+      "matchesProductionArtifact": true
+    },
+    {
+      "path": "assets/index-CSL_tPex.js",
+      "bytes": 132770,
+      "sha256": "1fd7b99afde0e1be573f9b4b5ed68e08ec2ef2dbbf5b5db2f191c8869857063d",
+      "matchesProductionArtifact": true
+    },
+    {
+      "path": "assets/title-screen-master-16Iyexw0.png",
+      "bytes": 2458272,
+      "sha256": "5978dac647473dee317aabdb3f6bf6a38f1abd25e2cf65dd115c711df919bdc6",
+      "matchesProductionArtifact": true
+    }
+  ]
+}

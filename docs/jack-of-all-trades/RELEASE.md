@@ -26,3 +26,17 @@ Validate this review branch, merge normally, validate the resulting exact main S
 ## Candidate verification
 
 PASS: typecheck, lint/format, 14 catalog/publishing tests, existing gallery browser suite (10 layouts, 76 filters, 13 axe scans, 13 behaviors, five publishing fixtures), Apps (10 views, zero axe violations), Shadow entry (10 views), and fresh normal-TLS checks of all 26 published projects/resources. Candidate JSON receipts and targeted Jack cover/fact-sheet screenshots are retained in `candidate/`. The targeted portal verifier uses the repository's existing same-origin test-script route method for axe injection; production CSP is preserved. Full clean-source release packaging is also enforced by CI before any dispatch.
+
+## Final public delivery — COMPLETE
+
+Observed 2026-11-08 Asia/Taipei. [Manual publication run 42450588700](https://github.com/jaychtw/jaychtw.github.io/actions/runs/42450588700) completed successfully for exact source `6833dfc191569e465fee37200740cbe94cd7261d`, after [PR #9](https://github.com/jaychtw/jaychtw.github.io/pull/9) and successful exact-main validation `42450443228`. Both prepare and publish jobs passed, including the workflow's public file/browser/link checks. The first attempt's post-deployment check failed; after independent confirmation that all 148 public files matched, retry of the same reviewed SHA passed. The first failure's root cause is not asserted. The run history retains both attempts. No safeguards were weakened.
+
+- PASS: independent normal-TLS comparison of **148 public files** to the clean reviewed production artifact (`public/integrity.json`).
+- PASS: new Games card is first by its observed publication date, approved cover is loaded, actual EN/zh-TW fact sheet and Play link work on 390/1440 widths in dark/light themes, with zero scoped axe violations or page errors (`public/verification.json`). The verifier explicitly asserts the persisted theme and waits for the decoded cover; candidate light-theme fact-sheet captures were refreshed accordingly.
+- PASS: actual public fact-sheet Play action followed into the live game and invoked START and Blessing (`public/play-game.png`).
+- PASS: the unchanged portal smoke script passed independently. A runtime-only proxy adapter was needed for Playwright's Node APIRequestContext in this Cloud environment; the script and product were not changed, and TLS stayed enabled. Adapter retained in `public/cloud-smoke-proxy.cjs` for that environment only.
+- PASS: exact public game HTML/JS/CSS/title bytes match the reviewed artifact (`public-game-integrity.json`), in addition to real public combat/death/restart smoke.
+
+Public game: https://jaychtw.github.io/jack-of-all-trades/ . Public fact sheet: https://jaychtw.github.io/games/jack-of-all-trades/ . Gallery: https://jaychtw.github.io/ (Games alias https://jaychtw.github.io/games/).
+
+Original promotional masters, derivative identity, source notices, $0 spend and test limitations remain as recorded above. Physical-device/human aesthetic/assistive-technology checks remain Not Verified. No owner action is required. Automatic production publication remains disabled. Immediate portal rollback remains `ce469f863305e428dd45bfc587285a28eeeecd54`; use the same existing manual workflow only under appropriate authority. This final receipt is documentation only and does not republish or change the deployed source identity.
