@@ -198,5 +198,13 @@
     "status": 200,
     "checkedAt": "2026-11-05T01:44:32.644402+00:00",
     "method": "Normal system-CA urllib HTTPS; exact accepted HTML SHA-256 matched. Separate actual Chromium keyboard/touch victory/unlock/language/reload verification is recorded in Armorheart publication evidence."
+  },
+  {
+    "id": "jack-of-all-trades",
+    "url": "https://jaychtw.github.io/jack-of-all-trades/",
+    "finalUrl": "https://jaychtw.github.io/jack-of-all-trades/",
+    "status": 200,
+    "checkedAt": "2026-11-08T05:16:07.284230+00:00",
+    "method": "Normal-TLS urllib public URL and build identity; Chromium live START/sword/beam/pause/natural defeat/restart/Chinese/mute smoke passed independently (docs/jack-of-all-trades/live-smoke.json)."
   }
 ]
