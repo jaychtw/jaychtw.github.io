@@ -1,0 +1,31 @@
+{
+  "id": "jack-of-all-trades",
+  "category": "games",
+  "title": "Jack of All Trades",
+  "summary": "A Roman knight survives a ruined arena with two sword attacks and five unlimited spells. Defeat five flaming skulls and a crowned Orc King, then repeat.",
+  "summaryZhTW": "羅馬騎士在廢墟競技場中，以兩種劍技與五種無限使用的魔法求生。擊敗五隻火焰飛行骷髏與加冕獸人王後，繼續迎戰相同波次。",
+  "coverAlt": "Approved promotional pixel artwork: a red-crested Roman knight, flaming skulls and a crowned green Orc King with a spiked warhammer beside a luminous portal.",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 250,
+  "publishedAt": "2026-11-08",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/jack-of-all-trades/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/jack-of-all-trades",
+  "languages": ["en", "zh-TW"],
+  "controls": "A/D or Left/Right move; J/K sword; 1–5 magic; P/Esc pause. Seven visible touch/click actions and two hold-to-move buttons. Live language, mute and fullscreen controls.",
+  "limitations": "Mobile play requires landscape. Local best and preferences are browser/device-local; blocked storage or audio degrades gracefully. Repeated Blessing intentionally permits continuous protection. Physical-device, independent human aesthetic and assistive-technology reviews are not performed; full nonvisual Canvas combat is not supported.",
+  "approval": {
+    "url": "https://github.com/jaychtw/jack-of-all-trades/blob/337a7af7ffb4a52a22583547f62aea1a35ed7c7d/docs/GDD-FINAL.md",
+    "note": "Owner-approved November 8, 2026 Design Freeze separately authorizes the game and this one Possibility publication. Live START, sword, delayed beam, pause/resume, natural defeat/restart and Chinese/mute checks passed. Artwork is the exact approved card derivative; no owner review of final runtime visuals is claimed."
+  },
+  "release": {
+    "version": "1.0.0",
+    "commit": "337a7af7ffb4a52a22583547f62aea1a35ed7c7d"
+  },
+  "thumbnail": null,
+  "tags": ["Action"]
+}

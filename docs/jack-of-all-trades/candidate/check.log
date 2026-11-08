@@ -1,0 +1,100 @@
+
+> possibility@1.0.0-platform-rc.1 check
+> npm run typecheck && npm run lint && npm test && npm run test:browser
+
+
+> possibility@1.0.0-platform-rc.1 typecheck
+> tsc --noEmit
+
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+
+> possibility@1.0.0-platform-rc.1 lint
+> eslint src/client tests/*.cjs scripts/*.cjs && npm run format:check
+
+
+> possibility@1.0.0-platform-rc.1 format:check
+> prettier --check --ignore-unknown src scripts tests/*.ts tests/*.cjs content .github/workflows/*.yml package.json tsconfig.json eslint.config.js
+
+Checking formatting...
+All matched files use Prettier code style!
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+
+> possibility@1.0.0-platform-rc.1 test
+> node --test tests/*.test.ts
+
+✔ published projects retain verified current URLs and respect editable editorial order (26.93803ms)
+✔ unsafe URLs are rejected, including credential and encoded-control injection (0.93992ms)
+✔ duplicates, missing metadata, reserved tags and typo fields fail clearly (26.296547ms)
+✔ published links require matching dated evidence; acceptance and visibility remain distinct (4.178415ms)
+✔ invalid dates, statuses, language duplicates and implicit commit versions fail (10.200039ms)
+✔ traversal/missing screenshot assets fail; null selects an honest placeholder (9.276519ms)
+✔ draft/approved/archived projects stay out of galleries (2.499292ms)
+✔ gallery escapes metadata, includes complete cards, and hides empty navigation (3.818581ms)
+✔ identity settings reject email injection, subpath origins and unknown homepage (0.668209ms)
+✔ Games default to newest known publication, null dates retain editorial order, and Apps never reorder (2.24644ms)
+✔ new optional copy and override fields validate, escape, and keep filter labels in editorial order (9.822545ms)
+✔ Markdown supports authoring and rejects malformed/ambiguous metadata (26.664782ms)
+✔ raw HTML, unsafe URLs, external images and YAML aliases cannot inject active content (8.412855ms)
+Built 8 canonical routes; 2 projects; 2 articles. No public deployment.
+Built 8 canonical routes; 2 projects; 2 articles. No public deployment.
+Built 8 canonical routes; 2 projects; 2 articles. No public deployment.
+Invalid cover for republic-of-chickens; using screenshot.
+Built 8 canonical routes; 2 projects; 2 articles. No public deployment.
+Built 8 canonical routes; 2 projects; 2 articles. No public deployment.
+Built 8 canonical routes; 2 projects; 2 articles. No public deployment.
+Built 8 canonical routes; 2 projects; 2 articles. No public deployment.
+Built 8 canonical routes; 2 projects; 2 articles. No public deployment.
+✔ publication, cover replacement, Apps and homepage changes work through content only (5842.151025ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6256.648609
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+
+> possibility@1.0.0-platform-rc.1 test:browser
+> npm run build && node tests/browser.cjs && node tests/apps-browser.cjs && node tests/shadow-browser.cjs
+
+
+> possibility@1.0.0-platform-rc.1 build
+> node scripts/build.ts
+
+Built 28 canonical routes; 26 projects; 0 articles. No public deployment.
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+{"layouts":10,"filterCases":76,"axeScans":13,"behavior":13,"fixtures":5,"passed":true}
+{"public":false,"appsViews":10,"axeViolations":0,"passed":true}
+10 Shadow entry views passed
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

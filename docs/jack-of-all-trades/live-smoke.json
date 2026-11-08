@@ -1,0 +1,26 @@
+{
+  "status": "Pass",
+  "url": "https://jaychtw.github.io/jack-of-all-trades/",
+  "checkedAt": "2026-11-08T05:15:39.927Z",
+  "checks": [
+    "exact original title dimensions",
+    "no development mutation hook",
+    "START",
+    "keyboard sword",
+    "delayed beam",
+    "pause/resume",
+    "natural death",
+    "restart",
+    "Chinese switch",
+    "mute",
+    "no broken resources",
+    "no third-party runtime requests"
+  ],
+  "errors": [],
+  "requests": [
+    "https://jaychtw.github.io/jack-of-all-trades/",
+    "https://jaychtw.github.io/jack-of-all-trades/assets/index-CSL_tPex.js",
+    "https://jaychtw.github.io/jack-of-all-trades/assets/index-BUyqxbQ9.css",
+    "https://jaychtw.github.io/jack-of-all-trades/assets/title-screen-master-16Iyexw0.png"
+  ]
+}
