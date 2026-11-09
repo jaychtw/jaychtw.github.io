@@ -1,0 +1,31 @@
+{
+  "id": "the-butterfly-department",
+  "category": "games",
+  "title": "The Butterfly Department",
+  "summary": "Move one small thing a day. Watch eight independent lives change. Trace the consequences, rewind time, and discover what might have happened otherwise.",
+  "summaryZhTW": "每天只改變一件微不足道的小事，看八位居民的生活如何悄悄轉變。追查因果、倒轉時間，探索另一種可能。",
+  "coverAlt": "Original painted editorial-style illustration of Bellwether's bakery, park, library, noticeboard and bus stop, with residents crossing paths beneath the title The Butterfly Department.",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 260,
+  "publishedAt": "2026-11-09",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/the-butterfly-department/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/the-butterfly-department",
+  "languages": ["en", "zh-TW"],
+  "controls": "Keyboard, mouse and touch. Select a daily intervention, play/pause, 1×/4×, skip to an event or evening; inspect residents, rewind mornings and compare branches. EN/繁中, fullscreen and optional muted-by-default synthesized sound.",
+  "limitations": "Finite authored five-day fictional simulation, not open social AI or real-world psychological advice. Saves are browser-local with export/import; blocked storage keeps session play. Firefox/WebKit, physical devices, OS minimize/restore, assistive technology and independent human aesthetic review are not verified.",
+  "approval": {
+    "url": "https://github.com/jaychtw/the-butterfly-department/blob/86eee1a8689bf87c678ec4081d55810033b90c44/docs/GDD-FINAL.md",
+    "note": "Owner-approved 2026-11-09 Design Freeze separately authorizes this exact game and portfolio publication. Core witnesses, Chromium keyboard/touch, EN/zh-TW, recovery and targeted accessibility checks passed. Independent live START, repair and causal archive passed. No owner inspection of final gameplay is claimed. Version 1.0.1 additionally verifies actual bus-route travel and the private appointment deadline."
+  },
+  "release": {
+    "version": "1.0.1",
+    "commit": "86eee1a8689bf87c678ec4081d55810033b90c44"
+  },
+  "thumbnail": null,
+  "tags": ["Strategy"]
+}
