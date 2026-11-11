@@ -1,0 +1,31 @@
+{
+  "id": "stillwater",
+  "category": "games",
+  "title": "Stillwater",
+  "summary": "Fourteen koi drift beneath the lily pads. Hover to draw them closer, or touch the pond and watch each fish turn as the ripple reaches it.",
+  "summaryZhTW": "十四尾錦鯉悠游在睡蓮葉下。將游標停在魚兒身旁，引牠們靠近；或輕點水面，看漣漪一路散開，錦鯉依次轉身。",
+  "coverAlt": "Two red-and-white koi curve toward golden ripples in a jade pond beneath the ivory title Stillwater.",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 270,
+  "publishedAt": "2026-11-12",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/stillwater/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/stillwater",
+  "languages": ["en"],
+  "controls": "Hover to attract koi. Click or tap to send a ripple. With the pond focused, press Enter or Space to ripple the center. Use Pause to stop the animation.",
+  "limitations": null,
+  "approval": {
+    "url": "https://github.com/jaychtw/stillwater/commit/afa21d79ddb08469c46f30c99d319942e64f0782",
+    "note": "Creator requested the catalog cover and publication as the newest Possibility game."
+  },
+  "release": {
+    "version": null,
+    "commit": "afa21d79ddb08469c46f30c99d319942e64f0782"
+  },
+  "thumbnail": null,
+  "tags": ["Kawaii"]
+}
