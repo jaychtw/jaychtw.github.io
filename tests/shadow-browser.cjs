@@ -95,7 +95,17 @@ let server, browser;
         await card.locator("img").getAttribute("alt"),
         entry.coverAlt,
       );
-      await card.locator("img").evaluate((e) => e.decode());
+      // A lazy cover below the fold starts loading when the player scrolls to it.
+      const image = card.locator("img");
+      await image.scrollIntoViewIfNeeded({ timeout: 15000 });
+      await page.waitForFunction(
+        () =>
+          document.querySelector('[data-project="shadow-becomes-me"] img')
+            ?.complete,
+        undefined,
+        { timeout: 15000 },
+      );
+      await image.evaluate((e) => e.decode());
       const art = await card.locator("img").evaluate((e) => ({
         src: e.currentSrc,
         loaded: e.naturalWidth > 0,
