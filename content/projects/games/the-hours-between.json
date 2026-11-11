@@ -1,0 +1,31 @@
+{
+  "id": "the-hours-between",
+  "category": "games",
+  "title": "The Hours Between",
+  "summary": "From a Taipei arcade, watch a grandfather and a schoolgirl share an umbrella. Drag to revisit the moment a bus passes between you, or tap a streetlamp to cast a little light on the wet pavement.",
+  "summaryZhTW": "站在臺北的騎樓下，看祖孫倆共撐一把傘。公車駛過，短暫遮住了兩人的身影。滑動指尖，重看那一刻，或輕點路燈，讓燈光映在濕漉漉的路面上。",
+  "coverAlt": "A schoolgirl reaches for her grandfather’s red umbrella as a cream-and-red bus leaves a rainy Taipei street.",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 269,
+  "publishedAt": "2026-11-12",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/the-hours-between/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/the-hours-between",
+  "languages": ["en"],
+  "controls": "Drag or use the timeline to rewind. Tap the lamp, hibiscus or bin, or focus the street and press 1, 2 or 3. Sound and playback have separate controls.",
+  "limitations": null,
+  "approval": {
+    "url": "https://github.com/jaychtw/the-hours-between/commit/697f7feacdff1d780e5dee6f42e19c8593108a94",
+    "note": "Creator requested a Possibility release following Stillwater."
+  },
+  "release": {
+    "version": null,
+    "commit": "697f7feacdff1d780e5dee6f42e19c8593108a94"
+  },
+  "thumbnail": null,
+  "tags": ["Narrative"]
+}
