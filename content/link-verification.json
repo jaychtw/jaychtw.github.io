@@ -230,5 +230,13 @@
     "status": 200,
     "checkedAt": "2026-11-11T17:10:49.492964+00:00",
     "method": "HTTPS GET with system TLS, matching the released game HTML byte for byte."
+  },
+  {
+    "id": "constellation-builder",
+    "url": "https://jaychtw.github.io/constellation-builder/",
+    "finalUrl": "https://jaychtw.github.io/constellation-builder/",
+    "status": 200,
+    "checkedAt": "2026-11-11T17:36:30.749509+00:00",
+    "method": "HTTPS GET with system TLS, matching the released game HTML byte for byte."
   }
 ]
