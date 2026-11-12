@@ -196,6 +196,21 @@ export async function build(inputRoot = root): Promise<void> {
   })) {
     if (!file.isFile()) continue;
     const path = resolve(file.parentPath, file.name);
+    if (file.name === "index.html" && file.parentPath === shelf) {
+      put(
+        "/bookshelf/index.html",
+        page(ctx, {
+          title: "The Bookshelf · Possibility",
+          description:
+            "Original illustrated stories in English and Traditional Chinese.",
+          path: "/bookshelf/",
+          active: "bookshelf",
+          className: "gallery-page",
+          body: readFileSync(path, "utf8"),
+        }),
+      );
+      continue;
+    }
     put(
       "/bookshelf/" + relative(shelf, path).split(sep).join("/"),
       readFileSync(path),

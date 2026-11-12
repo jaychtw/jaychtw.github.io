@@ -88,7 +88,7 @@ let server, browser;
     assert.deepEqual(await page.locator("nav a").allTextContents(), [
       "Games",
       "Apps",
-      "Bookshelf",
+      "The Bookshelf",
     ]);
     assert.equal(
       await page.locator('nav [aria-current="page"]').innerText(),
@@ -102,6 +102,30 @@ let server, browser;
       await page.locator('meta[property="og:url"]').getAttribute("content"),
       "https://jaychtw.github.io/apps/",
     );
+    const wordmark = page.locator(".wordmark");
+    const themeButton = page.locator(".theme-toggle");
+    const expectedBrand = await wordmark.boundingBox();
+    const expectedSwitch = await themeButton.boundingBox();
+    await page
+      .getByRole("link", { name: "The Bookshelf", exact: true })
+      .click();
+    await page
+      .getByRole("heading", { name: "The Bookshelf", exact: true })
+      .waitFor({ state: "attached" });
+    assert.deepEqual(await wordmark.boundingBox(), expectedBrand);
+    assert.deepEqual(await themeButton.boundingBox(), expectedSwitch);
+    assert.equal(
+      await page.locator("nav [aria-current]").innerText(),
+      "The Bookshelf",
+    );
+    const originalTheme = await page.locator("html").getAttribute("data-theme");
+    await themeButton.click();
+    await page.getByRole("link", { name: "Apps", exact: true }).click();
+    assert.notEqual(
+      await page.locator("html").getAttribute("data-theme"),
+      originalTheme,
+    );
+    await themeButton.click();
     const card = page.getByRole("link", {
       name: "Open Storm Chaser",
       exact: true,

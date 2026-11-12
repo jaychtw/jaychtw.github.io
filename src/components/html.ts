@@ -18,7 +18,7 @@ export function header(ctx: RenderContext, active?: string): string {
     )
     .join(
       "",
-    )}<a href="/bookshelf/">Bookshelf</a></nav><button type="button" class="theme-toggle" aria-label="Switch to light theme" title="Switch to light theme" hidden><span class="theme-orb" aria-hidden="true"></span></button></div></header>`;
+    )}<a href="/bookshelf/"${active === "bookshelf" ? ' aria-current="page"' : ""}>The Bookshelf</a></nav><button type="button" class="theme-toggle" aria-label="Switch to light theme" title="Switch to light theme" hidden><span class="theme-orb" aria-hidden="true"></span></button></div></header>`;
 }
 export function page(
   ctx: RenderContext,
