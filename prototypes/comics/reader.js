@@ -64,8 +64,33 @@ function panels(groups, parent) {
       const frame = element('figure');
       frame.id = p.id;
       const wrapper = element('div','', p.crop ? 'crop ' + p.crop : '');
-      wrapper.append(picture(p.image,p.alt));
-      frame.append(wrapper,element('figcaption',local(p.words)));
+      if (!p.image) {
+        frame.className = 'silent-cut';
+        frame.setAttribute('aria-label', local(p.alt));
+      } else {
+        const image = picture(p.image, p.alt);
+        if (p.width && p.height) {
+          image.width = p.width;
+          image.height = p.height;
+          image.loading = 'lazy';
+        }
+        wrapper.append(image);
+        const caption = element('figcaption');
+        if (p.lines) {
+          for (const line of p.lines) {
+            const paragraph = element('p');
+            if (line.speaker) {
+              const speaker = line.speaker === 'DOCTOR' ? tr('DOCTOR','博士') : line.speaker;
+              paragraph.append(element('strong', speaker + tr(': ', '：')));
+            }
+            paragraph.append(local(line.text));
+            caption.append(paragraph);
+          }
+        } else {
+          caption.textContent = local(p.words);
+        }
+        frame.append(wrapper, caption);
+      }
       row.append(frame);
     }
     parent.append(row);

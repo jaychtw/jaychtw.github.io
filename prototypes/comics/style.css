@@ -94,3 +94,12 @@ body{min-height:100vh}.cta{border-radius:24px}.cta:hover,.cta[aria-current=true]
     padding: 18px 20px 64px;
   }
 }
+
+.lives { --bg: #faf6ed; --fg: #252521; --accent: #884127; }
+.lives .strip { max-width: 540px; }
+.lives .group { margin: 0 auto 2.8rem; }
+.lives .group figure img { width: 100%; height: auto; aspect-ratio: auto; }
+.lives figcaption { padding: .75rem .3rem 0; line-height: 1.55; }
+.lives figcaption p { margin: .5em 0; }
+.lives figcaption strong { font: 700 .84em system-ui,sans-serif; }
+.lives .silent-cut { height: 48vh; background: #fff; border-block: 1px solid #d6d1c6; }
