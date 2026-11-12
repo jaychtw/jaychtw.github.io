@@ -28,10 +28,22 @@ function picture(src, alt, cls) {
 }
 function shelf() {
   main.append(element('h1', tr('The bookshelf','書架')));
-  const grid = element('section', '', 'shelf');
+  const grid = element('section', '', 'gallery');
   for (const story of stories) {
-    const card = link('', '#/' + story.id, 'card');
-    card.append(picture(story.cover, story.coverAlt), element('p',local(story.kind),'kind'), element('h2',local(story.title)), element('p',local(story.description)));
+    const card = link('', '#/' + story.id, 'work');
+    const media = element('div', '', 'work-media');
+    media.append(picture(story.cover, story.coverAlt));
+    const tags = element('p', '', 'card-tags');
+    local(story.kind).split(' · ').forEach((tag, index) => {
+      if (index) {
+        const separator = element('span', '·');
+        separator.setAttribute('aria-hidden', 'true');
+        tags.append(' ', separator, ' ');
+      }
+      tags.append(tag);
+    });
+    card.append(media, element('h2', local(story.title)), tags,
+      element('p', local(story.description), 'card-description'));
     grid.append(card);
   }
   main.append(grid);
@@ -99,7 +111,8 @@ function render(anchor) {
   const ep = story?.episodes.find(e => e.id === chapter);
   const choice = ep?.choices?.find(c => c.id === route);
   main.replaceChildren();
-  document.body.className = ep ? story.theme : '';
+  document.body.className = ep ? story.theme : story ? '' : 'bookshelf';
+  main.className = story ? '' : 'site-main';
   document.documentElement.lang = language ? 'zh-Hant' : 'en';
   toggle.textContent = tr('繁體中文','English');
   toggle.lang = tr('zh-Hant','en');

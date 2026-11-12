@@ -1,5 +1,96 @@
 :root{--bg:#f5f2ea;--fg:#182323;--accent:#913728;--muted:#5c6864;color-scheme:light}
 *{box-sizing:border-box}body{background:var(--bg);color:var(--fg);margin:0;font:1rem/1.55 Georgia,serif}header,main{max-width:1140px;margin:auto;padding:0 clamp(16px,4vw,55px)}header{display:flex;justify-content:space-between;align-items:center;min-height:70px;border-bottom:1px solid #858983}.brand,button,.kind,nav,a.cta{font:600 .9rem/1.4 system-ui,sans-serif}.brand{font-size:1.12rem;text-decoration:none}.brand b{font-weight:400}button,a.cta{padding:.65rem 1.1rem;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer}a{color:inherit;text-underline-offset:.22em}:focus-visible{outline:3px solid #2586c3;outline-offset:4px}
-main{padding-bottom:5rem}h1,h2,p{margin:.4em 0}h1,h2{line-height:1.04;font-weight:500}h1{font-size:clamp(2.7rem,7vw,6rem);margin:.55em 0}.kind{color:var(--accent);letter-spacing:.07em}.shelf{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(20px,4vw,55px)}.card{display:block;text-decoration:none}.card img,.hero{width:100%;object-fit:cover;display:block}.card img{aspect-ratio:1.65}.card h2{font-size:clamp(1.85rem,4vw,3rem)}.card .kind{margin-top:.9rem}.card:hover h2{text-decoration:underline}.hero{max-height:43vh}.intro{font-size:1.25rem;max-width:60ch}.cta{display:inline-block;text-decoration:none;margin:.3rem .5rem .3rem 0}nav{padding:1rem 0}body.noir{--fg:#f5f1e9;--bg:#101112;--accent:#ffac94;color-scheme:dark}body.rain{--fg:#2a342e;--bg:#eee7d9;--accent:#683e28}.strip{max-width:760px;margin:auto}.group{display:grid;gap:.7rem;margin:1.5rem 0}.pair{grid-template-columns:1fr 1fr}figure{margin:0;scroll-margin-top:1rem}figure img{width:100%;height:auto;display:block;aspect-ratio:1.5;object-fit:cover}.rain figure img{aspect-ratio:1.8}.crop{overflow:hidden;aspect-ratio:1.8}.crop img{transform:scale(2);transform-origin:50% 50%}.water img{transform-origin:55% 90%}figcaption{padding:.55rem .15rem;font-size:1.12rem}.rain .group{margin-bottom:4rem}footer{padding:1rem 0 4rem;border-top:1px solid #888}.choices{margin:1.5rem 0}.strip h1{font-size:clamp(2.2rem,5vw,4.2rem)}@media(max-width:620px){.shelf,.pair{grid-template-columns:1fr}.pair{gap:1.5rem}header{min-height:56px}}
-body{min-height:100vh}.cta{border-radius:24px}.cta:hover,.cta[aria-current=true]{background:var(--fg);color:var(--bg)}header button{border-radius:2rem}.strip{padding-top:2rem}.choices h2{margin-bottom:1rem}.group img:not(.rain img){object-fit:contain;aspect-ratio:auto}.card img,.hero{border-radius:4px}.card h2{margin:.22em 0}.card p:last-child{max-width:48ch}.noir figure img{aspect-ratio:1.5}.strip footer:empty{display:none}
+main{padding-bottom:5rem}h1,h2,p{margin:.4em 0}h1,h2{line-height:1.04;font-weight:500}h1{font-size:clamp(2.7rem,7vw,6rem);margin:.55em 0}.kind{color:var(--accent);letter-spacing:.07em}.hero{width:100%;object-fit:cover;display:block}.hero{max-height:43vh}.intro{font-size:1.25rem;max-width:60ch}.cta{display:inline-block;text-decoration:none;margin:.3rem .5rem .3rem 0}nav{padding:1rem 0}body.noir{--fg:#f5f1e9;--bg:#101112;--accent:#ffac94;color-scheme:dark}body.rain{--fg:#2a342e;--bg:#eee7d9;--accent:#683e28}.strip{max-width:760px;margin:auto}.group{display:grid;gap:.7rem;margin:1.5rem 0}.pair{grid-template-columns:1fr 1fr}figure{margin:0;scroll-margin-top:1rem}figure img{width:100%;height:auto;display:block}.rain figure img{aspect-ratio:1.8}.crop{overflow:hidden;aspect-ratio:1.8}.crop img{transform:scale(2);transform-origin:50% 50%}.water img{transform-origin:55% 90%}figcaption{padding:.55rem .15rem;font-size:1.12rem}.rain .group{margin-bottom:4rem}footer{padding:1rem 0 4rem;border-top:1px solid #888}.choices{margin:1.5rem 0}.strip h1{font-size:clamp(2.2rem,5vw,4.2rem)}@media(max-width:620px){.pair{grid-template-columns:1fr}.pair{gap:1.5rem}header{min-height:56px}}
+body{min-height:100vh}.cta{border-radius:24px}.cta:hover,.cta[aria-current=true]{background:var(--fg);color:var(--bg)}header button{border-radius:2rem}.strip{padding-top:2rem}.choices h2{margin-bottom:1rem}.group img:not(.rain img){object-fit:contain;aspect-ratio:auto}.hero{border-radius:4px}.noir figure img{aspect-ratio:1.5}.strip footer:empty{display:none}
 .noir .group figure img{aspect-ratio:502/331;object-fit:contain}
+
+/* Bookshelf dimensions and card typography follow the Possibility catalog. */
+.bookshelf {
+  --bg: #202120;
+  --fg: #eeeee9;
+  --muted: #b2b4ac;
+  --placeholder: #2b2e29;
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: light) {
+  .bookshelf { --bg: #f7f6f2; --fg: #272a26; --muted: #62665e; --placeholder: #e5e7df; color-scheme: light; }
+}
+.site-main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 22px 40px 100px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 46px 32px;
+  align-items: start;
+}
+.work {
+  display: block;
+  min-width: 0;
+  border-radius: 9px;
+  text-decoration: none;
+}
+.work-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 9px;
+  background: var(--placeholder);
+}
+.work-media img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work h2 {
+  margin: 17px 0 4px;
+  font-size: 1.05rem;
+  font-weight: 550;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.card-tags {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.65;
+  margin: 0;
+}
+.card-tags span {
+  padding: 0 4px;
+}
+.card-description {
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.65;
+  margin: 10px 0;
+}
+@media (hover: hover) {
+.work:hover h2 {
+    text-decoration: underline;
+    text-underline-offset: 0.22em;
+  }
+}
+@media (max-width: 1023px) {
+.gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 38px 24px;
+  }
+.site-main {
+    padding: 20px 24px 72px;
+  }
+}
+@media (max-width: 639px) {
+.gallery {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+  }
+.site-main {
+    padding: 18px 20px 64px;
+  }
+}
