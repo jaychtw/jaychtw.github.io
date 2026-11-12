@@ -254,5 +254,13 @@
     "status": 200,
     "checkedAt": "2026-11-12T10:42:09.162266+00:00",
     "method": "HTTPS GET of the live game; verified the drag-to-drive control hint."
+  },
+  {
+    "id": "petting-spots",
+    "url": "https://jaychtw.github.io/petting-spots/",
+    "finalUrl": "https://jaychtw.github.io/petting-spots/",
+    "status": 200,
+    "checkedAt": "2026-11-12T13:03:34.144680+00:00",
+    "method": "HTTPS GET verified the deployed game HTML byte for byte against the approved release."
   }
 ]
