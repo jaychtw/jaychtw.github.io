@@ -246,5 +246,13 @@
     "status": 200,
     "checkedAt": "2026-11-12T00:54:25.580784+00:00",
     "method": "HTTPS GET with system TLS, matching the released game HTML byte for byte."
+  },
+  {
+    "id": "shibuya-scramble-crossing",
+    "url": "https://jaychtw.github.io/shibuya-scramble-crossing/",
+    "finalUrl": "https://jaychtw.github.io/shibuya-scramble-crossing/",
+    "status": 200,
+    "checkedAt": "2026-11-12T10:42:09.162266+00:00",
+    "method": "HTTPS GET of the live game; verified the drag-to-drive control hint."
   }
 ]

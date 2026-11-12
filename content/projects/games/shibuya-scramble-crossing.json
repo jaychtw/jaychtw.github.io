@@ -1,0 +1,31 @@
+{
+  "id": "shibuya-scramble-crossing",
+  "category": "games",
+  "title": "Shibuya Scramble Crossing",
+  "summary": "Steer an orange coupe across rain-slick zebra stripes in Shibuya. Drag to drive and release to brake as 180 pedestrians part around the car, then drift back into the crossing.",
+  "summaryZhTW": "霓虹倒映在澀谷雨後的斑馬線上。拖曳指尖，駕著橘色跑車穿過路口，放開即可煞車。180 位行人隨車靠近而讓開，車過後又匯入人潮。",
+  "coverAlt": "An orange sports car rounds a bend between crowds on a neon-lit Shibuya crosswalk.",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 266,
+  "publishedAt": "2026-11-12",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/shibuya-scramble-crossing/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/shibuya-scramble-crossing",
+  "languages": ["en"],
+  "controls": "Press and drag with the mouse or touch to steer. Release to brake. With the crossing focused, use the arrow keys to steer. Pause and resume with the on-screen button.",
+  "limitations": null,
+  "approval": {
+    "url": "https://github.com/jaychtw/shibuya-scramble-crossing/commit/acec696278e7a7113d68e42f3f8a9ab59c7dd25c",
+    "note": "Creator requested cover artwork and a Games catalog entry."
+  },
+  "release": {
+    "version": null,
+    "commit": "acec696278e7a7113d68e42f3f8a9ab59c7dd25c"
+  },
+  "thumbnail": null,
+  "tags": ["Driving"]
+}
