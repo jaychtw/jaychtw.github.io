@@ -221,7 +221,7 @@ async function capture(page, name) {
       assert(geometry.firstY < 650, "No landing screen before gallery");
       assert.equal(
         await page.locator('nav[aria-label="Collections"] a').count(),
-        active.size,
+        active.size + 1,
       );
       assert.deepEqual(foreign, []);
       result.layouts.push({ width, appearance, ...geometry });
@@ -565,7 +565,7 @@ async function capture(page, name) {
     await fixture.goto("http://127.0.0.1:4176" + route);
     assert.equal(
       await fixture.locator('nav[aria-label="Collections"] a').count(),
-      4,
+      5,
     );
     assert.equal(
       await fixture.evaluate(

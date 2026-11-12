@@ -1,11 +1,12 @@
 import {
   existsSync,
+  readdirSync,
   readFileSync,
   mkdirSync,
   rmSync,
   writeFileSync,
 } from "node:fs";
-import { resolve, dirname, extname } from "node:path";
+import { resolve, dirname, extname, relative, sep } from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
@@ -188,7 +189,19 @@ export async function build(inputRoot = root): Promise<void> {
       if (!ctx.images.has(path))
         ctx.images.set(path, await image(path, "article", false));
   }
-  const routes: string[] = [];
+  const shelf = resolve(inputRoot, "public/bookshelf");
+  for (const file of readdirSync(shelf, {
+    recursive: true,
+    withFileTypes: true,
+  })) {
+    if (!file.isFile()) continue;
+    const path = resolve(file.parentPath, file.name);
+    put(
+      "/bookshelf/" + relative(shelf, path).split(sep).join("/"),
+      readFileSync(path),
+    );
+  }
+  const routes: string[] = ["/bookshelf/"];
   for (const c of collections.filter((c) => activeCollections.has(c.id))) {
     const path = c.id === site.homepageCollection ? "/" : `/${c.id}/`;
     put(path + "index.html", collectionPage(c, projects, articles, ctx));

@@ -88,6 +88,7 @@ let server, browser;
     assert.deepEqual(await page.locator("nav a").allTextContents(), [
       "Games",
       "Apps",
+      "Bookshelf",
     ]);
     assert.equal(
       await page.locator('nav [aria-current="page"]').innerText(),
