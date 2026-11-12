@@ -2,8 +2,8 @@
   "id": "constellation-builder",
   "category": "games",
   "title": "Constellation Builder",
-  "summary": "Trace ten constellations across a midnight atlas. Touch the last star in each chart to reveal a gold engraving, from Cassiopeia on her throne to Pegasus in flight.",
-  "summaryZhTW": "翻開午夜星圖，逐一連起十個星座的亮星。點亮每張星圖的最後一顆星，金色版畫便浮現眼前：從端坐王座的仙后，到振翅的飛馬。",
+  "summary": "Trace fourteen constellations in a midnight atlas. Reveal a gold engraving with the final star and discover how Andromeda, Perseus and Cetus share a myth.",
+  "summaryZhTW": "在午夜星圖上連起十四個星座。點亮最後一顆星，揭開金色版畫，讀仙女座、英仙座與鯨魚座共同的神話。",
   "coverAlt": "Gold engraving of Pegasus soaring across an indigo star chart beside the title Constellation Builder.",
   "status": "published",
   "maturity": "released",
@@ -15,7 +15,7 @@
     "url": "https://jaychtw.github.io/constellation-builder/"
   },
   "repositoryUrl": "https://github.com/jaychtw/constellation-builder",
-  "languages": ["en"],
+  "languages": ["en", "zh-TW"],
   "controls": "Click or tap stars in any order, or use Tab and Enter or Space. Switch charts with the atlas selector and toggle the trace guide for a hint.",
   "limitations": null,
   "approval": {
@@ -24,7 +24,7 @@
   },
   "release": {
     "version": null,
-    "commit": "5335e31760afd994f8253b0406f6f37899503667"
+    "commit": "b78929fd1270a457b77c847ebd933e0deef6987b"
   },
   "thumbnail": null,
   "tags": ["Puzzle"]

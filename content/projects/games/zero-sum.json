@@ -1,0 +1,31 @@
+{
+  "id": "zero-sum",
+  "category": "games",
+  "title": "Zero Sum: Nine Lives",
+  "summary": "On a rain-slick bridge, your partner hangs from the rail and the suspect’s taillights are disappearing. Choose what Alex does next in a police-noir manga with nine endings.",
+  "summaryZhTW": "雨夜的斷橋上，搭檔攀著護欄，嫌犯的車尾燈逐漸遠去。在這部有九種結局的黑色警匪漫畫裡，由你決定艾力克斯的下一步。",
+  "coverAlt": "Two squad cars chase a van along a rain-slick highway beneath the Zero Sum title.",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 267,
+  "publishedAt": "2026-11-12",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/zero-sum/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/zero-sum",
+  "languages": ["en", "zh-TW"],
+  "controls": "Read and choose with a mouse, touch or keyboard. After an ending, revisit a decision from that route.",
+  "limitations": null,
+  "approval": {
+    "url": "https://github.com/jaychtw/zero-sum/commit/20ed4a7554ab66b23ba3e81a7c23ae819d68dcc5",
+    "note": "Creator requested publication of the revised manga in Possibility."
+  },
+  "release": {
+    "version": null,
+    "commit": "20ed4a7554ab66b23ba3e81a7c23ae819d68dcc5"
+  },
+  "thumbnail": null,
+  "tags": ["Narrative"]
+}

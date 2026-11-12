@@ -228,7 +228,7 @@
     "url": "https://jaychtw.github.io/the-hours-between/",
     "finalUrl": "https://jaychtw.github.io/the-hours-between/",
     "status": 200,
-    "checkedAt": "2026-11-11T17:10:49.492964+00:00",
+    "checkedAt": "2026-11-12T00:54:25.581450+00:00",
     "method": "HTTPS GET with system TLS, matching the released game HTML byte for byte."
   },
   {
@@ -236,7 +236,15 @@
     "url": "https://jaychtw.github.io/constellation-builder/",
     "finalUrl": "https://jaychtw.github.io/constellation-builder/",
     "status": 200,
-    "checkedAt": "2026-11-11T17:36:30.749509+00:00",
+    "checkedAt": "2026-11-12T00:54:25.581618+00:00",
+    "method": "HTTPS GET with system TLS, matching the released game HTML byte for byte."
+  },
+  {
+    "id": "zero-sum",
+    "url": "https://jaychtw.github.io/zero-sum/",
+    "finalUrl": "https://jaychtw.github.io/zero-sum/",
+    "status": 200,
+    "checkedAt": "2026-11-12T00:54:25.580784+00:00",
     "method": "HTTPS GET with system TLS, matching the released game HTML byte for byte."
   }
 ]
