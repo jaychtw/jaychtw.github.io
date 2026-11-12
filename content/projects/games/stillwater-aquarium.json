@@ -1,0 +1,36 @@
+{
+  "id": "stillwater-aquarium",
+  "category": "games",
+  "title": "Stillwater Aquarium",
+  "summary": "Watch neon tetras dart through a sunlit freshwater tank. Add fish from five species and tap the gravel to clear the water before it grows too murky for them to survive.",
+  "summaryZhTW": "看霓虹燈魚在陽光灑落的淡水缸裡穿梭。從五種淡水魚中挑選新住客，輕點底砂吸走汙物，讓魚群在清澈的水中生活。",
+  "coverAlt": "A striped angelfish and a school of neon tetras swim above driftwood. The title Stillwater Aquarium appears in cream at the lower left.",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 273,
+  "publishedAt": "2026-11-13",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/stillwater-aquarium/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/stillwater-aquarium",
+  "languages": [
+    "en",
+    "zh-TW"
+  ],
+  "controls": "Select a species to add a fish. Click or tap the water to clean it for two seconds, or focus the aquarium and press Enter or Space.",
+  "limitations": null,
+  "approval": {
+    "url": "https://github.com/jaychtw/stillwater-aquarium/commit/45489307a4e4b34c694c0899e1797e53afd08001",
+    "note": "Creator requested Pages deployment and a titled game card in Possibility."
+  },
+  "release": {
+    "version": null,
+    "commit": "45489307a4e4b34c694c0899e1797e53afd08001"
+  },
+  "thumbnail": null,
+  "tags": [
+    "Kawaii"
+  ]
+}
