@@ -1,0 +1,37 @@
+{
+  "id": "taipei-rush",
+  "category": "games",
+  "title": "Scooter 1945: Taipei Rush",
+  "summary": "Ride a red scooter through Taipei’s breakfast rush. Thread between taxis and blue delivery trucks, fire twin headlamp pulses, and save your horn for the garbage truck’s final barrage.",
+  "summaryZhTW": "騎著紅色機車穿過臺北清晨的車陣，從計程車和藍色小貨車之間鑽過，用雙束車燈開路。聽見垃圾車的旋律時，記得把喇叭留給最後一波攻勢。",
+  "coverAlt": "Cream lettering reads “Scooter 1945” above “Taipei Rush.” A helmeted rider on a red scooter heads into a Taipei street full of yellow taxis and blue trucks.",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 272,
+  "publishedAt": "2026-11-12",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/taipei-rush/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/taipei-rush",
+  "languages": [
+    "en",
+    "zh-TW"
+  ],
+  "controls": "Steer with arrow keys, WASD, or touch and drag. Use Space or Horn to clear nearby traffic. P or Escape pauses the ride.",
+  "limitations": null,
+  "approval": {
+    "url": "https://github.com/jaychtw/taipei-rush/commit/2b31dd9e0e2c4548b06070decb51882d5ec7c575",
+    "note": "Creator requested game publication and deployment of the titled card to the Possibility Games catalog."
+  },
+  "release": {
+    "version": null,
+    "commit": "2b31dd9e0e2c4548b06070decb51882d5ec7c575"
+  },
+  "thumbnail": null,
+  "tags": [
+    "Action",
+    "Driving"
+  ]
+}
