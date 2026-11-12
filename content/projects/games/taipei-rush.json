@@ -15,10 +15,7 @@
     "url": "https://jaychtw.github.io/taipei-rush/"
   },
   "repositoryUrl": "https://github.com/jaychtw/taipei-rush",
-  "languages": [
-    "en",
-    "zh-TW"
-  ],
+  "languages": ["en", "zh-TW"],
   "controls": "Steer with arrow keys, WASD, or touch and drag. Use Space or Horn to clear nearby traffic. P or Escape pauses the ride.",
   "limitations": null,
   "approval": {
@@ -30,8 +27,5 @@
     "commit": "2b31dd9e0e2c4548b06070decb51882d5ec7c575"
   },
   "thumbnail": null,
-  "tags": [
-    "Action",
-    "Driving"
-  ]
+  "tags": ["Action", "Driving"]
 }
