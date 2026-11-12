@@ -262,5 +262,13 @@
     "status": 200,
     "checkedAt": "2026-11-12T13:03:34.144680+00:00",
     "method": "HTTPS GET verified the deployed game HTML byte for byte against the approved release."
+  },
+  {
+    "id": "taipei-rush",
+    "url": "https://jaychtw.github.io/taipei-rush/",
+    "finalUrl": "https://jaychtw.github.io/taipei-rush/",
+    "status": 200,
+    "checkedAt": "2026-11-12T15:20:56.447Z",
+    "method": "HTTPS GET of the canonical game URL. Both the live HTML and poster matched the release byte for byte."
   }
 ]
