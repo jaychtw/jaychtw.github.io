@@ -278,5 +278,13 @@
     "status": 200,
     "checkedAt": "2026-11-13T00:08:36Z",
     "method": "HTTPS GET of the deployed aquarium matched the approved standalone HTML byte for byte."
+  },
+  {
+    "id": "tavern-brawl",
+    "url": "https://jaychtw.github.io/tavern-brawl/",
+    "finalUrl": "https://jaychtw.github.io/tavern-brawl/",
+    "status": 200,
+    "checkedAt": "2026-11-13T12:31:00Z",
+    "method": "Opened the deployed game in Chrome and started the saloon round."
   }
 ]
