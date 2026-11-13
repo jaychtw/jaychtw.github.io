@@ -15,10 +15,7 @@
     "url": "https://jaychtw.github.io/stillwater-aquarium/"
   },
   "repositoryUrl": "https://github.com/jaychtw/stillwater-aquarium",
-  "languages": [
-    "en",
-    "zh-TW"
-  ],
+  "languages": ["en", "zh-TW"],
   "controls": "Select a species to add a fish. Click or tap the water to clean it for two seconds, or focus the aquarium and press Enter or Space.",
   "limitations": null,
   "approval": {
@@ -30,7 +27,5 @@
     "commit": "45489307a4e4b34c694c0899e1797e53afd08001"
   },
   "thumbnail": null,
-  "tags": [
-    "Kawaii"
-  ]
+  "tags": ["Kawaii"]
 }
