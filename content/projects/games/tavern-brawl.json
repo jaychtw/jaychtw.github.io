@@ -1,0 +1,31 @@
+{
+  "id": "tavern-brawl",
+  "category": "games",
+  "title": "Tavern Brawl",
+  "summary": "Shoot bottles, plates, and mugs out of the air while the balcony crowd cheers. Break 20 targets to face the outlaw on Main Street, where three well-timed countershots win the duel.",
+  "summaryZhTW": "在酒館樓上的歡呼聲中，擊碎飛過頭頂的酒瓶、盤子和杯子。打中 20 個目標後，走上大街與歹徒決鬥，抓準空檔回擊三次就能勝出。",
+  "coverAlt": "Under the title Tavern Brawl, a sheriff shatters a flying plate while balcony spectators cheer. An outlaw waits beyond the swinging doors.",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 274,
+  "publishedAt": "2026-11-13",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/tavern-brawl/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/tavern-brawl",
+  "languages": ["en", "zh-TW"],
+  "controls": "Move with the left and right arrows or A/D. Press Space to fire and P or Escape to pause. Touch controls are available on screen.",
+  "limitations": null,
+  "approval": {
+    "url": "https://github.com/jaychtw/tavern-brawl/pull/1",
+    "note": "Creator approved game deployment and the Possibility Games catalog addition."
+  },
+  "release": {
+    "version": null,
+    "commit": "9ca64cf6a055ca583002f278d14aad07a76bb56e"
+  },
+  "thumbnail": null,
+  "tags": ["Action"]
+}
