@@ -270,5 +270,13 @@
     "status": 200,
     "checkedAt": "2026-11-12T15:20:56.447Z",
     "method": "HTTPS GET of the canonical game URL. Both the live HTML and poster matched the release byte for byte."
+  },
+  {
+    "id": "stillwater-aquarium",
+    "url": "https://jaychtw.github.io/stillwater-aquarium/",
+    "finalUrl": "https://jaychtw.github.io/stillwater-aquarium/",
+    "status": 200,
+    "checkedAt": "2026-11-13T00:08:36Z",
+    "method": "HTTPS GET of the deployed aquarium matched the approved standalone HTML byte for byte."
   }
 ]
