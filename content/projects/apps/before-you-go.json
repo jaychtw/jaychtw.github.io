@@ -1,0 +1,31 @@
+{
+  "id": "before-you-go",
+  "title": "Before You Go",
+  "category": "apps",
+  "summary": "Compare live views from 21 destinations across Taiwan. Pick up to three and check the scenery, temperature, and rainfall before you head out.",
+  "summaryZhTW": "從臺灣 21 個景點選出兩到三處，並排看看即時風景、氣溫與雨量，再決定今天去哪裡。",
+  "status": "published",
+  "featured": false,
+  "order": 30,
+  "publishedAt": "2026-11-14",
+  "destination": {
+    "action": "open",
+    "url": "https://jaychtw.github.io/before-you-go/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/before-you-go",
+  "languages": ["en", "zh-TW"],
+  "controls": "Choose two or three destinations, then select Compare. Enlarge a camera for a closer look.",
+  "limitations": "Live video and station readings depend on the original providers. Observation times appear beneath the camera views.",
+  "approval": {
+    "url": "https://github.com/jaychtw/before-you-go/commit/0f4b27b4f6fe3efbc6ead1864866c9a99514e4cd",
+    "note": "Creator approved public release and the illustrated Possibility Apps card."
+  },
+  "release": {
+    "version": null,
+    "commit": "0f4b27b4f6fe3efbc6ead1864866c9a99514e4cd"
+  },
+  "thumbnail": null,
+  "tags": ["Travel", "Weather", "Interactive"],
+  "maturity": "public",
+  "coverAlt": "Before You Go travel poster depicting a Taiwanese harbor, green mountain ridges, and Pacific surf."
+}

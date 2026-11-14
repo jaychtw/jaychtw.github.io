@@ -294,5 +294,13 @@
     "status": 200,
     "checkedAt": "2026-11-14T08:33:18Z",
     "method": "HTTPS GET with curl and default TLS verification. The final URL returned HTTP 200."
+  },
+  {
+    "id": "before-you-go",
+    "url": "https://jaychtw.github.io/before-you-go/",
+    "finalUrl": "https://jaychtw.github.io/before-you-go/",
+    "status": 200,
+    "checkedAt": "2026-11-14T10:16:19Z",
+    "method": "Fetched the live HTML and compared it byte for byte with the approved app release."
   }
 ]
