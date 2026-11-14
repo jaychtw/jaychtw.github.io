@@ -1,0 +1,30 @@
+{
+  "id": "the-other-window",
+  "title": "The Other Window",
+  "category": "apps",
+  "summary": "Write one scene through three pairs of eyes, then change the reading order to see how each account shapes the next.",
+  "summaryZhTW": "從三個人的角度書寫同一幕，再調整閱讀順序，看看前一段敘述如何改變你對下一段的理解。",
+  "status": "published",
+  "featured": false,
+  "order": 20,
+  "publishedAt": "2026-11-14",
+  "destination": {
+    "action": "open",
+    "url": "https://jaychtw.github.io/the-other-window/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/the-other-window",
+  "languages": ["en", "zh-TW"],
+  "controls": "Choose a shared moment and switch narrators, adapt the Taipei bus story, or start a notebook. Find another angle offers a prompt for rewriting your passage.",
+  "limitations": "Drafts are saved in the current browser. Use JSON export and import to move a notebook between devices.",
+  "approval": {
+    "url": "https://github.com/jaychtw/the-other-window/actions/runs/43568508322",
+    "note": "GitHub Pages published the bilingual writing studio on November 14, 2026."
+  },
+  "release": {
+    "version": null,
+    "commit": "7337745791ab6de40d0ce062b4b84a405ebafcbd"
+  },
+  "thumbnail": null,
+  "tags": ["Writing", "Storytelling", "Interactive"],
+  "maturity": "public"
+}

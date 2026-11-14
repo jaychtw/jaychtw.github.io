@@ -286,5 +286,13 @@
     "status": 200,
     "checkedAt": "2026-11-13T12:31:00Z",
     "method": "Opened the deployed game in Chrome and started the saloon round."
+  },
+  {
+    "id": "the-other-window",
+    "url": "https://jaychtw.github.io/the-other-window/",
+    "finalUrl": "https://jaychtw.github.io/the-other-window/",
+    "status": 200,
+    "checkedAt": "2026-11-14T08:33:18Z",
+    "method": "HTTPS GET with curl and default TLS verification. The final URL returned HTTP 200."
   }
 ]
