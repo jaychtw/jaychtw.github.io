@@ -302,5 +302,13 @@
     "status": 200,
     "checkedAt": "2026-11-14T10:16:19Z",
     "method": "Fetched the live HTML and compared it byte for byte with the approved app release."
+  },
+  {
+    "id": "travel-canvas",
+    "url": "https://traveltogether-2a321.web.app/",
+    "finalUrl": "https://traveltogether-2a321.web.app/",
+    "status": 200,
+    "checkedAt": "2026-11-14T18:31:17.337Z",
+    "method": "Creator confirmed the Firebase URL loaded in the browser and provided a screenshot showing the TravelCanvas room entry screen. HTTP status inferred from the successful page load."
   }
 ]
