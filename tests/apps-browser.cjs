@@ -16,10 +16,13 @@ const entry = JSON.parse(
   fs.readFileSync(path.join(root, "content/projects/apps/storm-chaser.json")),
 );
 const appsDirectory = path.join(root, "content/projects/apps");
-const publishedApps = fs.readdirSync(appsDirectory)
-  .filter(name => name.endsWith(".json"))
-  .map(name => JSON.parse(fs.readFileSync(path.join(appsDirectory, name), "utf8")))
-  .filter(app => app.status === "published");
+const publishedApps = fs
+  .readdirSync(appsDirectory)
+  .filter((name) => name.endsWith(".json"))
+  .map((name) =>
+    JSON.parse(fs.readFileSync(path.join(appsDirectory, name), "utf8")),
+  )
+  .filter((app) => app.status === "published");
 const identity = JSON.parse(
   fs.readFileSync(path.join(root, "dist/build-info.json")),
 );
@@ -135,9 +138,17 @@ let server, browser;
       name: "Open Storm Chaser",
       exact: true,
     });
-    assert.equal(await page.locator("[data-project]").count(), publishedApps.length);
+    assert.equal(
+      await page.locator("[data-project]").count(),
+      publishedApps.length,
+    );
     for (const app of publishedApps) {
-      assert.equal(await page.getByRole("link", { name: `Open ${app.title}`, exact: true }).getAttribute("href"), app.destination.url);
+      assert.equal(
+        await page
+          .getByRole("link", { name: `Open ${app.title}`, exact: true })
+          .getAttribute("href"),
+        app.destination.url,
+      );
     }
     assert.equal(await card.getAttribute("href"), entry.destination.url);
     const image = card.locator("img");
@@ -151,7 +162,10 @@ let server, browser;
           .click();
       for (const tag of entry.tags) {
         await page.getByRole("button", { name: tag, exact: true }).click();
-        assert.equal(await page.locator("[data-project]:visible").count(), publishedApps.filter(app => app.tags?.includes(tag)).length);
+        assert.equal(
+          await page.locator("[data-project]:visible").count(),
+          publishedApps.filter((app) => app.tags?.includes(tag)).length,
+        );
         assert.equal(
           await page
             .getByRole("button", { name: tag, exact: true })

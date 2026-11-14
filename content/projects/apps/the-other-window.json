@@ -13,10 +13,7 @@
     "url": "https://jaychtw.github.io/the-other-window/"
   },
   "repositoryUrl": "https://github.com/jaychtw/the-other-window",
-  "languages": [
-    "en",
-    "zh-TW"
-  ],
+  "languages": ["en", "zh-TW"],
   "controls": "Choose a shared moment and switch narrators, adapt the Taipei bus story, or start a notebook. Find another angle offers a prompt for rewriting your passage.",
   "limitations": "Drafts are saved in the current browser. Use JSON export and import to move a notebook between devices.",
   "approval": {
@@ -28,10 +25,6 @@
     "commit": "7337745791ab6de40d0ce062b4b84a405ebafcbd"
   },
   "thumbnail": null,
-  "tags": [
-    "Writing",
-    "Storytelling",
-    "Interactive"
-  ],
+  "tags": ["Writing", "Storytelling", "Interactive"],
   "maturity": "public"
 }
