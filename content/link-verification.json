@@ -176,12 +176,12 @@
     "method": "Python urllib HTTPS with default system CA/TLS verification; not a live-browser gameplay run."
   },
   {
-    "id": "storm-chaser",
-    "url": "https://jaychtw.github.io/storm-chaser/",
-    "finalUrl": "https://jaychtw.github.io/storm-chaser/",
+    "id": "wdic",
+    "url": "https://jaychtw.github.io/wdic/",
+    "finalUrl": "https://jaychtw.github.io/wdic/",
     "status": 200,
-    "checkedAt": "2026-10-29T17:04:33.192318+00:00",
-    "method": "Python urllib HTTPS with default CA/TLS verification; separate real public Chromium EN/zh-TW desktop/mobile interaction checks in docs/apps-storm-chaser/application-browser.json. Reachability does not assert current weather-data availability."
+    "checkedAt": "2026-11-14T12:46:22.591697+00:00",
+    "method": "Verified the renamed public Pages destination returned HTTP 200 and the World Disaster Information Center title."
   },
   {
     "id": "shadow-becomes-me",

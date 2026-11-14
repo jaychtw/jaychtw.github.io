@@ -1,0 +1,31 @@
+{
+  "id": "wdic",
+  "title": "World Disaster Information Center",
+  "category": "apps",
+  "summary": "Follow typhoons, earthquakes, and other disasters worldwide. Choose an event to read available agency reports or see conditions through nearby cameras in Taiwan.",
+  "status": "published",
+  "featured": false,
+  "order": 10,
+  "publishedAt": "2026-10-30",
+  "destination": {
+    "action": "open",
+    "url": "https://jaychtw.github.io/wdic/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/wdic",
+  "languages": ["en", "zh-TW"],
+  "controls": "Select an event, choose an agency, or use the camera filter to find nearby streams.",
+  "limitations": "Agency reports depend on the event and jurisdiction. The camera directory currently covers Taiwan.",
+  "approval": {
+    "url": "https://github.com/jaychtw/wdic/commit/e29f68767ef3adf610fb189712a6d7024dc05b3d",
+    "note": "Creator approved the renamed application and requested updated Possibility artwork and catalog copy."
+  },
+  "release": {
+    "version": null,
+    "commit": "e29f68767ef3adf610fb189712a6d7024dc05b3d"
+  },
+  "thumbnail": null,
+  "tags": ["Weather", "Visualization", "Interactive"],
+  "maturity": "public",
+  "summaryZhTW": "全球災害資訊站彙整世界各地的颱風、地震等災害通報。選取事件，查看不同機關發布的資訊；若事件鄰近臺灣的公開攝影機，也能觀看當地即時影像。",
+  "coverAlt": "WDIC poster showing a Pacific cyclone, a volcanic arc, and golden seismic waves over a globe."
+}

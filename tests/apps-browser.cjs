@@ -13,7 +13,7 @@ const out = path.join(
 );
 fs.mkdirSync(out, { recursive: true });
 const entry = JSON.parse(
-  fs.readFileSync(path.join(root, "content/projects/apps/storm-chaser.json")),
+  fs.readFileSync(path.join(root, "content/projects/apps/wdic.json")),
 );
 const appsDirectory = path.join(root, "content/projects/apps");
 const publishedApps = fs
@@ -135,7 +135,7 @@ let server, browser;
     );
     await themeButton.click();
     const card = page.getByRole("link", {
-      name: "Open Storm Chaser",
+      name: "Open World Disaster Information Center",
       exact: true,
     });
     assert.equal(
@@ -206,29 +206,29 @@ let server, browser;
       await page.locator("html").getAttribute("data-theme"),
       "light",
     );
-    await page.goto(base + "/apps/storm-chaser/");
+    await page.goto(base + "/apps/wdic/");
     assert.equal(
       await page.locator('link[rel="canonical"]').getAttribute("href"),
-      "https://jaychtw.github.io/apps/storm-chaser/",
+      "https://jaychtw.github.io/apps/wdic/",
     );
     assert.equal(
       await page.locator('meta[property="og:url"]').getAttribute("content"),
-      "https://jaychtw.github.io/apps/storm-chaser/",
+      "https://jaychtw.github.io/apps/wdic/",
     );
     assert(
       (await page.locator("main").innerText()).includes("Traditional Chinese"),
     );
     assert(
       (await page.locator("main").innerText()).includes(
-        "not an official warning service",
+        "camera directory currently covers Taiwan",
       ),
     );
     await page.getByRole("link", { name: "Back to Apps" }).click();
     if (publicRun) {
       await card.click();
       await page.waitForURL(entry.destination.url);
-      await page.locator("#map[data-ready='true']").waitFor({ timeout: 60000 });
-      assert(await page.locator("#explorer").count());
+      await page.locator("#filter").waitFor({ timeout: 60000 });
+      assert(await page.locator("#cameraOnly").count());
     }
     await page.goto(base + "/games/");
     await page.waitForURL(base + "/");
