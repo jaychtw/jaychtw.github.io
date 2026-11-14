@@ -25,11 +25,7 @@
     "commit": null
   },
   "thumbnail": null,
-  "tags": [
-    "Travel",
-    "Planning",
-    "Collaboration"
-  ],
+  "tags": ["Travel", "Planning", "Collaboration"],
   "maturity": "public",
   "coverAlt": "Vintage travel poster overlooking a coastal harbor, with a laptop displaying a shared three-day trip timeline."
 }
