@@ -1,0 +1,35 @@
+{
+  "id": "travel-canvas",
+  "title": "Travel Canvas",
+  "category": "apps",
+  "summary": "A shared travel-planning workspace where everyone can contribute to the same trip. Create cards for destinations, activities, accommodations, or ideas, and arrange them along a shared timeline to turn individual suggestions into one collaborative itinerary.",
+  "summaryZhTW": "和旅伴一起規劃行程。每個人都能把想去的景點、想參加的活動、住宿選項或旅行點子做成卡片，再把卡片排到共用時間軸上，一起整理出大家的行程。",
+  "status": "published",
+  "featured": false,
+  "order": 40,
+  "publishedAt": null,
+  "destination": {
+    "action": "open",
+    "url": "https://traveltogether-2a321.web.app/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/plan-together-travel-together",
+  "languages": [],
+  "controls": "Create a card and place it on the shared trip timeline.",
+  "limitations": null,
+  "approval": {
+    "url": "https://traveltogether-2a321.web.app/",
+    "note": "Creator supplied the destination, description, and artwork for the Possibility Apps catalog."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": null,
+  "tags": [
+    "Travel",
+    "Planning",
+    "Collaboration"
+  ],
+  "maturity": "public",
+  "coverAlt": "Vintage travel poster overlooking a coastal harbor, with a laptop displaying a shared three-day trip timeline."
+}
