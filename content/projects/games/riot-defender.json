@@ -3,6 +3,7 @@
   "title": "Riot Defender",
   "category": "games",
   "summary": "Move a fence opening to admit defenders and block intruders.",
+  "summaryZhTW": "移動圍欄的缺口，讓守衛通過，把入侵者擋在外面。",
   "status": "published",
   "featured": true,
   "order": 180,

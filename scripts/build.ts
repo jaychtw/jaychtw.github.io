@@ -240,7 +240,7 @@ export async function build(inputRoot = root): Promise<void> {
       description: "This page could not be found.",
       path: "/404.html",
       noindex: true,
-      body: '<main id="main" class="site-main" tabindex="-1"><h1>Page not found</h1><p><a href="/">Return to Possibility</a></p></main>',
+      body: '<main id="main" class="site-main" tabindex="-1"><h1 data-zh="找不到這個頁面">Page not found</h1><p><a href="/" data-zh="返回 Possibility">Return to Possibility</a></p></main>',
     }),
   );
   put(

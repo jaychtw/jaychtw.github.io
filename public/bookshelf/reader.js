@@ -1,7 +1,4 @@
 const main = document.querySelector('main');
-const toggle = document.createElement('button');
-toggle.className = 'filter';
-toggle.type = 'button';
 document.querySelector('.skip-link').onclick = event => {
   event.preventDefault();
   main.focus();
@@ -13,7 +10,7 @@ function read(key) {
 function save(key, value) {
   try { localStorage.setItem('comics.' + key, JSON.stringify(value)); } catch {}
 }
-let language = read('language') === 1 ? 1 : 0;
+let language = document.documentElement.lang === 'zh-TW' ? 1 : 0;
 const tr = (en, zh) => language ? zh : en;
 const local = value => value[language];
 function element(tag, text, className) {
@@ -50,7 +47,6 @@ function shelf() {
     };
     controls.append(filter);
   }
-  controls.append(toggle);
   main.append(controls);
   const grid = element('section', '', 'gallery');
   for (const story of stories) {
@@ -163,10 +159,6 @@ function render(anchor) {
   main.replaceChildren();
   document.body.className = story ? 'comic-page' : 'gallery-page';
   main.className = story ? 'comic-main' : 'site-main';
-  if (story) main.append(toggle);
-  document.documentElement.lang = language ? 'zh-Hant' : 'en';
-  toggle.textContent = tr('繁體中文','English');
-  toggle.lang = tr('zh-Hant','en');
   if (ep) episode(story,ep,choice);
   else if (story) detail(story);
   else shelf();
@@ -177,13 +169,12 @@ function render(anchor) {
   ready = true;
   remember();
 }
-toggle.onclick = () => {
+window.addEventListener('possibility:language', () => {
   const p = [...main.querySelectorAll('figure')].find(el => el.getBoundingClientRect().bottom > 0 && el.getBoundingClientRect().top < innerHeight);
   const anchor = p ? {id:p.id,offset:p.getBoundingClientRect().top} : {y:scrollY};
-  language = 1-language;
-  save('language',language);
+  language = document.documentElement.lang === 'zh-TW' ? 1 : 0;
   render(anchor);
-};
+});
 window.addEventListener('scroll',remember,{passive:true});
 window.addEventListener('hashchange',() => render());
 render();

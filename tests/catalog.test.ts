@@ -226,9 +226,9 @@ test("new optional copy and override fields validate, escape, and keep filter la
     [],
     ctx,
   );
-  assert(!html.includes('lang="zh-TW"'));
+  assert(html.includes('data-zh="&lt;script&gt;unsafe&lt;/script&gt;"'));
   assert(
-    detail(p, ctx).includes('lang="zh-TW">&lt;script&gt;unsafe&lt;/script&gt;'),
+    detail(p, ctx).includes('data-zh="&lt;script&gt;unsafe&lt;/script&gt;"'),
   );
   assert.deepEqual(
     [...html.matchAll(/data-filter="([^"]+)"/g)].map((m) => m[1]),

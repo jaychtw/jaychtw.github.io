@@ -3,6 +3,7 @@
   "title": "My Queens",
   "category": "games",
   "summary": "Place ten pieces with one in each row, column, and region.",
+  "summaryZhTW": "在棋盤上放置十枚棋子，讓每一列、每一行和每個區域都剛好有一枚。",
   "status": "published",
   "featured": true,
   "order": 80,
