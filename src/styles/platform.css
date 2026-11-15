@@ -122,6 +122,17 @@ img {
 .header-actions nav a[aria-current] {
   color: var(--text);
 }
+.preferences {
+  display: flex;
+  align-items: center;
+}
+.site-footer {
+  padding: 16px 20px 32px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.875rem;
+}
+.language-toggle,
 .theme-toggle {
   width: 44px;
   height: 44px;

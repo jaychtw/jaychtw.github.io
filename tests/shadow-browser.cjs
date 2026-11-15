@@ -121,6 +121,14 @@ let server, browser;
       await page.screenshot({
         path: path.join(out, `games-${width}-${theme}.png`),
       });
+      const language = page.locator(".language-toggle");
+      assert.equal(await language.innerText(), "繁");
+      await language.click();
+      assert.equal(await language.innerText(), "En");
+      assert.equal(
+        await card.locator(".card-description").innerText(),
+        entry.summaryZhTW,
+      );
       await page.goto(base + "/games/shadow-becomes-me/");
       assert.equal(
         await page.locator('p[lang="zh-TW"]').innerText(),
@@ -182,7 +190,7 @@ let server, browser;
         public: isPublic,
         views,
         portalToActualGameLocales: isPublic ? ["en", "zh-TW"] : [],
-        note: "Portal chrome remains English; catalog summaries are English; Traditional Chinese remains on the fact sheet. Actual game has two live-switchable language modes.",
+        note: "Portal language selection persists from gallery cards to the fact sheet. Actual game has two live-switchable language modes.",
       },
       null,
       2,

@@ -126,6 +126,29 @@ let server, browser;
       await page.locator("nav [aria-current]").innerText(),
       "The Bookshelf",
     );
+    const language = page.locator(".language-toggle");
+    assert.equal(await language.innerText(), "繁");
+    await language.click();
+    assert.equal(await language.innerText(), "En");
+    await page.getByRole("heading", { name: "書架", exact: true }).waitFor({
+      state: "attached",
+    });
+    const footer = page.locator(".site-footer");
+    assert.match(await footer.innerText(), /保留所有權利。/);
+    await page.getByRole("link", { name: "應用程式", exact: true }).click();
+    await page.reload();
+    assert.equal(await page.locator("html").getAttribute("lang"), "zh-TW");
+    const chineseCard = page.locator('[data-project="travel-canvas"]');
+    await page.getByRole("button", { name: "旅行", exact: true }).click();
+    assert.equal(await chineseCard.isVisible(), true);
+    const count = await page.locator("[data-project]:visible").count();
+    await language.click();
+    assert.equal(await page.locator("[data-project]:visible").count(), count);
+    assert.equal(await page.locator("html").getAttribute("lang"), "en");
+    assert.match(await footer.innerText(), /All rights reserved\./);
+    await page
+      .getByRole("link", { name: "The Bookshelf", exact: true })
+      .click();
     const originalTheme = await page.locator("html").getAttribute("data-theme");
     await themeButton.click();
     await page.getByRole("link", { name: "Apps", exact: true }).click();
