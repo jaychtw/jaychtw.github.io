@@ -4,7 +4,8 @@ function initialLanguage() {
     const saved = window.localStorage.getItem("possibility:language");
     if (saved === "zh-TW" || saved === "en") return saved;
     const legacy = window.localStorage.getItem("comics.language");
-    if (legacy === "1" || legacy === "0") return legacy === "1" ? "zh-TW" : "en";
+    if (legacy === "1") return "zh-TW";
+    if (legacy === "0") return "en";
   } catch {
     /* Browser preferences also work when storage is unavailable. */
   }
@@ -19,7 +20,8 @@ const localized = [...document.querySelectorAll("[data-zh]")].map((node) => ({
   node,
   english: node.textContent,
 }));
-const labels = [...document.querySelectorAll("[data-zh-label]")].map((node) => ({
+const labelNodes = document.querySelectorAll("[data-zh-label]");
+const labels = [...labelNodes].map((node) => ({
   node,
   english: node.getAttribute("aria-label"),
 }));
@@ -32,7 +34,8 @@ function setLanguage(language) {
     if (node.hasAttribute("lang")) node.lang = language;
   }
   for (const { node, english } of labels) {
-    node.setAttribute("aria-label", isChinese() ? node.dataset.zhLabel : english);
+    const label = isChinese() ? node.dataset.zhLabel : english;
+    node.setAttribute("aria-label", label);
   }
   for (const image of images) {
     image.alt = isChinese() ? image.dataset.zhAlt : image.dataset.enAlt;

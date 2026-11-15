@@ -18,7 +18,9 @@ export function picture(
   eager = false,
   sizes = "(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc((100vw - 72px) / 2), (max-width: 1279px) calc((100vw - 144px) / 3), 379px",
 ): string {
-  const translatedAlt = chineseText(alt) || alt.replace(/ cover artwork$/, " 封面插畫").replace(/ screenshot$/, " 遊戲畫面");
+  const coverAlt = alt.replace(/ cover artwork$/, " 封面插畫");
+  const defaultAlt = coverAlt.replace(/ screenshot$/, " 遊戲畫面");
+  const translatedAlt = chineseText(alt) || defaultAlt;
   return `<img data-zh-alt="${escape(translatedAlt)}" src="${escape(media.src)}" srcset="${escape(media.srcset)}" sizes="${escape(sizes)}" width="${media.width}" height="${media.height}" alt="${escape(alt)}" ${eager ? 'fetchpriority="high" loading="eager"' : 'loading="lazy"'} decoding="async" data-image${media.fallback ? ` data-fallback="${escape(media.fallback)}" data-fallback-alt="${escape(media.fallbackAlt || alt)}" data-fallback-zh="${escape(chineseText(media.fallbackAlt || alt) || translatedAlt)}"` : ""}>`;
 }
 export function thumbnail(

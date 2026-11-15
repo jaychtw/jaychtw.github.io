@@ -125,7 +125,10 @@ let server, browser;
       assert.equal(await language.innerText(), "繁");
       await language.click();
       assert.equal(await language.innerText(), "En");
-      assert.equal(await card.locator(".card-description").innerText(), entry.summaryZhTW);
+      assert.equal(
+        await card.locator(".card-description").innerText(),
+        entry.summaryZhTW,
+      );
       await page.goto(base + "/games/shadow-becomes-me/");
       assert.equal(
         await page.locator('p[lang="zh-TW"]').innerText(),
