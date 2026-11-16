@@ -544,6 +544,9 @@ async function capture(page, name) {
     route.abort(),
   );
   await allFailure.goto("http://127.0.0.1:4176/");
+  await allFailure
+    .locator('[data-project="republic-of-chickens"]')
+    .scrollIntoViewIfNeeded();
   await allFailure.waitForFunction(() =>
     document
       .querySelector('[data-project="republic-of-chickens"] .work-media')
