@@ -15,10 +15,7 @@
     "url": "https://jaychtw.github.io/gbd-war-room/"
   },
   "repositoryUrl": "https://github.com/jaychtw/gbd-war-room",
-  "languages": [
-    "en",
-    "zh-TW"
-  ],
+  "languages": ["en", "zh-TW"],
   "controls": null,
   "limitations": "GBI Fire Control is in English. Night Watch and After the Flash also support Traditional Chinese.",
   "approval": {
@@ -30,8 +27,5 @@
     "commit": "f03ca4b1fe7572181c29c5fe94218f536f6ec42c"
   },
   "thumbnail": null,
-  "tags": [
-    "Strategy",
-    "Narrative"
-  ]
+  "tags": ["Strategy", "Narrative"]
 }
