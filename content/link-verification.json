@@ -310,5 +310,13 @@
     "status": 200,
     "checkedAt": "2026-11-14T18:31:17.337Z",
     "method": "Creator confirmed the Firebase URL loaded in the browser and provided a screenshot showing the TravelCanvas room entry screen. HTTP status inferred from the successful page load."
+  },
+  {
+    "id": "gbd-war-room",
+    "url": "https://jaychtw.github.io/gbd-war-room/",
+    "finalUrl": "https://jaychtw.github.io/gbd-war-room/",
+    "status": 200,
+    "checkedAt": "2026-11-16T14:44:36Z",
+    "method": "HTTPS GET returned 200 and the live selector contained the After the Flash module link."
   }
 ]

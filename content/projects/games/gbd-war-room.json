@@ -1,0 +1,37 @@
+{
+  "id": "gbd-war-room",
+  "category": "games",
+  "title": "Ground-Based Defense: War Room",
+  "summary": "Two tracks. One interceptor. Take command in Night Watch, work the GBI fire controls, or tell a hospital whether it’s safe to move patients in After the Flash.",
+  "summaryZhTW": "兩道航跡，一枚攔截彈。你可以在《Night Watch》接掌指揮席、操作 GBI 火控台，或在《閃光之後》判讀觀測報告，告訴醫院能否轉送病患。",
+  "coverAlt": "A watch commander faces two amber tracks on a map of the North Pacific beneath the War Room title.",
+  "status": "published",
+  "maturity": "released",
+  "featured": false,
+  "order": 275,
+  "publishedAt": "2026-11-16",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/gbd-war-room/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/gbd-war-room",
+  "languages": [
+    "en",
+    "zh-TW"
+  ],
+  "controls": null,
+  "limitations": "GBI Fire Control is in English. Night Watch and After the Flash also support Traditional Chinese.",
+  "approval": {
+    "url": "https://github.com/jaychtw/gbd-war-room/commit/f03ca4b1fe7572181c29c5fe94218f536f6ec42c",
+    "note": "Creator authorized publication of the three-module release to Possibility Games."
+  },
+  "release": {
+    "version": null,
+    "commit": "f03ca4b1fe7572181c29c5fe94218f536f6ec42c"
+  },
+  "thumbnail": null,
+  "tags": [
+    "Strategy",
+    "Narrative"
+  ]
+}
