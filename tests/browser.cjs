@@ -495,6 +495,9 @@ async function capture(page, name) {
     (route) => route.abort(),
   );
   await failed.goto(galleryURL);
+  await failed
+    .locator('[data-project="republic-of-chickens"]')
+    .scrollIntoViewIfNeeded();
   await failed.waitForFunction(() =>
     document
       .querySelector('[data-project="republic-of-chickens"] .work-media')
@@ -512,6 +515,9 @@ async function capture(page, name) {
     route.abort(),
   );
   await coverFailure.goto("http://127.0.0.1:4176/");
+  await coverFailure
+    .locator('[data-project="republic-of-chickens"]')
+    .scrollIntoViewIfNeeded();
   await coverFailure.waitForFunction(() => {
     const image = document.querySelector(
       '[data-project="republic-of-chickens"] img',
