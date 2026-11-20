@@ -1,0 +1,31 @@
+{
+  "id": "the-last-crossing",
+  "category": "games",
+  "title": "The Last Crossing",
+  "summary": "Run the rain-slick roofs of two elevated trains above Taipei. Jump the vents and swing across three gaps to reach the evacuation gate in this short 3D proof of concept.",
+  "summaryZhTW": "在臺北高架軌道上，沿著雨水打濕的車頂奔跑。躍過通風設備，用纜索在兩列車之間擺盪三次，抵達撤離門。《末班線》是一款短篇 3D 動作概念驗證作品。",
+  "coverAlt": "A runner in a yellow raincoat stands on a wet train roof reflecting an overhead gantry. A second train runs alongside it above Taipei.",
+  "status": "published",
+  "maturity": "public",
+  "featured": false,
+  "order": 276,
+  "publishedAt": "2026-11-20",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/the-last-crossing/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/the-last-crossing",
+  "languages": ["en", "zh-TW"],
+  "controls": "Move with WASD or the arrow keys, jump with Space, and press E to tether. Drag to look around.",
+  "limitations": "A short proof of concept. Requires a WebGL-enabled browser.",
+  "approval": {
+    "url": "https://github.com/jaychtw/the-last-crossing/commit/f8ac70f78b6c2fbecae04b09dc336386003cc12a",
+    "note": "Creator approved publishing the tested proof of concept to Possibility Games."
+  },
+  "release": {
+    "version": null,
+    "commit": "f8ac70f78b6c2fbecae04b09dc336386003cc12a"
+  },
+  "thumbnail": null,
+  "tags": ["Action", "Platformer"]
+}

@@ -318,5 +318,13 @@
     "status": 200,
     "checkedAt": "2026-11-16T14:44:36Z",
     "method": "HTTPS GET returned 200 and the live selector contained the After the Flash module link."
+  },
+  {
+    "id": "the-last-crossing",
+    "url": "https://jaychtw.github.io/the-last-crossing/",
+    "finalUrl": "https://jaychtw.github.io/the-last-crossing/",
+    "status": 200,
+    "checkedAt": "2026-11-20T15:41:31.543496+00:00",
+    "method": "HTTPS GET with curl and default TLS verification. The response contains the game title and WebGL canvas."
   }
 ]
