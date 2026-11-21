@@ -334,5 +334,13 @@
     "status": 200,
     "checkedAt": "2026-11-21T01:24:41.989Z",
     "method": "HTTPS GET with default certificate verification; confirmed the landing page and all three module titles."
+  },
+  {
+    "id": "construction-projects",
+    "url": "https://jaychtw.github.io/layer-by-layer/",
+    "finalUrl": "https://jaychtw.github.io/layer-by-layer/",
+    "status": 200,
+    "checkedAt": "2026-11-21T04:40:03Z",
+    "method": "HTTPS GET with default TLS verification; confirmed the bilingual title and both module links."
   }
 ]

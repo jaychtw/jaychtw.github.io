@@ -1,0 +1,31 @@
+{
+  "id": "construction-projects",
+  "category": "games",
+  "title": "Construction Projects (建案大師)",
+  "summary": "Repair the ventilation above a library reading room, then build a twelve-story tower and test its response to wind and earthquakes.",
+  "summaryZhTW": "掀開圖書館閱覽室的天花板修復通風管，再從基礎開始建造十二層高樓，測試風力與地震對建築的影響。",
+  "coverAlt": "A cutaway library model with exposed turquoise ducts, a concrete frame and a crane above the reading room.",
+  "status": "published",
+  "maturity": "evolving",
+  "featured": false,
+  "order": 280,
+  "publishedAt": "2026-11-21",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/layer-by-layer/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/layer-by-layer",
+  "languages": ["en", "zh-TW"],
+  "controls": "In the reading room, drag to orbit or use the camera buttons. Select a phase to examine the model.",
+  "limitations": "Skyline Builder requires WebGL and an internet connection for its external dependencies.",
+  "approval": {
+    "url": "https://github.com/jaychtw/layer-by-layer",
+    "note": "The creator requested publication of the two-module collection."
+  },
+  "release": {
+    "version": null,
+    "commit": "adcb4aa7502cfae7fbc36598a0cdbbcb0c7ef22f"
+  },
+  "thumbnail": null,
+  "tags": ["Education", "Simulation"]
+}
