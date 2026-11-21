@@ -4,10 +4,10 @@
   "category": "apps",
   "summary": "Turn a scene you can picture into a video prompt. Direct the timing of a sequence in Sightline, compose a frame in FrameCraft, or explore camera choices in CinePrompt Studio.",
   "summaryZhTW": "把腦中的畫面寫成影片提示詞。在 Sightline 編排鏡頭節奏、用 FrameCraft 設計構圖，或透過 CinePrompt Studio 探索攝影設定。",
-  "status": "draft",
+  "status": "published",
   "featured": false,
   "order": 50,
-  "publishedAt": null,
+  "publishedAt": "2026-11-21",
   "destination": {
     "action": "open",
     "url": "https://jaychtw.github.io/cinema-prompting-studio/"
@@ -21,11 +21,11 @@
   "limitations": "Sightline composes prompts locally. FrameCraft and CinePrompt Studio use external scripts.",
   "approval": {
     "url": "https://github.com/jaychtw/cinema-prompting-studio",
-    "note": "Creator supplied the project repository and the two companion modules."
+    "note": "Creator approved the app and neo-noir artwork for publication on Possibility."
   },
   "release": {
     "version": null,
-    "commit": null
+    "commit": "0c3b45d8d1eba2335d927c6920bbf310713825fb"
   },
   "thumbnail": null,
   "tags": [
