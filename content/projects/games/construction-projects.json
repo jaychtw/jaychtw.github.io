@@ -15,10 +15,7 @@
     "url": "https://jaychtw.github.io/layer-by-layer/"
   },
   "repositoryUrl": "https://github.com/jaychtw/layer-by-layer",
-  "languages": [
-    "en",
-    "zh-TW"
-  ],
+  "languages": ["en", "zh-TW"],
   "controls": "In the reading room, drag to orbit or use the camera buttons. Select a phase to examine the model.",
   "limitations": "Skyline Builder requires WebGL and an internet connection for its external dependencies.",
   "approval": {
@@ -30,8 +27,5 @@
     "commit": "adcb4aa7502cfae7fbc36598a0cdbbcb0c7ef22f"
   },
   "thumbnail": null,
-  "tags": [
-    "Education",
-    "Simulation"
-  ]
+  "tags": ["Education", "Simulation"]
 }
