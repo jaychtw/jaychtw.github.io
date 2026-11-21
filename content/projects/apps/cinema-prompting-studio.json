@@ -8,15 +8,31 @@
   "featured": false,
   "order": 50,
   "publishedAt": null,
-  "destination": {"action": "open", "url": "https://jaychtw.github.io/cinema-prompting-studio/"},
+  "destination": {
+    "action": "open",
+    "url": "https://jaychtw.github.io/cinema-prompting-studio/"
+  },
   "repositoryUrl": "https://github.com/jaychtw/cinema-prompting-studio",
-  "languages": ["English", "繁體中文"],
+  "languages": [
+    "English",
+    "繁體中文"
+  ],
   "controls": "Describe a scene, arrange timed beats, and copy or download the prompt.",
   "limitations": "Sightline composes prompts locally. FrameCraft and CinePrompt Studio use external scripts.",
-  "approval": {"url": "https://github.com/jaychtw/cinema-prompting-studio", "note": "Creator supplied the project repository and the two companion modules."},
-  "release": {"version": null, "commit": null},
+  "approval": {
+    "url": "https://github.com/jaychtw/cinema-prompting-studio",
+    "note": "Creator supplied the project repository and the two companion modules."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
   "thumbnail": null,
-  "tags": ["Film", "Creative tools", "Video"],
+  "tags": [
+    "Film",
+    "Creative tools",
+    "Video"
+  ],
   "maturity": "evolving",
-  "coverAlt": "Three progressively closer views of a passenger waiting at a rain-streaked Taipei bus shelter."
+  "coverAlt": "Cinema Prompting Studio in cream lettering above an editor’s hands inspecting a filmstrip at a teal and amber vintage editing bench."
 }
