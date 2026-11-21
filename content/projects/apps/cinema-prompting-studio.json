@@ -1,0 +1,22 @@
+{
+  "id": "cinema-prompting-studio",
+  "title": "Cinema Prompting Studio",
+  "category": "apps",
+  "summary": "Turn a scene you can picture into a video prompt. Direct the timing of a sequence in Sightline, compose a frame in FrameCraft, or explore camera choices in CinePrompt Studio.",
+  "summaryZhTW": "把腦中的畫面寫成影片提示詞。在 Sightline 編排鏡頭節奏、用 FrameCraft 設計構圖，或透過 CinePrompt Studio 探索攝影設定。",
+  "status": "draft",
+  "featured": false,
+  "order": 50,
+  "publishedAt": null,
+  "destination": {"action": "open", "url": "https://jaychtw.github.io/cinema-prompting-studio/"},
+  "repositoryUrl": "https://github.com/jaychtw/cinema-prompting-studio",
+  "languages": ["English", "繁體中文"],
+  "controls": "Describe a scene, arrange timed beats, and copy or download the prompt.",
+  "limitations": "Sightline composes prompts locally. FrameCraft and CinePrompt Studio use external scripts.",
+  "approval": {"url": "https://github.com/jaychtw/cinema-prompting-studio", "note": "Creator supplied the project repository and the two companion modules."},
+  "release": {"version": null, "commit": null},
+  "thumbnail": null,
+  "tags": ["Film", "Creative tools", "Video"],
+  "maturity": "evolving",
+  "coverAlt": "Three progressively closer views of a passenger waiting at a rain-streaked Taipei bus shelter."
+}
