@@ -43,8 +43,10 @@ for item in [json.loads(path.read_text()) for path in sorted((root/'content/proj
     game = {'id':item['id'],'url':final,'status':status,'htmlSha256':sha256(content).hexdigest(),'assets':[],'inlineScripts':parser.inline_scripts}
     for path in sorted(set(parser.paths)):
         url = urljoin(final, path)
-        assert urlsplit(url).scheme == 'https' and urlsplit(url).hostname == urlsplit(final).hostname
+        is_game_font = item['id'] == 'kodi-and-gilly-the-game' and url == 'https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap'
+        assert urlsplit(url).scheme == 'https' and (urlsplit(url).hostname == urlsplit(final).hostname or is_game_font)
         code, resolved, data, kind = fetch(url)
+        if is_game_font: assert resolved == url and (kind or '').startswith('text/css'), (resolved, kind)
         assert code == 200 and len(data)>0 and 'text/html' not in (kind or ''), (url,kind)
         game['assets'].append({'url':resolved,'status':code,'bytes':len(data),'sha256':sha256(data).hexdigest()})
     if item['id']=='squirrel-control':

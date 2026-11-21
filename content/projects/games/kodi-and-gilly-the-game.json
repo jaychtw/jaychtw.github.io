@@ -1,0 +1,31 @@
+{
+  "id": "kodi-and-gilly-the-game",
+  "category": "games",
+  "title": "Kodi and Gilly",
+  "summary": "Carry Gilly across broken pillars on Kodi’s shoulder, then send the little axolotl underwater to lower a drawbridge. Reunite at the Sun Archway to clear each jungle chamber.",
+  "summaryZhTW": "讓 Kodi 背著 Gilly 跳過斷裂的石柱，再讓小小的六角恐龍潛入水中，拉動機關放下吊橋。兩位夥伴得在太陽拱門前會合，才能一起走出每一座遺跡。",
+  "coverAlt": "Gilly, a pink axolotl, rides on Kodi’s head as the backpacked bear explores a sunlit jungle temple.",
+  "status": "published",
+  "maturity": "public",
+  "featured": false,
+  "order": 280,
+  "publishedAt": "2026-11-21",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/kodi-and-gilly-the-game/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/kodi-and-gilly-the-game",
+  "languages": ["en", "zh-TW"],
+  "controls": "Use A and D to move, W or Space to jump, and E to release Gilly.",
+  "limitations": "Single-player puzzle adventure.",
+  "approval": {
+    "url": "https://github.com/jaychtw/kodi-and-gilly-the-game/commit/ac7164f44baa3a7c20f50cd70ac0fe824527cf8a",
+    "note": "Creator requested publication in Possibility Games with the supplied jungle ruins cover."
+  },
+  "release": {
+    "version": null,
+    "commit": "ac7164f44baa3a7c20f50cd70ac0fe824527cf8a"
+  },
+  "thumbnail": null,
+  "tags": ["Puzzle", "Platformer"]
+}
