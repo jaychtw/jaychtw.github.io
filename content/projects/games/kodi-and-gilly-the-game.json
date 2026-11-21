@@ -5,11 +5,11 @@
   "summary": "Carry Gilly across broken pillars on Kodi’s shoulder, then send the little axolotl underwater to lower a drawbridge. Reunite at the Sun Archway to clear each jungle chamber.",
   "summaryZhTW": "讓 Kodi 背著 Gilly 跳過斷裂的石柱，再讓小小的六角恐龍潛入水中，拉動機關放下吊橋。兩位夥伴得在太陽拱門前會合，才能一起走出每一座遺跡。",
   "coverAlt": "Gilly, a pink axolotl, rides on Kodi’s head as the backpacked bear explores a sunlit jungle temple.",
-  "status": "draft",
+  "status": "published",
   "maturity": "public",
   "featured": false,
   "order": 280,
-  "publishedAt": null,
+  "publishedAt": "2026-11-21",
   "destination": {
     "action": "play",
     "url": "https://jaychtw.github.io/kodi-and-gilly-the-game/"

@@ -350,5 +350,13 @@
     "status": 200,
     "checkedAt": "2026-11-21T07:46:49.894Z",
     "method": "Opened the HTTPS landing page in a browser and followed both module links to their interactive workshops."
+  },
+  {
+    "id": "kodi-and-gilly-the-game",
+    "url": "https://jaychtw.github.io/kodi-and-gilly-the-game/",
+    "finalUrl": "https://jaychtw.github.io/kodi-and-gilly-the-game/",
+    "status": 200,
+    "checkedAt": "2026-11-21T15:22:15.281Z",
+    "method": "Opened the public HTTPS game in a browser and confirmed the Jungle Ruins title, The Mossy Gate chamber and character controls."
   }
 ]
