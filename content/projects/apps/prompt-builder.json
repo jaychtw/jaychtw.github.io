@@ -1,0 +1,31 @@
+{
+  "id": "prompt-builder",
+  "title": "Prompt Builder (跟著我寫提示詞)",
+  "category": "apps",
+  "summary": "Turn an app or game idea into an AI prompt with Kodi. Answer four questions in your own words, or choose idea cards for features, rules, and style.",
+  "summaryZhTW": "跟著 Kodi，把工具或遊戲點子寫成 AI 提示詞。用自己的話回答四個問題，或透過靈感卡挑選功能、規則與風格。",
+  "status": "published",
+  "featured": false,
+  "order": 60,
+  "publishedAt": "2026-11-21",
+  "destination": {
+    "action": "open",
+    "url": "https://jaychtw.github.io/prompt-builder/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/prompt-builder",
+  "languages": ["en", "zh-TW"],
+  "controls": "Choose a module, answer questions or select cards, then copy your prompt into an AI chat.",
+  "limitations": "Module 2 uses external scripts. Read-aloud voices depend on the browser and device.",
+  "approval": {
+    "url": "https://github.com/jaychtw/prompt-builder",
+    "note": "The creator requested the two-module landing page and its publication in Possibility Apps."
+  },
+  "release": {
+    "version": null,
+    "commit": "63341e39e51b7dac18e189b91332c46187be076d"
+  },
+  "thumbnail": null,
+  "tags": ["Creative tools", "Education"],
+  "maturity": "evolving",
+  "coverAlt": "Kodi, a bear in glasses and a lab coat, helps a learner choose between a checklist and a game controller at a wooden workbench."
+}

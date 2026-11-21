@@ -342,5 +342,13 @@
     "status": 200,
     "checkedAt": "2026-11-21T04:40:03Z",
     "method": "HTTPS GET with default TLS verification; confirmed the bilingual title and both module links."
+  },
+  {
+    "id": "prompt-builder",
+    "url": "https://jaychtw.github.io/prompt-builder/",
+    "finalUrl": "https://jaychtw.github.io/prompt-builder/",
+    "status": 200,
+    "checkedAt": "2026-11-21T07:46:49.894Z",
+    "method": "Opened the HTTPS landing page in a browser and followed both module links to their interactive workshops."
   }
 ]
