@@ -326,5 +326,13 @@
     "status": 200,
     "checkedAt": "2026-11-20T15:41:31.543496+00:00",
     "method": "HTTPS GET with curl and default TLS verification. The response contains the game title and WebGL canvas."
+  },
+  {
+    "id": "cinema-prompting-studio",
+    "url": "https://jaychtw.github.io/cinema-prompting-studio/",
+    "finalUrl": "https://jaychtw.github.io/cinema-prompting-studio/",
+    "status": 200,
+    "checkedAt": "2026-11-21T01:24:41.989Z",
+    "method": "HTTPS GET with default certificate verification; confirmed the landing page and all three module titles."
   }
 ]
