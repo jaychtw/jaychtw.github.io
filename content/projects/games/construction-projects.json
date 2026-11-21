@@ -1,0 +1,37 @@
+{
+  "id": "construction-projects",
+  "category": "games",
+  "title": "Construction Projects (建案大師)",
+  "summary": "Explore how a library reading room comes together, from foundations to finishes, then open Skyline Builder 3D for a second construction activity.",
+  "summaryZhTW": "從基礎到裝修，逐層探索圖書館閱覽室的建造過程，再進入第二個單元「天際線建造師 3D」。",
+  "coverAlt": "A cutaway library model with exposed turquoise ducts, a concrete frame and a crane above the reading room.",
+  "status": "draft",
+  "maturity": "evolving",
+  "featured": false,
+  "order": 280,
+  "publishedAt": null,
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/layer-by-layer/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/layer-by-layer",
+  "languages": [
+    "en",
+    "zh-TW"
+  ],
+  "controls": "In the reading room, drag to orbit or use the camera buttons. Select a phase to examine the model.",
+  "limitations": "The reading-room exercise focuses on one ventilation connection.",
+  "approval": {
+    "url": "https://github.com/jaychtw/layer-by-layer",
+    "note": "The creator requested publication of the two-module collection."
+  },
+  "release": {
+    "version": null,
+    "commit": null
+  },
+  "thumbnail": null,
+  "tags": [
+    "Education",
+    "Simulation"
+  ]
+}
