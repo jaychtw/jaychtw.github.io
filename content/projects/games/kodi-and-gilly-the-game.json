@@ -15,12 +15,9 @@
     "url": "https://jaychtw.github.io/kodi-and-gilly-the-game/"
   },
   "repositoryUrl": "https://github.com/jaychtw/kodi-and-gilly-the-game",
-  "languages": [
-    "en",
-    "zh-TW"
-  ],
+  "languages": ["en", "zh-TW"],
   "controls": "Use A and D to move, W or Space to jump, and E to release Gilly.",
-  "limitations": null,
+  "limitations": "Single-player puzzle adventure.",
   "approval": {
     "url": "https://github.com/jaychtw/kodi-and-gilly-the-game/commit/ac7164f44baa3a7c20f50cd70ac0fe824527cf8a",
     "note": "Creator requested publication in Possibility Games with the supplied jungle ruins cover."
@@ -30,8 +27,5 @@
     "commit": "ac7164f44baa3a7c20f50cd70ac0fe824527cf8a"
   },
   "thumbnail": null,
-  "tags": [
-    "Puzzle",
-    "Platformer"
-  ]
+  "tags": ["Puzzle", "Platformer"]
 }
