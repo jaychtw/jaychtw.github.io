@@ -69,7 +69,7 @@ let browser;
 const servers = [];
 async function server(port, dir) {
   try {
-    await fetch(`http://127.0.0.1:${port}`);
+    await fetch(`http://127.0.0.1:${port}`, { method: "HEAD" });
     throw new Error(`Port ${port} occupied`);
   } catch (e) {
     if (e.message.includes("occupied")) throw e;
@@ -90,7 +90,10 @@ async function server(port, dir) {
   servers.push(child);
   for (let i = 0; i < 50; i++) {
     try {
-      if ((await fetch(`http://127.0.0.1:${port}`)).ok) return;
+      const response = await fetch(`http://127.0.0.1:${port}`, {
+        method: "HEAD",
+      });
+      if (response.ok) return;
     } catch {}
     await new Promise((r) => setTimeout(r, 100));
   }

@@ -52,7 +52,7 @@ let server, browser;
     );
     for (let i = 0; i < 50; i++) {
       try {
-        if ((await fetch(base)).ok) break;
+        if ((await fetch(base, { method: "HEAD" })).ok) break;
       } catch {}
       await new Promise((r) => setTimeout(r, 100));
     }
