@@ -358,5 +358,13 @@
     "status": 200,
     "checkedAt": "2026-11-21T15:22:15.281Z",
     "method": "Opened the public HTTPS game in a browser and confirmed the Jungle Ruins title, The Mossy Gate chamber and character controls."
+  },
+  {
+    "id": "carrier-battle-group",
+    "url": "https://jaychtw.github.io/carrier-battle-group/",
+    "finalUrl": "https://jaychtw.github.io/carrier-battle-group/",
+    "status": 200,
+    "checkedAt": "2026-11-22T05:26:51Z",
+    "method": "GitHub Actions run 44989431646 fetched the public landing page and both module pages over HTTPS, required HTTP 200, and compared each response byte-for-byte with its release file."
   }
 ]

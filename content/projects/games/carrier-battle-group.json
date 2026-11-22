@@ -1,0 +1,31 @@
+{
+  "id": "carrier-battle-group",
+  "category": "games",
+  "title": "Carrier Battle Group",
+  "summary": "Take a shift on a nine-ship carrier group and time three recoveries. In the ocean sandbox, follow a jet from the tower into the sky and switch between sunset, storm, and night.",
+  "summaryZhTW": "在九艘艦艇組成的航艦編隊值班，掌握三次飛機回收的時機。進入海洋沙盒，從塔台目送戰機起飛，切換跟拍視角，在夕陽、風暴與夜色中觀察艦隊。",
+  "coverAlt": "A carrier with jets parked on deck sails toward the viewer at dawn, with escorts on the horizon.",
+  "status": "published",
+  "maturity": "public",
+  "featured": false,
+  "order": 290,
+  "publishedAt": "2026-11-22",
+  "destination": {
+    "action": "play",
+    "url": "https://jaychtw.github.io/carrier-battle-group/"
+  },
+  "repositoryUrl": "https://github.com/jaychtw/carrier-battle-group",
+  "languages": ["en", "zh-TW"],
+  "controls": "Drag to orbit the fleet. Choose Flight Deck Watch to time launch and recovery signals, or Ocean Sandbox to use the camera and weather controls.",
+  "limitations": "Requires WebGL. The ocean sandbox loads external resources and needs an internet connection.",
+  "approval": {
+    "url": "https://github.com/jaychtw/carrier-battle-group/commit/1c8508dadce80af2c31b84c2ac3d406fd218c0c9",
+    "note": "Creator requested deployment of both modules and a Carrier Battle Group card in Possibility Games."
+  },
+  "release": {
+    "version": null,
+    "commit": "1c8508dadce80af2c31b84c2ac3d406fd218c0c9"
+  },
+  "thumbnail": null,
+  "tags": ["Simulation", "Sandbox"]
+}
